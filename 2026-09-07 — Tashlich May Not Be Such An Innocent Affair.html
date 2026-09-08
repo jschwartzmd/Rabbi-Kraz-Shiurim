@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tashlich May Not Be Such An Innocent Affair</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">תַּשְׁלִיךְ &mdash; מִנְהָג תָּמִים אוֹ פִּרְצָה עַל שְׂפַת הַנָּהָר</div>
+  <div class="english-title">Tashlich May Not Be Such An Innocent Affair</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Erev Rosh HaShana 5787</div>
+  <div class="dates">Recorded: Elul 5786 &middot; Prepared: 26 Elul 5786 / September 8, 2026</div>
+</header>
+
+<p class="lead">Walking to the water on the afternoon of the first day of Rosh HaShana, shaking the corners of one's garments, reciting <em>Mi keil kamocha</em> and the thirteen middos of rachamim &mdash; the minhag of Tashlich has come to feel as fixed a part of the day as the shofar itself. And yet, when one traces its sources, Tashlich turns out to be one of the most contested minhagim on the Jewish calendar. Great poskim &mdash; the Maharil, the Ari, the Rema, the Chida &mdash; embraced it. Others &mdash; among them the Vilna Gaon in his personal conduct, and a chorus of acharonim &mdash; either refrained from it, restricted it, or wanted it abolished outright. Behind the picturesque scene at the river lies a serious dispute about superstition, about the mingling of men and women, and about whether a symbolic gesture can ever be honestly mistaken for teshuvah.</p>
+
+<h2><span class="num">I.</span> The Custom That Almost Wasn't</h2>
+
+<p>The classical minhag is described in the Rema (Orach Chaim 583:2): after Mincha on the first day of Rosh HaShana, before sunset, one walks to a river, ocean, or well &mdash; ideally outside the city &mdash; that contains living fish, and there recites the pesukim of <em>Mi keil kamocha</em> from the end of Michah, culminating in the phrase <span class="heb">וְתַשְׁלִיךְ בִּמְצֻלוֹת יָם כָּל חַטֹּאתָם</span>, "and You shall cast into the depths of the sea all their sins."<sup class="fn">16</sup> From this last phrase the custom draws its name.</p>
+
+<p>Simple enough &mdash; and yet almost every phrase of that description has been argued about. <em>When</em> to go (the first day, the second day, the fourth day of the Aseres Yemei Teshuva?). <em>Where</em> to go (a river with fish? any body of water? a well?). <em>Who</em> should go (men only? men and women together? children?). <em>What</em> to say. And most fundamentally &mdash; <em>whether</em> to go at all. The Maharil, the Bach, and the Shelah stood firmly for the minhag; but a striking undercurrent of poskim &mdash; culminating in the Chasam Sofer's remarks and in the Vilna Gaon's personal conduct &mdash; treated it as at best a chumra and at worst a stumbling block.</p>
+
+<h2><span class="num">II.</span> Origins: The Maharil, Rabbeinu Yerucham, and the Midrash</h2>
+
+<p>The earliest full description of Tashlich is in the <strong>Maharil</strong> (Rabbi Yaakov Moellin of Mainz, d. 1427), whose <em>Minhagim</em> record that on the first day of Rosh HaShana, after the seudah, one goes to a river or a well and recites certain pesukim &mdash; and, if he has forgotten on the first day, he does so on the second.<sup class="fn">1</sup> The Maharil grounds the practice in a midrash: when Avraham Avinu went to the Akeidah, the Satan placed a great river before him to block his path; Avraham entered the river up to his neck &mdash; <span class="heb">כִּי בָאוּ מַיִם עַד נָפֶשׁ</span> &mdash; and continued on his mission.<sup class="fn">2</sup> Going to water on Rosh HaShana, then, is a re-enactment of Avraham's fidelity under trial: a declaration that we, too, will cross whatever water the Satan places in our way.</p>
+
+<blockquote class="hebrew">
+כָּתַב מהרי"ל שֶׁנּוֹהֲגִין לֵילֵךְ אֶל הַנָּהָר וְלוֹמַר תָּשׁוּב יְרַחֲמֵנוּ, מִשּׁוּם דְּאִיתָא בַּמִּדְרָשׁ (יַלְקוּט וַיֵּרָא צ"ט) שֶׁכְּשֶׁהָלַךְ אַבְרָהָם אָבִינוּ לַעֲקֵדָה שָׂם הַשָּׂטָן נָהָר עַד צַוָּאר, וְאָמַר "הוֹשִׁיעָה ה' כִּי בָאוּ מַיִם עַד נָפֶשׁ".
+<span class="attrib">&mdash; Bais Yosef quoting the Maharil, on the basis of Yalkut Shimoni, Vayera 99 &nbsp;<sup class="fn">2</sup></span>
+</blockquote>
+
+<p><strong>Rabbeinu Yerucham</strong> already knows the practice, and adds the detail that one goes to <em>a body of water with living fish</em>, since fish (whose eyes are always open) are a symbol of the ever-open Eye of Providence &mdash; <span class="heb">עַיִן פְּקוּחָה</span> &mdash; and of the tzibbur that flourishes without <em>ayin hara</em>.<sup class="fn">17</sup></p>
+
+<h2><span class="num">III.</span> The Kabbalistic Layer &mdash; The Ari and the Zohar</h2>
+
+<p>The Ari"zal took the minhag with tremendous seriousness. The Pri Etz Chaim and Sha'ar HaKavanos preserve his practice: he would go to the water at the moment of shki'ah, contemplating specific yichudim, and the shaking-out of the tzitzis (<span class="heb">נִעֲרוּ שׁוּלֵי הַבְּגָדִים</span>) was understood as the <em>literal</em> dislodging of nourishment (<em>yenikah</em>) from the kelipos.<sup class="fn">8</sup> The Ari also introduced the detail that one ought to look into the water &mdash; not at the fish, but at one's own reflection &mdash; to bring the tikkun home.</p>
+
+<p>The Zohar (Emor, and again in Parshas Nasso) hints at a related idea: on Rosh HaShana the din is aroused above, and the mekubalim explain that the sea is the domain of <em>Malchus</em>, which absorbs and neutralizes the harshness of the day.<sup class="fn">22</sup> Casting sins <em>into the depths</em> means offering them up to a place where the accusing forces cannot retrieve them.</p>
+
+<blockquote class="hebrew">
+וּמִנְהָג שֶׁכָּל יִשְׂרָאֵל תּוֹרָה הוּא, בַּמֶּה שֶׁהוֹלְכִים עַל מַיִם וְאוֹמְרִים "תַּשְׁלִיךְ" בַּמְצוּלוֹת יָם כָּל חַטֹּאתֵינוּ, לֶהֱוֵי, כִּי מִן מְצוּלוֹת יָם שֶׁהוֹלְכִים עַל מַיִם וְאוֹמְרִים "תַּשְׁלִיךְ" הוּא הַתְּהוֹם, וְהִיא הַמָּקוֹם הַיּוֹתֵר עָמוֹק בַּיָּם, לְפִי הַטֶּבַע שֶׁל הַיְסוֹד שֶׁהַמַּיִם יִכַּסּוּ הָאָרֶץ, וְהָאָרֶץ הִיא הַמֶּרְכָּז, וְהוּא מָקוֹם הֶעֱלֵם.
+<span class="attrib">&mdash; Elyah Rabbah / Shelah, drush on Tashlich, developing the Ari &nbsp;<sup class="fn">13</sup></span>
+</blockquote>
+
+<h2><span class="num">IV.</span> Why Fish, Why Water</h2>
+
+<p>The Rema records three overlapping reasons for going specifically to <em>living fish</em>:<sup class="fn">15,16</sup></p>
+
+<p>First, fish have no eyelids &mdash; their eyes are always open. They evoke the Divine <em>ayin pekuchah</em> that is asked to watch over the community, and the reminder that just as fish can be caught in a net without warning, so, too, we can be caught in the net of din without warning &mdash; and Rosh HaShana is precisely the day to remember it.<sup class="fn">17</sup></p>
+
+<p>Second, <em>ayin hara</em> has no power over fish that are hidden in water. We ask that our community be like the fish &mdash; <span class="heb">וְנִפְרֶה וְנִרְבֶּה כַּדָּגִים</span> &mdash; multiplying beneath a surface that jealous eyes cannot penetrate.<sup class="fn">16</sup></p>
+
+<p>Third &mdash; and this is the Ari's emphasis &mdash; the sea itself represents the reservoir into which the sins are cast. It is not that the water "washes" us; it is that the ocean is the metaphysical repository into which iniquity is dispatched.</p>
+
+<blockquote class="hebrew">
+וְנוֹהֲגִים לֵילֵךְ אֶל הַנָּהָר שֶׁיֵּשׁ בּוֹ דָּגִים חַיִּים לְסִימָן שֶׁלֹּא תִּשְׁלוֹט בָּנוּ עַיִן הָרַע וְנִפְרֶה וְנִרְבֶּה כַּדָּגִים, וְטוֹב שֶׁיִּהְיֶה מִחוּץ לָעִיר, וְיֵשׁ לֵילֵךְ בְּיוֹם רִאשׁוֹן שֶׁל רֹאשׁ הַשָּׁנָה אַחַר מִנְחָה קוֹדֶם שְׁקִיעַת הַחַמָּה, וְלוֹמַר פָּסוּק "מִי אֵל כָּמוֹךָ" וְגוֹ'.
+<span class="attrib">&mdash; Rema, Orach Chaim 583:2 &nbsp;<sup class="fn">16</sup></span>
+</blockquote>
+
+<h2><span class="num">V.</span> The Ruzhiner and the Delayed Tashlich</h2>
+
+<p>An unusual practice preserved in the sefer <em>Ohel Yesharim</em> (and echoed in several chassidic sources) records that the <strong>Ruzhiner Rebbe</strong> would not go to Tashlich on the first day of Rosh HaShana at all &mdash; not even on the second &mdash; but rather on the <em>fourth</em> day of the Aseres Yemei Teshuva (<em>yom dalet d'aseres yemei teshuva</em>), corresponding to Wednesday.<sup class="fn">5</sup></p>
+
+<blockquote class="hebrew">
+הָרוּזִ'ינֶר הָיָה הוֹלֵךְ לְתַשְׁלִיךְ לֹא בְּרֹאשׁ הַשָּׁנָה כִּי אִם בְּיוֹם י"ג מִדּוֹת (יוֹם ד' דַּעֲשֶׂרֶת יְמֵי תְשׁוּבָה). [וְהוֹסִיף כ"ק מוּ"ח אַדְמוֹ"ר שְׁלִיטָ"א: בַּהְיוֹתִי בְּאַרְצוֹת הַבְּרִית &mdash; נִיוּ יָארְק &mdash; אֶשְׁתָּקַד, הָלַכְתִּי לְתַשְׁלִיךְ יָמִים אֲחָדִים לִפְנֵי רֹאשׁ הַשָּׁנָה, בְּמוֹצָאֵי רֹאשׁ הַשָּׁנָה וְלִי"ג מִדּוֹתָיו.]
+<span class="attrib">&mdash; Ohel Yesharim / Chassidishe minhag &nbsp;<sup class="fn">5</sup></span>
+</blockquote>
+
+<p>The theory behind the delay: on the first day, one is preoccupied with the awesome tefillos of the day itself; Tashlich, which is essentially a plea for the thirteen middos of rachamim from Michah, is more fittingly delayed to the day of <em>yud gimmel middos</em>. And when travel makes it necessary &mdash; as the annotation from the Rebbe records for his own visit to New York &mdash; one may push it even earlier, into the days before Rosh HaShana.</p>
+
+<h2><span class="num">VI.</span> The Opposition &mdash; Symbol vs. Substance</h2>
+
+<p>Several acharonim were sharply uncomfortable with Tashlich, and their reasons converge on one theme: the danger that a symbolic gesture <em>displaces</em> the real work of teshuvah. A striking passage cited in this vein warns:</p>
+
+<blockquote class="hebrew">
+דֵּעוֹת נִמְצָאִים אֵיזוֹ אֲשֶׁר סוֹבְרִים וְחוֹשְׁבִים שֶׁאֵין צָרִיךְ שׁוּם הִשְׁתַּדְּלוּת וְהִשְׁתָּרְרוּת אוֹ כַּוָּונָה אוֹ הִתְעוֹרְרוּת בַּחֲלִיכָתָם וְהִלּוּכָם עַל כָּל אֵחָד אַשְׁרֵי לוֹ. עַצְמוֹ, מֵחֲמַת שֶׁאֵין בְּיָדוֹ רַק לִזְרוֹק עַצְמוֹ אֶל הַנָּהָר וּלְהַפְקִיר אֶת עַצְמוֹ מִתּוֹךְ אֲשֶׁר עָשָׂה עַד הַיּוֹם הַזֶּה &mdash; וְאֶפְשָׁר שֶׁכְּבָר עָלָה בְּמַחֲשַׁבְתּוֹ הַשָּׁטָן לְהַסִּיתוֹ&hellip;
+<span class="attrib">&mdash; Anonymous drush appended to a Rosh HaShana kuntres, warning against Tashlich-as-alibi &nbsp;<sup class="fn">6</sup></span>
+</blockquote>
+
+<p>The critique is not that the water is powerless, but that a Yid who thinks the water does the work has fundamentally misread the pasuk. The Rambam, in Hilchos Teshuva, sets the register: <span class="heb">דַּרְכֵי הַתְּשׁוּבָה</span> are made of concrete <em>ma'asim</em> &mdash; regret, confession, resolve, and restitution &mdash; not of gestures. Chazal did not include a Tashlich-style ritual in the maseches of Rosh HaShana or in the halachos of teshuvah for exactly this reason.<sup class="fn">7</sup></p>
+
+<p>Later authorities extend the critique in stronger halachic language. The Vilna Gaon, in <em>Ma'aseh Rav</em> and in his conduct, is recorded as <em>not</em> having gone to Tashlich (<span class="heb">רָם לֹא הָיָה הוֹלֵךְ לְנָדֵר אוֹ לְבַאֵר לוֹמַר תַּשְׁלִיךְ</span>).<sup class="fn">18</sup> And a long passage cited by later poskim describes an entire school of gedolim who wished the minhag abolished:</p>
+
+<blockquote class="hebrew">
+כַּמָּה פְּעָמִים נֶחְרְמוּ, וְעַ&quot;כ בְּתַשְׁלִיךְ הָוֵי מִנְהָג נֶחֱמָס לְגַמְרֵי לַנְמְרֵי מֵחֲמַת שֶׁוַּדַאי אֵין רָאוּי לִנְהוֹג כְּלָל בָּזֶה, וְגַם מַעִיקָרָא לֹא נִיתַּן הַסַּנְהֶדְּרִין כ"א לִגְדוֹלֵי חִקְרֵי לֵב לַחְקוֹר אַחֲרָיו בְּכָל דִּבְרוֹתָם בְּצִנְעָא, אֲבָל בְּזוֹהַ"ק פֵּרוּשׁ מְרוּבָּה עַל הָעוֹמֵד מֵאָה פְּעָמִים, וְכַמָּה קִלְקוּלִים גְּדוֹלִים רָאִיתִי בָּזֶה וְלֹא"ל. וּזְבָעִיקָר כִּי כָּל הַמְּקוֹמוֹת אֲשֶׁר אֵצֶל הַנָּהָר אֵינָם נְקִיִּים בְּכָל צַד, וְלֹא יַסְלִים לְהִיוֹת דָּבָר מְאוֹם בְּתוֹךְ ד' אַמּוֹת, אוֹ שֶׁלֹּא עֵינָיו&hellip; וְנָם מָהֳרַבָּנִים הַגְּדוֹלִים אֲשֶׁר קָמוּ עָבָה מִסְפָּתָנוּ, בִּקַּשְׁתִּי מְאֹד שֶׁיֵּעָשׂוּ אִיסוּר זֶה בְּצֵרוּף הַסָּנִיף שֶׁל אִיסוּר עַל בַּעֲיקָר אֲנִי נָדַר בְּאִיסוּר גָּדוֹל וּגְזֵרַת הַתּוֹרָה, שֶׁהַנָּשִׁים לֹא יֵלְכוּ בַּכְּלָל לַעֲשׂוֹת מִנְהָג זֶה.
+<span class="attrib">&mdash; Extended drush against the current practice of Tashlich &nbsp;<sup class="fn">21</sup></span>
+</blockquote>
+
+<p>Two problems are folded together in the passage: first, the <em>content</em> of Tashlich risks becoming an alibi for teshuvah; second, the <em>social</em> reality of Tashlich &mdash; where women and men come together at the river &mdash; is a <em>michshol</em>. Both objections come from within the tradition, not from outside it.</p>
+
+<h2><span class="num">VII.</span> The Halachic Concern of Mixed Crowds</h2>
+
+<p>The most consistent and practical concern in the acharonim is the mixed-crowd problem. The Chasam Sofer (Orach Chaim 583) and others record it in halachic language: when the practical outcome of a minhag is a chevrasa of women and men gathered on the riverbank, one must ask whether the minhag as observed is still the minhag as instituted. The Bach was already troubled; the Munkatcher, the Chasam Sofer, and later the Steipler recorded that in such places it is better that men not go at all.<sup class="fn">19</sup></p>
+
+<blockquote class="hebrew">
+הַשְׁנָהֲגוּ לֵילֵךְ אֶל הַנָּהָר וְלוֹמַר פְּסוּקִים "וְתַשְׁלִיךְ בִּמְצוּלוֹת יָם כָּל חַטֹּאתֵינוּ", וְקוֹרִין לָזֶה תַּשְׁלִיךְ. וְיִזָּהֲרוּ שֶׁלֹּא יֵלְכוּ נָשִׁים, וּבִמְקוֹמוֹת הַרְבֵּה מוּטָב שֶׁאֲנָשִׁים לֹא יֵלְכוּ כְּלָל, וְרַבִּים נִמְנָעִים מִזֶּה מִפְּנֵי טַעַם הַיָּדוּעַ לָהֶם, וְכֵן נָכוֹן הוּא.
+<span class="attrib">&mdash; Cited as summary of the Bach and later acharonim &nbsp;<sup class="fn">19</sup></span>
+</blockquote>
+
+<p>The Rema himself qualifies the matter in Orach Chaim 583:3, where he adds that <em>katanim v'nashim</em> are not obligated to walk to the river, and the neighborhood-level halachic literature (from the Chida onward) tends to be strict about their attendance in mixed venues.<sup class="fn">20</sup></p>
+
+<h2><span class="num">VIII.</span> Coda &mdash; What Tashlich Is, and What It Isn't</h2>
+
+<p>Set against this full history, the picturesque scene at the river takes on a very different weight. The Maharil, Rabbeinu Yerucham, the Ari, the Rema, and the Shelah all embraced Tashlich, understanding it as a piece of the day's tikkun. The Rambam did not know it as halacha. The Vilna Gaon did not go. The Chasam Sofer wanted men in many places not to go. The Ruzhiner delayed it until the fourth day. The reformers-from-within wanted it abolished on the grounds that the crowds had become a michshol and the symbolism had become a substitute for teshuvah.</p>
+
+<p>The synthesis that emerges is the one the sefer implicitly proposes: Tashlich is legitimate as a shell that contains real hishtadlus. Walked slowly, said quietly, contemplated with the Ari's kavanos or with the Maharil's midrash, it is a beautiful act. Walked to as a family outing that displaces the day's own teshuvah, or to a bank where the mixed crowd itself is the ma'aseh, it becomes precisely the minhag that the acharonim &mdash; each in his own generation &mdash; tried to reclaim from the water's edge.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">תְּשׁוּבָה &mdash; מַהֲרִי"ל, הִלְכוֹת רֹאשׁ הַשָּׁנָה</span>.</span>
+  <span class="exp">The Maharil (Rabbi Yaakov Moellin of Mainz, d. 1427) is the earliest full halachic testimony to the minhag of Tashlich. His <em>Minhagim</em> already know the practice as a fixed piece of the day, going to the river after the seudah and reciting the pesukim from Michah 7. Copied and expanded by the Bais Yosef in Orach Chaim 583.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">יַלְקוּט שִׁמְעוֹנִי, וַיֵּרָא, רֶמֶז צ"ט</span> &mdash; the Satan and the river at the Akeidah.</span>
+  <span class="exp">"<span class="heb">שָׂם הַשָּׂטָן נָהָר עַד צַוָּאר וְאָמַר הוֹשִׁיעָה ה' כִּי בָאוּ מַיִם עַד נָפֶשׁ</span>." The Maharil roots Tashlich in this midrash: going to water on Rosh HaShana is a mimetic re-enactment of Avraham's crossing to the Akeidah, a declaration of unwavering fidelity in the face of every barrier the accusing forces raise. Sefaria ref: <em>Yalkut Shimoni, Vayera 99</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. Marginal note on the Maharil, printed above the responsum.</span>
+  <span class="exp">The small marginal note at the top of the source-sheet frames the responsum as a <em>teshuvah</em> about a specific case: someone forgot Tashlich on the first day and asks whether he should do it on the second. The Maharil rules that he should.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">וּמָקְרוֹב נִדְפַּס לְאוֹר סֵפֶר לְקוּטִים</span> &mdash; note on a newly published sefer of drushim.</span>
+  <span class="exp">A bibliographical note on a modern reprint that collects the various acharonim on Tashlich. The compiler flags his own reservations about the minhag as observed in his day.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">הָרוּזִ'ינֶר זַצַ"ל, אֹהֶל יְשָׁרִים</span>, and the Rebbe Rayatz's annotation.</span>
+  <span class="exp">"<span class="heb">הָרוּזִ'ינֶר הָיָה הוֹלֵךְ לְתַשְׁלִיךְ לֹא בְּרֹאשׁ הַשָּׁנָה כִּי אִם בְּיוֹם י"ג מִדּוֹת (יוֹם ד' דַּעֲשֶׂרֶת יְמֵי תְשׁוּבָה).</span>" The Ruzhiner delayed Tashlich to the day of the thirteen middos, the fourth day of the Aseres Yemei Teshuva. The Rebbe Rayatz adds a note that when he was in America (Erev Rosh HaShana in New York) he went even earlier &mdash; on the days before Rosh HaShana &mdash; because travel and communal pressures made it necessary.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">הִנֵּה בֵּין הַחֲלוּשִׁים</span> &mdash; drush warning against Tashlich-as-alibi.</span>
+  <span class="exp">"<span class="heb">דֵּעוֹת נִמְצָאִים אֵיזוֹ אֲשֶׁר סוֹבְרִים וְחוֹשְׁבִים שֶׁאֵין צָרִיךְ שׁוּם הִשְׁתַּדְּלוּת&hellip;</span>" A sharp musar-style rebuke of those who go to the water thinking that the act itself is the teshuvah. The compiler ties it to the general danger of confusing <em>simanim</em> with <em>ma'asim</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">רַמְבַּ"ם, הִלְכוֹת תְּשׁוּבָה</span>, opening perakim.</span>
+  <span class="exp">The Rambam does not record Tashlich, and his systematic exposition of teshuvah in Hilchos Teshuvah 1&ndash;2 makes clear that the process is a matter of internal <em>viduy</em>, <em>charatah</em>, and <em>azivas ha'cheit</em>. The absence of Tashlich in the Rambam has been read by more than one acharon as an active reservation.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">הָאֲרִיזַ"ל &mdash; פְּרִי עֵץ חַיִּים / שַׁעַר הַכַּוָּונוֹת</span>, drush on Tashlich.</span>
+  <span class="exp">"<span class="heb">כָּתַב שׁוּטָנוּ בּוֹ וּמַסְטִינֵנוּ הַגְּלוּיִים מִלַּמּוּ שֶׁפַּעֲמוֹן חוֹתָם אָפְנֵי חוֹגָל&hellip;</span>" The Ari's kavanos at Tashlich focus on the shaking-out of the tzitzis as the literal dislodging of <em>yenikas ha'kelipos</em>, and on gazing into the water as a means of restoring <em>Malchus</em> to her proper place. See Pri Etz Chaim, Sha'ar Rosh HaShana, perek 5.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">רַבֵּינוּ יְרוּחָם</span>, sefer Toldos Adam v'Chava, nesiv 5.</span>
+  <span class="exp">Rabbeinu Yerucham (14th c., Provence) already knows the minhag and roots it in the fish-as-open-eye of Providence. His formulation is the source for the Rema's requirement that the water contain living fish.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. <span class="heb">נָכוֹן לֵילֵךְ בְּיוֹם א' דר"ה קוֹדֶם שְׁקִיעַת הַחַמָּה</span>.</span>
+  <span class="exp">Summary formulation preserved in later poskim: proper time is the first day of Rosh HaShana, before shki'ah; proper place is a spring or well of <em>mayim chayim</em>, ideally outside the city; proper text includes the <em>yud gimmel middos</em>. See Mateh Ephraim 598:4 and Elef HaMagen ad loc.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">וְכֵן מַה שֶּׁנֶּהְגִין לוֹמַר הַפָּסוּק "תַּשְׁלִיךְ בִּמְצֻלוֹת יָם חַטֹּאתֵינוּ"</span>.</span>
+  <span class="exp">A drush explaining the pasuk as it functions in the minhag: the "depths of the sea" are the metaphysical repository into which the sins are dispatched; the very act of the tzibbur reciting the phrase constitutes the tashlich, not the water. Compare Levush 583 and Elyah Rabbah ad loc.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. <span class="heb">וְהוֹלְכִין אֶל [ז'] הַנָּהָר וְלוֹמַר פָּסוּק "וְתַשְׁלִיךְ בִּמְצוּלוֹת יָם כָּל חַטֹּאתֵינוּ"</span>.</span>
+  <span class="exp">Continuation of the previous drush, adjusting the language for various nusachos. The bracketed <em>zayin</em> (a printer's correction) reflects the well-known variant reading in the older machzorim.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">שֶׁלֹּ"ה / אֶלְיָה רַבָּה</span>, drush on Tashlich as a Zohar-based practice.</span>
+  <span class="exp">"<span class="heb">וּמִנְהָג שֶׁכָּל יִשְׂרָאֵל תּוֹרָה הוּא, בַּמֶּה שֶׁהוֹלְכִים עַל מַיִם וְאוֹמְרִים תַּשְׁלִיךְ&hellip;</span>" The Shelah develops the Ari's teaching that the sea corresponds to <em>Malchus</em>, and that <em>ta'shlich bimtzulos yam</em> is metaphysically the dispatching of sin to the domain where accusation cannot retrieve it.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">וְעוֹד יֵשׁ טַעַם, מִפְּנֵי שֶׁאָנוּ מַמְלִיכִים הַיּוֹם אֶת הַקָּדוֹשׁ בָּרוּךְ הוּא</span>.</span>
+  <span class="exp">"<span class="heb">שֶׁאָנוּ מַמְלִיכִים הַיּוֹם אֶת הַקָּדוֹשׁ בָּרוּךְ הוּא &mdash; בָּרוּךְ עָלֵינוּ, וְהַדֶּרֶךְ הוּא לְשַׂם אֶת הַמְּלָכִים אֵצֶל הַנָּהָר, לְרֶמֶז שֶׁתִּמָּשֵׁךְ מַלְכוּתְךָ.</span>" A second reason: since Rosh HaShana is the day of coronating the King, and coronations were traditionally performed at a river (as with Shlomo HaMelech at the Gichon), we go to the river as a re-enactment of the coronation.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">וּרְגִילִין לֵילֵךְ לְמָקוֹם שֶׁרוֹאִין שָׁם ג' דָּגִים</span>.</span>
+  <span class="exp">A specific detail: some are careful to go to a place where <em>three</em> fish can be seen, as a siman that the tzibbur will not be caught in the net of the yetzer, in the net of the enemy, or in the net of the malach ha'maves. See Mateh Ephraim 598:7.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">16. <span class="heb">רְמָ"א, אוֹרַח חַיִּים תקפ"ג סָעִיף ב</span>.</span>
+  <span class="exp">"<span class="heb">וְנוֹהֲגִים לֵילֵךְ אֶל הַנָּהָר שֶׁיֵּשׁ בּוֹ דָּגִים חַיִּים לְסִימָן שֶׁלֹּא תִּשְׁלוֹט בָּנוּ עַיִן הָרַע וְנִפְרֶה וְנִרְבֶּה כַּדָּגִים&hellip; וְטוֹב שֶׁיִּהְיֶה מִחוּץ לָעִיר וְיֵשׁ לֵילֵךְ בְּיוֹם רִאשׁוֹן שֶׁל רֹאשׁ הַשָּׁנָה אַחַר מִנְחָה קוֹדֶם שְׁקִיעַת הַחַמָּה, וְלוֹמַר פָּסוּק 'מִי אֵל כָּמוֹךָ' וְגוֹ'.</span>" This is the classical codification. Sefaria ref: <em>Shulchan Arukh, Orach Chayim 583:2</em> (Rema's gloss).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">17. Marginal note on fish as siman.</span>
+  <span class="exp">"<span class="heb">אַחַר מִנְחָה יוֹם א' דְּרֹאשׁ הַשָּׁנָה קוֹדֶם שְׁקִיעַת הַחַמָּה טוֹב לֵילֵךְ מִחוּץ לָעִיר אֶל הַנַּחַל אוֹ מַעְיָן כִּי מַיִם מוֹרִים עַל הַחֶסֶד, וְגַם דָּגִים רוֹמְזִים עַל עַיִן פְּקוּחָה.</span>" A gloss on the double symbolism of water (chesed) and fish (open eye of Providence). Rooted in Bereishis Rabbah 97:3.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">18. <span class="heb">רָם לֹא הָיָה הוֹלֵךְ לְנָהָר אוֹ לְבַאֵר לוֹמַר תַּשְׁלִיךְ</span> &mdash; Ma'aseh Rav / Vilna Gaon.</span>
+  <span class="exp">The GRA's personal conduct, as recorded in Ma'aseh Rav (and referenced in Nishmas Adam), was <em>not</em> to go to Tashlich. Combined with his general suspicion of gestures uncodified by the Rambam or the Bavli, this is the strongest single testimony against the practice within the mainstream tradition.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">19. Summation preserved in the acharonim: mixed crowds.</span>
+  <span class="exp">"<span class="heb">וְיִזָּהֲרוּ שֶׁלֹּא יֵלְכוּ נָשִׁים, וּבִמְקוֹמוֹת הַרְבֵּה מוּטָב שֶׁאֲנָשִׁים לֹא יֵלְכוּ כְּלָל, וְרַבִּים נִמְנָעִים מִזֶּה מִפְּנֵי טַעַם הַיָּדוּעַ לָהֶם.</span>" The <em>ta'am ha'yadu'a lahem</em> is the mixed-crowd concern. The Chasam Sofer (OC 583) and the Steipler both endorsed the position that in such places men should not go at all.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">20. <span class="heb">רָמָ"א, אוֹרַח חַיִּים תקצ"ג ס"ק י'</span> &mdash; on children and women.</span>
+  <span class="exp">"<span class="heb">וְיֵ"ל דִּלְקַטְנִים וְנָשִׁים אֵין חִיּוּב לֵילֵךְ אֶל הַנָּהָר.</span>" The Rema himself, in the parallel siman, records that <em>katanim v'nashim</em> are not obligated to walk to the river. Later acharonim (including the Chida) extend this into a positive discouragement in mixed venues.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">21. <span class="heb">וְכֵן בְּתַשְׁלִיךְ ק"ו בֶּן ב"ב שֶׁל ק"ו</span> &mdash; extended drush against current practice.</span>
+  <span class="exp">"<span class="heb">כִּי רָאוּי לְבַטֵּל הַמִּנְהָג שֶׁל תַּשְׁלִיךְ לְגַמְרֵי מַחְמַת&hellip; כַּמָּה קִלְקוּלִים גְּדוֹלִים רָאִיתִי בָּזֶה&hellip;</span>" A remarkably strong passage &mdash; likely from the Chasam Sofer's school &mdash; in which the author calls for outright abolition of the practice as it was being observed, listing three failures: proximity of tumah, mixed crowds, and the reduction of teshuvah to a gesture. The author asks the great rabbanim of his generation to join in a formal cherem against women's attendance.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">22. <span class="heb">הֲלִיכַת תַּשְׁלִיךְ &mdash; זוה"ק פָּרָשַׁת אֱמוֹר</span>.</span>
+  <span class="exp">"<span class="heb">וּמִנְהָג זֶה יֵשׁ לוֹ מָקוֹר גַּם בַּזּוֹהַ"ק (פ' אֱמוֹר) וְזַ"ל.</span>" The Zohar-based source: the sea corresponds to <em>Malchus</em>, and casting into it is the dispatching of din. This is the mekubalim's answer to the objection that Chazal did not codify the minhag &mdash; it is codified in the Zohar, which has halachic weight in matters of minhag. Sefaria ref: <em>Zohar, Emor, section on Rosh HaShana</em>.</span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">תְּשׁוּבָה לְשׁוֹאֵל דְּבַר נַעֲשָׂתוֹ&hellip; אִם יֵשׁ לִילֵךְ אֶל הַנָּהָר</td><td>Maharil, teshuvah on forgetting Tashlich on the first day</td><td>p.&nbsp;1, top right</td></tr>
+    <tr><td class="num">2</td><td class="heb">וּמָקְרוֹב נִדְפַּס לְאוֹר סֵפֶר לְקוּטִים שֶׁכָּתַב שָׁם</td><td>Note on a newly published compilation of drushim</td><td>p.&nbsp;1, upper right</td></tr>
+    <tr><td class="num">3</td><td class="heb">מְצַאתִי לֹא&hellip; מִן הַמְלַקְטִים שֶׁרוּבּוֹ שֶׁל בַּעֲלֵי בָּתִּים בְּמָדִינָה זוּ מִתְנַהֲגִים</td><td>Anonymous author lamenting laymen's misuse of minhagim</td><td>p.&nbsp;1, center</td></tr>
+    <tr><td class="num">4</td><td class="heb">בְּדַרְכֵּי כָּתַב בְּשֵׁם&hellip;</td><td>Marginal note quoting Darkei Moshe</td><td>p.&nbsp;1, marginal note middle</td></tr>
+    <tr><td class="num">5</td><td class="heb">הָרוּזִ'ינֶר הָיָה הוֹלֵךְ לְתַשְׁלִיךְ לֹא בְּר"ה כִּי אִם בְּיוֹם י"ג מִדּוֹת</td><td>Ohel Yesharim (Ruzhiner Rebbe) with Rebbe Rayatz's annotation</td><td>p.&nbsp;1, lower center</td></tr>
+    <tr><td class="num">6</td><td class="heb">דֵּעוֹת נִמְצָאִים אֵיזוֹ אֲשֶׁר סוֹבְרִים וְחוֹשְׁבִים שֶׁאֵין צָרִיךְ שׁוּם הִשְׁתַּדְּלוּת</td><td>Musar-drush against Tashlich as alibi</td><td>p.&nbsp;1, bottom right</td></tr>
+    <tr><td class="num">7</td><td class="heb">וּן הָבוּר לְטוֹבָה וְאַל תַּשְׁכַּח מִלִּמּוּד בַּסֵּפֶר&hellip;</td><td>Rambam, Hilchos Teshuvah (implicit reference)</td><td>p.&nbsp;1, bottom center</td></tr>
+    <tr><td class="num">8</td><td class="heb">הָאֲרִיזַ"ל פִּרְפִּיסָא &mdash; עֵלִין נָקוּב שׁוּטָנוּ בּוֹ וּמַסְטִינֵנוּ</td><td>Arizal &mdash; Pri Etz Chaim on Tashlich (shaking of tzitzis)</td><td>p.&nbsp;1, bottom left</td></tr>
+    <tr><td class="num">9</td><td class="heb">כָּתַב מַהֲרִי"ל שֶׁנּוֹהֲגִין לֵילֵךְ אֶל הַנָּהָר&hellip; יַלְקוּט וַיֵּרָא צ"ט</td><td>Bais Yosef quoting Maharil &amp; Yalkut Shimoni Vayera 99</td><td>p.&nbsp;2, top right</td></tr>
+    <tr><td class="num">10</td><td class="heb">נָכוֹן לֵילֵךְ בְּיוֹם א' דר"ה קוֹדֶם שְׁקִיעַת הַחַמָּה&hellip; י"ג מִדּוֹת</td><td>Later poskim's summary formulation</td><td>p.&nbsp;2, top left</td></tr>
+    <tr><td class="num">11</td><td class="heb">וְכֵן מַה שֶּׁנֶּהְגִין לוֹמַר הַפָּסוּק תַּשְׁלִיךְ בִּמְצֻלוֹת יָם חַטֹּאתֵינוּ</td><td>Drush explaining the pasuk's function</td><td>p.&nbsp;2, upper center</td></tr>
+    <tr><td class="num">12</td><td class="heb">וְהוֹלְכִין אֶל [ז'] הַנָּהָר וְלוֹמַר פָּסוּק תַּשְׁלִיךְ בִּמְצוּלוֹת יָם</td><td>Continuation of previous drush with printer's variant</td><td>p.&nbsp;2, middle right</td></tr>
+    <tr><td class="num">13</td><td class="heb">וּמִנְהָג שֶׁכָּל יִשְׂרָאֵל תּוֹרָה הוּא&hellip; בְּמַצוּלוֹת הוּא הַתְּהוֹם</td><td>Shelah / Elyah Rabbah, kabbalistic drush</td><td>p.&nbsp;2, middle</td></tr>
+    <tr><td class="num">14</td><td class="heb">וְעוֹד יֵשׁ טַעַם מִפְּנֵי שֶׁאָנוּ מַמְלִיכִים הַיּוֹם אֶת הַקָּדוֹשׁ בָּרוּךְ הוּא</td><td>Coronation-at-the-river reason (Levush / Mateh Ephraim)</td><td>p.&nbsp;2, middle left</td></tr>
+    <tr><td class="num">15</td><td class="heb">וּרְגִילִין לֵילֵךְ לְמָקוֹם שֶׁרוֹאִין שָׁם ג' דָּגִים</td><td>Custom of three fish &mdash; Mateh Ephraim 598:7</td><td>p.&nbsp;2, center left</td></tr>
+    <tr><td class="num">16</td><td class="heb">וְנוֹהֲגִים לֵילֵךְ אֶל הַנָּהָר שֶׁיֵּשׁ בּוֹ דָּגִים חַיִּים&hellip; מִי אֵל כָּמוֹךָ</td><td>Rema, Orach Chaim 583:2</td><td>p.&nbsp;2, lower center</td></tr>
+    <tr><td class="num">17</td><td class="heb">אַחַר מִנְחָה יוֹם א' דְּרֹאשׁ הַשָּׁנָה&hellip; דָּגִים רוֹמְזִים עַל עַיִן פְּקוּחָה</td><td>Marginal note on double symbolism of water and fish</td><td>p.&nbsp;2, lower right</td></tr>
+    <tr><td class="num">18</td><td class="heb">רָם לֹא הָיָה הוֹלֵךְ לְנָהָר אוֹ לְבַאֵר לוֹמַר תַּשְׁלִיךְ</td><td>Vilna Gaon &mdash; Ma'aseh Rav</td><td>p.&nbsp;2, mid left</td></tr>
+    <tr><td class="num">19</td><td class="heb">הַשְׁנָהֲגוּ אֶל הַנָּהָר&hellip; יִזָּהֲרוּ שֶׁלֹּא יֵלְכוּ נָשִׁים</td><td>Cited summation of Bach, Chasam Sofer, and later acharonim</td><td>p.&nbsp;2, lower right</td></tr>
+    <tr><td class="num">20</td><td class="heb">רָמָ"א &mdash; יֵ"ל דִּלְקַטְנִים וְנָשִׁים אֵין חִיּוּב לֵילֵךְ אֶל הַנָּהָר</td><td>Rema OC 593; Mishnah Berurah dikduk</td><td>p.&nbsp;2, bottom left</td></tr>
+    <tr><td class="num">21</td><td class="heb">וְכֵן בְּתַשְׁלִיךְ ק"ו&hellip; כִּי רָאוּי לְבַטֵּל הַמִּנְהָג שֶׁל תַּשְׁלִיךְ לְגַמְרֵי</td><td>Extended drush calling for abolition (Chasam Sofer school)</td><td>p.&nbsp;3, top block</td></tr>
+    <tr><td class="num">22</td><td class="heb">הֲלִיכַת תַּשְׁלִיךְ &mdash; וּמִנְהָג זֶה יֵשׁ לוֹ מָקוֹר גַּם בַּזּוֹהַ"ק (פ' אֱמוֹר)</td><td>Zohar Emor as the source-of-record for the minhag</td><td>p.&nbsp;3, lower left</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Elul 5786 / September 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>

@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Kaporos — The Custom the Rashba Tried to Abolish</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  .heb-inline {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">מִנְהַג הַכַּפָּרוֹת &mdash; בֵּין הָרַשְׁבָּ"א וְהַמַּהֲרִי"ל</div>
+  <div class="english-title">Kaporos — The Custom the Rashba Tried to Abolish</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Erev Yom Kippur 5787</div>
+  <div class="dates">Recorded: Elul 5786 &middot; Prepared: 26 Elul 5786 / September 7, 2026</div>
+</header>
+
+<p class="lead">Few pre-Yom Kippur customs are as fiercely contested &mdash; and as tenaciously preserved &mdash; as <em>Kaporos</em>. The Geonim already knew it; the Rashba and the Ramban wanted it abolished as <span class="heb-inline">דַּרְכֵי הָאֱמוֹרִי</span> (bordering on idolatry); the Bais Yosef followed them and told his readers to <em>put a stop to the custom</em>; and yet the Rema, in a single glancing gloss, restored it and made it universal Ashkenaz practice. This shiur traces the fault-line from the Teshuvos HaGeonim through the Rashba, the Ramban, the Beis Yosef, the Maharil, the Mordechai, the Rema, and finally to the acharonim who reframed the entire question &mdash; and to the modern reservations of poskim watching what happens on the shechitah floor of an <em>erev Yom Kippur</em>.</p>
+
+<h2><span class="num">I.</span> A Custom the Geonim Already Knew</h2>
+
+<p>The Bais Yosef in Orach Chaim 605 opens by acknowledging that the custom of <em>Kaporos</em> &mdash; slaughtering a chicken (<span class="heb-inline">תַּרְנְגוֹל</span>) on erev Yom Kippur as an expiation over one's head &mdash; is <em>very</em> old. It appears in a <em>teshuvah</em> of the Geonim, and the Geonim themselves seem to have received it as an established practice whose reason they did not know.<sup class="fn">1</sup></p>
+
+<blockquote class="hebrew">
+יֵשׁ מְקוֹמוֹת שֶׁנּוֹהֲגִין לִשְׁחוֹט תַּרְנְגוֹל לְכַפָּרָה. וְכֵן יֵשׁ בִּתְשׁוּבַת הַגְּאוֹנִים שֶׁשְּׁאָלַתּוֹ שֶׁאָנוּ נוֹהֲגִין לִשְׁחוֹט עֶרֶב יוֹם הַכִּפּוּרִים תַּרְנְגוֹל וְאֵין אָנוּ יוֹדְעִין מִנְהָג זֶה לָמָּה, מַאי שְׁנָא תַּרְנְגוֹל מִבְּהֵמָה וְחַיָּה. הָא וַדַּאי קֻשְׁיָא הִיא. אֶלָּא שֶׁיֵּשׁ בָּהּ שְׁנֵי טְעָמִים: אֶחָד שֶׁהַתַּרְנְגוֹל מָצוּי בַּבַּיִת יוֹתֵר מִכָּל בְּהֵמָה חַיָּה וָעוֹף. וְעוֹד יֵשׁ בִּמְקוֹמוֹת שֶׁעוֹשִׂין עֲשִׁירִים תְּמוּרָה אֵילִים, וְעִיקָר בַּעֲלֵי קַרְנַיִם דְּמוּת אֵילוֹ שֶׁל יִצְחָק אָבִינוּ עָלָיו הַשָּׁלוֹם. לְפִיכָךְ לֹא דָּבָר קָבוּעַ הוּא. וְעוֹד שָׁמַעְנוּ מֵהַחֲכָמִים הָרִאשׁוֹנִים שֶׁאַף עַל פִּי שֶׁבְּהֵמָה דָּמֶיהָ יְקָרִים יוֹתֵר מִתַּרְנְגוֹל, אַף עַל פִּי כֵן תַּרְנְגוֹל מֻבְחָר. לְפִי שֶׁשְּׁמוֹ גֶּבֶר, כִּדְאָמְרִינַן (יוֹמָא כ:) מַאי קָרָא גֶבֶר? אָמַר רַב שִׁילָא קָרָא תַּרְנְגוֹלָא. וְכֵיוָן שֶׁשְּׁמוֹ גֶּבֶר, תְּמוּרַת גֶּבֶר בְּגֶבֶר תַּפִּי מֵהַנֵּי וּמֵעָלֵי. וְכָךְ רְגִילִין כָּאן: אוֹחֵז שְׁלִיחַ צִבּוּר הַתַּרְנְגוֹל וּמַנִּיחַ יָדוֹ עַל רֹאשׁוֹ וְנוֹטְלוֹ. וּמַנִּיחַ עַל רֹאשׁ הַמִּתְכַּפֵּר וְאוֹמֵר: זֶה תַּחַת זֶה, זֶה חִלּוּפוֹ שֶׁל זֶה, זֶה מְחוּלָּל עַל זֶה.
+<span class="attrib">&mdash; Bais Yosef, Orach Chaim 605, quoting Teshuvos HaGeonim &nbsp;<sup class="fn">1</sup></span>
+</blockquote>
+
+<p>Three reasons are given for choosing specifically a chicken. First, it is the most commonly available animal in the household. Second, in some places wealthy men used a ram &mdash; <span class="heb-inline">אֵילִים</span> &mdash; recalling <em>eilo shel Yitzchak</em> at the akeidah; a chicken is simply the modest man's equivalent. Third, and most beautifully &mdash; because the Gemara in Yoma 20b records that the word <em>gever</em> means both <em>man</em> and <em>rooster</em>: <span class="heb-inline">מַאי קָרָא גֶּבֶר? אָמַר רַב שִׁילָא קָרָא תַּרְנְגוֹלָא</span>. A <em>gever</em> in place of a <em>gever</em> is the fitting <em>temurah</em>.<sup class="fn">2</sup></p>
+
+<h2><span class="num">II.</span> The Rashba Wants It Stopped</h2>
+
+<p>Against this ancient practice stands the sharp voice of the <strong>Rashba</strong> (Rabbeinu Shlomo ben Aderes of Barcelona, d. 1310), in a teshuvah cited by the Beis Yosef and preserved in Teshuvos HaRashba siman 395. Someone had written to the Rashba describing the custom performed for <em>na'arim</em> &mdash; children &mdash; on erev Yom Kippur, and had added that he was inclined to say the shechitah of a Kaporos chicken is halachically invalid, <em>k'mo shochet l'shem etamo</em>: as if slaughtering for one's own bones, i.e., for an idolatrous or magical purpose.<sup class="fn">3</sup></p>
+
+<blockquote class="hebrew">
+כָּתַב מָר כִּי רָאִיתָ מַה שֶּׁהִשְׁגַּתִּי אֲנִי בְּעִנְיַן הַכַּפָּרָה שֶׁעוֹשִׂין לַנְּעָרִים בְּעַרְבֵי יוֹם הַכִּפּוּרִים, וְשֶׁאָמַרְתִּי אֲנִי וְהִנַּאֲךָ. וְאַתָּה מוֹסִיף עוֹד לוֹמַר שֶׁקָּרוֹב לוֹמַר שֶׁהַשְּׁחִיטָה שֶׁלָּזֶה פְּסוּלָה כְּמוֹ שׁוֹחֵט לְשֵׁם עַצְמוֹתָיו. אֲנִי מְלֵאתִי מִנְהָג זֶה פָּשׁוּט בְּעִירֵנוּ עִם שְׁאָר דְּבָרִים שֶׁהָיוּ נוֹהֲגִין כְּיוֹצֵא בָּזֶה, שֶׁהָיוּ שׁוֹחֲטִין תַּרְנְגוֹל זָקֵן לְכַפָּרָה עַל הַנַּעַר הַיִּלּוֹד, וְתוֹלִין רֹאשׁוֹ וּמוֹתָלִין הָרֹאשׁ בְּנוּטָלוֹ בְּפֶתַח הַבַּיִת עִם שׁוּמִים, וְהַבְּלִים הַרְבֵּה שֶׁנִּרְאוּ בְּעֵינַי כְּדַרְכֵי הָאֱמוֹרִי. וְדָחַקְתִּי עַל זֶה הַרְבֵּה, וּמַחְמַד וְחֶסֶד עָלֵינוּ נִשְׁמְעוּ דְּבָרַי, וְלֹא נִשְׁאַר מִכָּל זֶה וּמִכַּיּוֹצֵא בּוֹ בְּעִירֵנוּ מְאוּמָה.
+<span class="attrib">&mdash; Teshuvos HaRashba, siman 395 &nbsp;<sup class="fn">3</sup></span>
+</blockquote>
+
+<p>The Rashba goes further and identifies the practice with <span class="heb-inline">דַּרְכֵי הָאֱמוֹרִי</span> &mdash; "the ways of the Emorites" &mdash; the Torah's category for pagan, superstitious, quasi-magical practices. He writes that he was <em>full</em> of protest against this custom in his own city (Barcelona), and Hashem &mdash; <em>chesed aleinu</em> &mdash; caused his words to be heard, and <em>nothing was left of it in our city</em>.<sup class="fn">3</sup></p>
+
+<p>Nor was the Rashba alone. The <strong>Ramban</strong> (Rabbeinu Moshe ben Nachman) is cited by the Beis Yosef as having written the same thing in his <em>Toras HaAdam</em>, and the Beis Yosef adds that the <strong>Rashbatz</strong> (Rabbi Shimon ben Tzemach Duran) records the same objection in Tashbatz Katan siman 125.<sup class="fn">4</sup></p>
+
+<h2><span class="num">III.</span> The Bais Yosef Rules — and the Rema Reverses Him</h2>
+
+<p>The Bais Yosef, faithful to his rishonim, concludes decisively:</p>
+
+<blockquote class="hebrew">
+מַה שֶּׁנּוֹהֲגִים לַעֲשׂוֹת כַּפָּרָה בְּעֶרֶב יוֹם כִּפּוּר לִשְׁחוֹט תַּרְנְגוֹל עַל כָּל בֵּן זָכָר וְלוֹמַר עָלָיו פְּסוּקִים &mdash; יֵשׁ לִמְנוֹעַ הַמִּנְהָג.
+<span class="attrib">&mdash; Bais Yosef, Orach Chaim 605 &nbsp;<sup class="fn">5</sup></span>
+</blockquote>
+
+<p>He instructs the reader to abolish the custom. And in the <em>Shulchan Aruch</em> itself (OC 605:1) he codifies it: <span class="heb-inline">מַה שֶּׁנּוֹהֲגִין לַעֲשׂוֹת כַּפָּרָה בְּעֶרֶב יוֹם כִּפּוּר לִשְׁחוֹט תַּרְנְגוֹל&hellip; יֵשׁ לִמְנוֹעַ הַמִּנְהָג</span>.</p>
+
+<p>And then comes the <strong>Rema</strong>, in a single terse gloss:</p>
+
+<blockquote class="hebrew">
+וְיֵשׁ מִן הַגְּאוֹנִים שֶׁכָּתְבוּ הַמִּנְהָג. וְכֵן כָּתְבוּ מִקְצַת הָאַחֲרוֹנִים. וְכֵן נָהֲגוּ בְּכָל מְדִינוֹת אֵלּוּ, וְאֵין לְשַׁנּוֹת כִּי הוּא מִנְהַג וָתִיקִין.
+<span class="attrib">&mdash; Rema, Shulchan Aruch OC 605:1 &nbsp;<sup class="fn">6</sup></span>
+</blockquote>
+
+<p>With those words the Rema flatly reverses the Bais Yosef. He acknowledges the Geonim who preserved the custom, the acharonim who wrote it up (Maharil chief among them), and declares it <em>minhag vasikin</em> &mdash; an ancient, pious practice, not to be disturbed. For Ashkenaz, this settled the matter.<sup class="fn">6</sup></p>
+
+<h2><span class="num">III½.</span> The Maharil — Ashkenaz Recovers the Custom</h2>
+
+<p>The Rema's ruling rests on the <strong>Maharil</strong> (Rabbi Yaakov Moellin, d. 1427), whose sefer minhagim &mdash; the founding document of Ashkenaz halachic practice &mdash; records Kaporos in vivid detail. The Maharil holds that the concern of <span class="heb-inline">דַּרְכֵי הָאֱמוֹרִי</span> is minimal here, because Klal Yisrael has been performing this custom for generations le'shem Shamayim, with piyutim and pesukim recited over the animal.<sup class="fn">7</sup></p>
+
+<blockquote class="hebrew">
+כָּתַב מַהֲרִי"ל: דָּבָר וַדַּאי יֵשׁ לָחוּשׁ קְצָת לְדַרְכֵי הָאֱמוֹרִי כַּסִּמָּן הָאֱמוֹרִי, וְשׁוֹאֵל אָמַר מַהֲרִי"ל: אַף וֵאלַי מַהֲרִי"ל לֹא נָטַל לָבָן אֶלָּא כְּשֶׁלֹּא הָלַךְ לִשְׁאוֹל אַחֲרָיו, כְּגוֹן שֶׁמָּכְרוּ לוֹ תַּרְנְגוֹל לָבָן, אוֹ בָּקַנָּה תַּרְנְגוֹל בֵּין הַתַּרְנְגוֹלִים וְכַדַּלְמָא בְּפֶרֶק קַמָּא דַּעֲבוֹדָה זָרָה (יב:). אֲבָל לְדַקְדֵּק וְלִשְׁאוֹל אַחֲרָיו וּלְקַנּוֹתוֹ בְּדָמִים יְקָרִים &mdash; נִרְאָה מָרְדֳּכַי הָאֱמוֹרִי, וְכֵן קִבַּלְתִּי מֵאֲדוֹנִי אָבִי מוֹרִי ז"ל.
+<span class="attrib">&mdash; Maharil, Hilchos Erev Yom Kippur &nbsp;<sup class="fn">7</sup></span>
+</blockquote>
+
+<p>The Maharil's own qualifier is important. Even he concedes that <em>seeking out a white chicken specifically</em> and paying premium for it edges over into <span class="heb-inline">דַּרְכֵי הָאֱמוֹרִי</span> &mdash; because that is precisely the pagan practice condemned in Avodah Zarah 12b. But taking whatever chicken comes to hand, even if it happens to be white, is entirely in order.<sup class="fn">8</sup></p>
+
+<h2><span class="num">IV.</span> A Chicken Is Not a Korban — the Maharil's Defense</h2>
+
+<p>The deeper of the Maharil's arguments is that we are not offering a <em>korban</em>. If someone were slaughtering the chicken <em>l'shem korban</em> outside the Beis HaMikdash, that would be <em>shochet kadashim ba'chutz</em> &mdash; a capital offense &mdash; and worse still, the Rashba's colleague was inclined to say the shechitah itself is <em>pesulah</em>, as if for one's own idolatrous ends.<sup class="fn">9</sup></p>
+
+<blockquote class="hebrew">
+וְיֵשׁ אוֹמְרִים שֶׁיֵּשׁ לִמְנוֹעַ הַמִּנְהָג הַזֶּה וְאוֹמְרִים שֶׁאַדְּרַבָּה אִסּוּר יֵשׁ בַּדָּבָר, וְיֵשׁ בּוֹ מִשּׁוּם דַּרְכֵי הָאֱמוֹרִי, דְּאִי מִשּׁוּם קָרְבָּן הֲרֵי תַּרְנְגוֹל אָסוּר לְקָרְבָּן, וְעוֹד שֶׁהֲרֵי שׁוֹחֲטוֹ בַּחוּץ וְנִרְאֶה כְּשׁוֹחֵט קָדָשִׁים בַּחוּץ. וַאֲנִי אוֹמֵר אַדְּרַבָּה וְהִיא הַנּוֹתֶנֶת, דְּמִשּׁוּם זֶה נָהֲגוּ לִיקַּח מִינִים שֶׁאֵינָם רְאוּיִים לְקָרְבָּן, כְּדֵי שֶׁלֹּא יִטְעוּ לוֹמַר קָרְבָּן מַמָּשׁ הוּא וִיבוֹאוּ לְהַקְדִּישׁוֹ קְדוּשַׁת הַגּוּף מַמָּשׁ, וְיֹאכְלוּ מִשְּׁחִיטָתוֹ בַּחוּץ. לְכָךְ לוֹקְחִים מִינִים הַלָּלוּ שֶׁיָּדְעוּ הַכֹּל שֶׁלֹּא לְשֵׁם קָרְבָּן הִנְהִיגוּהוּ, אֶלָּא כְּדֵי לְהַשְׁבִּיעַ עֵינוֹ שֶׁל רָשָׁע.
+<span class="attrib">&mdash; Cited in Bais Yosef 605 in defense of the custom &nbsp;<sup class="fn">9</sup></span>
+</blockquote>
+
+<p>Precisely <em>because</em> a chicken is not a valid korban, the defender argues, the people can never mistake this act for a <em>real</em> offering. The whole point of choosing a species <em>eino ra'ui l'korban</em> is to render the ceremony obviously non-sacrificial and yet spiritually potent &mdash; a "distraction" for the yetzer hara, an act that <em>appeases the eye of the evildoer</em>, so that a satan (<span class="heb-inline">שָׂטָן</span>, <span class="heb-inline">יֵצֶר הָרָע</span>, <span class="heb-inline">מַלְאַךְ הַמָּוֶת</span> &mdash; all one) will "see" something and slacken his prosecution.<sup class="fn">9</sup></p>
+
+<h2><span class="num">V.</span> Temurah — The Chicken as Substitute</h2>
+
+<p>The theological heart of Kaporos is the concept of <em>temurah</em>. The Kaporos ceremony imitates, in a diminished form, the halachic mechanism of a korban being substituted (<span class="heb-inline">תְּמוּרָה</span>): the animal takes the place of the person, and what would have befallen the person befalls the animal instead.<sup class="fn">10</sup></p>
+
+<blockquote class="hebrew">
+זֶה חֲלִיפָתִי, זֶה תְּמוּרָתִי, זֶה כַּפָּרָתִי. זֶה הַתַּרְנְגוֹל יֵלֵךְ לְמִיתָה וַאֲנִי אֵלֵךְ וְאֶכָּנֵס לְחַיִּים טוֹבִים אֲרוּכִּים וּלְשָׁלוֹם.
+<span class="attrib">&mdash; The formula recited during Kaporos &nbsp;<sup class="fn">10</sup></span>
+</blockquote>
+
+<p>The Aruch and later Rishonim illustrate the concept with a story from the Gemara. When the Roman decree of destruction was rolling toward a certain city, Rabbi Akiva was in danger of being captured. In the parallel elsewhere, a rooster crowed at the wrong moment and the trap sprung on it instead. The Aruch (siman <em>gever</em>) preserves that image: the chicken takes the blow that was aimed at the man.<sup class="fn">11</sup></p>
+
+<blockquote class="hebrew">
+כְּשֶׁכַּאֲשֶׁר בָּא הָרַ"ע לְאוֹתָהּ עִיר, הָיָה רָאוּי לָבֹא עָלָיו וְעַל כָּל הָעִיר, דְּהַיְינוּ שֶׁיִּהְיֶה נִשְׁבָּה כְּמוֹ שֶׁהָיוּ נִשְׁבִּים שְׁאָר הָעִיר. וְאִם הָיָה נִשְׁבָּה הָיוּ מְבַטְלִים אוֹתוֹ מִכָּל וְהָיוּ נוֹטְלִים מִמֶּנּוּ גּוּפוֹ וְנַפְשׁוֹ. וְהַשֵּׁם יִתְבָּרַךְ רָצָה לְהַצִּיל אֶת רַבִּי עֲקִיבָא, סָבַב דְּלָא יְהִיב לֵיהּ אוּשְׁפִּיזָא. וּלְפִיכָךְ אָתָא אַרְיֵה וְאָכַל הַחֲמוֹר וְדָבָר זֶה הוּא תְּמוּרָה מַה שֶּׁרָאוּי לָבֹא עַל גּוּפוֹ, וְאָכִיל הַתַּרְנְגוֹל וְדָבָר זֶה הוּא תְּמוּרָה נַפְשׁוֹ וְכַפָּרָתוֹ, וְהַנֵּר תְּמוּרַת הַשֵּׂכֶל עַד שֶׁיִּהְיֶה לוֹ תְּמוּרָה לְגַמְרֵי.
+<span class="attrib">&mdash; The Aruch on <em>gever</em>, and cited by later poskim &nbsp;<sup class="fn">11</sup></span>
+</blockquote>
+
+<p>The Kaporos ceremony is thus not <em>magic</em> and not <em>korban</em> &mdash; but a middle path. It is a physical enactment of teshuvah: I look at an animal that has been slaughtered <em>tachtai</em>, in my place, and I am shaken into an awareness of my own mortality and my dependence on Hashem's mercy.<sup class="fn">12</sup></p>
+
+<h2><span class="num">VI.</span> The Rashba's Halachic Weight — Even Against Everyone</h2>
+
+<p>The Beis Yosef in his teshuvah preserves a stunning line about the Rashba's authority: even if all the chachmei Yisrael of a generation were on one side of a scale and the Rashba were alone on the other, <em>the Rashba would tip the scale for all of them</em>.<sup class="fn">13</sup></p>
+
+<blockquote class="hebrew">
+דְּלֹא שָׁבְקִינַן הָרַשְׁבָּ"א וְנָקְטִינַן כְּהָרִיבָ"שׁ, מִשּׁוּם דְּקִיַ"ל הֲלָכָה כְּהָרַשְׁבָּ"א לְגַבֵּי הָרִיבָ"שׁ. אַף שֶׁמְּקִיל, וְכַמַּהֲרַשְׁדָּ"ם אֶה"ע סִימָן פ"ג. וּכְבָר יָדוּעַ מַה שֶּׁהֵעִיד עָלָיו מָרָן דְּאִם יִהְיוּ כָּל חַכְמֵי יִשְׂרָאֵל בְּכַף מֹאזְנַיִם וְהָרַשְׁבָּ"א בְּכַף שְׁנִיָּה מַכְרִיעַ הוּא אֶת כֻּלָּם. וְכַ"כ מוֹהֲרַשְׁדָּ"ם בְּחָ"מ סִימָן מ"ג דְּרַבֵּינוּ הַגָּדוֹל מוֹהֲרַ"י טַאיטַ"צַק כַּמָּה פְּעָמִים כַּאֲשֶׁר הָיָה רוֹאֶה בַּדִּין אֶחָד דַּעַת הָרַשְׁבָּ"א כִּמְעַט הָיָה שׁוֹקֵל וּמַכְרִיעַ אוֹתוֹ נֶגֶד כָּל חַכְמֵי יִשְׂרָאֵל.
+<span class="attrib">&mdash; Cited in the responsa tradition on Kaporos &nbsp;<sup class="fn">13</sup></span>
+</blockquote>
+
+<p>And yet, on this one issue, the entire Ashkenaz world followed the Maharil and the Rema, <em>against</em> the combined weight of the Rashba, the Ramban, the Rashbatz, and the Bais Yosef. Nowhere in halachic literature is the tension between <em>minhag</em> and <em>psak</em> so raw. The Rema's phrase <span class="heb-inline">מִנְהַג וָתִיקִין</span> was doing enormous work.</p>
+
+<h2><span class="num">VII.</span> A White Chicken and a Silver Coin — Later Refinements</h2>
+
+<p>Once the custom was preserved, the acharonim began negotiating its edges. The <strong>Magen Avraham</strong> and the <strong>Mishnah Berurah</strong> (OC 605) permit and even prefer using a white chicken &mdash; based on Yeshayahu 1:18, <span class="heb-inline">אִם יִהְיוּ חֲטָאֵיכֶם כַּשָּׁנִים כַּשֶּׁלֶג יַלְבִּינוּ</span> &mdash; but only if the chicken presented for slaughter <em>happens</em> to be white, not if one specifically sought it out.<sup class="fn">14</sup> The <strong>Aruch HaShulchan</strong> and the <strong>Chayei Adam</strong> both note that where a chicken is unavailable or the shechitah cannot be safely done, one should redeem the ceremony with <em>money</em> given to tzedakah &mdash; a coin passed over the head, later given to the poor.<sup class="fn">15</sup></p>
+
+<p>The <strong>Mordechai</strong> in Yoma (siman 723) records that the custom is to use <em>two</em> chickens for a boy &mdash; one for the newborn boy and one for the mother &mdash; and to distribute the innards to the birds on the roof, on the theory that just as the birds have compassion on their young, may Hashem have compassion on us.<sup class="fn">16</sup></p>
+
+<h2><span class="num">VIII.</span> The Modern Reservation — When Shechitah Itself Is at Risk</h2>
+
+<p>The most recent and pointed reservation is not halachic but practical. The last excerpt on the source sheet, in the voice of a contemporary posek, describes what the shochet actually faces on erev Yom Kippur: the <em>hidachak v'halachatz</em>, the crush of hundreds of chickens, the shochtim not paying attention <em>mipnei ha'ayeifus v'ha'tircha</em> &mdash; from exhaustion and haste &mdash; the many <em>treifos</em> that pass out of their hands, and the impossibility of the knife being properly checked.<sup class="fn">17</sup></p>
+
+<blockquote class="hebrew">
+ה' וְכָל זֶה בְּעֶצֶם הַדָּבָר. אֲבָל בַּעֲוֹנוֹתֵינוּ הָרַבִּים אָנוּ רוֹאִים הַקִּלְקוּל בַּשְּׁחִיטָה מֵרִבּוּי הַכַּפָּרוֹת מֵהַדְּחָק וְהַלַּחַץ, וְאֵין הַשּׁוֹחֲטִים מַשְׁגִּיחִים מִפְּנֵי הָעֲיֵפוּת וְהַטִּרְחָה, וְכַמָּה טְרֵפוֹת יָצְאוּ מִתַּחַת יָדָם, וְגַם הַסַּכִּין אִי אֶפְשָׁר לִהְיוֹת בָּדוּק כָּרָאוּי, וְגַם עַל יְדֵי הַשּׁוֹחֵט כְּבֵדוּת, וְעַתָּה בַּזְּמַן הַזֶּה מִצְוָה וְחוֹבָה לְהַמְעִיטָן וְלֹא לִיכָּנֵס בְּיוֹם הַקָּדוֹשׁ בַּחֲשַׁשׁ שְׁחִיטָה, וּכְבָר טָרְחוּ גַּם בְּדוֹרוֹת שֶׁלְּפָנֵינוּ לְבַטְּלָן וְלֹא עָלְתָה בְיָדָן, כִּי הֶהָמוֹן דָּבוּק בָּזֶה כְּמוֹ עַל מִצְווֹת אֶתְרוֹג וְעוֹד יוֹתֵר, וּלְכָל הַפָּחוֹת לִרְאוֹת לְהַתְחִיל בִּשְׁחִיטָתָן אֵיזֶה יָמִים מְקוּדָם, וְלִמְנוֹעַ הָאַשְׁמוּרֶת שֶׁ<i>יְּדֵי</i> הַשּׁוֹחֵט כְּבֵדוֹת אָז.
+<span class="attrib">&mdash; Recent posek, summarized in the source sheet &nbsp;<sup class="fn">17</sup></span>
+</blockquote>
+
+<p>The recommendation is characteristically balanced: reduce the volume, begin the shechitah several days early, and where necessary use <em>ma'os l'kapparah</em> instead. The Rashba, who tried to abolish the custom on halachic-theological grounds, is joined here by a very different voice &mdash; one that would preserve the custom in principle but constrain it in practice, precisely to protect the sanctity of the <em>ma'aseh</em> at its center.</p>
+
+<h2><span class="num">IX.</span> Coda — A Rooster Named Gever</h2>
+
+<p>The Kaporos ceremony has traveled a long road. It was born in the Geonic academies of Bavel, condemned in the yeshivos of Barcelona, ignored by the Bais Yosef, restored by the Maharil, universalized by the Rema, refined by the Mishnah Berurah, and constrained by the contemporary poskim watching the erev Yom Kippur shechitah floor. Every step of the way, it has been the same question: <em>can a man's fate really be transferred to a bird?</em></p>
+
+<p>The Aruch's answer &mdash; that a <em>gever</em> replaces a <em>gever</em> &mdash; is not a chemistry lesson. It is a moral one. When a Yid on erev Yom Kippur takes a chicken in his hand and says <span class="heb-inline">זֶה חֲלִיפָתִי, זֶה תְּמוּרָתִי, זֶה כַּפָּרָתִי</span>, he is not performing magic. He is watching, in miniature, what his own body would look like if strict din prevailed. And that watching, more than any pesukim, more than any piyut, is what makes him a <em>ba'al teshuvah</em> by the time he walks into shul for Kol Nidrei.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">תְּשׁוּבַת הַגְּאוֹנִים</span>, quoted in the Bais Yosef Orach Chaim 605.</span>
+  <span class="exp">The teshuvah is preserved in Otzar HaGeonim, Yoma 88, and in Sha'arei Teshuva siman 299. The Geonic responsum is remarkable for its candor: <em>we ourselves do not know why we do this</em>. The Bais Yosef reads the responsum as evidence that the custom predates any known halachic literature and had already become settled minhag by the eighth century.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">יוֹמָא כ:</span> &mdash; "<span class="heb">מַאי קָרָא גֶּבֶר? אָמַר רַב שִׁילָא קָרָא תַּרְנְגוֹלָא</span>."</span>
+  <span class="exp">The Gemara identifies the word <em>gever</em> in the Torah with the crowing of a rooster (see also Berachos 60b's berachah <em>ha'nosen la'sechvi vinah l'havchin bein yom u'vein laylah</em>, where <em>sechvi</em> = rooster). Sefaria ref: <em>Yoma.20b.13</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">תְּשׁוּבוֹת הָרַשְׁבָּ"א, סִימָן שצ"ה</span>.</span>
+  <span class="exp">The Rashba's teshuvah is one of the most polemical in the corpus. He describes the practice in Barcelona, associates it with the additional customs of hanging the head over the door with garlic (<span class="heb">שׁוּמִים</span>) and other <em>hevlim</em>, and frames the entire complex as <span class="heb">דַּרְכֵי הָאֱמוֹרִי</span>. The Rashba's ruling was accepted throughout Sefarad for centuries. Cf. Teshuvos HaRashba HaChadashos 15.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">רַמְבַּ"ן, תּוֹרַת הָאָדָם</span>, sha'ar ha'sof; and <span class="heb">תַּשְׁבַּ"ץ קָטָן סִימָן קכ"ה</span>.</span>
+  <span class="exp">The Ramban joins the Rashba in calling for the abolition of the custom, on the same darchei ha'emori grounds. The Rashbatz (Rav Shimon ben Tzemach Duran, Algiers) preserves the same objection in Tashbatz Katan and also in Tashbatz Chelek 3, siman 273. The Beis Yosef reads all three Sephardic authorities as one voice.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">בֵּית יוֹסֵף, אוֹרַח חַיִּים תר"ה</span>, and the Shulchan Aruch there, se'if 1.</span>
+  <span class="exp">The Beis Yosef in the body of the Tur summarizes: <em>yesh limnoa haminhag</em>. In the Shulchan Aruch he preserves the identical language. For the Sephardic communities that follow Maran, this ruling was decisive for centuries &mdash; and only in recent generations has Kaporos with a chicken become widespread among Sephardim, largely under the influence of the Ari z"l.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">רְמָ"א, שֻׁלְחָן עָרוּךְ אוֹרַח חַיִּים תר"ה סְעִיף א</span>.</span>
+  <span class="exp">"<span class="heb">וְכֵן נָהֲגוּ בְּכָל מְדִינוֹת אֵלּוּ, וְאֵין לְשַׁנּוֹת כִּי הוּא מִנְהַג וָתִיקִין.</span>" The phrase <em>minhag vasikin</em> (an "ancient pious custom") is the Rema's characteristic move &mdash; the same expression he uses to preserve simchas Torah dancing and the eating of dairy on Shavuos against Sephardic objections. Sefaria ref: <em>Shulchan_Aruch,_Orach_Chayim.605.1</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">מַהֲרִי"ל, הִלְכוֹת עֶרֶב יוֹם כִּפּוּר</span>.</span>
+  <span class="exp">The Maharil (Rav Yaakov Moellin, Mainz, d. 1427) is the founding text of Ashkenaz minhagim. His account of Kaporos includes the full ceremony (three swings, the pesukim from Iyov 33 and Tehillim 107, the transfer to the mother of a boy, and so on). The Rema's gloss in OC 605 relies almost entirely on the Maharil's authority.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">עֲבוֹדָה זָרָה יב:</span> and the Maharil's caveat.</span>
+  <span class="exp">The Gemara in AZ 12b (also Shabbos 67a) enumerates practices that constitute <em>darchei ha'emori</em>, including seeking specifically white animals for cultic purposes. The Maharil rules that the concern applies only to <em>seeking out</em> a white chicken &mdash; if one is presented incidentally, there is no issur. This has become the standard Ashkenaz ruling.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. Defense of the custom cited in the Bais Yosef OC 605 &mdash; that a chicken is chosen precisely because it is <em>eino ra'ui l'korban</em>.</span>
+  <span class="exp">The defender (some attribute the sevara to the Mordechai, others to a comment of the Rosh) argues that using an animal invalid as a korban is itself the guarantee that no one will confuse the ceremony with sacrifice. This inverts the Rashba's objection: what the Rashba read as a proof of confusion (<em>k'mo shochet kadashim ba'chutz</em>) becomes, on this reading, the very safeguard against confusion.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. The formula <span class="heb">זֶה חֲלִיפָתִי זֶה תְּמוּרָתִי זֶה כַּפָּרָתִי</span> &mdash; recorded in the Machzor and in the Maharil.</span>
+  <span class="exp">The three-word triplet <em>chalifasi, temurasi, kapparasi</em> deliberately echoes the language of Vayikra 27:10 regarding temurah: <span class="heb">לֹא יַחֲלִיפֶנּוּ וְלֹא יָמִיר אֹתוֹ</span>. The Kaporos formula is a deliberate mirror &mdash; a permissive "temurah" outside the beis ha'mikdash. See Ramban Vayikra 1:9 for the general theology of substitution.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">עָרוּךְ עֵרֶךְ גֶּבֶר</span>, and the parallel story of Rabbi Akiva in Berachos 60b.</span>
+  <span class="exp">The Aruch (Rav Nassan of Rome, 11th c.) preserves the story of R' Akiva who was denied lodging (<em>ushpiza</em>) in a certain city; that night his donkey was eaten by a lion, his rooster was eaten by a cat, and his candle was blown out by the wind &mdash; and by the morning the city had been captured by a Roman legion. Every "loss" turned out to be a substitution: the donkey stood in for the body, the chicken for the nefesh, the candle for the sechel. Sefaria ref: <em>Berakhot.60b.9</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. The rationale of <em>hishtachvus la'azazel</em> &mdash; the acharonim on why the ceremony works even without avodah.</span>
+  <span class="exp">Several acharonim (see Yalkut Yosef, Moadim, Kaporos 3) explain that the Kaporos ceremony parallels the send-out of the <em>sa'ir la'azazel</em> in the Beis HaMikdash: an act of concrete separation of sin from the body of the sinner. The animal is not <em>korban</em> and not <em>avodah</em>, but a physical marker of the transfer.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. The Beis Yosef on the Rashba's weight, and Maharashdam Even HaEzer siman 83 and Choshen Mishpat siman 43.</span>
+  <span class="exp">The famous line about the Rashba's authority &mdash; <em>if all the chachmei Yisrael were on one side of the scale and the Rashba on the other, the Rashba would tip the scale</em> &mdash; is preserved by the Maharashdam in the name of the Beis Yosef. It appears elsewhere in the Chida (Shem HaGedolim, s.v. Rashba) and in the Aruch HaShulchan's introduction.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">מָגֵן אַבְרָהָם</span> and <span class="heb">מִשְׁנָה בְּרוּרָה</span>, OC 605.</span>
+  <span class="exp">The Magen Avraham (siman 605:2) writes that one should use a white chicken based on <em>im yihyu chatta'eichem k'shanim ka'sheleg yalbinu</em> (Yeshayahu 1:18), but immediately cautions that <em>seeking out</em> a white one is darchei ha'emori. The Mishnah Berurah (SK 3) codifies both halves of this ruling.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">חַיֵּי אָדָם</span>, kelal 144:4, and <span class="heb">עָרוּךְ הַשֻּׁלְחָן</span> OC 605.</span>
+  <span class="exp">The Chayei Adam and the Aruch HaShulchan both permit substituting <em>ma'os</em> (a coin passed over the head and then given to tzedakah) when a chicken is unavailable or when there is concern about the quality of the shechitah. This is now the near-universal practice in many communities, following also the endorsement of Rav Ovadia Yosef (Yechaveh Da'as 2:71) and the Chazon Ish.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">16. <span class="heb">מָרְדֳּכַי, יוֹמָא סִימָן תשכ"ג</span>.</span>
+  <span class="exp">The Mordechai (Rav Mordechai ben Hillel, d. 1298) records the custom of using two chickens for a newborn boy &mdash; one for the child and one for the mother &mdash; and of distributing the innards on the rooftops to feed the birds, "so that just as the birds have compassion on their young, may Hashem have compassion on us." This custom is preserved in the Levush and in the Elya Rabbah 605.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">17. Contemporary posek on <span class="heb">קִלְקוּל הַשְּׁחִיטָה</span> in the erev Yom Kippur crush.</span>
+  <span class="exp">The concern is not new. The Chayei Adam and the Chazon Ish both alluded to it. In our generation it is voiced with particular force by Rav Chaim Kanievsky, Rav Shmuel Wosner (Shevet HaLevi 9:203), and Rav Moshe Feinstein (implicit in Igros Moshe OC 4:75), who all recommend either beginning the shechitah several days in advance or using <em>ma'os l'kapparah</em>. The pattern &mdash; where the practical safeguards around a ma'aseh mitzvah eventually reshape the ma'aseh itself &mdash; runs from the Aruch HaShulchan through the Mishnah Berurah into our own poskim.</span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">כָּתַב מַהֲרִי"ל &mdash; שֶׁנּוֹהֲגִים לֵילֵךְ אֶל הַנָּהָר וְלוֹמַר תָּשׁוּב תְּרַחֲמֵנוּ</td><td>Maharil, Hilchos Rosh HaShana / Erev YK</td><td>p.&nbsp;1, top right</td></tr>
+    <tr><td class="num">2</td><td class="heb">שָׁם ג' דָּגִים לִזְכּוֹר שֶׁאָנוּ מְשׁוּלִים כַּדָּגִים הַלָּלוּ</td><td>Rema, OC 583 &mdash; Tashlich as thematic prelude</td><td>p.&nbsp;1, upper left</td></tr>
+    <tr><td class="num">3</td><td class="heb">תַּשְׁלִיךְ &mdash; וְיַזְהִירוּ שֶׁלֹּא יֵלְכוּ נָשִׁים</td><td>Rema OC 583:2, with Magen Avraham</td><td>p.&nbsp;1, upper left</td></tr>
+    <tr><td class="num">4</td><td class="heb">יֵשׁ מְקוֹמוֹת שֶׁנּוֹהֲגִין לִשְׁחוֹט תַּרְנְגוֹל לְכַפָּרָה</td><td>Bais Yosef OC 605, quoting Teshuvos HaGeonim &amp; Rosh</td><td>p.&nbsp;1, mid right</td></tr>
+    <tr><td class="num">5</td><td class="heb">וְאַחַר תְּפִלָּה עוֹלִין וּמַתְחִילִין מְכַפְּרִים תַּמְרִים וַחֲבַל דָּם</td><td>Maharil / Rashba defense, on the ceremonial details</td><td>p.&nbsp;1, mid left</td></tr>
+    <tr><td class="num">6</td><td class="heb">הַמָּרְדֳּכַי בְּמַסֶּכֶת יוֹמָא &mdash; וְהָרַשְׁבָּ"א בִּתְשׁוּבָה סִימָן שצ"א</td><td>Mordechai, Yoma; Rashba Teshuvos 391 / 395</td><td>p.&nbsp;1, mid left column</td></tr>
+    <tr><td class="num">7</td><td class="heb">כָּתַב מָר כִּי רָאִיתָ מַה שֶּׁהִשְׁגַּתִּי אֲנִי בְּעִנְיַן הַכַּפָּרָה</td><td>Rashba, Teshuvos siman 395 (the polemical opening)</td><td>p.&nbsp;1, center right</td></tr>
+    <tr><td class="num">8</td><td class="heb">א' מַה שֶּׁנּוֹהֲגִים לַעֲשׂוֹת כַּפָּרָה בְּעֶרֶב יוֹם כִּפּוּר לִשְׁחוֹט תַּרְנְגוֹל</td><td>Bais Yosef / Shulchan Aruch OC 605:1</td><td>p.&nbsp;1, lower left</td></tr>
+    <tr><td class="num">9</td><td class="heb">בִּתְשׁוּבוֹת הָרַשְׁבָּ"א סִימָן שֶׁ"ה &mdash; מִשּׁוּם דַּרְכֵי הָאֱמוֹרִי</td><td>Rashba, Teshuvos siman 305 &mdash; darchei ha'emori</td><td>p.&nbsp;1, bottom</td></tr>
+    <tr><td class="num">10</td><td class="heb">מַהֲרִי"ל &mdash; דָּבָר וַדַּאי יֵשׁ לָחוּשׁ קְצָת לְדַרְכֵי הָאֱמוֹרִי</td><td>Maharil, defense of the custom</td><td>p.&nbsp;2, top right</td></tr>
+    <tr><td class="num">11</td><td class="heb">דְּלֹא שָׁבְקִינַן הָרַשְׁבָּ"א וְנָקְטִינַן כְּהָרִיבָ"שׁ</td><td>Beis Yosef responsa &amp; Maharashdam on Rashba's weight</td><td>p.&nbsp;2, top left</td></tr>
+    <tr><td class="num">12</td><td class="heb">וְיֵשׁ אוֹמְרִים שֶׁיֵּשׁ לִמְנוֹעַ הַמִּנְהָג הַזֶּה</td><td>Cited in Bais Yosef 605 &mdash; the Maharil's rebuttal</td><td>p.&nbsp;2, upper right</td></tr>
+    <tr><td class="num">13</td><td class="heb">ג' בְּתַרְנְגוֹלִים לְבָנִים &mdash; מִשּׁוּם דַּרְכֵי הָאֱמוֹרִי</td><td>Magen Avraham OC 605:2, on white chickens</td><td>p.&nbsp;2, middle left</td></tr>
+    <tr><td class="num">14</td><td class="heb">כו' סוֹף שֶׁדָּבָר זֶה אַף בָּטוּר בְּשֵׁם הַגְּאוֹנִים</td><td>End of the teshuvah / Levush on Kaporos</td><td>p.&nbsp;2, mid left</td></tr>
+    <tr><td class="num">15</td><td class="heb">עַל עִנְיַן שְׁחִיטַת הַתַּרְנְגוֹלִים עֶרֶב יה"כ לְכַפָּרָה עַל הַנְּעָרִים הָעוֹלָם נָהֲגוּ בּוֹ הֶתֵּר אֲבָל הָרַשְׁבָּ"א אָסַר</td><td>Kaf HaChaim / Ben Ish Chai on Kaporos</td><td>p.&nbsp;2, center right</td></tr>
+    <tr><td class="num">16</td><td class="heb">ה' וְכָל זֶה בְּעֶצֶם הַדָּבָר, אֲבָל בַּעֲוֹנוֹתֵינוּ הָרַבִּים אָנוּ רוֹאִים הַקִּלְקוּל בַּשְּׁחִיטָה</td><td>Contemporary posek on shechitah quality (Kaf HaChaim / Shevet HaLevi)</td><td>p.&nbsp;2, lower right</td></tr>
+    <tr><td class="num">17</td><td class="heb">כְּשֶׁכַּאֲשֶׁר בָּא הָרַ"ע לְאוֹתָהּ עִיר הָיָה רָאוּי לָבֹא עָלָיו &mdash; רַבִּי עֲקִיבָא וְהַתַּרְנְגוֹל</td><td>Aruch, s.v. <em>gever</em>; parallel Berachos 60b</td><td>p.&nbsp;2, bottom</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Elul 5786 / September 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>
