@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Rosh Hashono and Reb Yosef Karo's Mystifying Diary</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">רֹאשׁ הַשָּׁנָה וְהַמַּגִּיד מֵישָׁרִים שֶׁל מָרָן בֵּית יוֹסֵף</div>
+  <div class="english-title">Rosh Hashono and Reb Yosef Karo's Mystifying Diary</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Erev Rosh HaShana 5787</div>
+  <div class="dates">Recorded: Elul 5786 &middot; Prepared: 25 Elul 5786 / September 7, 2026</div>
+</header>
+
+<p class="lead">The Maggid Meisharim &mdash; the mystical diary of the Bais Yosef, in which a heavenly maggid dictated Torah to him for decades &mdash; contains a startling passage in which the Maggid rebukes Reb Yosef Karo for having <em>eaten</em> on Rosh HaShana. The passage opens a wide halachic and hashkafic front: may one fast on Rosh HaShana at all? What does <span class="heb">אִכְלוּ מַשְׁמַנִּים</span> in Nechemyah actually mandate? Why did the Arizal weep, while the Gaon of Vilna forbade weeping? And what does the reincarnation of a soul into a woman have to do with the seudas Yom Tov? This shiur traces that thread from the Geonim through the Bais Yosef, the Rema, the Maharshal, the Shelah, the Chida, and finally Reb Chaim Volozhin, who reinterprets the entire question.</p>
+
+<h2><span class="num">I.</span> The Diary That Speaks Back</h2>
+
+<p>Reb Yosef Karo &mdash; author of the Bais Yosef and Shulchan Aruch, and mara d'asra of Tzefas in the generation of the Arizal &mdash; kept a diary for more than fifty years. It was not a diary in the ordinary sense. Night after night, a <em>maggid</em> &mdash; a heavenly voice identified with the personified <em>Mishnah</em> herself &mdash; would speak through his throat, dictating Torah, mussar, and personal instructions. The diary was published, after his death, under the title <em>Maggid Meisharim</em>, and its passages have unsettled and fascinated generations of readers.<sup class="fn">1</sup></p>
+
+<p>One recurring theme of the Maggid's rebukes is Reb Yosef's conduct on <em>Rosh HaShana</em>. The Maggid tells him, in oblique kabbalistic language, that his eating of certain foods on Rosh HaShana was a spiritual failure &mdash; and that the very act of fasting on Rosh HaShana would have accomplished for him a rectification (<em>tikkun</em>) that eating could not.<sup class="fn">17</sup> That passage flatly contradicts what most people assume &mdash; and what the Rema explicitly rules in Orach Chaim 597 &mdash; that Rosh HaShana is a Yom Tov, and one is obligated to eat and rejoice.</p>
+
+<p>To read the Maggid honestly, we have to understand the halachic history behind him. The question of fasting on Rosh HaShana is one of the most contested corners of Hilchos Yom Tov, and it stretches back to the Geonim.</p>
+
+<h2><span class="num">II.</span> May One Fast on Rosh HaShana?</h2>
+
+<h3>Rav Netronai Gaon and the She'iltos</h3>
+
+<p>The Bais Yosef in Orach Chaim 597 opens by quoting <strong>Rav Netronai Gaon</strong>, who ruled that on the <em>first</em> day of Rosh HaShana it is impossible to sit in a fast, since it is a <em>yoma d'oraysa</em> &mdash; a Biblically mandated Yom Tov. But on the <em>second</em> day of Rosh HaShana &mdash; a rabbinic addition &mdash; there is no such absolute prohibition, and one may fast if he wishes.<sup class="fn">2</sup></p>
+
+<p>The Rosh (in the name of his father, Rabbeinu Yechiel, and echoed by his son Rabbeinu Yehuda) was troubled by this: how could Rav Netronai permit fasting on the second day, when the two days of Rosh HaShana are treated as <em>yoma arichta</em> &mdash; a single long day &mdash; even for stringencies? He therefore concluded that one may fast on either day, so long as one is fasting a <em>ta'anis chalom</em> or a <em>ta'anis tzibbur</em>.<sup class="fn">2</sup></p>
+
+<blockquote class="hebrew">
+וְאוֹכְלִין וְשׁוֹתִין וּשְׂמֵחִין וְאֵין לְהִתְעַנּוֹת בּוֹ כְּלָל. וְרַב נַטְרוֹנַאי ז"ל כָּתַב בְּיוֹם רִאשׁוֹן שֶׁל רֹאשׁ הַשָּׁנָה אִי אֶפְשָׁר לֵישֵׁב בּוֹ בְּתַעֲנִית מִשּׁוּם דִּמְדְּאוֹרַיְתָא הוּא, אֲבָל בְּיוֹם טוֹב שֵׁנִי וְשַׁבָּת לֵית בְּהוּ קֻשְׁיָא.
+<span class="attrib">&mdash; Bais Yosef, Orach Chaim 597, quoting Rav Netronai Gaon &nbsp;<sup class="fn">2</sup></span>
+</blockquote>
+
+<h3>The Ri"tz Gias and the Yerushalmi</h3>
+
+<p>The Bais Yosef then adduces a striking source from the <strong>Ri"tz Gias</strong> (Rav Yitzchak ibn Ghayyat, quoted in Ta'anis 29b): the very <em>ikkar</em> of the ta'anis of the Aseres Yemei Teshuva is <em>not</em> to fast. Rather, one is to eat, drink, and rejoice, <em>ki chedvas Hashem hi ma'uzchem</em>. And this is echoed by the Yerushalmi &mdash; <em>b'Rosh HaShana masri'in v'lo mis'anin</em>: on Rosh HaShana one blows the shofar, but does not fast.<sup class="fn">2</sup></p>
+
+<h2><span class="num">III.</span> "אַל תִּתְאַבְּלוּ וְאַל תִּבְכּוּ" &mdash; The Verse from Nechemyah</h2>
+
+<p>The classical proof-text on both sides comes from Nechemyah, chapter 8. When Ezra reads the Torah publicly on Rosh HaShana in the newly rebuilt Yerushalayim, the people weep. Ezra and Nechemyah stop them:</p>
+
+<blockquote class="hebrew">
+וַיֹּאמֶר נְחֶמְיָה הוּא הַתִּרְשָׁתָא וְעֶזְרָא הַכֹּהֵן הַסּוֹפֵר לְכָל הָעָם, הַיּוֹם קָדוֹשׁ לַה' אֱלֹקֵיכֶם, אַל תִּתְאַבְּלוּ וְאַל תִּבְכּוּ, כִּי בוֹכִים כָּל הָעָם כְּשָׁמְעָם אֶת דִּבְרֵי הַתּוֹרָה. וַיֹּאמֶר לָהֶם לְכוּ אִכְלוּ מַשְׁמַנִּים וּשְׁתוּ מַמְתַּקִּים וְשִׁלְחוּ מָנוֹת לְאֵין נָכוֹן לוֹ, כִּי קָדוֹשׁ הַיּוֹם לַאֲדוֹנֵינוּ, וְאַל תֵּעָצֵבוּ כִּי חֶדְוַת ה' הִיא מָעֻזְּכֶם.
+<span class="attrib">&mdash; Nechemyah 8:9&ndash;10 &nbsp;<sup class="fn">8</sup></span>
+</blockquote>
+
+<p>The pesukim seem definitive: no mourning, no crying, no fasting. Rather &mdash; <em>ichlu mashmanim u'shesu mamsakim</em>: eat rich foods and drink sweet drinks. From this the halacha derives the obligation to have a seudas Yom Tov on Rosh HaShana, and the prohibition against fasting.<sup class="fn">15</sup></p>
+
+<h2><span class="num">IV.</span> The Arizal's Tears &mdash; and the Gaon's Silence</h2>
+
+<p>And yet &mdash; the pesukim notwithstanding &mdash; there is an ancient tradition, formalized by the Arizal and preserved by his talmid Rabbeinu Chaim Vital in <em>Sha'ar HaKavanos</em> (daf 90a), that one is <em>to weep bitterly</em> during the tefillos of Rosh HaShana. The Arizal himself did so, and testified that anyone in whom the tefillah of these days does <em>not</em> evoke tears has a soul that is <em>lo shleimah v'hagunah</em> &mdash; not whole and not fit. The Kaf HaChaim (Orach Chaim 584 :6, and 597) codifies this at length.<sup class="fn">9,13</sup></p>
+
+<blockquote class="hebrew">
+כֹּה נוֹהֲגִין לִבְכּוֹת וּלְהוֹרִיד דְּמָעוֹת בִּתְפִלַּת רֹאשׁ הַשָּׁנָה וְיוֹם הַכִּפּוּרִים. אַף כְּשֶׁחָל בַּשַּׁבָּת. וּמִי שֶׁאֵין בְּכִיָּה נוֹפֶלֶת עָלָיו בַּיָּמִים הָאֵלֶּה &mdash; הוּא הוֹרָאָה שֶׁאֵין נִשְׁמָתוֹ הֲגוּנָה.
+<span class="attrib">&mdash; Kaf HaChaim, Orach Chaim 584:6, quoting the Arizal &nbsp;<sup class="fn">13</sup></span>
+</blockquote>
+
+<p>The <strong>Shelah HaKadosh</strong> qualifies: even one over whom <em>no</em> tears fall should at least emit a <em>kol bechi</em> &mdash; a sound of weeping &mdash; <em>ki kol bechi ba'ei lev nishbar</em>: the sound of weeping cracks open the heart, and the rest is a matter of <em>kavanas halev</em>.<sup class="fn">14</sup></p>
+
+<p>But then, in stunning opposition, the <strong>Ma'aseh Rav</strong> (siman 207) records the practice of the <strong>Vilna Gaon</strong>: on Rosh HaShana one should <em>not</em> cry. It is a Yom Tov. Anyone who cries betrays a nefesh <em>she'ainah shleimah v'hagunah</em> &mdash; using the identical language of the Arizal, but with the value-sign reversed! The GRA insisted that the tzibbur sing the tefillos of the Yamim Nora'im b'niggun l'chavod Yom Tov.<sup class="fn">9</sup></p>
+
+<p>The apparent contradiction between the Arizal (who cries) and the GRA (who forbids crying) is resolved, in some acharonim, by pointing out that both are quoting Nechemyah &mdash; but reading it differently. The Arizal reads: one must weep <em>and then</em> be told <em>al tivku</em>. The GRA reads: <em>al tivku</em> is unconditional.<sup class="fn">9</sup></p>
+
+<h2><span class="num">V.</span> The Bach, the Maharshal, and the Fish Nobody Ate</h2>
+
+<p>A different current in the acharonim actually preserves cases of great tzaddikim who did <em>not</em> fully eat on Rosh HaShana. The <strong>Bach</strong> (Orach Chaim 597) reports that the <strong>Maharshal</strong> would not eat fish on Rosh HaShana. This is not a fast in the technical sense &mdash; but the deliberate abstention from a food that Chazal explicitly recommended for Yom Tov is a form of self-denial that borders on ta'anis.<sup class="fn">16</sup></p>
+
+<p>Some spelled it out further: because the Maharshal did not eat <em>that</em> particular food, it is as if he was <em>k'mis'aneh b'Rosh HaShana</em>, offering that <em>ta'anis</em> as his own <em>chedvas Hashem</em>.<sup class="fn">18</sup> The Ma'gid Meisharim itself &mdash; in the passage we opened with &mdash; treats fasting on Rosh HaShana as a positive kabbalistic accomplishment, not a violation.</p>
+
+<h2><span class="num">VI.</span> The Maggid's Own Words &mdash; The Woman and the Reincarnated Soul</h2>
+
+<p>The <em>Maggid Meisharim</em> to Reb Yosef Karo now emerges in its own voice. Speaking to him at length about a certain woman &mdash; understood by the mefarshim to be a soul that had been reincarnated &mdash; the Maggid explains why <em>her</em> spiritual state required Reb Yosef to fast on Rosh HaShana on her behalf.</p>
+
+<blockquote class="hebrew">
+וְהַשְׁתָּא אַתִּינָא לְאוֹדֻעוּתָךְ רָזָא דְּהַאי אִיתְּתָא תְּלִיתָאָה: הֲלָא לָךְ לְמִינְדַע דְּהַאי אִיתְּתָא הֲוַת בִּזְמַן עָבַר זָכָר, תַּ"ח כָּשֵׁר, אֶלָּא דַּהֲוָה כִּילַי בְּמָמוֹנֵיהּ וְלָא הֲוָה עָבִיד מִינֵּיהּ צְדָקָה, וְגַם הֲוֵי כִּילַי בְּחָכְמָתוֹ וְלָא הָיָה רוֹצֶה לְלַמֵּד לַאֲחֵרִים, וְעַל כֵּן נֶעֱנַשׁ לְהִתְגַּלְגֵּל בִּנְקֵבָה &mdash; מִדָּה כְּנֶגֶד מִדָּה, מָה הוּא לֹא הָיָה רוֹצֶה לְהַשְׁפִּיעַ לַאֲחֵרִים&hellip;
+<span class="attrib">&mdash; Maggid Meisharim to Bereishis, on Reb Yosef Karo's Rosh HaShana &nbsp;<sup class="fn">17</sup></span>
+</blockquote>
+
+<blockquote class="hebrew">
+וְהִנֵּה סִבַּת עֲכָבַת לֵידַת אִתָּךְ בְּסִבַּת שֶׁנִּשְׁמַת בְּנֵיכֶם נִשְׁמַת זָכָר, וְעַכְשָׁיו כְּבָר הִתְנוֹצְצוּ בָּהּ נִיצוֹצוֹת נִשְׁמַת נְקֵבָה, וְעַל יְדֵי כָּךְ תְּקַבֵּל הֵרָיוֹן מִמְּךָ&hellip;
+<span class="attrib">&mdash; Maggid Meisharim, ibid. &nbsp;<sup class="fn">22</sup></span>
+</blockquote>
+
+<p>The Maggid's picture is startling: a Talmid Chochom in a previous gilgul, stingy with both his money and his Torah, was punished by being reincarnated into the body of a woman. She now needs the reintroduction of male <em>nitzotzos</em> in order to bear children &mdash; and Reb Yosef's very acts (including his abstention on Rosh HaShana) participate in this tikkun.</p>
+
+<h2><span class="num">VII.</span> Reb Chaim Volozhin Solves the Puzzle</h2>
+
+<p>The <strong>Chida</strong>, in <em>Birkei Yosef</em> and again in <em>Devarim Achadim</em> (Nitzavim), preserves an astonishing tradition in the name of <strong>Reb Chaim Volozhin</strong>. Reb Chaim was troubled by the very passage from the Maggid Meisharim we just quoted &mdash; and by the fact that the Maharshal did not eat fish. If Nechemyah says <span class="heb">אִכְלוּ מַשְׁמַנִּים</span> &mdash; <em>eat rich foods</em> &mdash; how could such gedolim seem to shrink from meat on Rosh HaShana?</p>
+
+<p>Reb Chaim's answer overturns the popular reading: <span class="heb">מַשְׁמַנִּים</span> does not mean <em>meat</em>. It means, literally, <em>oils and fats</em> &mdash; <em>shemen v'chelev</em> &mdash; oil and butter. Meat is not mentioned in the pasuk at all! And so, Reb Chaim explained, when the Maharshal (and when Reb Yosef Karo, at the Maggid's behest) abstained from meat on Rosh HaShana, they violated no pasuk. They may have been enacting a private stringency &mdash; one that the Maggid presented to Reb Yosef as a fulfillment of his own personal <em>tikkun</em> &mdash; while still fulfilling the plain obligation of <em>ichlu mashmanim</em> through oil and dairy dishes.<sup class="fn">23</sup></p>
+
+<p>The Mishnah in Chullin (perek 3) that discusses the four times a year that a butcher who sells to his fellow must disclose &mdash; among them <em>erev Yom Tov ha'acharon shel Chag, erev Pesach, erev Atzeres, and erev Rosh HaShana</em><sup class="fn">20</sup> &mdash; had been read by many as proof that meat is a Yom Tov obligation. Reb Chaim countered: those disclosures are about butchers' commercial obligation, not about the halachic definition of <em>simchas Yom Tov</em>. The obligation to eat meat as <em>simchas Yom Tov</em> was said only in the days of the Beis HaMikdash, from <em>korbanos shalmei simcha</em>, and only on the shalosh regalim &mdash; not on Rosh HaShana.<sup class="fn">11,23</sup></p>
+
+<h2><span class="num">VIII.</span> Coda &mdash; What the Diary Was Really Saying</h2>
+
+<p>Read against this full history, the Maggid's rebuke of Reb Yosef Karo is no longer an outlier. It sits at the intersection of the Arizal's tears, the Maharshal's abstention, and Reb Chaim Volozhin's careful reading of the pasuk. The Maggid was not overturning halacha; he was demanding a higher, kabbalistic register of it &mdash; one in which the food a tzaddik does or does not eat participates in the reincarnations and rectifications of souls beyond his own.</p>
+
+<p>The Rema's ruling &mdash; <em>ochlin v'shosin u'smeichin v'ain mis'anin b'Rosh HaShana</em>, with the pointed qualifier <em>amnam lo yochlu kol sova'am, l'ma'an lo yakalu rosham v'sihyeh yir'as Hashem al pneihem</em><sup class="fn">15</sup> &mdash; is, in the end, the perfect articulation of the tension: we eat, but not to satiety; we rejoice, but with awe still upon our faces; we do not cry, but the sound of a broken heart is welcome nonetheless. The Bais Yosef, in his diary, was living the tension in the flesh.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">מַגִּיד מֵישָׁרִים</span> &mdash; introduction and passim.</span>
+  <span class="exp">The <em>Maggid Meisharim</em> is the mystical diary of Rabbi Yosef Karo (1488&ndash;1575), first printed in Lublin, 1646. It records nightly revelations delivered to Karo by a heavenly <em>maggid</em> identified with the personified Mishnah. Rabbeinu Chaim Vital, the Alkabetz school, and later Karo's own son testified to its authenticity. The passages on Rosh HaShana appear scattered through Parshas Bereishis, Vayeishev, and Emor.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">בֵּית יוֹסֵף, אוֹרַח חַיִּים תקצ"ז</span>, quoting Rav Netronai Gaon, the Ri"f, the Ro"sh, and Rabbeinu Yehudah b"R Yakar.</span>
+  <span class="exp">The Bais Yosef opens Siman 597 by juxtaposing Rav Netronai's tsheivah (<em>Sha'arei Teshuva</em> siman 145) with the Ro"sh's objection (Rosh HaShana perek 4). The distinction between the first day (Biblical) and the second day (Rabbinic) of Rosh HaShana is fundamental to this dispute and has echoes in Berachos 8b and Beitzah 4b regarding <em>yoma arichta</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">אֲרִיזַ"ל</span> as cited in the Bais Yosef and in Sha'ar HaKavanos (Rosh HaShana, drush 1).</span>
+  <span class="exp">"<span class="heb">הֲלֹא רֹאשׁ הַשָּׁנָה הוּא יוֹם טוֹב&hellip; וְהוּא יוֹם שִׂמְחָה, וְעַ"כ אוֹמְרִים שֶׁהֶחֱיָינוּ.</span>" The Arizal reads the day as the wedding-day of the Shechinah, whose crying is a crying of <em>simchah</em>, not of aveilus. Compare Zohar Emor 98a.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">מִצְווֹת הַיּוֹם בַּשּׁוֹפָר</span> &mdash; language of the Rambam, Hilchos Shofar 3:7, and the Tur, Orach Chaim 585.</span>
+  <span class="exp">The formulation "<span class="heb">אַהֲבָה וְיִרְאָה שָׁוִין</span>" &mdash; that on Rosh HaShana love and awe stand equal &mdash; is developed most sharply in the Nefesh HaChaim, sha'ar 2, and in the Sefas Emes on Rosh HaShana.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">שְׁאִילְתּוֹת דְּרַב אַחָאִי גָּאוֹן, שְׁאִילְתָּא א</span>.</span>
+  <span class="exp">Sh'iltos de'Rav Achai Gaon, opening she'ilta on <em>inyan shnei yamim tovim shel Rosh HaShana</em>: some hold one may fast on them, some hold one may not; and when the fast falls on Shabbos, one delays it even from a ta'anis chalom.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">חִדּוּשֵׁי הָרִי"ם</span>, drashos to Rosh HaShana, in the name of the Arizal.</span>
+  <span class="exp">On the first day of Rosh HaShana one prays for <em>inyanei ha'neshamah</em>, and on the second for <em>tzarchei ha'guf</em>. This bifurcation is developed at length by the Sefas Emes (RH 5641) and grounded in the Zohar's identification of the two days with <em>gevurah</em> and <em>chesed</em> respectively.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. Language of the Mussaf &mdash; "<span class="heb">וַתִּתֶּן לָנוּ ה' אֱלֹקֵינוּ בְּאַהֲבָה מוֹעֲדִים לְשִׂמְחָה חַגִּים וּזְמַנִּים לְשָׂשׂוֹן</span>."</span>
+  <span class="exp">The phrase <em>l'simcha</em> is famously omitted from the Rosh HaShana and Yom Kippur amidah in most nusachos. Rav Sar Shalom Gaon (in Machzor Vitry siman 323) records that in two Yeshivos <em>l'simcha</em> was said on Rosh HaShana specifically to counter those who read the day as a purely dread-filled one.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">נְחֶמְיָה ח:ט-י</span>.</span>
+  <span class="exp">The locus classicus. Sefaria ref: <em>Nehemiah.8.9-10</em>. The context is the first public reading of the Torah in the rebuilt Beis HaMikdash on Rosh HaShana of the year 3413. The verse is quoted by the Bavli (Megillah 16b, Beitzah 15b) and by the Yerushalmi (Rosh HaShana 4:8) as the source that Yom Tov requires simcha, eating, and drinking.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">שַׁעַר הַכַּוָּונוֹת, דַּף צ' ע"א</span>, from Rabbeinu Chaim Vital; and <span class="heb">מַעֲשֶׂה רַב</span> (siman 207) from the Vilna Gaon.</span>
+  <span class="exp">The Arizal's practice of bitter weeping is preserved in Sha'ar HaKavanos, drush 1 of RH. The GRA's opposite ruling &mdash; that Rosh HaShana is a day of <em>niggun</em> and Yom Tov, and crying is <em>hora'ah she'ain nishmaso shleimah v'hagunah</em> &mdash; is preserved in Ma'aseh Rav 207 and in Nehemiah perek 8 with the Vilna Gaon's comments. Both quote the identical formula in reverse.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. Footnote in <span class="heb">כַּף הַחַיִּים</span>, siman 597.</span>
+  <span class="exp">The Kaf HaChaim (Rabbi Yaakov Chaim Sofer, Yerushalayim, early 20th c.) adjudicates the machlokes by ruling that one may weep <em>during</em> the silent tefillos but not publicly at the seudah &mdash; a compromise anticipated by the Shelah.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">הַרֵי זָכִינוּ לְדִין דְּלָא מִיבַּעְיָא</span> &mdash; summation quoted by the Chida.</span>
+  <span class="exp">Chida (Devarim Achadim, drush 30) summarizes: the pasuk in Nechemyah does not obligate meat; it obligates <em>mashmanim u'mamsakim</em>, which are oil, butter, and sweet drinks. Meat as <em>simchas Yom Tov</em> is a Torah obligation only <em>bizman she'Beis HaMikdash kayam</em> and only via <em>shalmei simcha</em>, which are brought only on the three regalim &mdash; not on Rosh HaShana. See Rambam, Chagigah 2:14 and Pesachim 109a.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">כַּף הַחַיִּים, אוֹרַח חַיִּים תקפ"ד ס"ק ו</span>.</span>
+  <span class="exp">The Kaf HaChaim codifies the Arizal's teaching about weeping on Rosh HaShana and Yom Kippur, and extends it even to when Rosh HaShana falls on Shabbos, quoting the Ari's testimony that Rosh HaShana crying is <em>bechi shel simchah</em>, distinct from the crying of a mourner.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">שְׁלָ"ה הַקָּדוֹשׁ</span>, Masechta Rosh HaShana, Ner Mitzvah.</span>
+  <span class="exp">"<span class="heb">קוֹל בְּכִי בָּעֵי לֵב נִשְׁבָּר</span>" &mdash; even one over whom no tears fall should emit the sound of weeping, since the sound cracks the heart and the rest is <em>kavanas halev</em>. The Shelah invokes the Zohar's teaching that <em>kol bechi</em> is what pierces the <em>gzar din</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">רְמָ"א, אוֹרַח חַיִּים תקצ"ז, סעיף א</span>.</span>
+  <span class="exp">"<span class="heb">אוֹכְלִים וְשׁוֹתִים וּשְׂמֵחִים וְאֵין מִתְעַנִּין בְּרֹאשׁ הַשָּׁנָה וְלֹא בְּשַׁבָּת שׁוּבָה, אָמְנָם לֹא יֹאכְלוּ כָּל שָׂבְעָם, לְמַעַן לֹא יָקֵלּוּ רֹאשָׁם וְתִהְיֶה יִרְאַת ה' עַל פְּנֵיהֶם.</span>" The Rema's own gloss balances the Bais Yosef's ruling with a moral qualifier drawn directly from the pasuk in Shemos 20:17.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">16. <span class="heb">בַּ"ח, אוֹרַח חַיִּים תקצ"ג</span> and <span class="heb">מהרש"ל</span> in Yam Shel Shlomo, Chullin perek 1.</span>
+  <span class="exp">The Bach reports that the Maharshal did not eat fish on Rosh HaShana; some understood this as a private stringency out of concern that the fish traditionally served (<em>dagim</em>) resemble the <em>dag hameshim</em> associated with judgment. Others record that the Maharshal simply held meat and fish together to be a <em>sakanas nefashos</em>, and preferred to abstain entirely on the yamim nora'im.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">17. <span class="heb">מַגִּיד מֵישָׁרִים</span>, פרשת בראשית, in the name of the Maggid to Reb Yosef Karo.</span>
+  <span class="exp">"<span class="heb">וְהַשְׁתָּא אַתִּינָא לְאוֹדֻעוּתָךְ רָזָא דְּהַאי אִיתְּתָא תְּלִיתָאָה&hellip;</span>" The Maggid reveals to Karo the secret of a thrice-married woman: in a previous gilgul she was a Talmid Chochom who was <em>kilai</em> (stingy) both with his money and with his Torah, and was reincarnated as a woman <em>midah k'neged midah</em>. See Or HaChaim, Bereishis 38:8 for parallels.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">18. Commentary tradition on the Maharshal's abstention.</span>
+  <span class="exp">Several acharonim (Ya'avetz, Chida) explain that the Maharshal's abstention from a specific food was <em>k'mis'aneh b'Rosh HaShana v'yichud im zeh chedvas Hashem ma'uzo</em>: his personal fast was itself an expression of <em>chedvas Hashem</em> in the kabbalistic sense. See Sefer Chasidim siman 316.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">19. <span class="heb">מַגִּיד מֵישָׁרִים</span> &mdash; continuation, on the reincarnated soul.</span>
+  <span class="exp">"<span class="heb">נִתְגַּלְגֵּל זֶה בִּנְקֵבָה שֶׁהִיא מוּשְׁפַּעַת&hellip;</span>" The Maggid concludes that whoever provides for such a woman &mdash; materially, spiritually, or through the tikkun of a shared meal &mdash; participates in her rectification. Compare Sha'ar HaGilgulim, hakdamah 8.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">20. <span class="heb">מַתְנִיתִין דְּחוּלִּין פ"ג</span> (Chullin 83b).</span>
+  <span class="exp">"<span class="heb">אַרְבָּעָה פְּרָקִים בַּשָּׁנָה הַמּוֹכֵר בְּהֵמָה לַחֲבֵרוֹ צָרִיךְ לְהוֹדִיעוֹ&hellip; עֶרֶב יוֹם טוֹב הָאַחֲרוֹן שֶׁל חָג, וְעֶרֶב יוֹם טוֹב הָרִאשׁוֹן שֶׁל פֶּסַח, וְעֶרֶב עֲצֶרֶת, וְעֶרֶב רֹאשׁ הַשָּׁנָה.</span>" Reb Chaim Volozhin reads this Mishnah as evidence <em>against</em> a Torah-level obligation of meat on Rosh HaShana: the disclosure requirement is commercial, not halachic-simcha. Sefaria ref: <em>Chullin.83b.4</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">21. <span class="heb">מַ"מ אִיבְצֵי דְּלָא</span> &mdash; Maggid Meisharim, on eating oil and butter and cheese but not meat.</span>
+  <span class="exp">"<span class="heb">אוֹכְלִין וּמַשְׁקִין לְמוֹעַד בְּהוּ&hellip; אָכְלוּ מַשְׁמַנִּים הַיְינוּ שֶׁמֶן וְחֶמְאָה וְחָלָב, אֲבָל לֹא בָּשָׂר.</span>" This is the actual textual anchor for Reb Chaim Volozhin's reading. The Maggid, reading Nechemyah literally, tells Karo that <em>mashmanim</em> is oil-and-butter, not flesh.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">22. <span class="heb">מַגִּיד מֵישָׁרִים</span> &mdash; the promise of a son.</span>
+  <span class="exp">"<span class="heb">וְהִנֵּה סִבַּת עֲכָבַת לֵידַת אִתָּךְ&hellip;</span>" The Maggid tells Karo that the delayed birth of his own son is bound up with the reincarnation of the woman's soul; through the mitzvos performed by both of them (including the Rosh HaShana abstention), the balance of <em>nitzotzos zachar</em> and <em>nitzotzos nekeivah</em> in her will be restored, and she will conceive.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">23. <span class="heb">חִיד"א</span>, in the name of Reb Chaim Volozhin: Devarim Achadim, drush 30 (Nitzavim), and Birkei Yosef Orach Chaim 597.</span>
+  <span class="exp">"<span class="heb">בְּשֵׁם הַגָּאוֹן אֲמִתִּי מַהֲרַ"ח מִוואַלָאזִין זַצַ"ל, שֶׁאָמַר עַל מַ"שׁ בְּמַ"מ שָׁם&hellip; שֶׁלֹּא לֶאֱכוֹל בָּשָׂר בְּרֹאשׁ הַשָּׁנָה, וּמַאי דִּכְתִיב 'אִכְלוּ מַשְׁמַנִּים' הַיְינוּ שֶׁמֶן וְחָלָב וְלֹא בָּשָׂר.</span>" Reb Chaim, cited by the Chida, argues that the Torah obligation of meat as <em>simchas Yom Tov</em> attaches only to the three regalim via <em>shalmei simchah</em>. On Rosh HaShana, no <em>korban shalmei simchah</em> was brought (see Rambam, Hilchos Chagigah 2:10&ndash;14). Therefore <em>ichlu mashmanim</em> is fulfilled entirely with oil and dairy, and the Maharshal's private practice violates no pasuk.</span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">וְרוֹחֲצִין וּמִסְתַּפְּרִין עַל פִּי הַמִּדְרָשׁ&hellip; כִּי מִי גוֹי גָּדוֹל</td><td>Bais Yosef, OC 597 (Devarim 4:7, Yalkut)</td><td>p.&nbsp;1, top right</td></tr>
+    <tr><td class="num">2</td><td class="heb">וְאוֹכְלִין וְשׁוֹתִין וּשְׂמֵחִין וְאֵין לְהִתְעַנּוֹת בּוֹ כְּלָל</td><td>Bais Yosef OC 597, quoting Rav Netronai Gaon &amp; the Ro"sh</td><td>p.&nbsp;1, upper right column</td></tr>
+    <tr><td class="num">3</td><td class="heb">הֲלֹא רֹאשׁ הַשָּׁנָה הוּא יוֹם טוֹב</td><td>Arizal &mdash; cited by Sha'ar HaKavanos</td><td>p.&nbsp;1, upper left</td></tr>
+    <tr><td class="num">4</td><td class="heb">שֶׁמִּצְווֹת הַיּוֹם בַּשּׁוֹפָר</td><td>Tur / Bais Yosef, OC 585</td><td>p.&nbsp;1, middle left</td></tr>
+    <tr><td class="num">5</td><td class="heb">פֹּה וְעוֹד שְׁאַלְתִּי</td><td>She'iltos DeRav Achai, She'ilta 1</td><td>p.&nbsp;1, center left</td></tr>
+    <tr><td class="num">6</td><td class="heb">חִדּוּשֵׁי הָרִי"ם &mdash; בְּשֵׁם הָאֲרִיזַ"ל</td><td>Chiddushei HaRim on Rosh HaShana</td><td>p.&nbsp;1, mid right</td></tr>
+    <tr><td class="num">7</td><td class="heb">וְאֵין אוֹמְרִים וַתִּתֶּן לָנוּ&hellip; לְשִׂמְחָה חַגִּים וּזְמַנִּים</td><td>Rav Sar Shalom Gaon &mdash; Machzor Vitry 323</td><td>p.&nbsp;1, right side</td></tr>
+    <tr><td class="num">8</td><td class="heb">וַיֹּאמֶר נְחֶמְיָה&hellip; אַל תִּתְאַבְּלוּ וְאַל תִּבְכּוּ</td><td>Nechemyah 8:9&ndash;10</td><td>p.&nbsp;1, lower left</td></tr>
+    <tr><td class="num">9</td><td class="heb">רַבֵּינוּ חַיִּים וִיטַאל &mdash; שַׁעַר הַכַּוָּונוֹת, דַּף צ ע"א</td><td>Sha'ar HaKavanos; Ma'aseh Rav 207 (GRA)</td><td>p.&nbsp;1, bottom left</td></tr>
+    <tr><td class="num">10</td><td class="heb">וּמֵיכַל רְבוּתָא אַכְמִיעַ &mdash; note on eating as mitzvah</td><td>Marginal footnote citing Midrash and the GRA</td><td>p.&nbsp;1, lower right</td></tr>
+    <tr><td class="num">11</td><td class="heb">הַרֵי זָכִינוּ לְדִין דְּלָא מִיבַּעְיָא</td><td>Summation cited by the Chida</td><td>p.&nbsp;1, bottom right</td></tr>
+    <tr><td class="num">13</td><td class="heb">כֹּה נוֹהֲגִין לִבְכּוֹת וּלְהוֹרִיד דְּמָעוֹת</td><td>Kaf HaChaim OC 584:6, quoting Arizal</td><td>p.&nbsp;2, top right</td></tr>
+    <tr><td class="num">14</td><td class="heb">קוֹל בְּכִי&hellip; דְּרַחֲמָנָא לִבָּא בָּעֵי לֵב נִשְׁבָּר</td><td>Shelah HaKadosh, Masechta Rosh HaShana</td><td>p.&nbsp;2, top left</td></tr>
+    <tr><td class="num">15</td><td class="heb">אוֹכְלִים וְשׁוֹתִים וּשְׂמֵחִים&hellip; אָמְנָם לֹא יֹאכְלוּ כָּל שָׂבְעָם</td><td>Rema, OC 597:1</td><td>p.&nbsp;2, upper right</td></tr>
+    <tr><td class="num">16</td><td class="heb">תקצ"ג &mdash; כָּתַב הַבַּ"ח שֶׁמַּהֲרַשַׁ"ל לֹא אָכַל דָּגִים בְּרֹאשׁ הַשָּׁנָה</td><td>Bach, OC 593; Maharshal (Yam Shel Shlomo)</td><td>p.&nbsp;2, upper left</td></tr>
+    <tr><td class="num">17</td><td class="heb">וְהַשְׁתָּא אַתִּינָא לְאוֹדֻעוּתָךְ רָזָא דְּהַאי אִיתְּתָא</td><td>Maggid Meisharim, Bereishis</td><td>p.&nbsp;2, mid right</td></tr>
+    <tr><td class="num">18</td><td class="heb">וּבְכֵן בְּזֶה שֶׁלֹּא אָכַל הַמַּהֲרַשַׁ"ל&hellip; נֶחְשָׁב כְּמִתְעַנֶּה</td><td>Acharonim (Ya'avetz / Chida) on the Maharshal</td><td>p.&nbsp;2, middle left</td></tr>
+    <tr><td class="num">19</td><td class="heb">נִתְגַּלְגֵּל זֶה בִּנְקֵבָה שֶׁהִיא מוּשְׁפַּעַת</td><td>Maggid Meisharim &mdash; continuation</td><td>p.&nbsp;2, center right</td></tr>
+    <tr><td class="num">20</td><td class="heb">מַתְנִיתִין דְּבַאַרְבָּעָה פְּרָקִים בַּשָּׁנָה הַמּוֹכֵר בְּהֵמָה</td><td>Mishnah, Chullin 83b</td><td>p.&nbsp;2, mid left</td></tr>
+    <tr><td class="num">21</td><td class="heb">אוֹכְלִין וּמַשְׁקִין לְמוֹעַד בְּהוּ&hellip; מַשְׁמַנִּים הַיְינוּ שֶׁמֶן וְחֶמְאָה וְחָלָב</td><td>Maggid Meisharim &mdash; textual anchor</td><td>p.&nbsp;2, lower center-left</td></tr>
+    <tr><td class="num">22</td><td class="heb">וְהִנֵּה סִבַּת עֲכָבַת לֵידַת אִתָּךְ בְּסִבַּת שֶׁנִּשְׁמַת בְּנֵיכֶם</td><td>Maggid Meisharim &mdash; the promise of a son</td><td>p.&nbsp;2, lower right</td></tr>
+    <tr><td class="num">23</td><td class="heb">בְּשֵׁם הַגָּאוֹן אֲמִתִּי מַהֲרַ"ח מִוואַלָאזִין זַצַ"ל</td><td>Chida, Devarim Achadim (Nitzavim) &amp; Birkei Yosef, quoting R' Chaim Volozhin</td><td>p.&nbsp;2, bottom</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Elul 5786 / September 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>
