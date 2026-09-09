@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Tidbits on Rosh Hashana</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">רְסִיסֵי טַל לְרֹאשׁ הַשָּׁנָה</div>
+  <div class="english-title">Tidbits on Rosh Hashana</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Erev Rosh HaShana 5787</div>
+  <div class="dates">Recorded: Elul 5786 &middot; Prepared: 27 Elul 5786 / September 9, 2026</div>
+</header>
+
+<p class="lead">A compilation of ten short vignettes drawn from across the halachic and hashkafic literature of Rosh HaShana &mdash; from the <em>hataras nedarim</em> of Erev Rosh HaShana, through the Arizal's <em>bechi shel simchah</em>, the Rebbe of Lubavitch's cryptic New Year letter, the mystery of Rivka's absence from the list of the <em>akaros nifkados</em>, the halachos of apple-and-honey and the seven species, the meaning of <em>l'arbev haSatan</em>, the shofar as the <em>ka'las lev</em>, and finally the celebrated story of the Berditchever and the simple ba'al tokea. Each vignette stands on its own, but together they trace the day's peculiar geometry &mdash; part awe, part sweetness, part <em>tza'akas halev</em>.</p>
+
+<h2><span class="num">I.</span> The Nedarim We Never Meant to Take</h2>
+
+<p>The opening excerpt on the source sheet is a passage from an early acharon (marked by our editor as <span class="heb">רֵבִינוּ</span>) discussing the sweep of <em>hataras nedarim</em> that Klal Yisrael performs on Erev Rosh HaShana. The concern the author raises is subtle: a person often utters a phrase &mdash; <em>bli neder</em> notwithstanding &mdash; that is technically a <em>neder</em>, whether by way of <em>hasaga</em> or by way of a public commitment. Even a <em>minhag tov</em> that a person has established without ever intending to bind himself can, in the language of the poskim, become a <em>neder</em>.<sup class="fn">1</sup></p>
+
+<p>The passage goes so far as to invoke Yaakov Avinu's own <em>neder</em> at Beis-El &mdash; "<span class="heb">וְיִדַּר יַעֲקֹב נֶדֶר</span>" &mdash; as the paradigm case of a promise whose fulfillment was delayed and whose consequences reached into future generations. The custom of standing before a beis din on Erev Rosh HaShana and formally undoing every prior <em>neder</em> is, in this reading, not a technicality: it is the essential precondition for entering the day of judgment with a clean ledger.<sup class="fn">1</sup></p>
+
+<h2><span class="num">II.</span> The Arizal &mdash; Eating, and the Weeping of Simchah</h2>
+
+<p>The second excerpt places two claims side by side. The <em>gemara</em> and the Rema rule that Rosh HaShana is a Yom Tov, and one is obligated to eat, drink, and rejoice.<sup class="fn">2</sup> And yet the <strong>Arizal</strong>, as preserved in the Kaf HaChaim, testifies that Rosh HaShana is precisely the day on which one is <em>to weep</em>. How can both be true?</p>
+
+<blockquote class="hebrew">
+הֲלֹא רֹאשׁ הַשָּׁנָה הוּא יוֹם טוֹב, וּבַמִּשְׁנָה יוֹם טוֹב שֶׁל רֹאשׁ הַשָּׁנָה, וְהוּא יוֹם שִׂמְחָה, עַל כָּךְ אוֹמְרִים שֶׁהֶחֱיָינוּ. וּמַ"שׁ הָאֲרִיזַ"ל לִבְכּוֹת &mdash; הוּא עֲבוּר גָּלוּת שְׁכִינָה וכו', וּכְדֵי שֶׁיְּדוּנֵנוּ הַשֵּׁ"י לְטוֹבָה. וְהוּא שֶׁכָּתַב לְכוּ אִכְלוּ מַשְׁמַנִּים וְגוֹ' וְאַל תֵּעָצְבוּ כִּי חֶדְוַת ה' הִיא מָעֻזְּכֶם, וְהַבְּכִיָּה שֶׁבּוֹכִין הוּא בְּכִיָּה שֶׁל שִׂמְחָה עַל שֶׁהֶחֱיָינוּ וְהִגִּיעָנוּ.
+<span class="attrib">&mdash; Source sheet #2, in the name of the Arizal &nbsp;<sup class="fn">2</sup></span>
+</blockquote>
+
+<p>The resolution the author offers &mdash; almost paradoxical &mdash; is that the tears of Rosh HaShana are themselves <em>bechi shel simchah</em>. The weeping is not for our own smallness, but for the exile of the Shechinah &mdash; and it is precisely by weeping over <em>her</em> exile that we merit to be judged, ourselves, for the good.<sup class="fn">3</sup></p>
+
+<h2><span class="num">III.</span> Kavod Av &mdash; And When It Cannot Be Waived</h2>
+
+<p>The third excerpt (Siman <span class="heb">ה</span>, "<span class="heb">כְּבוֹד אָב וָאֵם</span>") opens with a striking Rashba, quoted by the <strong>Rivash</strong> in Siman <span class="heb">ר"ך</span>: if a father is <em>mochel</em> on his own kavod, does his mechila help? The Rashba's answer &mdash; and the anguish that stands behind it &mdash; is that the honor of the father is not truly the father's private property to waive, because it is bound up in the honor of the King. "<span class="heb">עֲבָדִים דְּעָבְדִין קָלָנָא לְשְׁכִינְתָּא</span>" &mdash; when servants degrade the Shechinah, the fact that the King has, in some sense, condescended to permit it does not erase the disgrace.<sup class="fn">4</sup></p>
+
+<p>The chiddush the acharonim draw from this is heavy: on Rosh HaShana, when Klal Yisrael comes to plead for a good year, the sins that stand hardest against them are not always the ones the individual felt he had "made peace" with &mdash; they are the ones in which the kavod of the King was violated. Even mechila from Above cannot fully erase them. This is the meaning of <em>chaita Yisrael b'chataim she'hem zilzul, chas v'shalom, k'hanahu d'perek chelek</em>.<sup class="fn">4</sup></p>
+
+<h2><span class="num">IV.</span> Aharon's <span class="heb">חֵן</span> and the Gematria of <span class="heb">בְּזֹאת יָבֹא</span></h2>
+
+<p>The fourth vignette (Siman <span class="heb">קטז</span>) is a numerological drasha on the pasuk that opens the parasha of Yom Kippur avodah: "<span class="heb">בְּזֹאת יָבֹא אַהֲרֹן אֶל הַקֹּדֶשׁ</span>." The gematria of <span class="heb">בְּזֹאת</span> is 410; add the six letters of the word (im ha'kollel) and one arrives at the tally used by the acharonim to open the drush.<sup class="fn">5</sup></p>
+
+<p>The point of the drasha, invoking a passage from Megillah in the name of Rabbi Yehoshua ben Levi and Kamtzuri, is that Aharon HaKohen entered the Kodesh <em>b'zos</em> &mdash; through the accumulated <em>zechusim</em> whose numerical weight equals 68, the gematria of <span class="heb">חֵן</span>. Aharon's whole avoda &mdash; both the Yom Kippur avoda and, by extension, the Rosh HaShana tekiyos his descendants would blow &mdash; drew its efficacy not from raw merit but from the <em>chein</em> that had been built up in the beis-din shel ma'alah on his behalf.<sup class="fn">5</sup></p>
+
+<h2><span class="num">V.</span> A Rebbe's Rosh HaShana Letter</h2>
+
+<p>The fifth excerpt is not a halachic sugya but a <em>michtav</em> &mdash; a personal Rosh HaShana letter of blessing, opening with the classic salutation:</p>
+
+<blockquote class="hebrew">
+בְּנֵי אֲהוּבַי חֲבִיבַי וְיַקִּירַי מְנַחֵם מֶענְדֶּעל שֶׁיִּחְיֶה לְאוֹרֶךְ יָמִים טוֹבִים.
+וְהִנְנִי מְבָרֵךְ מֵעֻמְקָא דְלִבִּי וְנַפְשִׁי יַחַד, בַּחֲתִימָה וּגְמַר חֲתִימָה טוֹבָה וּמְאֻשָּׁרָה, אוֹתְךָ אֶת זוּגָתְךָ תִּחְיֶה יַחַד, כִּי יְהִי לָכֶם שְׁנַת חַיִּים וְשָׁלוֹם, שְׁנַת טוֹבָה וּמְתוּקָה וְכָל טוּב בְּגַשְׁמִיּוּת וְרוּחָנִיּוּת, שָׁנָה שֶׁבָּהּ תִּפָּקְדוּ בְּבֵן זָכָר, זַרְעָא חַיָּיא וְקַיָּימָא.
+<span class="attrib">&mdash; Source sheet #5, opening of a Rosh HaShana letter &nbsp;<sup class="fn">6</sup></span>
+</blockquote>
+
+<p>The body of the letter turns immediately to a piece of Arizal Torah: the <em>inyan</em> of Rosh HaShana is bound up in the fact that on <em>this</em> day, three people were <em>nifkedu b'zera</em> &mdash; Sarah, Rachel, and Chana. And the difference between their <em>demuyos</em> is precisely a difference in <em>shiur ha'amos</em> and <em>komah</em>. The letter goes on to link the <em>tikkun olam</em> that is founded on Rosh HaShana to the very first act of Creation &mdash; that the world was <em>k'sivat</em> to be founded so that a mother might, at last, be <em>simchas ha'banim</em>.<sup class="fn">6</sup></p>
+
+<h2><span class="num">VI.</span> Apple in Honey &mdash; A Halachic Puzzle</h2>
+
+<h3>The dip, the bracha, and the tafel</h3>
+
+<p>Excerpts 6, 8, 9, 11, 12, and 15 all revolve around the halachos of the Rosh HaShana <em>simanim</em> &mdash; and specifically, the halachic status of dipping the apple into honey.<sup class="fn">7</sup> The classical question: when one eats an apple dipped in honey, over which item does one make the beracha, and does the honey <em>patur</em> the apple as <em>tafel</em>?</p>
+
+<p>The Bais Yosef (in the name of the Mordechai) and later the <strong>Levush</strong> (Orach Chaim <span class="heb">תקפ"ג</span>, seif <span class="heb">ב</span>) rule that in Ashkenaz there was a minhag to dip the <em>prusas ha'motzi</em> in honey; the apple-in-honey minhag was a later addition. Some hold one should eat a <em>tapuach masok b'dvash</em> and be yotzei everything; the Levush warns, however, that where two customs conflict, "<span class="heb">אֲבָל לַעֲשׂוֹת כְּדִבְרֵי שְׁנֵיהֶם הֲוֵי כְּכְסִיל בַּחֹשֶׁךְ</span>."<sup class="fn">8</sup></p>
+
+<blockquote class="hebrew">
+וּבֶאֱמֶת הַלְּבוּשׁ בְּאוֹ"ח סִימָן תקפ"ג [ס"ב] כָּתַב וְזֶה לְשׁוֹנוֹ, וּמִנְהַג אַשְׁכְּנַז מַטְבִּילִין פְּרוּסַת הַמּוֹצִיא בִּדְבַשׁ, וְיֵשׁ נוֹהֲגִין לֶאֱכוֹל תַּפּוּחַ מָתוֹק בִּדְבָשׁ עַכַּ"ל, מַשְׁמַע דְּבַחֲדָא מִנַּיְיהוּ סַגִּי, אֲבָל לַעֲשׂוֹת כְּדִבְרֵי שְׁנֵיהֶם הֲוֵי כְּכְסִיל בַּחֹשֶׁךְ ח"ו.
+<span class="attrib">&mdash; Source sheet #15, quoting Levush OC 583:2 &nbsp;<sup class="fn">8</sup></span>
+</blockquote>
+
+<h3>Seven species and the priority of the bracha</h3>
+
+<p>The two short excerpts at the head of page 2 (<em>#11</em> and <em>#12</em>) codify the general rule: when several fruits stand before a person and one of them is from the <em>shiv'as ha'minim</em>, that one takes precedence for the bracha &mdash; even when it is only <em>chatzi</em> and the others are <em>shleimim</em>, and even when the others are more numerous or more beloved.<sup class="fn">9</sup> On the Rosh HaShana seder, therefore, the order of the simanim is not free: it follows the halachic order of the shivas ha'minim.</p>
+
+<h2><span class="num">VII.</span> Why Rivka Is Not Named Among the <span class="heb">עֲקָרוֹת נִפְקָדוֹת</span></h2>
+
+<p>The seventh excerpt raises the question of the <em>pekidas ha'imahos</em>: Chazal tell us that Sarah, Rachel, and Chana were <em>nifkedu</em> on Rosh HaShana &mdash; three <em>akaros</em> who conceived on the day of judgment. The Ba'al HaTurim and the Rokeach ask: why is Rivka missing from the list?<sup class="fn">10</sup></p>
+
+<blockquote class="hebrew">
+וְאֶפְשָׁר שֶׁבָּא לְרַבּוֹת שְׁתֵּי צַדְקָנִיּוֹת כְּמוֹתָהּ, רָחֵל וְחַנָּה, שֶׁנִּפְקְדוּ גַם הֵן בְּרֹאשׁ הַשָּׁנָה. וְהַתֵּימָא מֵרִבְקָה: לָמָּה לֹא יְחַסֵּר פְּקִידָתָהּ לְיוֹם הַזֶּה כִּי עֲקָרָה הִיא&hellip; פְּקִידַת הַצַּדְקָנִיּוֹת הָאֵלּוּ זוֹ דוֹמָה לְזוֹ&hellip; אֲבָל רִבְקָה שֶׁהָיָה יִצְחָק צָרִיךְ גַּם הוּא בְּיוֹתֵר לְאוֹתָהּ פְּקִידָה נִתְאַמֵּץ עִמָּהּ בִּתְפִלָּה וְיֵעָתֵר לוֹ בְּאוֹתָהּ שָׁעָה שֶׁבִּקֵּשׁ רַחֲמִים עָלֶיהָ&hellip; רִבְקָה עַל טוֹב יָחִיד שִׁלְדָּהּ אֶת שְׁמָה יִזְכֹּר, וְהוּא מִדַּת הָרַחֲמִים בְּיוֹדֵעַ, וְאֵין לוֹ עִם מִדַּת הַיּוֹם כְּלָל.
+<span class="attrib">&mdash; Source sheet #7 &nbsp;<sup class="fn">10</sup></span>
+</blockquote>
+
+<p>The answer &mdash; simple and beautiful &mdash; is that Sarah, Rachel, and Chana were <em>tzaddekes bas rasha</em> or at least <em>tzaddekes bas beinoni</em>: their pekida was Divine chesed exercised on <em>them alone</em>. Rivka was different. She was a <em>tzaddekes bas tzaddik</em>, and the pekida that came upon her came only because <em>Yitzchak himself</em> stood beside her and davened. That kind of pekida &mdash; the fruit of Yitzchak's own <em>rachamim</em> &mdash; belongs to the year's ordinary reservoir, not to the Rosh HaShana <em>mishpat</em>. And so Rivka is not listed.<sup class="fn">10</sup></p>
+
+<h2><span class="num">VIII.</span> <span class="heb">כְּדֵי לְעַרְבֵּב הַשָּׂטָן</span> &mdash; Sitting and Standing</h2>
+
+<p>Excerpt #13 quotes the classic sugya in Rosh HaShana 16a&ndash;16b:</p>
+
+<blockquote class="hebrew">
+אָמַר רַבִּי יִצְחָק: לָמָּה תּוֹקְעִין בְּרֹאשׁ הַשָּׁנָה? לָמָּה תּוֹקְעִין? רַחֲמָנָא אָמַר תִּקְעוּ! אֶלָּא לָמָּה מְרִיעִין? רַחֲמָנָא אָמַר זִכְרוֹן תְּרוּעָה! אֶלָּא לָמָּה תּוֹקְעִין וּמְרִיעִין כְּשֶׁהֵן יוֹשְׁבִין וְתוֹקְעִין וּמְרִיעִין כְּשֶׁהֵן עוֹמְדִין &mdash; כְּדֵי לְעַרְבֵּב הַשָּׂטָן.
+<span class="attrib">&mdash; Rosh HaShana 16b &nbsp;<sup class="fn">11</sup></span>
+</blockquote>
+
+<p>Rashi ad loc. (#14 on the sheet) explains: "<span class="heb">כְּדֵי לְעַרְבֵּב &mdash; שֶׁלֹּא יַשְׂטִין, כְּשֶׁיִּשְׁמַע יִשְׂרָאֵל מְחַבְּבִין אֶת הַמִּצְוֹת מִסְתַּתְּמִין דְּבָרָיו</span>."<sup class="fn">12</sup> The Satan &mdash; the prosecutor before the Kisei HaKavod &mdash; is silenced not by our merits per se, but by the sound of Klal Yisrael's <em>chibbuv mitzvah</em>. When he hears us blow twice &mdash; once sitting, once standing &mdash; where the din requires only once, his mouth is closed by the sheer excess of our love for the mitzvah.</p>
+
+<h2><span class="num">IX.</span> The Shofar as <span class="heb">קוֹל הַלֵּב</span></h2>
+
+<p>Excerpts #16 and #17 preserve a beautiful passage &mdash; probably from the Rebbe or the Sfas Emes &mdash; on the meaning of the shofar's inarticulate sound.<sup class="fn">13</sup> The author distinguishes three ranks of <em>tze'akah</em>:</p>
+
+<ol>
+<li>A cry that can be articulated in letters, whether ordered or disordered &mdash; ordinary human speech under stress.</li>
+<li>A cry that cannot be reduced to letters, but is still uttered in a <em>kol pashut</em> &mdash; a wordless sound of the mouth.</li>
+<li>A cry so deep that even a <em>kol pashut</em> of the mouth cannot express it &mdash; the <em>ka'las ha'lev</em> that the Torah records regarding Chana, "<span class="heb">רַק שְׂפָתֶיהָ נָּעוֹת וְקוֹלָהּ לֹא יִשָּׁמֵעַ</span>."<sup class="fn">13</sup></li>
+</ol>
+
+<blockquote class="hebrew">
+וְכַאֲשֶׁר מִתְבּוֹנֵן בְּכָל זֶה, הֲרֵי זֶה נוֹגֵעַ לְעֶצֶם נַפְשׁוֹ, וְאָז הוּא צוֹעֵק בְּצַעֲקַת הַלֵּב, שֶׁאֵינוֹ יָכוֹל לְגַלּוֹת זֶה גַּם בְּקוֹל פָּשׁוּט. וְזֶהוּ עִנְיַן הַשּׁוֹפָר, שֶׁאֵינוֹ יָכוֹל לִבָּטֵא בְּאוֹתִיּוֹת הַדִּבּוּר, וְגַם לֹא בְּקוֹל פָּשׁוּט, כִּי אִם בִּבְכִי צָעַק לִבָּם &mdash; שֶׁהֲרֵי קוֹל הַשּׁוֹפָר אֵינוֹ קוֹל הָאָדָם, כִּי אִם קוֹל הַבְּהֵמָה, וּבַהַמְדְּרֵגוֹת בְּנֶפֶשׁ הֲרֵי זֶה מוֹרֶה שֶׁהָעִנְיָן נוֹגֵעַ לוֹ בְּעֶצֶם נִשְׁמָתוֹ.
+<span class="attrib">&mdash; Source sheet #17 &nbsp;<sup class="fn">13</sup></span>
+</blockquote>
+
+<p>The shofar &mdash; a horn of a beast, sounding a sound that no human throat can produce &mdash; is the third rank made audible. It is not the mouth; it is not even the mouth's silence. It is the <em>essem ha'nefesh</em>, the <em>yechidah</em>, articulating the one syllable it possesses.<sup class="fn">14</sup></p>
+
+<h2><span class="num">X.</span> The Berditchever and the Baal Tokea</h2>
+
+<p>The source sheet closes (#18) with the beloved story of <strong>Reb Levi Yitzchak of Berditchev</strong> and the <em>ba'al tokea</em>. It is worth telling in its own words:</p>
+
+<blockquote class="hebrew">
+לִפְנֵי רֹאשׁ הַשָּׁנָה חִזֵּר פַּעַם הַצַּדִּיק רַבִּי לֵוִי יִצְחָק מִבֶּרְדִּיטְשׁוֹב אַחַר בַּעַל תּוֹקֵעַ הָגוּן וְרָאוּי, שֶׁיִּתְקַע בְּבֵית מִדְרָשׁוֹ. נִכְנְסוּ אֵלָיו הַרְבֵּה בַּעֲלֵי תְּקִיעָה וְרָצוּ לִזְכּוֹת בִּזְכִיָּה זוֹ. כָּל אֶחָד מֵהֶם הֶרְאָה כֹּחוֹ בִּידִיעַת כַּוָּונוֹת וְסוֹדוֹת הַתְּקִיעָה לְפִי הַקַּבָּלָה, וְאַף אֶחָד מֵהֶם לֹא מָצָא חֵן בְּעֵינֵי הַצַּדִּיק.
+
+יוֹם אֶחָד בָּא בַּעַל תּוֹקֵעַ לְפָנָיו, וְהַצַּדִּיק שָׁאַל אוֹתוֹ: מַה הוּא מְכַוֵּון בִּשְׁעַת הַתְּקִיעוֹת? נַעֲנָה הָאִישׁ וְאָמַר:
+
+&mdash; רַבֵּנוּ! יְהוּדִי פָּשׁוּט אֲנִי, וְאֵין לִי עֵסֶק בַּנִּסְתָּרוֹת. אַרְבַּע בָּנוֹת יֵשׁ לִי שֶׁהִגִּיעוּ לְפִרְקָן, וַאֲנִי מִתְכַּוֵּון בַּתְּקִיעוֹת: רִבּוֹנוֹ שֶׁל עוֹלָם! הֲרֵינִי עוֹשֶׂה רְצוֹנְךָ, מְקַיֵּים מִצְוָתְךָ וְתוֹקֵעַ בְּשׁוֹפָר; אַף אַתָּה עֲשֵׂה רְצוֹנִי וְתַעֲזוֹר לִי לְהַשִּׂיא אֶת בְּנוֹתַי.
+
+עָמַד רַבִּי לֵוִי יִצְחָק וְאָמַר:
+
+&mdash; אַתָּה תִּתְקַע בְּבֵית מִדְרָשִׁי.
+<span class="attrib">&mdash; Source sheet #18, in the name of Reb Levi Yitzchak of Berditchev &nbsp;<sup class="fn">15</sup></span>
+</blockquote>
+
+<p>The story is a hashkafic gloss on all nine of the vignettes that preceded it. The <em>sod ha'tekiah</em> is real. The Arizal's tears are real. The pekidah of the imahos is real. But the <em>ba'al tokea</em> who moved the Berditchever was the one who came before HaKadosh Baruch Hu with the simplest possible <em>kavanah</em>: <em>Ribbono shel Olam &mdash; I am doing Yours. You do mine.</em></p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">הַתָּרַת נְדָרִים בְּעֶרֶב רֹאשׁ הַשָּׁנָה</span> &mdash; Bais Yosef and Rema, Orach Chaim 581; Chayei Adam, klal 138.</span>
+  <span class="exp">The excerpt on the sheet (#1) is a lightly-copied passage that pieces together language from the Mordechai (Nedarim) and from a later acharon &mdash; probably the <em>Matteh Ephraim</em> siman 581 &mdash; on the strong minhag of undoing all <em>nedarim</em> before Rosh HaShana, and the invocation of Yaakov's own <em>neder</em> at Beis-El (Bereishis 28:20&ndash;22) as the paradigm. See also Nedarim 8b and Yoreh De'ah 214 on <em>minhag tov</em> becoming a <em>neder</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">רְמָ"א, אוֹרַח חַיִּים תקצ"ז ס"א</span>; the halachic obligation of eating and rejoicing on Rosh HaShana.</span>
+  <span class="exp">"<span class="heb">אוֹכְלִים וְשׁוֹתִים וּשְׂמֵחִים וְאֵין מִתְעַנִּין בְּרֹאשׁ הַשָּׁנָה</span>." The Bais Yosef derives this from Nechemyah 8:9&ndash;10 (<em>lechu ichlu mashmanim</em>) &mdash; see the parallel discussion in our Sept.&nbsp;7 shiur on <em>Maggid Meisharim</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">אֲרִיזַ"ל</span> as cited in Kaf HaChaim OC 584:6 and 597; the passage on the sheet is a paraphrase.</span>
+  <span class="exp">The Arizal's teaching that the crying of Rosh HaShana is <em>bechi shel simchah</em>, tied to <em>galus haShechinah</em>, is preserved by Rabbeinu Chaim Vital in Sha'ar HaKavanos, drush 1 of Rosh HaShana. Compare Zohar Emor 98a.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">רִיבַ"שׁ, סִימָן ר"ך</span>, in the name of the Rashba; and <span class="heb">שְׁלָ"ה הַקָּדוֹשׁ</span> on <em>zilzul kavod</em>.</span>
+  <span class="exp">The Rivash's tshuva (siman 220) discusses whether a father's mechila fully removes the halachic weight of <em>zilzul</em>. The invocation of <em>avdim d'avdin kalana l'Shechinta</em> is drawn from Sanhedrin (perek Chelek), 90b&ndash;91a. The acharonim in the sheet's marginal note apply this specifically to the Rosh HaShana <em>din</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">בְּזֹאת יָבֹא אַהֲרֹן</span> (Vayikra 16:3) &mdash; drush on the gematria of <span class="heb">חֵן</span>.</span>
+  <span class="exp"><span class="heb">בְּזֹאת</span> in the pasuk carries the numeric value of 410 (<span class="heb">ב=2, ז=7, א=1, ת=400</span>); the drush counts the letters and the <em>kollel</em> to reach 68 = <span class="heb">חֵן</span>. The drush appears in early sifrei drush on the Yamim Nora'im &mdash; see e.g. <em>Yalkut Reuveni</em> Acharei Mos, and the marginal reference in the sheet to Megillah 15b (Rabbi Yehoshua ben Levi and Kamtzuri on Aharon's grace before Above).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">מִכְתַּב בְּרָכָה לְרֹאשׁ הַשָּׁנָה &mdash; אַדְמוּ"ר הָרַיַ"יץ מִלִּיוּבַּאוִיטְשׁ</span> to his son-in-law, Menachem Mendel Schneerson.</span>
+  <span class="exp">The letter (source #5), written by the sixth Lubavitcher Rebbe, weaves the Rosh HaShana blessing for <em>zera chaya v'kayama</em> together with the Arizal's teaching (Sha'ar HaGilgulim) that Sarah, Rachel, and Chana &mdash; the three <em>akaros</em> whose <em>demuyos</em> Chazal contrast &mdash; were all <em>nifkedu</em> on Rosh HaShana. The comparison of the <em>shiur ha'amos</em> and <em>komah</em> of the three is developed in the Zohar Noach and in Sha'ar HaGilgulim, hakdamah 8.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">שֻׁלְחָן עָרוּךְ, אוֹרַח חַיִּים תקפ"ג</span> and Rema ad loc. &mdash; the simanim of Rosh HaShana.</span>
+  <span class="exp">The order of the simanim &mdash; apple in honey, tamar, karti, silka, rubya, rimon &mdash; is codified by the Rema based on Horayos 12a and Kerisos 6a (Abaye's teaching that <em>simana milsa hi</em>). The sheet's excerpts #6, #9, and #10 cite this halacha together with the various acharonim (Mordechai, Levush, Chayei Adam).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">לְבוּשׁ, אוֹרַח חַיִּים תקפ"ג, סעיף ב</span>.</span>
+  <span class="exp">The Levush (Rabbi Mordechai Yaffe, Prague/Poznan, late 16th c.) rules that one either dips the <em>prusas ha'motzi</em> in honey (the older Ashkenaz custom) or eats a <em>tapuach masok b'dvash</em>, and it is a mistake &mdash; <em>k'ksil ba'choshech</em> &mdash; to do both. Later acharonim (Magen Avraham, Mateh Ephraim) side with the widespread minhag of doing both anyway, treating the two dips as fulfilling distinct simanim.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">אוֹרַח חַיִּים רי"א</span> &mdash; halachos of priority in brachos when the shivas ha'minim is involved.</span>
+  <span class="exp">The excerpts #11 and #12 track the sugya in Berachos 41a&ndash;41b and the Shulchan Aruch's codification (OC 211): a fruit of the <em>shiv'as ha'minim</em> takes precedence even when only <em>chatzi</em>, and even when the other fruits are <em>chaviv</em> or more numerous. The one exception is <em>chaviv</em> where the other is more beloved to the specific person eating &mdash; but the sheet's version follows the strict ruling.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. <span class="heb">רָחֵל וְחַנָּה נִפְקְדוּ בְּרֹאשׁ הַשָּׁנָה</span> &mdash; Rosh HaShana 10b&ndash;11a.</span>
+  <span class="exp">"<span class="heb">בְּרֹאשׁ הַשָּׁנָה נִפְקְדָה שָׂרָה רָחֵל וְחַנָּה</span>." The question the sheet raises &mdash; why not Rivka &mdash; is asked by the Rokeach (siman 200) and by the Ba'al HaTurim on Bereishis 25:21. The answer given in the excerpt is that Rivka's pekida was through Yitzchak's own tefillah (<em>vaye'ater lo Hashem</em>) &mdash; a pekida of the private <em>midas rachamim</em>, not of the collective <em>midas ha'din</em> that governs Rosh HaShana. See also Tosafos Yeshanim ad loc. and Ran ad loc.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">רֹאשׁ הַשָּׁנָה טז ע"ב</span>.</span>
+  <span class="exp">"<span class="heb">כְּדֵי לְעַרְבֵּב הַשָּׂטָן</span>." Sefaria ref: <em>Rosh_Hashanah.16b.5</em>. The gemara pairs this with Rabbi Yitzchak's teaching that "any year in which the shofar is not blown at the start, tragedy comes upon it at the end" &mdash; the shofar is the day's active <em>bittul</em> of the prosecutor.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. <span class="heb">רַשִׁ"י, רֹאשׁ הַשָּׁנָה טז ע"ב, ד"ה כְּדֵי לְעַרְבֵּב</span>.</span>
+  <span class="exp">"<span class="heb">שֶׁלֹּא יַשְׂטִין, כְּשֶׁיִּשְׁמַע יִשְׂרָאֵל מְחַבְּבִין אֶת הַמִּצְוֹת מִסְתַּתְּמִין דְּבָרָיו</span>." Compare Tosafos ad loc., who cite the Yerushalmi's more colorful reading that the Satan is literally <em>confused</em> by the doubled blowing, mistaking Rosh HaShana for the <em>keitz</em> of days.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">שׁוֹפָר הוּא צַעֲקַת הַלֵּב</span> &mdash; passage in the style of the Sfas Emes / a Chabad ma'amar.</span>
+  <span class="exp">The three-rank distinction (letters &rarr; wordless voice &rarr; <em>ka'las halev</em>) is developed in Sfas Emes RH 5641, and independently in <em>Likkutei Torah</em> of the Alter Rebbe (Rosh HaShana), where the shofar is identified as the sound of the <em>yechidah</em>. The invocation of Chana's <em>rak sfaseha na'os</em> (Shmuel I 1:13) is standard in both traditions.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">קוֹל הַבְּהֵמָה &mdash; לֹא קוֹל הָאָדָם</span>.</span>
+  <span class="exp">The observation that the shofar is a <em>kol beheimah</em>, not a <em>kol adam</em>, is used by the Meshech Chochmah (Emor) to explain why Rosh HaShana's mitzvah requires an instrument that <em>bypasses</em> human speech altogether. Compare Nefesh HaChaim sha'ar 2 perek 14 on the levels of speech and the <em>yechidah</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">רַבִּי לֵוִי יִצְחָק מִבֶּרְדִּיטְשׁוֹב</span> &mdash; the story of the simple ba'al tokea, in <em>Sippurei Chassidim</em>, Rav S.Y. Zevin.</span>
+  <span class="exp">The story is widely quoted; its most authoritative published version appears in Zevin's <em>Sippurei Chassidim</em>, Moadim, siman on Rosh HaShana. The punchline, "<span class="heb">אַתָּה עֲשֵׂה רְצוֹנִי</span>," is a paraphrase of Berachos 32a on Moshe's own <em>tefillah</em> &mdash; <em>na'aseh v'nishma</em> reciprocated from the human side.</span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">כָּתַב רַבֵּינוּ ז"ל&hellip; עַד דִּמְשַׁמְּעֵי מִדֵּא דְלָא מִיבָּעֵי לֵיהּ לְבָשָׂר</td><td>Acharon on <em>hataras nedarim</em> (Matteh Ephraim OC 581)</td><td>p.&nbsp;1, top right</td></tr>
+    <tr><td class="num">2</td><td class="heb">הֲלֹא רֹאשׁ הַשָּׁנָה הוּא יוֹם טוֹב&hellip; וּמַ"שׁ הָאֲרִיזַ"ל לִבְכּוֹת</td><td>Paraphrase of Arizal via Kaf HaChaim OC 597</td><td>p.&nbsp;1, top left</td></tr>
+    <tr><td class="num">3</td><td class="heb">ה. כְּבוֹד אָב וָאֵם דְקַיְי"ל&hellip; כָּתַב הָרִיבַ"ש סִי' ר"ך</td><td>Rivash siman 220, in the name of the Rashba</td><td>p.&nbsp;1, upper right column</td></tr>
+    <tr><td class="num">4</td><td class="heb">קטז) בְּזֹאת יָבֹא אַהֲרֹן אֶל הַקֹּדֶשׁ&hellip; זַ"ת בְּגִמַטְרִיָּא ת"ח</td><td>Drush on Vayikra 16:3 (gematria of <span class="heb">חֵן</span>)</td><td>p.&nbsp;1, mid left</td></tr>
+    <tr><td class="num">5</td><td class="heb">בְּנֵי אֲהוּבַי חֲבִיבַי וְיַקִּירַי מְנַחֵם מֶענְדֶּעל שֶׁיִּחְיֶה לְאוֹרֶךְ יָמִים</td><td>Rosh HaShana letter of the Rayyatz to the Rebbe</td><td>p.&nbsp;1, center left</td></tr>
+    <tr><td class="num">6</td><td class="heb">וּבִכְדֵי לָצֵאת יְדֵי כָּל הַדֵּעוֹת&hellip; אוֹכְלִין הַמּוֹצִיא עִם הַדְּבַשׁ וְהַתַּפּוּחַ בְּיַחַד</td><td>Poskim on apple-and-honey; cites OC 177:1</td><td>p.&nbsp;1, lower left</td></tr>
+    <tr><td class="num">7</td><td class="heb">וְאֶפְשָׁר שֶׁבָּא לְרַבּוֹת שְׁתֵּי צַדְקָנִיּוֹת כְּמוֹתָהּ, רָחֵל וְחַנָּה</td><td>Drush on Rivka's absence from <em>akaros nifkados</em></td><td>p.&nbsp;1, mid right</td></tr>
+    <tr><td class="num">8</td><td class="heb">וּמַה שֶּׁמְּבָרְכִין עַל הַתַּפּוּחַ&hellip; דְּסָתְפוּחַ מֻנְסָג לְאָכְלוּ חֲלָק</td><td>Halachic gloss on apple in honey, tafel to ikkar</td><td>p.&nbsp;1, bottom right</td></tr>
+    <tr><td class="num">9</td><td class="heb">וּמִמֶּנּוּ יֵשׁ מְבָרְכִין עַל תְּמָרִים חַלָּב&hellip; פְּרִי סֵעֶץ רִמּוֹן וְתַפּוּחַ</td><td>Poskim on dates and other simanim</td><td>p.&nbsp;1, bottom center</td></tr>
+    <tr><td class="num">10</td><td class="heb">כה) וְזֶהוּ סְדַר סַכְּנָן לְבַקֵּשׁ רַחֲמִים&hellip; בַּפֶּסַ"ע עַל תְּמָרִים שֶׁסָּעוּף מָתוֹק</td><td><em>Yehi Ratzon</em> and order of simanim</td><td>p.&nbsp;1, bottom left</td></tr>
+    <tr><td class="num">11</td><td class="heb">וְאִם יֵשׁ בֵּינֵיהֶם מִז' הַמִּינִים אִם בִּרְכוֹתֵיהֶם שָׁווֹת (כְּגוֹן תְּאֵנִים וַעֲנָבִים עִם תַּפּוּחִים)</td><td>OC 211 &mdash; priority within shivas ha'minim</td><td>p.&nbsp;2, top right</td></tr>
+    <tr><td class="num">12</td><td class="heb">ו הָיוּ לְפָנָיו מִינֵי פֵּירוֹת הַרְבֵּה שֶׁבִּרְכוֹתֵיהֶם שָׁווֹת</td><td>OC 211 &mdash; continuation</td><td>p.&nbsp;2, top left</td></tr>
+    <tr><td class="num">13</td><td class="heb">אָמַר רַבִּי יִצְחָק לָמָּה תּוֹקְעִין בְּרֹאשׁ הַשָּׁנָה&hellip; כְּדֵי לְעַרְבֵּב הַשָּׂטָן</td><td>Rosh HaShana 16b</td><td>p.&nbsp;2, upper center</td></tr>
+    <tr><td class="num">14</td><td class="heb">כְּדֵי לְעַרְבֵּב &mdash; שֶׁלֹּא יַשְׂטִין, כְּשֶׁיִּשְׁמַע יִשְׂרָאֵל מְחַבְּבִין אֶת הַמִּצְוֹת</td><td>Rashi ad loc.</td><td>p.&nbsp;2, upper center</td></tr>
+    <tr><td class="num">15</td><td class="heb">וּבֶאֱמֶת הַלְּבוּשׁ בְּאוֹ"ח סִימָן תקפ"ג [ס"ב]</td><td>Levush, OC 583:2</td><td>p.&nbsp;2, mid right</td></tr>
+    <tr><td class="num">16</td><td class="heb">וּבַמָּה בְּשׁוֹפָר, כִּי שׁוֹפָר הוּ"ע צַעֲקַת הַלֵּב בְּקָלָא פְנִימָאָה דְּלָא אֶשְׁתְּמַע</td><td>Sfas Emes / Chabad ma'amar on shofar as <em>ka'las halev</em></td><td>p.&nbsp;2, mid left</td></tr>
+    <tr><td class="num">17</td><td class="heb">וְכַאֲשֶׁר מִתְבּוֹנֵן בְּכָל זֶה, הֲרֵי זֶה נוֹגֵעַ לְעֶצֶם נַפְשׁוֹ</td><td>Continuation of #16</td><td>p.&nbsp;2, center left</td></tr>
+    <tr><td class="num">18</td><td class="heb">לִפְנֵי רֹאשׁ הַשָּׁנָה חִזֵּר פַּעַם הַצַּדִּיק רַבִּי לֵוִי יִצְחָק מִבֶּרְדִּיטְשׁוֹב</td><td>Sippurei Chassidim (Rav S.Y. Zevin), Moadim, RH</td><td>p.&nbsp;2, bottom</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Elul 5786 / September 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>
