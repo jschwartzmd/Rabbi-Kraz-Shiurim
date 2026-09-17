@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Returning to the Scene of the Crime</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .english-subtitle {
+    font-size: 13pt;
+    font-style: italic;
+    color: #6b4a30;
+    margin: 0 0 12px 0;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  .aside {
+    font-size: 11.5pt;
+    color: #4a3a30;
+    background: #f6f2e6;
+    border-left: 3px solid #8c7662;
+    padding: 10px 16px;
+    margin: 14px 4px;
+    font-style: italic;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">חֲזָרָה לִמְקוֹם הַחֵטְא</div>
+  <div class="english-title">Returning to the Scene of the Crime</div>
+  <div class="english-subtitle">Rescuing the Ba&rsquo;al Shem Tov from the Noda BiYehuda</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Elul 5786</div>
+  <div class="dates">Recorded: Elul 5786 &middot; Prepared: 2 Tishrei 5787 / September 14, 2026</div>
+</header>
+
+<p class="lead">The <em>gemara</em> in Yoma 86b sets a startling test for a true <em>ba&rsquo;al teshuvah</em>: he is placed a second time in the very scene of his fall &mdash; the same woman, the same place, the same season &mdash; and this time he walks away. Around this one line a whole architecture of dispute has grown up. The Rambam and Rabbeinu Yonah read it as a scene the <em>Ribbono shel Olam</em> arranges from Above. Rabbeinu Yehudah HeChassid warns against dragging oneself into a <em>nisayon</em>. The Kli Yakar and Rav Eliyahu HaKohen of Izmir read it altogether literally &mdash; the <em>ba&rsquo;al teshuvah</em> is <em>required</em> to return, physically, to the place of his sin. The Ba&rsquo;al Shem Tov, in a stunning <em>ma&rsquo;amar</em> preserved in his name, presses further still. And the Noda BiYehuda and Rav Tzadok HaKohen, thundering in the opposite direction, brand the whole approach <em>bavaa maasios</em> &mdash; the stuff of fables. This shiur traces the machlokes to its edge, then rescues the Ba&rsquo;al Shem Tov by way of the Mitteler Rebbe&rsquo;s dream and the Ramo MiPano&rsquo;s reading of <em>teshuvah me&rsquo;ahavah</em>.</p>
+
+<h2><span class="num">I.</span> The Gemara in Yoma &mdash; What Is a <em>Ba&rsquo;al Teshuvah</em>?</h2>
+
+<p>We begin with the source that anchors everything that follows. The <em>gemara</em> in Yoma 86b asks the deceptively simple question: how does one identify a <em>ba&rsquo;al teshuvah</em>? Not a person who has merely repented, notes the Rav, but one who has <em>mastered</em> the <em>teshuvah</em> &mdash; <em>ba&rsquo;al</em> in the sense of ownership. He has reached what the Rambam will call <em>teshuvah gemurah</em>.<sup class="fn">1</sup></p>
+
+<blockquote class="hebrew">
+אָמַר רַב יְהוּדָה: כְּגוֹן שֶׁבָּא לְיָדוֹ דְּבַר עֲבֵירָה פַּעַם רִאשׁוֹנָה וּשְׁנִיָּה וְנִצַּל הֵימֶנָּה. מַחֲוֵי רַב יְהוּדָה: בְּאוֹתָהּ אִשָּׁה, בְּאוֹתוֹ פֶּרֶק, בְּאוֹתוֹ מָקוֹם.
+<span class="attrib">&mdash; Yoma 86b (source sheet #1) &nbsp;<sup class="fn">1</sup></span>
+</blockquote>
+
+<p>Three parameters &mdash; the same woman, the same <em>perek</em>, the same place. Rav Yehudah&rsquo;s hand-gesture makes the demand literal. The <em>perek</em>, as we will see, is read two ways: the same season of the year, or the same season of life &mdash; the years in which the <em>ta&rsquo;avah</em> still burns. The place is not incidental either. In one street you felt secure enough to stumble; in another you would not have dared. For the reenactment to count, every switch must be flipped exactly as it was the first time.</p>
+
+<p>And then the obvious objection: does the <em>gemara</em> really mean that a person should <em>go back</em> and place himself in the crosshairs? The Rav quotes the <em>Leket Yosher</em>, a <em>sefer</em> from roughly six hundred years ago, which reports the case of a <em>yid</em> who took Rav Yehudah at his word, returned to the same scene &mdash; and stumbled again. On its face, the <em>gemara</em>&rsquo;s advice is dangerous. The rest of the shiur is a running argument over what to do with it.<sup class="fn">2</sup></p>
+
+<h2><span class="num">II.</span> The Rambam &mdash; <em>Teshuvah Gemurah</em> and <em>Yodei&rsquo;a Ta&rsquo;alumos</em></h2>
+
+<p>The Rambam opens Hilchos Teshuvah 2:1 with the framing that will govern the rest of the debate:</p>
+
+<blockquote class="hebrew">
+אֵיזוֹ הִיא תְּשׁוּבָה גְמוּרָה? זֶה שֶׁבָּא לְיָדוֹ דָּבָר שֶׁעָבַר בּוֹ, וְאֶפְשָׁר בְּיָדוֹ לַעֲשׂוֹתוֹ, וּפֵרַשׁ וְלֹא עָשָׂה מִפְּנֵי הַתְּשׁוּבָה, לֹא מִיִּרְאָה וְלֹא מִכִּשְׁלוֹן כֹּחַ. כֵּיצַד? הֲרֵי שֶׁבָּא עַל אִשָּׁה בַּעֲבֵירָה וּלְאַחַר זְמַן נִתְיַחֵד עִמָּהּ וְהוּא עוֹמֵד בְּאַהֲבָתוֹ בָּהּ וּבְכֹחַ גּוּפוֹ וּבַמְּדִינָה שֶׁעָבַר בָּהּ, וּפֵרַשׁ וְלֹא עָבַר &mdash; זֶהוּ בַּעַל תְּשׁוּבָה גְמוּרָה.
+<span class="attrib">&mdash; Rambam, Hilchos Teshuvah 2:1 (source #2) &nbsp;<sup class="fn">3</sup></span>
+</blockquote>
+
+<p>The Rav dwells on a phrase every reader glides past: <em>she&rsquo;ba l&rsquo;yado</em> &mdash; when the thing <em>came</em> his way. The Rambam does <em>not</em> say <em>she&rsquo;yechapes achareha</em>. He is not sending the penitent out to search her out. He is describing what happens when the <em>Aibershter</em> Himself arranges the second encounter and the person, standing in it, walks away. And it is by no means limited to <em>arayos</em> &mdash; the Ba&rsquo;al Shem Tov will apply the very same rule to <em>lashon hara</em>. A true <em>teshuvah</em> is one you know would hold up under the exact conditions in which it broke.</p>
+
+<p>In the next <em>halachah</em>, the Rambam gives the second reading &mdash; the one the acharonim treat as a distinct <em>pshat</em> in Rav Yehudah&rsquo;s statement:</p>
+
+<blockquote class="hebrew">
+וְיָעִיד עָלָיו יוֹדֵעַ תַּעֲלוּמוֹת שֶׁלֹּא יָשׁוּב לְזֶה הַחֵטְא לְעוֹלָם, שֶׁנֶּאֱמַר וְלֹא נֹאמַר עוֹד אֱלֹקֵינוּ לְמַעֲשֵׂה יָדֵינוּ.
+<span class="attrib">&mdash; Rambam, Hilchos Teshuvah 2:2 (source #3) &nbsp;<sup class="fn">3</sup></span>
+</blockquote>
+
+<p>Here the reenactment need not occur in the world at all. It occurs in the eye of the <em>Yodei&rsquo;a Ta&rsquo;alumos</em>: the <em>Aibershter</em> peers into the recesses of the heart and testifies that, were this person placed in that street, in that room, at that hour, he would abstain. The Rav frames it as the general definition &mdash; <em>teshuvah stam</em> &mdash; while the physical reenactment of 2:1 is <em>teshuvah gemurah</em>, the higher grade.</p>
+
+<p>Why, then, would the <em>Aibershter</em> ever bring the actual scene about, if He already sees in the heart that the person would not fall? The <em>Sfas Emes</em>, in his commentary on the <em>sugya</em>, offers a beautiful answer: not for Heaven&rsquo;s sake, but for ours. A person can eat himself alive with doubt long after his <em>teshuvah</em> is real; he replays the sin and second-guesses his own resolve. The <em>Aibershter</em> stages the reenactment so that <em>the penitent himself</em> should know, past all self-suspicion, that his <em>teshuvah</em> stood. Only then can he pick up and move.<sup class="fn">4</sup></p>
+
+<h2><span class="num">III.</span> The Meiri &mdash; The <em>Mikvah</em> and the <em>Sheretz</em></h2>
+
+<p>The Meiri &mdash; Rabbeinu Menachem Meiri of Perpignan &mdash; wrote an entire <em>sefer</em> on <em>teshuvah</em>, the <em>Chibbur HaTeshuvah</em>, and he raises the question that haunts every honest penitent: what about the day <em>after</em> the <em>teshuvah</em>, when the person falls again? Does the fall retroactively invalidate the repentance?</p>
+
+<blockquote class="hebrew">
+שֶׁבְּעֵת הַתְּשׁוּבָה גּוֹמֵר בְּלִבּוֹ לַעֲזוֹב דַּרְכֵי הָרַע תַּכְלִית עֲזִיבָה, אֲבָל אַחַר כֵּן יַכְרִיחֵהוּ יִצְרוֹ לָשׁוּב לַחֲטוֹא&hellip; שֶׁזֶּה אָמְנָם כְּבָר הָיְתָה תְּשׁוּבָתוֹ תְּשׁוּבָה בְּעֵת הֱיוֹתָהּ עֲשׂוּיָה, וְהוֹעִילָה לוֹ עַל חֲטָאָיו הַמֻּקְדָּמִים. וְהָיָה זֶה בְּדִמְיוֹן מִי שֶׁטָּבַל וְאַחַר הַטְּבִילָה עָלָה שֶׁרֶץ בְּיָדוֹ &mdash; לֹא שֶׁיִּתְפּוֹס שֶׁרֶץ בְּיָדוֹ, שֶׁכְּבָר הָיְתָה טְבִילָתוֹ טְבִילָה וְהֶעֱבִירָה טֻמְאָה קוֹדֶמֶת.
+<span class="attrib">&mdash; Meiri, Chibbur HaTeshuvah (source #5) &nbsp;<sup class="fn">5</sup></span>
+</blockquote>
+
+<p>The <em>mashal</em> is precise. A man who goes into a <em>mikvah</em> holding a <em>sheretz</em> gains nothing; his <em>tumah</em> travels in with him. But a man who <em>tovels</em> cleanly, and then, minutes after emerging, touches a <em>sheretz</em> &mdash; his <em>tevilah</em> stood. He is <em>tamei</em> again, but for a new cause. So too the <em>teshuvah</em> of the moment: if in that moment the resolve was total, the <em>teshuvah</em> was real. Tomorrow&rsquo;s fall is tomorrow&rsquo;s account.</p>
+
+<div class="aside">The Rav noted the near-identity between the Meiri&rsquo;s <em>chiddush</em> and the Alter Rebbe&rsquo;s definition of a <em>beinoni</em>: a person is a <em>beinoni</em> if, <em>at this moment</em>, he would never sin again &mdash; even if tomorrow he does. The <em>beinoni</em> lives one day at a time.</div>
+
+<h2><span class="num">IV.</span> Rabbeinu Yehudah HeChassid and Rabbeinu Yonah &mdash; Do Not Seek Her Out</h2>
+
+<p>The <em>Sefer Chassidim</em> (source #4) forbids the literal reading outright. A person should not say, &ldquo;Rav Yehudah requires the same woman, the same place, the same <em>perek</em> &mdash; therefore let me go find her.&rdquo;</p>
+
+<blockquote class="hebrew">
+אַל יֹאמַר אָדָם: הֲרֵי אָמַר רַב יְהוּדָה בְּאוֹתָהּ אִשָּׁה בְּאוֹתוֹ מָקוֹם בְּאוֹתוֹ פֶּרֶק, אֲקַיֵּים זֶה. שֶׁמָּא הָאִשָּׁה תַּחְפֹּץ לְהִזָּדֵק וְיִהְיֶה לוֹ חֵטְא. וְלֹא אָמְרוּ שֶׁיָּבִיא אָדָם אֶת עַצְמוֹ לִידֵי חֵטְא.
+<span class="attrib">&mdash; Sefer Chassidim, siman 165 (source #4) &nbsp;<sup class="fn">6</sup></span>
+</blockquote>
+
+<p>Rabbeinu Yehudah HeChassid&rsquo;s worry is telling. He is not concerned only for the penitent&rsquo;s own resolve. He is concerned for the <em>woman</em>: even if <em>you</em> mean it, the other party may not; and she will draw him in.</p>
+
+<p>Rabbeinu Yonah, in <em>Sha&rsquo;arei Teshuvah</em>, gives the same two-tiered picture as the Rambam. In his enumeration of the ingredients of <em>teshuvah</em>, ingredient nineteen is <em>azivas ha&rsquo;chet b&rsquo;hizdammen lo</em> &mdash; abandoning the sin when it comes his way. If the <em>Aibershter</em> arranges the encounter and the person, with his <em>ta&rsquo;avah</em> intact, abstains, that is the peak. But if the encounter does not come, one adds fear of Heaven day by day until <em>Bochen levavos hu yavin</em> &mdash; the One who searches hearts recognizes that were the <em>nisayon</em> to arrive, the person would stand.<sup class="fn">7</sup></p>
+
+<div class="aside">The Rav paused here to tell the story of Rabbeinu Yonah&rsquo;s own <em>teshuvah</em> &mdash; his role in the campaign against the Rambam and the burning of the <em>Moreh Nevuchim</em> in Montpellier, his shock when, in the same square, twenty-four wagon-loads of <em>seforim</em> were later burned by the Christians, and his vow to travel to <em>Teveryah</em>, to the Rambam&rsquo;s <em>kever</em>, with a <em>minyan</em>. He died in Toledo before he could reach it. <em>Sha&rsquo;arei Teshuvah</em> was, in the tradition, written under the weight of that guilt.</div>
+
+<h2><span class="num">V.</span> The Kli Yakar &mdash; A <em>Whopper</em> on <em>Parah Adumah</em></h2>
+
+<p>Here the ship starts to rock. The <em>Kli Yakar</em> &mdash; Rabbi Shlomo Ephraim of Luntschitz, a <em>talmid</em> of the Maharal and a great <em>darshan</em> in Prague &mdash; reads Rav Yehudah&rsquo;s statement altogether literally. And he grounds it in the very paradox of <em>parah adumah</em>.</p>
+
+<blockquote class="hebrew">
+וְעַל צַד הָרֶמֶז מָקוֹם אִתִּי לוֹמַר עַל פִּי דִבְרֵי בַּעַל הָעֲקֵדָה שֶׁפֵּרֵשׁ כָּל עִנְיְנֵי הַפָּרָה עַל דַּרְכֵי הַתְּשׁוּבָה&hellip; שֶׁרְפוּאַת הַנֶּפֶשׁ כִּרְפוּאַת הַגּוּף. כִּי הַמַּשְׁקֶה הַמּוֹעִיל לִתְרוּפַת אָדָם חוֹלֶה מַזִּיק לְאָדָם בָּרִיא&hellip; כִּי מְקוֹם הַחֵטְא וְהַשַּׁעַר שֶׁעָבַר בּוֹ &mdash; שָׁם צָרִיךְ שֶׁתְּהֵא גְבוּרָתוֹ, שֶׁכְּבָר טָעַם טַעַם עֲבֵירָה וּמְבַקֵּשׁ לִמּוּדוֹ.
+<span class="attrib">&mdash; Kli Yakar, Bamidbar 19 (source #7) &nbsp;<sup class="fn">8</sup></span>
+</blockquote>
+
+<p>The medicine for the ill is poison for the healthy, said Plato; the same is true, says the Kli Yakar, in the spiritual realm. A <em>ta&rsquo;anis</em> is a curative for one <em>gavra</em> and a defilement for another. So too the return to the scene: for the <em>tzaddik</em> it is a forbidden <em>yichud</em>, a <em>nisayon</em> one may not bring upon oneself; for the <em>ba&rsquo;al teshuvah</em> it is the very act of purification. That, he says, is the sod of the pasuk in Hoshea:</p>
+
+<p><span class="heb">וְהָיָה בִּמְקוֹם אֲשֶׁר יֵאָמֵר לָהֶם לֹא עַמִּי אַתֶּם, יֵאָמֵר לָהֶם בְּנֵי אֵל חָי</span>. Not <em>instead</em> &mdash; <em>bimekom</em> means in the very same physical place. In the very room where six months ago the <em>Aibershter</em> said, <em>Lo ami atem</em>, in that very room He now says, <em>Bnei Kel chai</em>. And the Kli Yakar presses further into the <em>gemara</em> in Berachos: <em>mekom she&rsquo;ba&rsquo;alei teshuvah omdim, tzaddikim gemurim einam yecholim la&rsquo;amod</em>. Not a metaphor of spiritual altitude &mdash; the physical <em>makom</em>. The <em>ba&rsquo;al teshuvah</em> is <em>required</em> to stand in <em>yichud</em> with that very woman; a <em>tzaddik gamur</em> is forbidden to.<sup class="fn">8</sup></p>
+
+<h2><span class="num">VI.</span> Rav Eliyahu HaKohen of Izmir &mdash; and Reb Meir of Premishlan</h2>
+
+<p>The same reading appears in <em>Ezer Eliyahu</em> of Rav Eliyahu HaKohen of Izmir &mdash; the author of the <em>Shevet Mussar</em> and <em>Midrash Talpiyos</em>, born 1659. He supports it with a fresh source: the <em>gemara</em> in Berachos 19a which says that if one sees a <em>talmid chacham</em> sin at night, one must not think ill of him by day, for he has surely done <em>teshuvah</em>. Rav Eliyahu HaKohen reads the <em>gemara</em> radically:</p>
+
+<blockquote class="hebrew">
+אִם רָאִיתָ תַּלְמִיד חָכָם שֶׁעָבַר עֲבֵירָה בַּלַּיְלָה &mdash; אַל תְּהַרְהֵר אַחֲרָיו בַּיּוֹם. וְהַכַּוָּונָה, שֶׁמָּה שֶׁרָאִיתָ הוּא בְעַצְמוֹ הָיָה מַעֲשֵׂה הַתְּשׁוּבָה, שֶׁחָזַר לִמְקוֹם הַחֵטְא לְקַיֵּים דִּבְרֵי רַב יְהוּדָה.
+<span class="attrib">&mdash; Ezer Eliyahu (source #7, continued) &nbsp;<sup class="fn">9</sup></span>
+</blockquote>
+
+<p>Meaning: what you saw &mdash; the <em>talmid chacham</em> walking into the harlot&rsquo;s house &mdash; was not a sin followed by <em>teshuvah</em>. It <em>was</em> the <em>teshuvah</em>. He was returning to the scene of a fall of twenty-five years earlier, this time to walk out.</p>
+
+<div class="aside">The Rav paired this with the story of Rav Yosef Shaul Nathanson &mdash; the future <em>rav</em> of Lvov &mdash; who as a young man visited Rav Meir of Premishlan, looked in through the doorway, and saw the <em>rebbe</em> apparently &ldquo;wasting time,&rdquo; staring at the wall. It troubled him deeply. Before he left, Rav Meir said to him: &ldquo;You know that <em>gemara</em> that if you see a <em>talmid chacham</em> sinning, he is really doing <em>teshuvah</em>? It means &mdash; you walk past someone&rsquo;s room and you see a <em>talmid chacham</em> sitting at the table not learning; you think he is wasting time. No. He is doing <em>teshuvah</em>.&rdquo;</div>
+
+<h2><span class="num">VII.</span> The Semak, the Forest, and the Tashbetz&rsquo;s <em>Chiddush</em></h2>
+
+<p>The Semak &mdash; Rabbi Yitzchak of Corbeil, one of the Ba&rsquo;alei Tosafos &mdash; brings the reading in through a back door. His question in siman 3 is whether, in a case of ordinary <em>aveiros</em> where the <em>halachah</em> is <em>ya&rsquo;avor v&rsquo;al yehareig</em>, one is nevertheless <em>allowed</em> to give one&rsquo;s life. He answers yes, provided <em>kavanaso l&rsquo;shem Shamayim</em>, and proves it from a story of Rabbeinu Yehudah HeChassid.</p>
+
+<p>The Rav retold the story with the detail the source sheet quietly reproduces (source #8&ndash;9). Students of Rabbeinu Yehudah HeChassid &mdash; or, in the version of the Ramo MiPano preserved in <em>Kanfei Yonah</em>, students of Rabbeinu Yonah &mdash; went out into a place of wild animals in the desert to test whether they could deploy <em>shemos ha&rsquo;kodesh</em>. It worked. In the morning their <em>rebbe</em> heard, and decreed: to atone for the misuse of the <em>shemos</em>, they were to return to the very place, this time <em>without</em> invoking the <em>shemos</em>, and give themselves over. They did. They were devoured. What was found in the morning were their hands and their faces &mdash; the very organs that had held and read the sacred names, untouched.<sup class="fn">10</sup></p>
+
+<p>Why send them back at all? Why not have them repent at home? The Tashbetz &mdash; Rav Shimshon ben Tzemach Duran of Algiers, one of the last of the Rishonim &mdash; asks exactly that <em>kushya</em> and answers with our theme:</p>
+
+<blockquote class="hebrew">
+דְּעַל כָּרְחָךְ צָרִיךְ שֶׁתְּהֵא תְּשׁוּבָתוֹ בְּאוֹתוֹ מָקוֹם וּבְאוֹתוֹ פֶּרֶק וּבְאוֹתוֹ עִנְיָן שֶׁחָטָא, כִּדְאָמְרִינַן בְּיוֹמָא &mdash; שֶׁלֹּא תִּתָּכֵן הַתְּשׁוּבָה הַשְּׁלֵמָה אֶלָּא בְּמָקוֹם שֶׁעָבַר.
+<span class="attrib">&mdash; Tashbetz (paraphrased on the sheet), on the Semak&rsquo;s story &nbsp;<sup class="fn">10</sup></span>
+</blockquote>
+
+<p>So the Semak, the Kli Yakar, the Shevet Mussar and the Tashbetz all converge on the literal reading: complete <em>teshuvah</em> demands the reenactment.</p>
+
+<h2><span class="num">VIII.</span> The Ba&rsquo;al Shem Tov &mdash; Reish Lakish and the <em>Lud&rsquo;ai</em></h2>
+
+<p>And then comes the <em>ma&rsquo;amar</em> of the Ba&rsquo;al Shem Tov, preserved in his name in <em>Ba&rsquo;al Shem Tov al HaTorah</em>, quoted also by Rav Yeiva Sar and by the Komarna. The Ba&rsquo;al Shem Tov reads the <em>gemara</em> in Gittin &mdash; Reish Lakish selling himself to a group of <em>lud&rsquo;ai</em> (cannibals) with a hidden weapon &mdash; against the reading of Tosafos. Tosafos assumed the incident occurred before Reish Lakish&rsquo;s <em>teshuvah</em>, when he was still a bandit. The Ba&rsquo;al Shem Tov insists it happened <em>after</em>: precisely because he had risen, he was obligated to return to the scene, to the same class of people among whom he had sinned, and this time to destroy them.<sup class="fn">11</sup></p>
+
+<blockquote class="hebrew">
+וְאָמַר מוֹרֵנוּ הַבַּעַל שֵׁם טוֹב זַ&quot;ל: רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ זַבֵּן נַפְשֵׁיהּ לְלוּדָאֵי, כִּי שָׁמַע בִּמְתִיבְתָּא דִרְקִיעָא שֶׁהִקְשׁוּ עַל הַגְּמָרָא דְּיוֹמָא דְּתְשׁוּבָה צְרִיכָה בְּאוֹתָהּ אִשָּׁה בְּאוֹתוֹ מָקוֹם, הֵיכִי יִהְיֶה זֶה &mdash; דְּהָא כְּשֶׁנִּכְנָס לְשֵׁם תְּשׁוּבָה נִכְנָס, בְּהַכְנָעָה וּבְלֵב נִשְׁבָּר, וְלָאו כְּפַעַם הָרִאשׁוֹנָה. וְאָמְרוּ בִּמְתִיבְתָּא דְּהִתִּירוּ לוֹ לִיכָּנֵס בְּעֹז וּבְעֹז הַתַּאֲוָה כְּמוֹ בַּפַּעַם הָרִאשׁוֹנָה, וְאָז יִכְפֶּה אֶת יִצְרוֹ וְלֹא יַעֲבֹר עַל רְצוֹן הַשֵּׁם, וּבָזֶה &mdash; וְסָר עֲוֹנֶךָ וְחַטָּאתְךָ תְּכֻפָּר.
+<span class="attrib">&mdash; Ba&rsquo;al Shem Tov al HaTorah (source #10) &nbsp;<sup class="fn">11</sup></span>
+</blockquote>
+
+<p>The Ba&rsquo;al Shem Tov is grappling with a genuine problem in the literal reading. If the second entry into the harlot&rsquo;s house is done with <em>lev nishbar</em>, in humility and with the express intention to abstain, then it is not, in truth, a reenactment at all. The test has been rigged from Above. The <em>ba&rsquo;al teshuvah</em> is walking in already braced. Where is the <em>ta&rsquo;avah</em> against which he is meant to prevail?</p>
+
+<p>The answer he brings down from the <em>Mesivta d&rsquo;Rekiya</em>: the <em>ba&rsquo;al teshuvah</em> is <em>authorized</em> &mdash; <em>hitiru lo</em> &mdash; to walk in with the full force of the <em>ta&rsquo;avah</em> he had the first time. Not the broken man; the same man, with the same fire. And only <em>then</em>, at the crucial instant, does he restrain his <em>yetzer</em>. This is what turns the encounter into a genuine reenactment, and this is what accomplishes <em>v&rsquo;sar avonecha</em>. And it applies, the Ba&rsquo;al Shem Tov says, to every <em>aveirah</em> &mdash; <em>lashon hara</em> included. He grounds it in a Yerushalmi that puts the aphorism <em>chata&rsquo;im tirdof ra&rsquo;ah</em> into an unexpected voice: not that evil pursues the sinner, but that the (repentant) sinner is to pursue the evil &mdash; not to do it, but to place himself in its presence and restrain his <em>yetzer</em>.</p>
+
+<h2><span class="num">IX.</span> The Noda BiYehuda &mdash; <em>Bavaa Ma&rsquo;asios!</em></h2>
+
+<p>Enter the Noda BiYehuda &mdash; Rav Yechezkel Landau, <em>rav</em> of Prague in the second half of the eighteenth century &mdash; who in one of his <em>drashos</em> writes down the whole reading and dismisses it in a single line: <em>bavaa ma&rsquo;asios</em>. Grandmothers&rsquo; tales. To place oneself in <em>yichud</em> in order to test oneself? Impossible. And he presses a <em>kal vachomer</em> with real force:</p>
+
+<blockquote class="hebrew">
+וּמָה צַדִּיק גָּמוּר שֶׁלֹּא חָטָא מֵעוֹלָם אָסוּר לוֹ לְהָבִיא עַצְמוֹ לִידֵי נִסָּיוֹן &mdash; שֶׁכֵּן דָּוִד הַמֶּלֶךְ הִתְפַּלֵּל &quot;בְּחָנֵנִי ה' וְנַסֵּנִי&quot; וְנִכְשַׁל בְּבַת שֶׁבַע &mdash; קַל וָחֹמֶר הַבַּעַל תְּשׁוּבָה שֶׁכְּבָר טָעַם טַעַם עֲבֵירָה, אֵיךְ יַחְזִיר עַצְמוֹ לִמְקוֹם הַנִּסָּיוֹן?
+<span class="attrib">&mdash; Noda BiYehuda, drush (source #11) &nbsp;<sup class="fn">12</sup></span>
+</blockquote>
+
+<p>David HaMelech, before he had ever sinned, asked to be tested &mdash; and stumbled at Bas Sheva. The <em>gemara</em> in Sanhedrin draws the mussar from that: even a <em>tzaddik</em> may not ask for a <em>nisayon</em>. If so, how much more so a <em>ba&rsquo;al teshuvah</em> who has already tasted the sin. Who is <em>less</em> trustworthy at the door of the tavern &mdash; the man who has never drunk, or the man in recovery? Obviously the second. To send him back to the scene is bad advice.</p>
+
+<h2><span class="num">X.</span> Rav Tzadok HaKohen &mdash; the Same <em>Kushya</em>, Twice</h2>
+
+<p>Rav Tzadok HaKohen of Lublin, in <em>Takanas HaShavim</em>, raises exactly the same <em>kushya</em> in exactly the same terms. He acknowledges &mdash; parenthetically &mdash; that Rav Yeiva Sar, in his <em>peirush</em> on <em>Tehillim</em>, cites the Ba&rsquo;al Shem Tov&rsquo;s reading, and that he has heard of a Kli Yakar in <em>Chukas</em> which says the like, though he does not have the <em>sefer</em> in front of him. He does not deny the sources. He simply says: it cannot be. It contradicts common sense, and it contradicts Rabbeinu Yehudah HeChassid, and it contradicts the <em>Leket Yosher</em>&rsquo;s reported casualty. He is willing to concede only the <em>Yerushalmi</em>&rsquo;s picture of David HaMelech testing himself with his <em>pilagshim</em> &mdash; but there, notes Rav Tzadok, the worst-case outcome is a permitted <em>bi&rsquo;ah</em>. That is not a reenactment; that is a controlled exercise.<sup class="fn">13</sup></p>
+
+<h2><span class="num">XI.</span> The Mitteler Rebbe&rsquo;s Dream &mdash; and <em>Teshuvah Me&rsquo;Ahavah</em> vs. <em>Me&rsquo;Yirah</em></h2>
+
+<p>To resolve the fight, the Rav turned to a story recorded by the Frierdiker Rebbe and quoted many times by the Rebbe.<sup class="fn">14</sup> The Mitteler Rebbe once dreamt of a raging river spanned by a narrow plank. Three great <em>rabbanim</em> came to cross. Two &mdash; whom he did not recognize &mdash; tried and could not; the plank shook under them. The third, his own father, the Alter Rebbe, walked across as though the plank were solid. When he woke, he described the two others to the Alter Rebbe. &ldquo;One,&rdquo; said the Alter Rebbe, &ldquo;was the Ba&rsquo;al Shem Tov. One was the Maggid of Mezritch. And the reason I was able to cross is that I deal with <em>ba&rsquo;alei teshuvah</em>.&rdquo;</p>
+
+<p>The Rebbe&rsquo;s reading: the river is the raging <em>mayim ha&rsquo;zeidonim</em>, the currents of temptation. A <em>tzaddik</em> who has never sinned, confronted by them, is not guaranteed to hold. He may stumble &mdash; David HaMelech is the case in point. But the <em>ba&rsquo;al teshuvah</em>, who has tasted the sin and is now repulsed by it, has the fixed compass of a veteran. He is more trustworthy than the <em>tzaddik</em>, not less.</p>
+
+<p>Which is directly the reverse of what the Alter Rebbe himself teaches, in the name of his own <em>rebbe</em> the Maggid, on the Rashi at the end of <em>Kedoshim</em>. There, a person walking past treif food is told to say &ldquo;I want it, but the <em>Aibershter</em> said no.&rdquo; The Maggid ruled: this advice applies only to a <em>tzaddik</em> &mdash; someone who has never eaten there. A <em>ba&rsquo;al teshuvah</em> in that domain must <em>not</em> say <em>ipshi</em>; his desire is still live, and he will fall. On <em>that</em> reading the <em>ba&rsquo;al teshuvah</em> is trusted <em>less</em>, and the <em>tzaddik</em> more.</p>
+
+<p>So which is it? The Rebbe&rsquo;s answer, in a footnote to a <em>sichah</em>: it depends on the <em>kind</em> of <em>teshuvah</em>.</p>
+
+<ul>
+<li><em>Teshuvah me&rsquo;yirah</em> &mdash; the person still <em>wants</em> the <em>aveirah</em>; he is only kept from it by fear of Heaven. His passions remain in the old channel. This is the person the Maggid speaks of: he must stay far away.</li>
+<li><em>Teshuvah me&rsquo;ahavah</em> &mdash; the person&rsquo;s passions have migrated. He now loves the <em>Aibershter</em>. <em>Ohavei Hashem sin&rsquo;u ra</em>: the more he loves the <em>Aibershter</em>, the more he hates the <em>aveirah</em>. This is the person of the Mitteler Rebbe&rsquo;s dream. He is more secure than the <em>tzaddik</em>, and he &mdash; and only he &mdash; is the one the literal reading of Yoma 86b concerns.</li>
+</ul>
+
+<h2><span class="num">XII.</span> Rabbi Yochanan and Rabbi Abahu &mdash; The Ramo MiPano and the Shlah</h2>
+
+<p>The concluding <em>gemara</em> in Berachos 34b (source #12) sets Rabbi Yochanan against Rabbi Abahu: is the <em>tzaddik gamur</em> greater than the <em>ba&rsquo;al teshuvah</em>, or the reverse? Rabbi Yochanan cites <em>ayin lo ra&rsquo;asah Elokim zulasecha</em> for the <em>tzaddik gamur</em>. Rabbi Abahu answers with <em>shalom shalom la&rsquo;rachok v&rsquo;la&rsquo;karov</em> &mdash; the <em>Aibershter</em> greets the distant one first, and only afterward the near one. The Rambam in Hilchos Teshuvah (source #13) <em>pesken&rsquo;s</em> like Rabbi Abahu &mdash; and pointedly amplifies the <em>gemara</em>&rsquo;s language: not merely that <em>tzaddikim gemurim</em> <em>do</em> not stand in the place of <em>ba&rsquo;alei teshuvah</em>, but that they <em>are not able</em> to stand there.</p>
+
+<p>The Maharsha, unwilling to say that a person who actually sinned is on higher ground than one who never did, reads the <em>gemara</em> as being about two people who have <em>both</em> never sinned &mdash; a <em>tzaddik</em> without desire, and a <em>beinoni</em> who has desire and vanquishes it. The Ramo MiPano and the Shlah HaKadosh &mdash; and the Rebbe cites this at length in letters &mdash; disagree. There is no <em>machlokes</em>. Rabbi Yochanan is speaking of <em>teshuvah me&rsquo;yirah</em>; Rabbi Abahu is speaking of <em>teshuvah me&rsquo;ahavah</em>. A <em>ba&rsquo;al teshuvah me&rsquo;ahavah</em> stands where a <em>tzaddik gamur</em> cannot.<sup class="fn">15</sup></p>
+
+<p>Which is the resolution of everything the Rav has built. When the <em>gemara</em> in Yoma calls its subject a <em>ba&rsquo;al teshuvah</em>, it is using the term the way Rabbi Abahu uses it &mdash; the <em>teshuvah gemurah</em> of the Rambam, which is <em>teshuvah me&rsquo;ahavah</em>. That is the person the Ba&rsquo;al Shem Tov has in view. He is not to be judged by the <em>kal vachomer</em> from a <em>tzaddik</em>, because he is stronger than the <em>tzaddik</em>, not weaker. The Noda BiYehuda&rsquo;s <em>kal vachomer</em> is airtight &mdash; for <em>teshuvah me&rsquo;yirah</em>. It collapses for <em>teshuvah me&rsquo;ahavah</em>, which is the only <em>teshuvah</em> the <em>gemara</em> in Yoma has been talking about all along.</p>
+
+<p>Does this mean the <em>ba&rsquo;al teshuvah me&rsquo;ahavah</em> is literally to enter <em>yichud gamur</em>? No &mdash; <em>yichud mamash</em> would remain forbidden. But to place himself in the vicinity of what once undid him, and to walk away, is not only permitted; on the Ba&rsquo;al Shem Tov&rsquo;s reading, it is the very substance of what he owes.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">יוֹמָא פ&quot;ו ע&quot;ב</span> &mdash; the paradigm case of <em>ba&rsquo;al teshuvah</em>.</span>
+  <span class="exp">The Rav opened by observing that <em>ba&rsquo;al teshuvah</em> in the <em>gemara</em>&rsquo;s usage means one who has <em>mastered</em> repentance, i.e. reached what the Rambam calls <em>teshuvah gemurah</em>. The three parameters of Rav Yehudah&rsquo;s hand-gesture &mdash; <em>b&rsquo;osah ishah, b&rsquo;oso perek, b&rsquo;oso makom</em> &mdash; are read two ways in the Rishonim: <em>b&rsquo;oso perek</em> as the same season of the year (Rashi&rsquo;s inclination), or the same season of life (Rambam, Hilchos Teshuvah 2:1).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">לֶקֶט יוֹשֶׁר</span>, <em>chelek</em> 2 (Yoreh De&rsquo;ah) &mdash; the man who took Rav Yehudah literally and stumbled again.</span>
+  <span class="exp">The <em>Leket Yosher</em> (Rav Yosef ben Moshe, <em>talmid</em> of the Terumas HaDeshen, mid-15th c. Germany) reports the case as a warning against the literal reading. This is the anchoring &ldquo;experimental&rdquo; datum cited by both Rabbeinu Yehudah HeChassid and later the Noda BiYehuda and Rav Tzadok.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">רַמְבַּ&quot;ם, הִלְכוֹת תְּשׁוּבָה ב:א&ndash;ב</span> &mdash; the two-tiered definition.</span>
+  <span class="exp">Halachah 1 defines <em>teshuvah gemurah</em> as the actual reenactment (which the Rambam carefully phrases as <em>she&rsquo;ba l&rsquo;yado</em> &mdash; came his way &mdash; not <em>she&rsquo;chippes achareha</em>). Halachah 2 defines the general <em>teshuvah</em>: abandonment of the sin, removal from thought, resolve of the heart, and testimony from the <em>Yodei&rsquo;a Ta&rsquo;alumos</em>. The acharonim (Ohr Sameach, and cf. Lechem Mishneh ad loc.) treat these as the two <em>pshatim</em> in Rav Yehudah&rsquo;s <em>b&rsquo;osah ishah</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">שְׂפַת אֱמֶת</span> on Yoma 86b &mdash; why the <em>Aibershter</em> stages the reenactment at all.</span>
+  <span class="exp">The Sfas Emes&rsquo;s answer: the reenactment is <em>lo&rsquo; li&rsquo;tzorech Gavohah</em>, but so that the <em>ba&rsquo;al teshuvah</em> himself can lay down the burden of self-suspicion. Compare the parallel in the Alter Rebbe&rsquo;s definition of <em>beinoni</em> in Tanya, ch. 12&ndash;13, cited by the Rav.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">מְאִירִי, חִבּוּר הַתְּשׁוּבָה</span>, ma&rsquo;amar rishon &mdash; the <em>tevilah</em>-and-<em>sheretz</em> <em>mashal</em>.</span>
+  <span class="exp">Menachem HaMeiri of Perpignan (Provence, 1249&ndash;1310). His <em>Chibbur HaTeshuvah</em> is a systematic treatise on repentance separate from his commentary <em>Beis HaBechirah</em>. The <em>mashal</em> distinguishes sharply between (a) holding a <em>sheretz</em> during <em>tevilah</em> &mdash; the sin retained in mind during the <em>teshuvah</em>, which invalidates it &mdash; and (b) touching a <em>sheretz</em> after emerging, which does not.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">סֵפֶר חֲסִידִים, סִימָן קסה</span>.</span>
+  <span class="exp">Rabbeinu Yehudah HeChassid&rsquo;s striking concern is not merely for the <em>ba&rsquo;al teshuvah</em>&rsquo;s own resolve but for the woman &mdash; <em>shema ha&rsquo;ishah tachpotz l&rsquo;hizdakek</em>. The reading here rules out the literal-reenactment approach at the outset. Cf. Sefaria: <em>Sefer_Chasidim.165</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">רַבֵּינוּ יוֹנָה, שַׁעֲרֵי תְּשׁוּבָה, שַׁעַר א' עִיקָר יט</span>.</span>
+  <span class="exp">Ingredient nineteen of complete <em>teshuvah</em>: <em>azivas ha&rsquo;chet b&rsquo;hizdammen lo, v&rsquo;hu b&rsquo;sokef ta&rsquo;avaso</em>. Rabbeinu Yonah, like the Rambam, gives a fallback: if the <em>nisayon</em> does not come, one adds fear of Heaven day by day until <em>Bochen levavos hu yavin</em>. The historical aside on the Montpellier <em>seforim</em>-burning of the 1230s and Rabbeinu Yonah&rsquo;s vow to travel to the Rambam&rsquo;s <em>kever</em> in Teveryah is preserved in the classical <em>maggidim</em> tradition; the primary source is a letter of Rav Hillel of Verona to R. Yitzchak b&rsquo;R. Mordechai (Wertheimer, <em>Ginzei Yerushalayim</em>).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">כְּלִי יָקָר, בַּמִּדְבָּר יט (פרשת חוקת)</span>.</span>
+  <span class="exp">Rabbi Shlomo Ephraim of Luntschitz (Prague, d. 1619). His <em>chiddush</em> is dual: (i) <em>parah adumah</em>&rsquo;s paradox &mdash; <em>metaher es ha&rsquo;temeim u&rsquo;metamei es ha&rsquo;tehorim</em> &mdash; is the schematic of <em>teshuvah</em>: the same act is a <em>chiyuv</em> for the <em>ba&rsquo;al teshuvah</em> and a <em>ma&rsquo;aseh assur</em> for the <em>tzaddik</em>; (ii) <em>bimekom asher yei&rsquo;amer lahem</em> (Hoshea 2:1) is read as the physical <em>makom</em>. The Kli Yakar also reads <em>mekom she&rsquo;ba&rsquo;alei teshuvah omdim</em> in Berachos 34b as a physical statement about the room. Sefaria ref: <em>Kli_Yakar,_Numbers.19</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">רַב אֵלִיָּהוּ הַכֹּהֵן, עֵזֶר אֵלִיָּהוּ</span>; and <span class="heb">בְּרָכוֹת יט ע&quot;א</span> on the <em>talmid chacham</em> who sinned at night.</span>
+  <span class="exp">Rav Eliyahu HaKohen of Izmir (1659&ndash;1729), author also of <em>Shevet Mussar</em> and <em>Midrash Talpiyos</em>. His radical reading of Berachos 19a: the act you witnessed <em>was itself the teshuvah</em>. The Rav paired this with the story of Rav Meir of Premishlan and the young Rav Yosef Shaul Nathanson (later <em>rav</em> of Lvov, author of <em>Sho&rsquo;el u&rsquo;Meishiv</em>), preserved in the classical Premishlan literature.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. <span class="heb">סֵפֶר מִצְוֹת קָטָן (סמ&quot;ק), סִימָן ג</span>; and <span class="heb">רַבִּי רְאוּבֵן מַרְגָּלִיּוֹת</span>, notes on <em>Sefer Chassidim</em>, citing the <span class="heb">רַמָ&quot;ע מִפָּאנוֹ</span>, <em>Kanfei Yonah</em>; and the <span class="heb">תַּשְׁבַּ&quot;ץ</span> ad loc.</span>
+  <span class="exp">Rav Yitzchak of Corbeil (d. 1280), Ba&rsquo;alei Tosafos. His use of the &ldquo;forest&rdquo; story of Rabbeinu Yehudah HeChassid&rsquo;s <em>talmidim</em> is as a proof that dying <em>l&rsquo;shem Shamayim</em> is permitted even where the <em>halachah</em> is <em>ya&rsquo;avor</em>. The parallel &ldquo;desert of wild animals&rdquo; version is preserved in Kanfei Yonah of the Ramo MiPano (Rav Menachem Azaryah of Fano, 1548&ndash;1620) and quoted in Rav Reuven Margolios&rsquo;s notes on <em>Sefer Chassidim</em>. The Tashbetz (Rav Shimshon ben Tzemach Duran of Algiers, d. 1444) reads the whole story as depending on the literal-reenactment reading of Yoma 86b &mdash; without which, he says, sending the <em>talmidim</em> back is inexplicable.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">בַּעַל שֵׁם טוֹב עַל הַתּוֹרָה, פָּרָשַׁת נִצָּבִים</span>, in the name of the Ba&rsquo;al Shem Tov; on <span class="heb">גִּיטִין מז ע&quot;א</span> (Reish Lakish and the <em>lud&rsquo;ai</em>).</span>
+  <span class="exp"><em>Ba&rsquo;al Shem Tov al HaTorah</em> is a nineteenth-century collection of teachings preserved in the Ba&rsquo;al Shem Tov&rsquo;s name via chains of <em>talmidim</em>. The Rav noted that the same <em>ma&rsquo;amar</em> is quoted by Rav Yeiva Sar (<em>talmid</em> of the Ba&rsquo;al Shem Tov&rsquo;s inner circle) in his <em>peirush</em> on <em>Tehillim</em>, and by the Komarna Rebbe. The Ba&rsquo;al Shem Tov&rsquo;s reading of Reish Lakish&rsquo;s sale to the <em>lud&rsquo;ai</em> (Gittin 47a) as a post-<em>teshuvah</em> return to the scene stands directly against Tosafos ad loc., who assumed the incident preceded Reish Lakish&rsquo;s rise. The Yerushalmi cited (evil pursued by the sinner) is Peah 1:1 with the classical <em>drasha</em> reversed. Sefaria: <em>Gittin.47a.4</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. <span class="heb">נוֹדַע בִּיהוּדָה</span> &mdash; drush of Rav Yechezkel Landau (Prague, 1713&ndash;1793).</span>
+  <span class="exp">The Rav read the <em>kal vachomer</em> from David HaMelech (Sanhedrin 107a on <em>bechaneini Hashem v&rsquo;naseini</em>) as the Noda BiYehuda&rsquo;s central argument. The polemic <em>bavaa ma&rsquo;asios</em> is characteristic of the Noda BiYehuda&rsquo;s stance toward what he perceived as the excesses of the emerging Chassidic reading tradition. On the Noda BiYehuda&rsquo;s well-known <em>tshuvah</em> (Yoreh De&rsquo;ah, Mahadura Kama, siman 93) against reciting <em>l&rsquo;shem yichud</em>, and the story of the change of <em>poshim</em> to <em>chassidim</em> in the closing pasuk of Hoshea, see the discussion in <em>Igros Kodesh</em> of the Rebbe and in Alfasi, <em>HaChassidus MiDor l&rsquo;Dor</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">רַב צָדוֹק הַכֹּהֵן מִלּוּבְּלִין, תַּקָּנַת הַשָּׁבִים</span>.</span>
+  <span class="exp">Rav Tzadok HaKohen Rabinowitz of Lublin (1823&ndash;1900). The Rav retold the biographical background: Rav Tzadok&rsquo;s trajectory from his early <em>mitnaggedish</em> setting through his encounters with the Chiddushei HaRim of Ger (who was the one <em>rav</em> to refuse to sign for the divorce he sought), through Ishbitz and Lublin. In <em>Takanas HaShavim</em> he acknowledges the Ba&rsquo;al Shem Tov&rsquo;s reading (via Rav Yeiva Sar) and the Kli Yakar in <em>Chukas</em>, and still concludes that the literal reenactment cannot be right &mdash; the sole exception being the Yerushalmi&rsquo;s picture of David HaMelech testing himself with his <em>pilagshim</em>, where the fallback is a permitted <em>bi&rsquo;ah</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. The <span class="heb">מִיטֶעלֶער רֶבִּי&rsquo;ס</span> dream &mdash; recorded by the Frierdiker Rebbe; explicated by the Rebbe in several <em>sichos</em>.</span>
+  <span class="exp">The core reference is <em>Sefer HaSichos</em> of the Rayatz (1943 and following); the Rebbe returns to the story in the <em>ma&rsquo;amarim</em> and <em>sichos</em> of Yud-Tes Kislev and Elul. On the underlying question &mdash; who is more secure, the <em>tzaddik</em> or the <em>ba&rsquo;al teshuvah</em>? &mdash; the Rebbe&rsquo;s footnote resolving the apparent contradiction with the Maggid&rsquo;s <em>vort</em> on Rashi (Vayikra 20:26) via the split between <em>teshuvah me&rsquo;yirah</em> and <em>teshuvah me&rsquo;ahavah</em> is in <em>Likkutei Sichos</em>, chelek 17, Kedoshim.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">בְּרָכוֹת לד ע&quot;ב</span> &mdash; the debate of Rabbi Yochanan and Rabbi Abahu; the reading of the <span class="heb">רַמָ&quot;ע מִפָּאנוֹ</span> and the <span class="heb">שְׁלָ&quot;ה הַקָּדוֹשׁ</span>.</span>
+  <span class="exp">The Rambam pesken&rsquo;s like Rabbi Abahu (Hilchos Teshuvah 7:4) and amplifies the <em>gemara</em>&rsquo;s language: not merely <em>ein omdim</em> but <em>ein yecholim la&rsquo;amod</em>. The Maharsha rereads the whole <em>gemara</em> as concerning two people who have never sinned. The Ramo MiPano (Sefer <em>Asarah Ma&rsquo;amaros</em>) and the Shlah HaKadosh (<em>Sha&rsquo;ar HaOsios</em>) hold that Rabbi Yochanan and Rabbi Abahu are speaking of two different kinds of penitent &mdash; <em>me&rsquo;yirah</em> vs. <em>me&rsquo;ahavah</em> &mdash; and are not, in truth, arguing at all. The Rebbe cites this at length in <em>Igros Kodesh</em>. This is the resolution that allows the Ba&rsquo;al Shem Tov&rsquo;s <em>ma&rsquo;amar</em> to stand against the Noda BiYehuda&rsquo;s <em>kal vachomer</em>: it survives because the subject of the entire literal-reenactment tradition is precisely the <em>ba&rsquo;al teshuvah me&rsquo;ahavah</em>.</span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">הֵיכִי דָּמֵי בַּעַל תְּשׁוּבָה&hellip; בְּאוֹתָהּ אִשָּׁה בְּאוֹתוֹ פֶּרֶק בְּאוֹתוֹ מָקוֹם</td><td>Yoma 86b</td><td>p.&nbsp;1, top</td></tr>
+    <tr><td class="num">2</td><td class="heb">אֵיזוֹ הִיא תְּשׁוּבָה גְמוּרָה, זֶה שֶׁבָּא לְיָדוֹ דָּבָר שֶׁעָבַר בּוֹ</td><td>Rambam, Hilchos Teshuvah 2:1</td><td>p.&nbsp;1, upper</td></tr>
+    <tr><td class="num">3</td><td class="heb">וּמַה הִיא הַתְּשׁוּבָה&hellip; וְיָעִיד עָלָיו יוֹדֵעַ תַּעֲלוּמוֹת</td><td>Rambam, Hilchos Teshuvah 2:2</td><td>p.&nbsp;1, upper</td></tr>
+    <tr><td class="num">4</td><td class="heb">אַל יֹאמַר אָדָם הֲרֵי אָמַר רַב יְהוּדָה בְּאוֹתָהּ אִשָּׁה&hellip;</td><td>Sefer Chassidim, Rabbeinu Yehudah HeChassid</td><td>p.&nbsp;1, mid</td></tr>
+    <tr><td class="num">5</td><td class="heb">שֶׁבְּעֵת הַתְּשׁוּבָה גּוֹמֵר בְּלִבּוֹ&hellip; בְּדִמְיוֹן מִי שֶׁטָּבַל וְאַחַר הַטְּבִילָה עָלָה שֶׁרֶץ בְּיָדוֹ</td><td>Meiri, Chibbur HaTeshuvah</td><td>p.&nbsp;1, mid</td></tr>
+    <tr><td class="num">6</td><td class="heb">הָעִיקָר הַתְּשַׁע עָשָׂר: עֲזִיבַת חֶטְאוֹ בְּהִזְדַּמֵּן לוֹ וְהוּא בְּתֹקֶף תַּאֲוָתוֹ</td><td>Rabbeinu Yonah, Sha&rsquo;arei Teshuvah 1:19</td><td>p.&nbsp;1, lower</td></tr>
+    <tr><td class="num">7</td><td class="heb">וְעַל צַד הָרֶמֶז מָקוֹם אִתִּי לוֹמַר&hellip; שֶׁרְפוּאַת הַנֶּפֶשׁ כִּרְפוּאַת הַגּוּף</td><td>Kli Yakar, Bamidbar (Chukas) &mdash; with continuation from Ezer Eliyahu</td><td>p.&nbsp;1, bottom&nbsp;/ p.&nbsp;2 top</td></tr>
+    <tr><td class="num">8</td><td class="heb">וּשְׁאָר מִצְוֹת&hellip; אִם יִרְצֶה יַהֲרֹג וְאַל יַעֲבֹר</td><td>Semak, Rav Yitzchak of Corbeil, siman 3</td><td>p.&nbsp;2, upper</td></tr>
+    <tr><td class="num">9</td><td class="heb">הָלְכוּ וְאָכְלוּם חַיּוֹת רָעוֹת&hellip; הַפָּנִים וְהַיָּדַיִם לֹא נֶאֱכְלוּ</td><td>Rav Reuven Margolios on Sefer Chassidim, citing Ramo MiPano (Kanfei Yonah); with Tashbetz&rsquo;s <em>chiddush</em></td><td>p.&nbsp;2, upper</td></tr>
+    <tr><td class="num">10</td><td class="heb">וְאָמַר מוֹרֵנוּ&hellip; רַבִּי שִׁמְעוֹן בֶּן לָקִישׁ זַבֵּן נַפְשֵׁיהּ לְלוּדָאֵי&hellip; הִתִּירוּ לוֹ לִיכָּנֵס בְּעֹז וּבְעֹז הַתַּאֲוָה</td><td>Ba&rsquo;al Shem Tov al HaTorah, Nitzavim</td><td>p.&nbsp;2, mid</td></tr>
+    <tr><td class="num">11</td><td class="heb">בָּבָא מַעֲשִׂיּוֹת&hellip; קַל וָחֹמֶר מִצַּדִּיק גָּמוּר שֶׁלֹּא חָטָא</td><td>Noda BiYehuda, drush</td><td>p.&nbsp;2, mid</td></tr>
+    <tr><td class="num">12</td><td class="heb">אָמַר רַבִּי חִיָּיא בַּר אַבָּא&hellip; פְּלִיגָא דְרַבִּי אַבָּהוּ&hellip; מְקוֹם שֶׁבַּעֲלֵי תְּשׁוּבָה עוֹמְדִים</td><td>Berachos 34b</td><td>p.&nbsp;2, lower</td></tr>
+    <tr><td class="num">13</td><td class="heb">וְלֹא עוֹד&hellip; מַעֲלָתָן גְּדוֹלָה מִמַּעֲלַת אֵלּוּ שֶׁלֹּא חָטְאוּ מֵעוֹלָם</td><td>Rambam, Hilchos Teshuvah 7:4</td><td>p.&nbsp;2, bottom</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Tishrei 5787 / September 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>
