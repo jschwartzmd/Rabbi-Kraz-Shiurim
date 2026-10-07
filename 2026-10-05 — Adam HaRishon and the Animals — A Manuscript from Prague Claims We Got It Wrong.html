@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Adam HaRishon and the Animals</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .english-subtitle {
+    font-size: 13pt;
+    font-style: italic;
+    color: #6b4a30;
+    margin: 0 0 12px 0;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  .aside {
+    font-size: 11.5pt;
+    color: #4a3a30;
+    background: #f6f2e6;
+    border-left: 3px solid #8c7662;
+    padding: 10px 16px;
+    margin: 14px 4px;
+    font-style: italic;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .note-academic {
+    font-size: 10.5pt;
+    color: #5a3a1a;
+    background: #fbf3dc;
+    border-left: 3px solid #b8860b;
+    padding: 6px 12px;
+    margin: 6px 0 0 0;
+    font-style: italic;
+  }
+  .note-academic strong { color: #4a1525; font-style: normal; }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">בָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה</div>
+  <div class="english-title">Adam HaRishon and the Animals</div>
+  <div class="english-subtitle">A Manuscript from Prague Claims We Got It Wrong</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Monday Evening, 24 Tishrei 5787 &middot; Yahrtzeit of the Ri of Dampierre</div>
+  <div class="dates">Recorded: Monday evening, 24 Tishrei 5787 / October 5, 2026 &middot; Prepared: 25 Tishrei 5787 / October 6, 2026</div>
+</header>
+
+<p class="lead">Rashi on <em>Bereishis</em> 2:23 (<span class="heb">רש״י בראשית ב:כג</span>), quoting the <em>gemara</em> in Yevamos 63a, tells us that <em>zos hapaam</em> (<span class="heb">זֹאת הַפַּעַם</span>) teaches that Adam HaRishon &ldquo;came upon every beast and creature, and his mind was not at ease until he came upon Chava.&rdquo; Read at face value, it is a shocking statement &mdash; and almost no one wants to read it at face value. The Maharal asks the <em>halachic</em> question: Adam had already been commanded on <em>arayos</em>. The Torah Temimah asks the biological one: such relations would have left the animals barren. The Levush asks the aesthetic and the practical ones. And a fourteenth-century manuscript from Prague, the <em>Sefer HaNitzachon</em>, records how the Christian disputants used this very Rashi as a weapon. Against all of them stands the Taz, who cheerfully answers every question and insists that Rashi means exactly what he says. This shiur walks through the sheet source by source &mdash; from the Rashbam&rsquo;s entirely different reading of <em>zos hapaam</em>, through Maharshal, Vilna Gaon, Akeidah, Toldos Yitzchak, Chizkuni and Maharsha, to the Taz &mdash; and ends, as the Rav&rsquo;s shiurim so often do, with a live argument still on the table.</p>
+
+<h2><span class="num">I.</span> The Setup &mdash; Day One, Hour Five</h2>
+
+<p>The Rav began with the <em>pesukim</em> on the first page of the sheet (#1 and #2). The <em>Aibershter</em> creates Adam on the first Friday and places him in <em>Gan Eden</em> &mdash; Adam was created outside the Garden and then lifted in &mdash; and immediately commands him: <span class="heb">מִכֹּל עֵץ הַגָּן אָכֹל תֹּאכֵל</span>, you may eat from every tree, but <span class="heb">וּמֵעֵץ הַדַּעַת טוֹב וָרָע לֹא תֹאכַל מִמֶּנּוּ</span>.<sup class="fn">1</sup> The Or Sameach (R&rsquo; Meir Simcha of Dvinsk, a <em>gaon</em> who passed away shortly before the Holocaust) notes that <em>achol tochal</em> is not mere permission; it is a <em>mitzvah</em>. He ties it to the well-known <em>Yerushalmi</em> that a person will one day be asked whether he partook of everything permitted that was set before him. Food you ate with the right intent becomes part of you &mdash; that slice of pizza ends up in your <em>davening</em> and your learning &mdash; and food you refused is an opportunity squandered.</p>
+
+<p>Then comes <span class="heb">לֹא טוֹב הֱיוֹת הָאָדָם לְבַדּוֹ, אֶעֱשֶׂה לּוֹ עֵזֶר כְּנֶגְדּוֹ</span>. The <em>gemara</em> has two views on how Chava was formed: Adam was created <em>du-partzufin</em> (<span class="heb">דּוּ פַּרְצוּפִין</span>) with two faces and was divided, or &mdash; the simple reading &mdash; he was alone and the <em>Aibershter</em> took a <em>tzela</em> (<span class="heb">צֵלָע</span>). Either way, the <em>Aibershter</em> did not hand Adam a mate unprompted. He first sent him to name every <em>behemah</em> and <em>chayah</em>, and Adam saw that each had a mate. <span class="heb">וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ</span> &mdash; and Adam found none. Rashi explains: he said, &ldquo;Everyone has a partner and I do not,&rdquo; and only then did the <em>Aibershter</em> cast the <em>tardeimah</em> upon him.<sup class="fn">2</sup></p>
+
+<p>Why did the <em>Aibershter</em> want him to ask? The Rav offered a thought: when Adam later blamed Chava &mdash; <em>ha&rsquo;ishah asher nasata imadi</em> &mdash; the <em>Aibershter</em> could answer, &ldquo;You requested her.&rdquo; Had Chava been given unasked, Adam could have said he never wanted her. Rashi at 2:18 gives a different reason for the whole arrangement, which was the question of an attendee: the <em>Aibershter</em> is alone above; if Adam were alone below, people might say there are two powers (<span class="heb">שְׁתֵּי רָשׁוּיוֹת</span>).<sup class="fn">2</sup> (To the listener who asked how we know the <em>Aibershter</em> is alone: because <em>Hashem Echad</em> (<span class="heb">ה׳ אֶחָד</span>) &mdash; He told us so &mdash; and He then emphasized it.)</p>
+
+<div class="aside">A passing <em>vort</em> from the room: the <em>Aibershter</em> takes His <em>sha&rsquo;ashuim</em> (<span class="heb">שַׁעֲשׁוּעִים</span>) in Torah, and the Torah is, so to speak, His toy &mdash; and it is hard to play alone. The Rav added the well-known <em>maaseh</em> that the first thing a <em>tzaddik</em> is asked upon arriving Above is to deliver a <em>shiur</em>, and that the Bach, who had permitted new grain outside Eretz Yisrael, was told to defend his <em>psak</em> the moment he arrived.</div>
+
+<h2><span class="num">II.</span> Two Ways to Read <em>Zos HaPaam</em> &mdash; the Rashbam and Rashi</h2>
+
+<p>Adam&rsquo;s first words on seeing Chava are <span class="heb">זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי וּבָשָׂר מִבְּשָׂרִי</span>. What does <em>zos hapaam</em> mean? In English we say &ldquo;finally,&rdquo; and that may be the wrong translation entirely.</p>
+
+<h3>The Rashbam: &ldquo;This Time, Only&rdquo;</h3>
+
+<p>Today is the <em>yahrtzeit</em> of the Ri of Dampierre (Rabbeinu Yitzchak, <span class="heb">ר״י</span>), regarded as perhaps the greatest of the Rishonim in <em>nigleh</em>. The Rosh writes that when the Rambam argues on the Ri or Rabbeinu Tam, we follow the Ri and Rabbeinu Tam, who were greater in wisdom &mdash; an Ashkenazi tradition; the Sefardim have the opposite one. The Ri was a great-grandson of Rashi. Rashi&rsquo;s daughter Yocheved married Rabbi Meir, and their children were the Rashbam (Shmuel), Rabbeinu Tam (Yaakov), the Rivam (Yitzchak, who died young), and Miriam, mother of the Ri. So the Ri and Rabbeinu Tam were nephew and uncle. Appropriately, the first source comes from the Ri&rsquo;s uncle.</p>
+
+<blockquote class="hebrew">
+זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי &mdash; דַּוְקָא, אֲבָל מִכָּאן וָאֵילָךְ אֵינוֹ כֵן, אֶלָּא אַדְּרַבָּה אִיפְּכָא הָאִישׁ יוֹצֵא מִן הָאִשָּׁה.
+<span class="attrib">&mdash; Rashbam, Bereishis 2:23 (source sheet #3) &nbsp;<sup class="fn">3</sup></span>
+</blockquote>
+
+<p>According to the Rashbam, <em>zos hapaam</em> means &ldquo;this time &mdash; and only this time&rdquo; a woman comes from a man; from now on it is <em>farkert</em>, man will come from woman. It has nothing to do with &ldquo;finally I have a mate.&rdquo; The Rashbam is a <em>pashtan</em>; the story, in his reading, is not primarily the wedding but Adam <em>naming</em> things &mdash; how did woman get her name, <em>ishah</em>? Because she was taken from <em>ish</em>. The Sforno learns similarly, and, the Rav noted, so do other Rishonim.</p>
+
+<p>The Rav pressed the obvious question &mdash; what is the point of saying &ldquo;only this time&rdquo;? Adam needs no one to tell him she came from a man; the <em>Aibershter</em> has just said so. A listener suggested that Adam is saying that although it will never happen again, she will always be called <em>ishah</em>, because the first time she was taken from <em>ish</em>. The Rav allowed the point to stand.</p>
+
+<h3>Rashi: &ldquo;In Contrast to Everything Before&rdquo;</h3>
+
+<p>Rashi (source #4) does not take the Rashbam&rsquo;s path. He cites the <em>gemara</em> in Yevamos:</p>
+
+<blockquote class="hebrew">
+זֹאת הַפַּעַם. מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה, וְלֹא נִתְקָרְרָה דַעְתּוֹ עַד שֶׁבָּא עַל חַוָּה (יבמות ס״ג).
+<span class="attrib">&mdash; Rashi, Bereishis 2:23, citing Yevamos 63a (source #4) &nbsp;<sup class="fn">4</sup></span>
+</blockquote>
+
+<p>On this reading, <em>zos hapaam</em> means &ldquo;this one is different from everything that came before it&rdquo;; Adam had been with every animal and was not appeased until Chava. <em>Nitkarerah da&rsquo;ato</em> (<span class="heb">נִתְקָרְרָה דַעְתּוֹ</span>) literally means his mind was cooled. Rashi is quoting the <em>gemara</em> verbatim, and the <em>gemara</em> itself is cited in the name of Rabbi Elazar.<sup class="fn">4</sup></p>
+
+<p>The Rashbam is Rashi&rsquo;s grandson; how can he disagree with the <em>gemara</em>? The Rav explained that a <em>drashah</em> does not displace <em>peshuto shel mikra</em> (<span class="heb">פְּשׁוּטוֹ שֶׁל מִקְרָא</span>) &mdash; there are layers: <em>peshat, remez, drush, sod</em> &mdash; and Rashi himself is less of a <em>pashtan</em> than his grandson or the Ibn Ezra. The Ibn Ezra famously said that when he explains <em>Chumash</em> he is giving his own understanding of the text and need not follow the <em>gemara</em>, because he is not ruling on a <em>halachic</em> question. The Maharshal was vehemently opposed, saying this approach created the ground for the Reform; to this day, some academics treat the Ibn Ezra as their hero. The Rebbe, the Rav added, did note that even Rashi occasionally offers a reading that departs from <em>Chazal</em>, and that it is not mutually exclusive.<sup class="fn">5</sup></p>
+
+<p>But then the real question: what does Rashi mean? Did Adam literally come upon every animal? <em>Lechorah</em> that sounds absurd. Which is where the Maharal comes in.</p>
+
+<h2><span class="num">III.</span> The Maharal&rsquo;s Problem &mdash; Adam Was Already Commanded</h2>
+
+<p>The Maharal of Prague (source #4, in the <em>Gur Aryeh</em>) opens with a flat rejection:</p>
+
+<blockquote class="hebrew">
+שֶׁבָּא עַל כָּל בְּהֵמָה וכו׳. בְּיִבָּמוֹת פֶּרֶק הַבָּא עַל יְבִמְתּוֹ. וְאֵין הַפֵּירוּשׁ חָלִילָה שֶׁבָּא עֲלֵיהֶם לְמִשְׁכָּב, שֶׁהֲרֵי הַקָּדוֹשׁ בָּרוּךְ הוּא כְּבָר צִוָּה אוֹתוֹ עַל הָעֲרָיוֹת (סנהדרין נו ע״ב) בַּפָּסוּק &ldquo;וַיְצַו&rdquo;.
+<span class="attrib">&mdash; Maharal, Gur Aryeh, Bereishis 2:23 (source #4) &nbsp;<sup class="fn">6</sup></span>
+</blockquote>
+
+<p>To appreciate his question, the Rav turned to the <em>gemara</em> in Sanhedrin 56b (source #5), which spends several <em>blatt</em> on the seven <em>mitzvos bnei Noach</em> and brings a spread of views about what Adam himself was commanded. One opinion: only <em>avodah zarah</em>. Another adds <em>birkas Hashem</em>, another <em>dinim</em>. The standard view &mdash; the Rav&rsquo;s shorthand &mdash; is six of the seven: he was missing <em>eiver min hachai</em>. Why? Because Adam was a vegetarian; he was not permitted to eat meat at all until after the <em>mabul</em>. The Ramban gives the reason: had it not been for Noach, the animals would have been destroyed, and Noach also tended them for a year in the <em>teivah</em>, so he merited dominion. Adam had no such claim.<sup class="fn">7</sup> Some say Adam was told all seven; Tosafos explains why <em>eiver min hachai</em> would then be relevant at all: if Adam could eat an animal that died on its own, a limb that fell off a living animal would be forbidden even after it died.</p>
+
+<p>The source for the larger view is Rabbi Yochanan&rsquo;s <em>drashah</em> on the very first <em>pasuk</em> (sheet #1, repeated in #5):</p>
+
+<blockquote class="hebrew">
+מְנָא הָנֵי מִילֵּי? אָמַר רַבִּי יוֹחָנָן, דְּאָמַר קְרָא: &ldquo;וַיְצַו ה׳ אֱלֹקִים עַל הָאָדָם לֵאמֹר מִכֹּל עֵץ הַגָּן אָכֹל תֹּאכֵל.&rdquo; &mdash; וַיְצַו, אֵלּוּ הַדִּינִין &hellip; ה׳, זוֹ בִּרְכַּת הַשֵּׁם &hellip; אֱלֹקִים, זוֹ עֲבוֹדָה זָרָה &hellip; עַל הָאָדָם, זוֹ שְׁפִיכוּת דָּמִים &hellip; לֵאמֹר, זוֹ גִּלּוּי עֲרָיוֹת &hellip; מִכֹּל עֵץ הַגָּן, וְלֹא גָּזֵל &hellip; אָכֹל תֹּאכֵל, וְלֹא אֵבֶר מִן הַחַי.
+<span class="attrib">&mdash; Sanhedrin 56b (source #5) &nbsp;<sup class="fn">7</sup></span>
+</blockquote>
+
+<p>The word <em>leimor</em> (<span class="heb">לֵאמֹר</span>) alludes to <em>giluy arayos</em> because of the <em>pasuk</em> in <em>Yirmiyah</em> (<span class="heb">לֵאמֹר הֵן יְשַׁלַּח אִישׁ אֶת אִשְׁתּוֹ</span>) where the same word introduces a case of relations. And since the prohibition on <em>arayos</em> for <em>bnei Noach</em> includes <em>bestiality</em> according to all opinions, here is the Maharal&rsquo;s problem: before Adam met any animal, he had been told not to have forbidden relations. Rashi himself (source #5, Rashi on 2:24) says that <span class="heb">עַל כֵּן יַעֲזָב אִישׁ</span> is the <em>ruach hakodesh</em>&rsquo;s way of forbidding <em>arayos</em> to <em>bnei Noach</em> (Sanhedrin 57a).<sup class="fn">7</sup></p>
+
+<h3>A Digression: Yaakov, Two Sisters, and Rabbi Meir</h3>
+
+<p>The Rav noted a surprising corollary. Whatever is forbidden to a Jew is forbidden to a gentile, according to the Sages; Rabbi Meir is more lenient: what carries no capital punishment for a Jew, even if it carries <em>kares</em> &mdash; like marrying two sisters &mdash; is permitted to a <em>goy</em>. This, he said, explains a well-known Rashi. When Yaakov hears Esav is coming, the <em>pasuk</em> says <span class="heb">וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ</span>, and Rashi says he feared he would be killed, and was distressed lest he kill <em>acherim</em> (<span class="heb">אֲחֵרִים</span>), others.<sup class="fn">8</sup> Who are these <em>acherim</em>? The Rav gave a tradition: in the Mishnayos, Rabbi Meir is referred to as <em>acher</em>; the <em>gemara</em> in Gittin says that Rabbi Meir descended from Nero Caesar, who converted. Nero is of Rome, Rome comes from Esav, so if Yaakov killed Esav, he risked cutting off the line that would produce Rabbi Meir. And why did Yaakov need Rabbi Meir? Because Yaakov married two sisters, and according to the Sages even a gentile may not. Only according to Rabbi Meir was it permitted. (An attendee countered that the <em>acherim</em> are plural; the Rav acknowledged it and moved on.)</p>
+
+<h3>The Maharal&rsquo;s Answer</h3>
+
+<p>The Maharal continues with a philosophical exposition (to the point the Rav chose to give in outline): man is the <em>tzurah</em> of everything beneath him in creation, and gives them <em>shleimus</em>. Each <em>tzurah</em> joins with that for which it is the form, and that joining is called <em>biah</em> (<span class="heb">בִּיאָה</span>). Adam, as the form of all the lower creatures, joined with all of them in this sense of bringing completion; but this was not a true match, because there was too little in common &mdash; it was not the right puzzle piece. Only when Chava came, who is a perfect match for Adam, did he find someone to whom he could bring his completion. That is what <em>biah</em> means here: bringing completion, not physical relations.<sup class="fn">6</sup></p>
+
+<h2><span class="num">IV.</span> Entering the Animals with the Mind</h2>
+
+<p>The Maharal is not alone. The Rav now surveyed a line of authorities who learn Rashi&rsquo;s <em>biah</em> as <em>mental</em>.</p>
+
+<h3>The Maharshal and the Vilna Gaon</h3>
+
+<p>The Maharshal (Rabbi Shlomo Luria, <span class="heb">מהרש״ל</span>), living in Lublin and a contemporary of the Maharal, writes in his gloss on Rashi (source #6):</p>
+
+<blockquote class="hebrew">
+אֲחֵרִים שִׁמֵּשׁ. נ״ב: אַף שֶׁאֵין מְשִׁיבִין אֶת הָאֲרִי, מִכָּל מָקוֹם נִרְאֶה לִי דְּלָאו דַּוְקָא שִׁמֵּשׁ, אֶלָּא בָּא בְּמַחֲשָׁבָה.
+<span class="attrib">&mdash; Maharshal, gloss on Rashi, <em>zos hapaam</em> (source #6) &nbsp;<sup class="fn">9</sup></span>
+</blockquote>
+
+<p><em>Nichtav nun-beis</em> means &ldquo;written on the side.&rdquo; The Maharshal will not &ldquo;knock off the lion&rdquo; &mdash; Rashi &mdash; but it seems to him that Adam did not physically come upon them; he came upon them with his mind, to see whether mating was possible. An attendee observed that Adam, to name the animals, had to plumb their essence, just as Shlomo HaMelech understood the speech of animals; so he could easily assess whether any of them could be a companion, and conclude, as the Maharshal does, that they were on different levels.</p>
+
+<p>The Vilna Gaon, in the <em>Aderes Eliyahu</em>, adds a linguistic point: <em>bo&rsquo; al</em> does not need to mean literally; he compares it to the <em>gemara</em>&rsquo;s phrase about the <em>Kohen Gadol</em> who &ldquo;came to his cow&rdquo; (<em>ba etzel parah</em>) on Yom Kippur, which obviously does not mean relations. The Rav noted <em>Chazal</em> use <em>etzel</em> there, not <em>al</em>, so the comparison is not perfect. The Gaon&rsquo;s sharper point is that the <em>gemara</em> does not really learn this from <em>zos hapaam</em> at all; the source is <span class="heb">וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ</span> two <em>pesukim</em> earlier. &ldquo;He did not find&rdquo; implies he was <em>searching</em> &mdash; and searching does not mean physical contact. If someone says, &ldquo;I am going to New York to look for a wife,&rdquo; he does not mean he will be intimate with the city; he means he will look and evaluate, as the <em>gemara</em> in Kiddushin and the Rambam tell us one must see a woman before betrothing her.<sup class="fn">10</sup></p>
+
+<h3>The Torah Temimah, Akeidah, Toldos Yitzchak, and Yalkut Yehoshua</h3>
+
+<p>The Torah Temimah (Rabbi Baruch HaLevi Epstein, d. 1941, son of the Aruch HaShulchan) writes (source #8):</p>
+
+<blockquote class="hebrew">
+רְצוֹנוֹ לוֹמַר שֶׁחָשַׁב וּבִקֵּשׁ לוֹ זוּג מִכָּל הַבְּרִיּוֹת וְלֹא נָחָה דַעְתּוֹ עַד שֶׁמָּצָא אֶת חַוָּה. וְאִי אֶפְשָׁר לְפָרְשׁוֹ כִּפְשׁוּטוֹ, דְּהֲרֵי מְבוֹאָר בְּעֲבוֹדָה זָרָה כ״ב ב׳ וכו׳ דִּבְהֵמוֹת מִתְעַקֶּרֶת מִבִּיאַת אָדָם, וְאֵלּוּ הַבְּהֵמוֹת וְהַחַיּוֹת הֲלֹא הוֹלִידוּ לְתַכְלִית קִיּוּם הַמִּין.
+<span class="attrib">&mdash; Torah Temimah, Bereishis 2:23 (source #8) &nbsp;<sup class="fn">11</sup></span>
+</blockquote>
+
+<p>The <em>gemara</em> in Avodah Zarah 22b accepts that an animal can be rendered barren by relations with a human. Had Adam been with every animal, many species would be infertile &mdash; yet all the original animals bore young and are here today. Two <em>gemaros</em> contradict; so the one about Adam must not be literal.<sup class="fn">11</sup> (A listener suggested that perhaps they gave birth beforehand. The Rav said: wait.)</p>
+
+<p>The Akeidah (Rabbi Yitzchak Arama, born in Spain c. 1420, a generation after the pogroms of 1391; he lived to see the expulsion of 1492 and died in Naples two years later) quotes the <em>gemara</em> with an added word: <em>chayah va&rsquo;of</em> (<span class="heb">חַיָּה וָעוֹף</span>) &mdash; a bird. The Rav did not know where the bird came from; he suspected a manuscript copyist. The Akeidah (source #9) explains:</p>
+
+<blockquote class="hebrew">
+יִרְצֶה שֶׁבָּא בְּדַעְתּוֹ וְטוֹב הִתְבּוֹנְנוּתוֹ עֲלֵיהֶם וְעַל טִבְעָם, וְלֹא נִתְקָרְרָה דַעְתּוֹ שֶׁיִּהְיֶה זִוּוּגוֹ וְחִבּוּרוֹ כְּזִוּוּג וְחִבּוּר שׁוּם אֶחָד מֵהֶם.
+<span class="attrib">&mdash; Akeidas Yitzchak, <em>parshas Bereishis</em> (source #9) &nbsp;<sup class="fn">12</sup></span>
+</blockquote>
+
+<p>The Toldos Yitzchak (source #10) was written by Rabbi Yitzchak Karo, uncle of Rabbi Yosef Karo, who also lived through the Spanish expulsion. He is emphatic: <span class="heb">חַס וְשָׁלוֹם שֶׁבָּא בְּפֹעַל</span>. After Adam named the animals through his wisdom, he understood their natures and saw that no female among them agreed with him. He adds that, on <em>peshat</em>, <em>zos hapaam</em> is as the Rashbam says &mdash; from now on there will be no need to take a woman from the rib of man.<sup class="fn">12</sup></p>
+
+<p>The Yalkut Yehoshua (source #11), by Rabbi Yehoshua Rabinowitz, printed in Milwaukee in 1933 &mdash; he lived in Brownsville, New York &mdash; makes a <em>diyuk</em> in the language:</p>
+
+<blockquote class="hebrew">
+מֵאָמְרוֹ וְלֹא נִתְקָרְרָה דַעְתּוֹ, כִּי הַמִּפְעָל הַזֶּה מִפְעָל תַּאֲוָנִי הוּא וְלֹא מִפְעָל שִׂכְלִי, וְהָיָה לוֹ לוֹמַר וְלֹא נִתְקָרְרָה תַּאֲוָתוֹ &hellip; אֵין לְפָרֵשׁ כִּפְשׁוּטוֹ.
+<span class="attrib">&mdash; Yalkut Yehoshua (source #11) &nbsp;<sup class="fn">12</sup></span>
+</blockquote>
+
+<p>If the <em>gemara</em> meant a physical act, it would have said <em>his desire</em> was not appeased (<em>ta&rsquo;avaso</em>), not <em>his mind</em> (<em>da&rsquo;ato</em>). Instead, the <em>gemara</em> means he considered the nature and characteristics of every animal and found nothing like himself; then he looked at Chava &mdash; at her <em>tichunah</em> and the build of her body &mdash; and said: <em>this</em> will work. Why the urgency to find a mate? Because the <em>Aibershter</em> had already blessed him with <em>peru urevu</em>.<sup class="fn">12</sup> (A discussion followed about whether the <em>bracha</em> of <em>peru urevu</em> in <em>Bereishis</em> 1:28 came before or after Chava&rsquo;s creation.) <em>Paam</em> itself, the Yalkut says, means a footstep, as in <span class="heb">מַה יָּפוּ פְעָמַיִךְ בַּנְּעָלִים</span>, and the Rav told the familiar <em>vort</em> that what the <em>Aibershter</em> treasures about the <em>aliyah laregel</em> is the mud and sweat of the journey in one&rsquo;s shoes, not the bliss one feels after the shoes come off in the <em>Beis HaMikdash</em>.</p>
+
+<p>So far, then, it looks unanimous: the Maharal, Maharshal, Vilna Gaon, Akeidah, Toldos Yitzchak, Torah Temimah, Yalkut Yehoshua &mdash; all against a literal reading. But there are exceptions.</p>
+
+<h2><span class="num">V.</span> The Literal Reading &mdash; the Chizkuni and the Maharsha</h2>
+
+<p>The Chizkuni (source #12), a thirteenth-century French Rishon, gives the Rashbam&rsquo;s <em>peshat</em> &mdash; and then, in the same breath, takes Rashi at his word:</p>
+
+<blockquote class="hebrew">
+זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי. פֵּרֵשׁ רַשִׁ״י מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה וְלֹא נִתְקָרְרָה דַעְתּוֹ. צָרִיךְ לוֹמַר שֶׁנִּתְעַבְּרוּ קֹדֶם שֶׁבָּא עֲלֵיהֶם אָדָם, דְּאִי לָא תֵימָא הָכִי הָא מִיעַקְּרָן בְּבִיאַת אָדָם.
+<span class="attrib">&mdash; Chizkuni, Bereishis 2:23 (source #12) &nbsp;<sup class="fn">13</sup></span>
+</blockquote>
+
+<p>He accepts the Torah Temimah&rsquo;s difficulty and answers it: all the animals must already have conceived before Adam came upon them. Afterwards they may have become barren, but the conception had already occurred. The Rav pointed out that the Chizkuni was a <em>Rishon</em> in the thirteenth century, so his <em>kashya</em> is the very <em>kashya</em> that the Torah Temimah would raise centuries later. A listener objected that the Chizkuni offers two <em>peshatim</em> and the second need not be literal; the Rav replied that the Chizkuni says plainly that Adam was with them.<sup class="fn">13</sup></p>
+
+<p>The Tzeidah LaDerech (Rabbi Yissachar Ber Eilenburg, author of the <em>Be&rsquo;er Sheva</em>, who wrote a supercommentary on Rashi, source #13) quotes the Chizkuni and rejects it outright: <span class="heb">חָלִילָה חָלִילָה לוֹמַר כֵּן</span> &mdash; would Adam defile himself in this way? It is not that he actually did anything; as the Toldos Yitzchak says, he came with his mind and was unimpressed. The Tzeidah LaDerech therefore pushes the Chizkuni aside.<sup class="fn">13</sup> (The Rav added an exchange with the room: if Adam examined all the animals mentally and found them lacking, did it lower his opinion of Hashem &mdash; &ldquo;is this the best You can do?&rdquo; &mdash; and perhaps that is why Hashem wanted him to <em>ask</em>.)</p>
+
+<p>The Maharsha (source #7, on Yevamos 63a, written c. 1600 in Poland) sticks up for the Chizkuni &mdash; but, the Rav said, only at the level of logic:</p>
+
+<blockquote class="hebrew">
+אֵין זֶה מַסְפִּיק, דְּהָא מִשֶּׁנִּתְעַבְּרָה בְּהֵמָה אֵינָהּ מְקַבֶּלֶת זָכָר, וַאֲפִלּוּ זְכַר אָדָם, כְּדִמְוּכָח פֶּרֶק קַמָּא דִבְכוֹרוֹת. וְאֶפְשָׁר לוֹמַר שֶׁנִּתְעַבְּרוּ וְיָלְדוּ בּוֹ בַיּוֹם קֹדֶם שֶׁבָּא עֲלֵיהֶן, דְּהָא חַוָּה נַמִּי יָלְדָה בּוֹ בַיּוֹם כְּדְאָמְרִינַן פֶּרֶק אָדָם הָרִאשׁוֹן.
+<span class="attrib">&mdash; Maharsha, Chiddushei Aggados, Yevamos 63a (source #7) &nbsp;<sup class="fn">14</sup></span>
+</blockquote>
+
+<p>The Chizkuni&rsquo;s answer is not enough, says the Maharsha: once an animal is pregnant it will not accept a male, as we see in the first <em>perek</em> of Bechoros. So Adam would have had to force each pregnant animal, which makes the story worse. The Maharsha proposes that they conceived <em>and gave birth that very day</em>, before Adam came upon them &mdash; for Chava too gave birth the same day, as the <em>gemara</em> in the <em>perek</em> of Adam HaRishon says (Sanhedrin 38b).<sup class="fn">14</sup> The Rav addressed an objection &mdash; the <em>gemara</em> says <em>mishenisaberah</em>, once she is pregnant, not that one pregnancy is complete in a day &mdash; with a stern reading: the Chizkuni is still &ldquo;up the creek,&rdquo; because the animal&rsquo;s system would have gone haywire before conception; so if they conceived beforehand they would have refused, and the only logical resolution is that they had already given birth.</p>
+
+<p>Then, the Maharsha adds: <span class="heb">וּבַעַל הַנִּצָּחוֹן כָּתַב</span> &mdash; the author of the <em>Sefer HaNitzachon</em> writes that the <em>gemara</em> is not literal at all. The Rav asked the class to turn to source #14.</p>
+
+<h3>A Manuscript from Prague &mdash; the <em>Sefer HaNitzachon</em></h3>
+
+<p>In the late 1300s the Prague Jewish community was a fount of Torah &mdash; long before the Maharal, the Shelah, the Tosafos Yom Tov, the Kli Yakar and the Noda BiYehuda &mdash; and in those days there were two friends there. One was Avigdor Kara, a philosopher and kabbalist who, according to tradition, made a <em>golem</em> a century and a half before the Maharal. The other was Rabbi Yom Tov Lipmann (Muelhausen). He was summoned to a public disputation; his opponent was a Jew who had converted, Pesach, now called Peter. The Jews thought the debate went well &mdash; which was the problem, because the Christians were humiliated; a couple of months later, the Rav said, eighty Jews were killed in Prague. Rabbi Lipmann wrote down the entire debate so that all would know what had happened, and that is the <em>Sefer HaNitzachon</em> (<span class="heb">סֵפֶר הַנִּצָּחוֹן</span>).<sup class="fn">15</sup></p>
+
+<blockquote class="hebrew">
+וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ. הַכּוֹפְרִים פּוֹקְרִים עַל רַשִׁ״י, שֶׁפֵּרֵשׁ מְלַמֵּד שֶׁבָּא עַל כָּל בְּהֵמָה חַיָּה וְעוֹף, וְלֹא נִתְקָרְרָה דַעְתּוֹ עַד שֶׁנִּזְדַּוְּגָה לוֹ חַוָּה. לָכֵן אוֹמֵר אֲנִי שֶׁאֵין בָּא זֶה לְשׁוֹן תַּשְׁמִישׁ, כִּי הַגָּדוֹל בָּעֲנָקִים אִי אֶפְשָׁר לְשַׁמֵּשׁ עִם עַכְבָּר וְחוֹלְדָה, אֶלָּא אָדָם הַהוֹלֵךְ לְחַפֵּשׂ וּלְבַקֵּשׁ דָּבָר נוֹפֵל עָלָיו לְשׁוֹן בָּא בְּעִבְרִית, כְּמוֹ פְלוֹנִי בָּא עֲלֵיהֶם לְמִלְחָמָה אוֹ בָּא עֲלֵיהֶם בַּעֲלִילוֹת. וְהָכִי פֵּירוּשׁוֹ: לְפִי שֶׁלֹּא הָיָה זוּג לְאָדָם הָלַךְ לְחַפֵּשׂ וְלִבְדּוֹק בְּכָל הַמִּינִים אִם יִמְצָא עוֹד אֶחָד בְּלֹא עֵזֶר, וְכֵיוָן שֶׁלֹּא מָצָא לֹא נִתְקָרְרָה דַעְתּוֹ עַד שֶׁנִּזְדַּוְּגָה לוֹ חַוָּה.
+<span class="attrib">&mdash; Sefer HaNitzachon (Rabbi Yom Tov Lipmann-Muelhausen), on <em>Bereishis</em> 2:20 (source #14) &nbsp;<sup class="fn">15</sup></span>
+</blockquote>
+
+<p>Note the opening words: <em>hakofrim pokrim al Rashi</em> &mdash; the heretics poke at Rashi. This was a standing problem for Jews in disputations; the Rav noted that Rabbi Yechiel of Paris faced the same Rashi and the same <em>gemara</em> in the 1240s. (Disputations tended to center on <em>Sefer Bereishis</em>, and the Jewish debater had to be <em>baki</em> in it.) The Nitzachon&rsquo;s answer has two parts. First, a practical one: Adam was a giant &mdash; before the sin his head reached the heavens, as the <em>gemara</em> says &mdash; and one cannot cohabit with a mouse or a weasel. Second, a linguistic one: <em>bo&rsquo;</em> in Hebrew falls on someone who is searching, as in <em>he came against them for war</em>. So the <em>gemara</em> means that, having no mate, Adam went to search among all the species to see if there might be another single one, and since he did not find, his mind was not appeased until Chava was brought to him.</p>
+
+<p>A friendly debate followed in the room about whether &ldquo;did not find&rdquo; should have produced <em>chalishus hada&rsquo;as</em> (dejection) rather than <em>lo nitkarerah</em>; the Rav let the room have its say &mdash; it was suggested that Adam wanted to learn whether the concept of being alone exists at all, or that he sought another loner, since he would not break up a couple &mdash; and said that either way the point of the Nitzachon is clear. A final question was raised about the Torah being so specific about <em>kashrus</em> and <em>Shabbos</em> and then so oblique here. The Rav&rsquo;s answer: the <em>Chumash</em> says nothing about this. The extra word is in the <em>gemara</em>&rsquo;s derivation, from <em>matza</em> or from <em>zos hapaam</em>.</p>
+
+<p>The Levush (Rabbi Mordechai Yaffe, a student of the Rema, d. 1612, author of <em>Levush HaOrah</em> on Rashi), in a source the Rav almost forgot to bring, objects for two reasons. One: there is not enough time in the day for Adam to be with every animal. Two: it is simply repulsive (<em>aklakeit</em>) &mdash; even if the commandment of <em>bal teshaktzu</em> (<span class="heb">בַּל תְּשַׁקְּצוּ</span>) was given only to Jews, it is a <em>muskal rishon</em> that Adam would not do such a thing.<sup class="fn">16</sup></p>
+
+<p>The Rav then summarized. By now there are five problems with a literal reading: the Maharal&rsquo;s (<em>halachic</em> &mdash; Adam had been commanded); the Chizkuni and Torah Temimah&rsquo;s (fertility); the Sefer HaNitzachon&rsquo;s (Adam&rsquo;s size); the Levush&rsquo;s (time); and the Levush&rsquo;s other (disgust). He then asked for source #15:</p>
+
+<blockquote class="hebrew">
+וַיֹּאמֶר הָאָדָם זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי וגו׳. מְלַמֵּד שֶׁבָּא אָדָם עַל חַיָּה וּבְהֵמָה, וְלֹא נִתְקָרְרָה דַעְתּוֹ עַד שֶׁנִּזְדַּוֵּג לְחַוָּה.
+<span class="attrib">&mdash; Midrash Aggadah (ed. Buber), Bereishis 2:23 (source #15) &nbsp;<sup class="fn">16</sup></span>
+</blockquote>
+
+<p>Solomon Buber, the great researcher of <em>midrash</em>, printed this text about a century ago from manuscript. Note the difference: it has no <span class="heb">כָּל</span> &mdash; he came upon <em>some</em> animals. This already dissolves the Levush&rsquo;s first <em>kashya</em> (time). The Rav then fielded a vigorous objection: Rashi and the <em>gemara</em> say <em>kol</em>. If you want to read <em>al</em> literally, <em>kol</em> must go; if you keep <em>kol</em> literally, you must read <em>al</em> as mental. His answer: <em>kol</em> in <em>Chazal</em> often means &ldquo;quite a lot,&rdquo; and the <em>Midrash Aggadah</em> suggests the same.<sup class="fn">16</sup></p>
+
+<h2><span class="num">VI.</span> The Taz &mdash; Rashi Means What He Says</h2>
+
+<p>Now the Taz (Rabbi David HaLevi Segal, 1586&ndash;1667), in <em>Divrei David</em> on Rashi (source #18). The Rav prefaced with a few of the Taz&rsquo;s stories: that during the <em>Shabsai Tzvi</em> episode he sent his son to observe him and the son returned reporting that he saw nothing alarming other than that he slept on his back; and that during the Chmielnicki massacres, when the Taz, exhausted, fell asleep in <em>shul</em> and dreamed of the <em>pasuk</em> <span class="heb">וְגַנּוֹתִי עַל הָעִיר הַזֹּאת לְהוֹשִׁיעָהּ לְמַעֲנִי וּלְמַעַן דָּוִד עַבְדִּי</span> &mdash; he took it as a promise for himself, David, told the people to take the old cannon to the weakest section of the wall, and the explosion sent the attackers fleeing. Having established who we are dealing with, he turned to the text.</p>
+
+<blockquote class="hebrew">
+זֹאת הַפַּעַם, מְלַמֵּד שֶׁבָּא עַל כָּל בְּהֵמָה וְחַיָּה. בְּפֶרֶק הַבָּא עַל יְבִמְתּוֹ &hellip; וְהִקְשׁוּ הַמְפָרְשִׁים הֵיאַךְ בָּא עַל בְּהֵמָה, שֶׁהֲרֵי נִצְטַוּוּ עַל הָעֲרָיוֹת וּבְהֵמָה בִּכְלַל עֲרָיוֹת, כְּדִתְנַן פֶּרֶק אַרְבַּע מִיתוֹת &hellip; וְדָבָר זֶה אֵינוֹ עוֹלֶה לְפֵירוּשׁ רַשִׁ״י שֶׁכָּתַב בְּהֶדְיָא בְּיִבָּמוֹת שֶׁשִּׁמֵּשׁ פְּעָמִים אֲחֵרִים &hellip; וּבֶאֱמֶת הִקְשׁוּ קוּשְׁיָא זוֹ מֵחִסָּרוֹן יְדִיעָה, דְּאִיתָא פֶּרֶק אָדָם הָרִאשׁוֹן (דַּף לַ״ח).
+<span class="attrib">&mdash; Taz, Divrei David on Rashi, Bereishis 2:23 (source #18; abridged, print faint) &nbsp;<sup class="fn">17</sup></span>
+</blockquote>
+
+<p>The Taz says: the commentators asked how Adam could have come upon an animal when he was already commanded on <em>arayos</em> &mdash; and therefore explained it as mental. A nice <em>peshat</em>, says the Taz, but not Rashi&rsquo;s. Rashi in Yevamos writes explicitly that <em>shimeish pe&rsquo;amim acheiros</em> &mdash; Adam cohabited at other times. (The Rav added that some say this was Lilis, and that the Ibn Ezra brings those who read <em>zos hapaam</em> as a contrast to Lilis. An attendee insisted that Rashi&rsquo;s wording is general, not about Lilis, and the Rav agreed that the <em>gemara</em> in context concerns the animals.)</p>
+
+<p>The Taz then says: those who ask this question lack knowledge (<span class="heb">מֵחִסָּרוֹן יְדִיעָה</span>) of the <em>gemara</em> in Sanhedrin 38b. The Rav put source #19 on the table:</p>
+
+<blockquote class="hebrew">
+אָמַר רַבִּי יוֹחָנָן בַּר חֲנִינָא: שְׁתֵּים עֶשְׂרֵה שָׁעוֹת הָיָה הַיּוֹם. שָׁעָה רִאשׁוֹנָה הוּצְבַּר עֲפָרוֹ, שְׁנִיָּה נַעֲשָׂה גּוֹלֶם, שְׁלִישִׁית נִמְתְּחוּ אֵבָרָיו, רְבִיעִית נִזְרְקָה בּוֹ נְשָׁמָה, חֲמִישִׁית עָמַד עַל רַגְלָיו, שִׁשִּׁית קָרָא שֵׁמוֹת, שְׁבִיעִית נִזְדַּוְּגָה לוֹ חַוָּה, שְׁמִינִית עָלוּ לַמִּטָּה שְׁנַיִם וְיָרְדוּ אַרְבָּעָה, תְּשִׁיעִית נִצְטַוָּה שֶׁלֹּא לֶאֱכֹל מִן הָאִילָן, עֲשִׂירִית סָרַח, אַחַת עֶשְׂרֵה נִדּוֹן, שְׁתֵּים עֶשְׂרֵה נִטְרַד וְהָלַךְ לוֹ, שֶׁנֶּאֱמַר: &ldquo;וְאָדָם בִּיקָר בַּל יָלִין.&rdquo;
+<span class="attrib">&mdash; Sanhedrin 38b (source #19) &nbsp;<sup class="fn">18</sup></span>
+</blockquote>
+
+<p>The sixth hour: Adam gives names. The seventh: Chava is joined to him. The eighth: two go up to bed and four come down. The ninth: <span class="heb">נִצְטַוָּה שֶׁלֹּא לֶאֱכֹל מִן הָאִילָן</span> &mdash; he was commanded about the Tree. Tosafos (source #20) adds that the four were Adam, Chava, Kayin and Kayin&rsquo;s twin sister, because Hevel was born later, and <em>Bereishis Rabbah</em> derives from <span class="heb">אֶת אָחִיו אֶת הָבֶל</span> that Hevel had two twin sisters.<sup class="fn">18</sup> The point for our sugya: the <em>pesukim</em> are out of order. In the Torah the command <span class="heb">וַיְצַו</span> comes before the naming, but the <em>gemara</em> places Adam&rsquo;s commands <em>after</em> Chava. So the prohibition of bestiality was not yet in force when Adam spent his hour of searching. Rashi&rsquo;s own source for <em>arayos</em> for <em>bnei Noach</em> is the later verse, <span class="heb">עַל כֵּן יַעֲזָב אִישׁ אֶת אָבִיו וְאֶת אִמּוֹ וְדָבַק בְּאִשְׁתּוֹ</span> (#5 above, Rashi on 2:24), which is certainly after Chava. The Maharal&rsquo;s question evaporates.<sup class="fn">17</sup></p>
+
+<p>The Taz continues with the remaining difficulties. The Levush&rsquo;s revulsion: before the sin, every animal was beautiful &mdash; the <em>nachash</em> stood on two feet and spoke; the Ibn Ezra brings the view that it literally spoke. The animals were created by the word of Hashem; only after the sin did they, too, partake. His closing instruction: do not remove the words of the Sages from their simple meaning. The fertility question is answered by the Chizkuni (they conceived) and Maharsha (they gave birth); the Sefer HaNitzachon and Levush&rsquo;s practical objections are answered by the <em>Midrash Aggadah</em> &mdash; <em>some</em> animals. The Rav summed up the scorecard: all five questions are answered; no one comes out wounded.</p>
+
+<h3>The Room Pushes Back</h3>
+
+<p>A lively exchange followed, and the Rav made sure it was in the write-up. Is it plausible that one hour sufficed for even a few? Someone said even three would be a <em>chazakah</em>. Why would he need to try, being a scientist who understood their depth? &mdash; because there were no animals like him; and if animals looked quite different then, the <em>Midrash</em> that the <em>nachash</em> fathered Kayin (not the view of the <em>gemara</em> in Sanhedrin) shows how little we know about the creatures. The Kabbalists, the Rav added, hold that the animals lost their knowledge of Hashem when the sin occurred &mdash; <em>lo yare&rsquo;u velo yashchisu</em> (<span class="heb">לֹא יָרֵעוּ וְלֹא יַשְׁחִיתוּ</span>) will come true when <em>Moshiach</em> restores it &mdash; and that this is a spiritual loss, unlike the <em>nachash</em>&rsquo;s physical one.</p>
+
+<p>What was Adam looking for &mdash; a mind or a body? The room divided. The Rav&rsquo;s own view: both, as in any <em>shidduch</em>. <em>Ezer kenegdo</em> (<span class="heb">עֵזֶר כְּנֶגְדּוֹ</span>) is not only <em>peru urevu</em> but a whole companionship; and Rashi on 2:18 says <em>zachah &mdash; ezer; lo zachah &mdash; kenegdo lehilachem</em>. The Netziv of Volozhin adds that the greatest <em>ezer</em> is a wife who is <em>kenegdo</em>: one who pushes her husband to do more, not a yes-woman.<sup class="fn">2</sup> And the Rav insisted the word <em>da&rsquo;ato</em> shows he was looking for more than physical compatibility; for the bodily alone he could have made a <em>golem</em>.</p>
+
+<h2><span class="num">VII.</span> The Last Word &mdash; an Argument Still Open</h2>
+
+<p>Where do we stand? On one side, the Maharal, Maharshal, Vilna Gaon, Akeidah, Toldos Yitzchak, Torah Temimah, Yalkut Yehoshua, the Tzeidah LaDerech, the Sefer HaNitzachon and the Levush &mdash; all agreeing that Rashi cannot mean it literally, for a series of different reasons. On the other, the Chizkuni (who takes it literally and answers the fertility problem), the Maharsha (who defends him on logic), and the Taz, who defends the literal reading of Rashi with a full answer to every question. A listener summed up the standing of the debate: &ldquo;It seems like it&rsquo;s everyone against Rashi.&rdquo; The Rav&rsquo;s answer was that Rashi is quoting the <em>gemara</em> verbatim, and the question is only what the <em>gemara</em> meant; and that the Taz&rsquo;s point stands: Rashi himself in Yevamos is explicit.</p>
+
+<p>The Rav was about to turn to the Yalkut Yehoshua&rsquo;s <em>diyuk</em> on Rashi&rsquo;s own wording in Yevamos &mdash; that Rashi there says <em>meshamesh</em> &mdash; when the recording breaks off. The write-up stops where the recording stops.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">בְּרֵאשִׁית ב:טז&ndash;כד</span> &mdash; the <em>pesukim</em> (sheet #1&ndash;2); <span class="heb">אור שמח</span>; <span class="heb">ירושלמי קידושין ד:יב</span>.</span>
+  <span class="exp">The sheet reproduces <em>Bereishis</em> 2:16&ndash;18 (#1) and 2:20&ndash;24 (#2). The Or Sameach (Rabbi Meir Simcha HaKohen of Dvinsk, 1843&ndash;1926) reads <em>achol tochal</em> as a <em>mitzvah</em>, not mere permission. He is paired by the Rav with the well-known <em>Yerushalmi</em> that a person is held to account for permitted foods he refused to eat.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Rav gave the Or Sameach and the <em>Yerushalmi</em> without a precise location. The <em>Yerushalmi</em> is conventionally cited at the end of Kiddushin (4:12), but this was not confirmed on Sefaria; the Or Sameach&rsquo;s exact comment (on <em>Bereishis</em> 2:16) was not located. Verify both before citing.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. <span class="heb">רש״י בראשית ב:יח, כ</span> &mdash; why Adam had to ask, and <em>ezer kenegdo</em>.</span>
+  <span class="exp">Confirmed on Sefaria. Rashi on 2:18 (citing <em>Bereishis Rabbah</em>): <span class="heb">שֶׁלֹּא יֹאמְרוּ שְׁתֵּי רָשׁוּיוֹת הֵן, הַקָּבָּ״ה יָחִיד בָּעֶלְיוֹנִים וְאֵין לוֹ זוּג, וְזֶה יָחִיד בַּתַּחְתּוֹנִים</span>; and on <em>ezer kenegdo</em>: <span class="heb">זָכָה עֵזֶר, לֹא זָכָה כְּנֶגְדּוֹ לְהִלָּחֵם</span>. Rashi on 2:20: when the animals were brought before him, Adam said, <em>all have a mate and I have none</em>, and at once <em>vayapeil</em>. The latter drasha on <em>ezer kenegdo</em> also appears in Yevamos 63a (Sefaria-confirmed). The point about the Netziv of Volozhin&rsquo;s reading of <em>kenegdo</em> as &ldquo;urging him to do more&rdquo; was said in the room.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Netziv&rsquo;s comment (<em>Ha&rsquo;emek Davar</em>, <em>Bereishis</em> 2:18) was cited from memory in the discussion; not verified.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">רשב״ם בראשית ב:כג</span> (sheet #3); <span class="heb">ספורנו</span>.</span>
+  <span class="exp">Confirmed on Sefaria (<em>Rashbam on Genesis</em> 2:23): <span class="heb">זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי &mdash; דַּוְקָא, אֲבָל מִכָּאן וְאֵילָךְ אֵינוֹ כֵן, אֶלָּא אַדְּרַבָּה אִיפְּכָא הָאִישׁ יוֹצֵא מִן הָאִשָּׁה</span>. Rabbi Shmuel ben Meir, grandson of Rashi through his daughter Yocheved and Rabbi Meir; brother of Rabbeinu Tam.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Rav added that the Sforno &ldquo;learns as well&rdquo; like the Rashbam, without a citation. Not located or verified.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">רש״י בראשית ב:כג</span>; <span class="heb">יבמות סג ע״א</span> (sheet #4).</span>
+  <span class="exp">Confirmed on Sefaria. Rashi: <span class="heb">מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה, וְלֹא נִתְקָרְרָה דַעְתּוֹ בָּהֶם (יבמות ס״ג)</span>. Note: the Sefaria text of Rashi ends <em>bahem</em>; the sheet&rsquo;s version, like the <em>gemara</em> itself, reads <em>ad she&rsquo;ba al Chava</em>. Yevamos 63a, in the name of Rabbi Elazar: &ldquo;This teaches that Adam had intercourse with each animal and beast &hellip; and his mind was not at ease &hellip; until he had intercourse with Eve&rdquo; &mdash; one of a series of statements on <em>ishah</em> whose mnemonic opens the passage.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">אבן עזרא</span>; <span class="heb">מהרש״ל</span> on the Ibn Ezra&rsquo;s method of <em>peshat</em>.</span>
+  <span class="exp">The Rav told that the Ibn Ezra said his <em>peshat</em> need not follow the <em>gemara</em> where he is not ruling a <em>halachic</em> question; the Maharshal bitterly attacked this and held it opened the door to the Reform; and that today&rsquo;s academics see the Ibn Ezra as their hero. The Rav also said the Rebbe (R&rsquo; Menachem Mendel Schneerson) learned Rashi as at times diverging from <em>Chazal</em>.</span>
+  <div class="note-academic"><strong>Flag:</strong> Given as oral background without a source. Not verified against the Ibn Ezra&rsquo;s introduction or the Maharshal&rsquo;s writings.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">מהר״ל, גור אריה בראשית ב:כג</span> (sheet #4, lower left).</span>
+  <span class="exp">Confirmed on Sefaria (<em>Gur Aryeh on Bereishit</em> 2:23; Hebrew only). The text: <span class="heb">וְאֵין הַפֵּירוּשׁ חָלִילָה שֶׁבָּא עֲלֵיהֶם לְמִשְׁכָּב, שֶׁהֲרֵי הַקָּדוֹשׁ בָּרוּךְ הוּא כְּבָר צִוָּה אוֹתוֹ עַל הָעֲרָיוֹת (סנהדרין נו ע״ב)</span>. He proceeds that man is the <em>tzurah</em> of all lower creatures and gives them <em>shleimus</em>; that joining is called <em>biah</em>; and that Adam&rsquo;s true match, to whom he is a <em>particular and complete</em> form, was Chava. Rabbi Yehudah Loew of Prague (c. 1520&ndash;1609).</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">סנהדרין נו ע״ב</span> (sheet #5); <span class="heb">רש״י בראשית ב:כד</span> (sheet #5); <span class="heb">רמב״ן</span>; <span class="heb">תוספות</span>.</span>
+  <span class="exp">Sanhedrin 56b confirmed on Sefaria: Rabbi Yochanan derives the seven <em>mitzvos</em> from <em>Bereishis</em> 2:16, with <span class="heb">לֵאמֹר</span> tied to <em>giluy arayos</em> via <em>Yirmiyah</em> 3:1; the same <em>sugya</em> records that Rabbi Yehudah says Adam was commanded only about idolatry. Rashi on 2:24 confirmed: <span class="heb">עַל כֵּן יַעֲזָב אִישׁ, רוּחַ הַקֹּדֶשׁ אוֹמֶרֶת כֵּן לֶאֱסֹר עַל בְּנֵי נֹחַ הָעֲרָיוֹת (סנהדרין נ״ז)</span>; the following Rashi, <span class="heb">לְבָשָׂר אֶחָד</span>, cites Sanhedrin 58 for the child.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Ramban&rsquo;s reason that Adam did not eat meat (Noach&rsquo;s merit in preserving the animals), and the Tosafos on <em>eiver min hachai</em> (a limb from an animal that died of itself), were given orally without a location. Not verified; likely <em>Ramban</em> on <em>Bereishis</em> 9:3 and <em>Tosafos</em> on Sanhedrin 56b, but unconfirmed.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">רש״י בראשית לב:ח</span>; <span class="heb">גיטין נו ע״א</span>; Rabbi Meir and the Noahide.</span>
+  <span class="exp">Confirmed on Sefaria. Rashi on <span class="heb">וַיִּירָא יַעֲקֹב מְאֹד וַיֵּצֶר לוֹ</span>: <span class="heb">וַיִּירָא שֶׁמָּא יֵהָרֵג, וַיֵּצֶר לוֹ אִם יַהֲרֹג הוּא אֶת אֲחֵרִים</span>. Gittin 56a: Nero (<span class="heb">נֵירוֹן קֵיסָר</span>) fled, converted, <span class="heb">וּנְפַק מִינֵּיהּ רַבִּי מֵאִיר</span>.</span>
+  <div class="note-academic"><strong>Flag:</strong> Rashi himself does not identify the <em>acherim</em> with Rabbi Meir; that is a tradition the Rav cited, and the Rav also invoked a <em>machlokes</em> between the Sages and Rabbi Meir on whether a Noahide may marry two sisters, without a source. Both remain unverified. Also: the <em>gemara</em> says only that Rabbi Meir descended from Nero; the Rav&rsquo;s &ldquo;great-grandson&rdquo; is not in the text.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">מהרש״ל</span>, gloss on Rashi (sheet #6).</span>
+  <span class="exp">Rabbi Shlomo Luria (Lublin, 16th c.). The sheet reads: <span class="heb">אֲחֵרִים שִׁמֵּשׁ. נ״ב: אַף שֶׁאֵין מְשִׁיבִין אֶת הָאֲרִי, מִכָּל מָקוֹם נִרְאֶה לִי דְּלָאו דַּוְקָא שִׁמֵּשׁ אֶלָּא בָּא בְּמַחֲשָׁבָה</span>. <em>Nichtav nun-beis</em> is read by the Rav as <em>nichtav betzido</em>, a marginal note.</span>
+  <div class="note-academic"><strong>Flag:</strong> The title of the Maharshal&rsquo;s work in which this gloss appears is not given on the sheet. Not located on Sefaria; no work is named here in order not to guess.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. <span class="heb">גר״א, אדרת אליהו</span>; <span class="heb">קידושין</span>; <span class="heb">רמב״ם</span>.</span>
+  <span class="exp">The Vilna Gaon, as presented by the Rav (not on the sheet): <em>bo&rsquo; al</em> need not be literal, as with the <em>Kohen Gadol</em> who &ldquo;came to his cow&rdquo; on Yom Kippur; and the true source of the <em>gemara</em> is <span class="heb">וּלְאָדָם לֹא מָצָא</span> &mdash; searching. The Rav compares the need to see a bride before betrothal (Kiddushin and the Rambam).</span>
+  <div class="note-academic"><strong>Flag:</strong> No locations were given for any of these. Likely candidates (<em>Aderes Eliyahu</em> on <em>Bereishis</em>; Kiddushin 41a; Rambam <em>Hilchos Ishus</em> 3:19; the Mishnah in Yoma on the <em>parah</em>) were not verified and are not asserted.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">תורה תמימה בראשית ב:כג</span> (sheet #8); <span class="heb">עבודה זרה כב ע״ב</span>.</span>
+  <span class="exp">Rabbi Baruch HaLevi Epstein (1860&ndash;1941), son of the Aruch HaShulchan. Avodah Zarah 22b confirmed on Sefaria: Rav Tachlifa in the name of Rav Sheila bar Avina in the name of Rav says a gentile spares his animal so it will not become barren. The sheet&rsquo;s Torah Temimah cites <span class="heb">ע״ז כ״ב ב׳</span>.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Torah Temimah does not appear as a separate work on Sefaria (checked: no book named <em>Torah Temimah on Genesis</em>), so his text is given as printed on the sheet.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. <span class="heb">עקידת יצחק</span> (sheet #9); <span class="heb">תולדות יצחק</span> (#10); <span class="heb">ילקוט יהושע</span> (#11).</span>
+  <span class="exp">Akeidah: Rabbi Yitzchak Arama (c. 1420&ndash;1494). The sheet quotes: <span class="heb">חַיָּה וְעוֹף וְלֹא נִתְקָרְרָה דַעְתּוֹ בָּהֶם (יבמות ס״ג). יִרְצֶה שֶׁבָּא בְּדַעְתּוֹ וְטוֹב הִתְבּוֹנְנוּתוֹ עֲלֵיהֶם וְעַל טִבְעָם</span>. Toldos Yitzchak: Rabbi Yitzchak Karo, uncle of the Mechaber, on <em>zos hapaam</em>. Yalkut Yehoshua: Rabbi Yehoshua Rabinowitz; the Rav said it was printed in Milwaukee in 1933.</span>
+  <div class="note-academic"><strong>Flag:</strong> Texts reproduced from the sheet; none of the three was located on Sefaria. The addition of <em>of</em> (bird) to Rashi&rsquo;s wording (<em>chayah va&rsquo;of</em>) is the Akeidah&rsquo;s on the sheet, though it also appears in the Sefer HaNitzachon. The publication details of the Yalkut Yehoshua are from the Rav and unverified.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">חזקוני בראשית ב:כג</span> (sheet #12); <span class="heb">צידה לדרך</span> (sheet #13).</span>
+  <span class="exp">Chizkuni confirmed on Sefaria: <span class="heb">פֵּרֵשׁ רַשִׁ״י מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה וְלֹא נִתְקָרְרָה דַעְתּוֹ. צָרִיךְ לוֹמַר שֶׁנִּתְעַבְּרוּ קֹדֶם שֶׁבָּא עֲלֵיהֶם אָדָם דְּאִי לָא תֵימָא הָכִי הָא מִיעַקְּרָן בְּבִיאַת אָדָם</span>. Rabbi Chizkiyah ben Manoach, 13th-century France. The Tzeidah LaDerech is the supercommentary on Rashi by Rabbi Yissachar Ber Eilenburg, author of <em>Be&rsquo;er Sheva</em>, which quotes the Chizkuni and rejects the literal reading as <span class="heb">חָלִילָה חָלִילָה</span>.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Tzeidah LaDerech was not located on Sefaria; text as on the sheet.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">מהרש״א, חידושי אגדות יבמות סג ע״א</span> (sheet #7).</span>
+  <span class="exp">Confirmed on Sefaria (<em>Chidushei Agadot on Yevamot</em> 63a). Quotes the Chizkuni, says <span class="heb">אֵין זֶה מַסְפִּיק, דְּהָא מִשֶּׁנִּתְעַבְּרָה בְּהֵמָה אֵינָהּ מְקַבֶּלֶת זָכָר &hellip; כְּדִמְוּכָח פֶּרֶק קַמָּא דִבְכוֹרוֹת</span>, proposes <span class="heb">שֶׁנִּתְעַבְּרוּ וְיָלְדוּ בּוֹ בַיּוֹם</span>, citing the <em>perek</em> <span class="heb">אָדָם הָרִאשׁוֹן</span> for Chava giving birth the same day (Sanhedrin 38b, confirmed), and then <span class="heb">וּבַעַל הַנִּצָּחוֹן כָּתַב</span>. Rabbi Shmuel Eliezer Eidels (1555&ndash;1631).</span>
+  <div class="note-academic"><strong>Flag:</strong> The Maharsha&rsquo;s proof-text that a pregnant animal will not accept a male is given as <em>perek kama of Bechoros</em>. Bechoros 8a was checked and does not contain it, and the exact daf was not found. Left unresolved.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">סֵפֶר הַנִּצָּחוֹן</span> (sheet #14).</span>
+  <span class="exp">Rabbi Yom Tov Lipmann-Muelhausen of Prague (late 14th&ndash;early 15th c.), record of a disputation against the apostate Peter (formerly Pesach). The sheet&rsquo;s text begins <span class="heb">וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ. הַכּוֹפְרִים פּוֹקְרִים עַל רַשִׁ״י</span> and compares <em>bo&rsquo;</em> to <span class="heb">בָּא עֲלֵיהֶם לְמִלְחָמָה</span>. Its claim that Adam was too large is supported by Sanhedrin 38b (confirmed on Sefaria): Adam spanned the world until sin diminished him.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Rav&rsquo;s historical details &mdash; the identity of the disputant, the timing of the debate, the Avigdor Kara <em>golem</em> tradition, the Rabbi Yechiel of Paris disputation of the 1240s, and especially the number of Jews killed afterward (the Rav said eighty) &mdash; are oral and unverified. Do not cite the figure.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">16. <span class="heb">מדרש אגדה</span> (ed. Buber; sheet #15); <span class="heb">לבוש</span>.</span>
+  <span class="exp">The sheet text: <span class="heb">מְלַמֵּד שֶׁבָּא אָדָם עַל חַיָּה וּבְהֵמָה, וְלֹא נִתְקָרְרָה דַעְתּוֹ עַד שֶׁנִּזְדַּוֵּג לְחַוָּה</span> &mdash; without <em>kol</em>. Edited by Solomon Buber. The Levush (Rabbi Mordechai Yaffe, d. 1612, student of the Rema) objects on the grounds of insufficient time and the repulsiveness of the act, which is not covered by <em>bal teshaktzu</em>.</span>
+  <div class="note-academic"><strong>Flag:</strong> The Levush is not on the source sheet and no location was given; the title <em>Levush HaOrah</em> is the Rav&rsquo;s. Not located on Sefaria.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">17. <span class="heb">ט״ז, דברי דוד</span> (sheet #18); <span class="heb">סנהדרין לח ע״א</span> (sheet #17).</span>
+  <span class="exp">Rabbi David HaLevi Segal (1586&ndash;1667). The sheet text is printed faintly; what is legible runs <span class="heb">וְהִקְשׁוּ הַמְפָרְשִׁים הֵיאַךְ בָּא עַל בְּהֵמָה, שֶׁהֲרֵי נִצְטַוּוּ עַל הָעֲרָיוֹת &hellip; וּבֶאֱמֶת הִקְשׁוּ קוּשְׁיָא זוֹ מֵחִסָּרוֹן יְדִיעָה</span>. Sheet #17, a baraita that Adam was created on Erev Shabbos, is cited from the sheet (placed by the sheet at Sanhedrin 38a, immediately before Rabbi Yochanan bar Chanina&rsquo;s twelve hours in 38b).</span>
+  <div class="note-academic"><strong>Flag:</strong> The Taz was not located on Sefaria, so the Hebrew quoted is as legible on the sheet; the Rav&rsquo;s paraphrase of the five answers is oral. The Taz biography (the <em>Shabsai Tzvi</em> report, the Chmielnicki dream) is told as <em>maaseh</em> without source. Sanhedrin 38a was not directly fetched; 38b was.</div>
+</div>
+
+<div class="mm-note">
+  <span class="short">18. <span class="heb">סנהדרין לח ע״ב</span> (sheet #19); <span class="heb">תוספות</span> (sheet, unnumbered).</span>
+  <span class="exp">Confirmed on Sefaria. Rabbi Yochanan bar Chanina: six hours <span class="heb">קָרָא שֵׁמוֹת</span>, seventh <span class="heb">נִזְדַּוְּגָה לוֹ חַוָּה</span>, eighth <span class="heb">עָלוּ לַמִּטָּה שְׁנַיִם וְיָרְדוּ אַרְבָּעָה</span>, ninth <span class="heb">נִצְטַוָּה שֶׁלֹּא לֶאֱכֹל מִן הָאִילָן</span>, tenth <span class="heb">סָרַח</span>, and <span class="heb">אָדָם בִּיקָר בַּל יָלִין</span> (<em>Tehillim</em> 49:13). The unnumbered excerpt at the foot of the sheet comments on <span class="heb">וְיָרְדוּ אַרְבָּעָה</span> and cites <em>Bereishis Rabbah</em> on <span class="heb">אֶת אָחִיו אֶת הָבֶל</span>.</span>
+  <div class="note-academic"><strong>Flag:</strong> The unnumbered excerpt is labeled only by its position and its content (Tosafos on Sanhedrin 38b, per the Rav); the printed source label is not legible. Not verified against Tosafos.</div>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet (3 pages). The sheet carries two excerpts each numbered 4 and 5 and has no #16; both are noted below.</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">וַיְצַו ה׳ אֱלֹקִים עַל הָאָדָם לֵאמֹר מִכֹּל עֵץ הַגָּן אָכֹל תֹּאכֵל</td><td>Bereishis 2:16&ndash;18</td><td>p.&nbsp;1, top</td></tr>
+    <tr><td class="num">2</td><td class="heb">וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ &hellip; וַיִּבֶן &hellip; זֹאת הַפַּעַם</td><td>Bereishis 2:20&ndash;24</td><td>p.&nbsp;1, upper-middle</td></tr>
+    <tr><td class="num">3</td><td class="heb">זֹאת הַפַּעַם עֶצֶם מֵעֲצָמַי &mdash; דַּוְקָא</td><td>Rashbam, Bereishis 2:23</td><td>p.&nbsp;1, right margin, upper</td></tr>
+    <tr><td class="num">4</td><td class="heb">זֹאת הַפַּעַם. מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה</td><td>Rashi, Bereishis 2:23 (Yevamos 63a)</td><td>p.&nbsp;1, right margin, middle</td></tr>
+    <tr><td class="num">4 (second)</td><td class="heb">שֶׁבָּא עַל כָּל בְּהֵמָה וכו׳. בְּיִבָּמוֹת פֶּרֶק הַבָּא עַל יְבִמְתּוֹ</td><td>Maharal, Gur Aryeh, Bereishis 2:23</td><td>p.&nbsp;1, lower-left</td></tr>
+    <tr><td class="num">5</td><td class="heb">עַל כֵּן יַעֲזָב אִישׁ. רוּחַ הַקֹּדֶשׁ אוֹמֶרֶת כֵּן</td><td>Rashi, Bereishis 2:24 (Sanhedrin 57)</td><td>p.&nbsp;1, right margin, lower-middle</td></tr>
+    <tr><td class="num">5 (second)</td><td class="heb">מְנָא הָנֵי מִילֵּי? אָמַר רַבִּי יוֹחָנָן, דְּאָמַר קְרָא וַיְצַו ה׳</td><td>Sanhedrin 56b</td><td>p.&nbsp;1, lower right</td></tr>
+    <tr><td class="num">6</td><td class="heb">בד״ה זֹאת הַפַּעַם. אֲחֵרִים שִׁמֵּשׁ נ״ב אַף שֶׁאֵין מְשִׁיבִין אֶת הָאֲרִי</td><td>Maharshal, gloss on Rashi</td><td>p.&nbsp;1, centre, below #4/#5</td></tr>
+    <tr><td class="num">7</td><td class="heb">זֹאת הַפַּעַם וגו׳ מְלַמֵּד שֶׁבָּא עַל כָּל בְּהֵמָה &hellip; כָּתַב הַחִזְקוּנִי</td><td>Maharsha, Chiddushei Aggados, Yevamos 63a</td><td>p.&nbsp;1, lower right (small print)</td></tr>
+    <tr><td class="num">8</td><td class="heb">רְצוֹנוֹ לוֹמַר שֶׁחָשַׁב וּבִקֵּשׁ לוֹ זוּג מִכָּל הַבְּרִיּוֹת</td><td>Torah Temimah, Bereishis 2:23</td><td>p.&nbsp;1, lower-left</td></tr>
+    <tr><td class="num">9</td><td class="heb">חַיָּה וְעוֹף וְלֹא נִתְקָרְרָה דַעְתּוֹ בָּהֶם (יבמות ס״ג)</td><td>Akeidas Yitzchak</td><td>p.&nbsp;1, bottom</td></tr>
+    <tr><td class="num">10</td><td class="heb">זֹאת הַפַּעַם פֵּרֵשׁ רַשִׁ״י מְלַמֵּד שֶׁבָּא אָדָם &hellip; חַס וְשָׁלוֹם שֶׁבָּא בְּפֹעַל</td><td>Toldos Yitzchak (R&rsquo; Yitzchak Karo)</td><td>p.&nbsp;2, top right</td></tr>
+    <tr><td class="num">11</td><td class="heb">מֵאָמְרוֹ וְלֹא נִתְקָרְרָה דַעְתּוֹ, כִּי הַמִּפְעָל הַזֶּה מִפְעָל תַּאֲוָנִי</td><td>Yalkut Yehoshua</td><td>p.&nbsp;2, top left</td></tr>
+    <tr><td class="num">12</td><td class="heb">זֹאת הַפַּעַם. כְּלוֹמַר עַכְשָׁיו יָצְאָה אִשָּׁה מִן הָאִישׁ</td><td>Chizkuni, Bereishis 2:23</td><td>p.&nbsp;2, centre right</td></tr>
+    <tr><td class="num">13</td><td class="heb">רַשִׁ״י מְלַמֵּד שֶׁבָּא אָדָם עַל כָּל בְּהֵמָה וְחַיָּה וכו׳. כָּתַב הַחִזְקוּנִי</td><td>Tzeidah LaDerech</td><td>p.&nbsp;2, centre right, below #12</td></tr>
+    <tr><td class="num">14</td><td class="heb">וּלְאָדָם לֹא מָצָא עֵזֶר כְּנֶגְדּוֹ. הַכּוֹפְרִים פּוֹקְרִים עַל רַשִׁ״י</td><td>Sefer HaNitzachon</td><td>p.&nbsp;2, lower (large print)</td></tr>
+    <tr><td class="num">15</td><td class="heb">וַיֹּאמֶר הָאָדָם זֹאת הַפַּעַם &hellip; מְלַמֵּד שֶׁבָּא אָדָם עַל חַיָּה וּבְהֵמָה</td><td>Midrash Aggadah (ed. Buber)</td><td>p.&nbsp;2, bottom</td></tr>
+    <tr><td class="num">&mdash;</td><td>(no excerpt numbered 16 on the sheet)</td><td>&mdash;</td><td>&mdash;</td></tr>
+    <tr><td class="num">17</td><td class="heb">תָּנוּ רַבָּנַן אָדָם נִבְרָא בְּעֶרֶב שַׁבָּת וּמִפְּנֵי מָה</td><td>Sanhedrin 38a</td><td>p.&nbsp;3, top</td></tr>
+    <tr><td class="num">18</td><td class="heb">זֹאת הַפַּעַם, מְלַמֵּד שֶׁבָּא עַל כָּל בְּהֵמָה וְחַיָּה. בְּפֶרֶק הַבָּא עַל יְבִמְתּוֹ</td><td>Taz, Divrei David on Rashi</td><td>p.&nbsp;3, left column</td></tr>
+    <tr><td class="num">19</td><td class="heb">אָמַר רַבִּי יוֹחָנָן בַּר חֲנִינָא: שְׁתֵּים עֶשְׂרֵה שָׁעוֹת הָיָה הַיּוֹם</td><td>Sanhedrin 38b</td><td>p.&nbsp;3, middle</td></tr>
+    <tr><td class="num">&mdash;</td><td class="heb">וְיָרְדוּ אַרְבָּעָה. אָדָם וְחַוָּה וְקַיִן וּתְאוֹמָתוֹ</td><td>Tosafos on Sanhedrin 38b (unnumbered on the sheet; per the Rav)</td><td>p.&nbsp;3, lower right</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Tishrei 5787 / October 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>

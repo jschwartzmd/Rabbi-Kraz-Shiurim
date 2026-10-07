@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Clouds of Glory or Real Huts</title>
+<style>
+  @page { size: letter; margin: 0.9in; }
+  html, body { background: #fdfcf7; color: #2c221e; }
+  body {
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 12.5pt;
+    line-height: 1.65;
+    max-width: 7.2in;
+    margin: 0 auto;
+    padding: 0.6in 0.4in 1in 0.4in;
+    text-align: justify;
+    hyphens: auto;
+  }
+  .doc-header {
+    text-align: center;
+    border-top: 3px double #b8860b;
+    border-bottom: 3px double #b8860b;
+    padding: 22px 8px 18px;
+    margin-bottom: 30px;
+  }
+  .hebrew-title {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 30pt;
+    font-weight: 700;
+    color: #4a1525;
+    direction: rtl;
+    unicode-bidi: isolate;
+    letter-spacing: 0.02em;
+    margin: 0 0 10px 0;
+    line-height: 1.25;
+  }
+  .english-title {
+    font-size: 20pt;
+    font-style: italic;
+    color: #4a1525;
+    margin: 0 0 12px 0;
+    letter-spacing: 0.01em;
+  }
+  .english-subtitle {
+    font-size: 13pt;
+    font-style: italic;
+    color: #6b4a30;
+    margin: 0 0 12px 0;
+  }
+  .meta {
+    font-size: 10.5pt;
+    color: #5a4a40;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    margin: 6px 0 2px 0;
+  }
+  .dates {
+    font-size: 10pt;
+    color: #8c7662;
+    font-style: italic;
+    margin-top: 4px;
+  }
+  h2 {
+    color: #4a1525;
+    font-size: 16.5pt;
+    font-weight: 700;
+    margin: 34px 0 14px 0;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #8c7662;
+    letter-spacing: 0.02em;
+    page-break-after: avoid;
+  }
+  h2 .num {
+    font-family: "Trajan Pro", Georgia, serif;
+    color: #b8860b;
+    margin-right: 12px;
+    font-style: italic;
+  }
+  h3 {
+    color: #4a1525;
+    font-size: 13pt;
+    font-weight: 700;
+    font-style: italic;
+    margin: 20px 0 8px 0;
+    page-break-after: avoid;
+  }
+  p { margin: 0 0 12px 0; text-indent: 0; }
+  .lead {
+    font-style: italic;
+    font-size: 12.5pt;
+    color: #3a2e28;
+    border-left: 4px solid #b8860b;
+    background: #faf6ea;
+    padding: 14px 20px;
+    margin: 0 0 28px 0;
+  }
+  blockquote {
+    background: #f5e8ea;
+    border-left: 5px solid #4a1525;
+    margin: 16px 4px;
+    padding: 12px 20px;
+    color: #2c221e;
+    page-break-inside: avoid;
+  }
+  blockquote.hebrew {
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    font-size: 13.5pt;
+    line-height: 1.9;
+  }
+  blockquote .attrib {
+    display: block;
+    margin-top: 6px;
+    font-size: 10pt;
+    color: #6b4a30;
+    font-style: italic;
+    text-align: left;
+    direction: ltr;
+  }
+  .heb {
+    font-family: "SBL Hebrew", "Times New Roman", "David", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+  }
+  .aside {
+    font-size: 11.5pt;
+    color: #4a3a30;
+    background: #f6f2e6;
+    border-left: 3px solid #8c7662;
+    padding: 10px 16px;
+    margin: 14px 4px;
+    font-style: italic;
+  }
+  sup.fn {
+    color: #b8860b;
+    font-weight: 700;
+    font-size: 0.75em;
+    cursor: pointer;
+    padding: 0 1px;
+  }
+  .mm-appendix {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .mm-appendix h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .mm-appendix .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 22px;
+    font-size: 10.5pt;
+  }
+  .mm-note {
+    margin: 0 0 16px 0;
+    padding: 4px 0 10px 0;
+    border-bottom: 1px dotted #d4c8b0;
+    page-break-inside: avoid;
+  }
+  .mm-note .short {
+    font-weight: 700;
+    color: #4a1525;
+  }
+  .mm-note .exp {
+    display: block;
+    margin-top: 4px;
+    font-size: 11pt;
+    color: #3a2e28;
+    line-height: 1.55;
+  }
+  .inventory {
+    margin-top: 44px;
+    padding-top: 18px;
+    border-top: 3px double #b8860b;
+  }
+  .inventory h2 {
+    text-align: center;
+    border-bottom: none;
+    font-size: 18pt;
+  }
+  .inventory .subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #8c7662;
+    margin-top: -8px;
+    margin-bottom: 18px;
+    font-size: 10.5pt;
+  }
+  table.inv {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 10.5pt;
+  }
+  table.inv th {
+    background: #4a1525;
+    color: #fdfcf7;
+    text-align: left;
+    padding: 6px 10px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+  }
+  table.inv td {
+    padding: 6px 10px;
+    border-bottom: 1px solid #d4c8b0;
+    vertical-align: top;
+  }
+  table.inv td.num { color: #b8860b; font-weight: 700; width: 3.2em; text-align: center; }
+  table.inv td.heb {
+    font-family: "SBL Hebrew", "Times New Roman", serif;
+    direction: rtl;
+    unicode-bidi: isolate;
+    text-align: right;
+  }
+  table.inv tr:nth-child(even) td { background: #faf6ea; }
+  .colophon {
+    margin-top: 40px;
+    text-align: center;
+    font-size: 9.5pt;
+    color: #8c7662;
+    font-style: italic;
+    border-top: 1px solid #8c7662;
+    padding-top: 10px;
+  }
+  .note-academic {
+    margin-top: 6px;
+    padding: 6px 12px;
+    border-left: 3px solid #b8860b;
+    background: #faf3dc;
+    font-size: 10pt;
+    font-style: italic;
+    color: #5a4a40;
+  }
+  .note-academic strong { color: #4a1525; font-style: normal; }
+</style>
+</head>
+<body>
+
+<header class="doc-header">
+  <div class="hebrew-title">סֻכּוֹת — עַנְנֵי כָּבוֹד אוֹ סֻכּוֹת מַמָּשׁ</div>
+  <div class="english-title">Clouds of Glory or Real Huts</div>
+  <div class="english-subtitle">The Colossal Debate of Sukkos &mdash; and the Ba&rsquo;al Shem Tov&rsquo;s Sukkah</div>
+  <div class="meta">A Shiur by Rabbi Yisroel Kraz &middot; Erev Sukkos 5787</div>
+  <div class="dates">Recorded: 11 Tishrei 5787 / September 22, 2026 &middot; Prepared: 25 Tishrei 5787 / October 6, 2026</div>
+</header>
+
+<p class="lead">A few days before Sukkos, the Rav turned from <em>lulav</em> and <em>esrog</em> to the <em>sukkah</em> itself &mdash; and to the oldest fight about it. Is the <em>sukkah</em> a remembrance of the <em>ananei ha&rsquo;kavod</em> (<span class="heb">עַנְנֵי הַכָּבוֹד</span>), the clouds of glory that wrapped Klal Yisrael in the desert, as Rabbi Eliezer holds, or of <em>sukkos mamash</em> (<span class="heb">סֻכּוֹת מַמָּשׁ</span>), plain huts, as Rabbi Akiva holds? Along the way: a requested story of the Ba&rsquo;al Shem Tov&rsquo;s <em>sukkah</em> and a slip of parchment from the <em>malach</em> Metatron; the <em>girsa</em> that flips in the Sifra and the Mechilta; the Bach and the Taz, father-in-law and son-in-law, arguing over what one must have in mind at the table; the Tur&rsquo;s famous question &mdash; why in the middle of Tishrei? &mdash; and four answers, from the Chiddushei HaRim to the Gra; why Hashem commanded a remembrance of the clouds and not of the <em>mon</em> and the <em>be&rsquo;er</em>; the <em>halachic</em> fallout in Rabbi Eliezer&rsquo;s own rulings; and finally what Rabbi Akiva was after, as read by the Rashbam, Rabbeinu Bachya and the Kad HaKemach &mdash; and through the lens of Beis Shammai and Beis Hillel.</p>
+
+<h2><span class="num">I.</span> Motzei Yom Kippur &mdash; and the Ba&rsquo;al Shem Tov&rsquo;s Sukkah</h2>
+
+<p>The shiur opened, as it was bound to, with the calendar. The regular Monday-night slot had fallen on <em>motzei Yom Kippur</em> &mdash; the night of <em>lech echol b&rsquo;simchah lachmecha</em> (<span class="heb">לֵךְ אֱכֹל בְּשִׂמְחָה לַחְמֶךָ</span>), when Klal Yisrael goes home to eat, not to learn. The Rav offered a reason of his own to add to the long list of reasons for eating before and after the fast: for anyone hoping to lose weight on <em>Yom Kippur</em>, the <em>Aibershter</em> answers that the fast was for Him &mdash; and so He arranges that the <em>seudah</em> before and the <em>seudah</em> after leave no remnant of the fast behind. No personal gain whatsoever.</p>
+
+<p>The shiur was dedicated by a friend from the northeast, <em>l&rsquo;zecher nishmas</em> a <em>tzaddik</em>, Reb Eliezer HaLevi &mdash; Reb Charlie to all who knew him. The Rav remembered him as a <em>warme heilige neshamah</em>, a man who never missed a <em>simchah</em>, who went to the <em>mikvah</em> every day for as long as he was able, and who quietly collected food for the poor and hungry in the manner of the hidden <em>tzaddikim</em> of every generation. He loved <em>Chol HaMoed</em>, and these are his days.</p>
+
+<p>Then to business. There had been a request: since the topic was <em>Sukkos</em>, would the Rav speak about the Ba&rsquo;al Shem Tov&rsquo;s <em>sukkah</em>? The Rav admitted it had nothing to do with tonight&rsquo;s topic &mdash; but a request is a request, and so it stood as number one on the sheet.</p>
+
+<h3>The sukkah that was &ldquo;not kosher al pi din Torah&rdquo;</h3>
+
+<p>The <em>maaseh</em> is recorded in <em>Ba&rsquo;al Shem Tov al HaTorah</em> (<span class="heb">בַּעַל שֵׁם טוֹב עַל הַתּוֹרָה</span>), in the section on <em>Sukkos</em>.<sup class="fn">1</sup></p>
+
+<blockquote class="hebrew">
+רבינו הבעל שם טוב הקדוש זכותו יגן עלינו בעת שתקע אהלו של תורה בפה מעזבוש, היה אז במחנינו רבנים גדולים מתנגדי הבעל שם טוב זכרונו לברכה, והלכו בחג הסוכות להבעש״ט, ואמרו אשר הסוכה של הבעש״ט אינה כשרה על פי דין תורה, והבעש״ט ז״ל התווכח עמהם אשר סוכתו הוא כשרה, והניח ראשו על ידו על איזה רגעים ואחר כך פתח את ידו, ונמצא בה פתקא מחתיכת קלף, והיה כתוב בו, סוכה זו של הרב ישראל בעל שם טוב כשירה נאום מט״ט שר הפנים.
+<span class="attrib">&mdash; Ba&rsquo;al Shem Tov al HaTorah, on Sukkos (source sheet #1) &nbsp;<sup class="fn">1</sup></span>
+</blockquote>
+
+<p>When the Ba&rsquo;al Shem Tov set up shop in Mezhibuzh, there were great <em>rabbanim</em> in the other camp &mdash; <em>misnagdim</em> of the Ba&rsquo;al Shem Tov, uneasy, to put it mildly, with what looked to them like a new path in serving Hashem. On <em>Sukkos</em> they came to look at his <em>sukkah</em>. The <em>sukkah</em>, as the Rav put it, was known to be a <em>duchkedike</em> <em>sukkah</em> &mdash; many question marks &mdash; and they did not merely raise a <em>kushya</em>; they ruled that it was <em>pasul</em>. The Ba&rsquo;al Shem Tov argued back. This was no <em>am ha&rsquo;aretz</em> arguing: the Rav reminded us that the notion that the Ba&rsquo;al Shem Tov was a simple man was vehemently refuted by the Alter Rebbe, who repeated to the great <em>misnagdim</em> many <em>pilpulim</em> that he had heard from the Maggid, who heard them from the Ba&rsquo;al Shem Tov &mdash; to prove that he was a world-class <em>lamdan</em> in <em>nigleh</em>. So the Ba&rsquo;al Shem Tov held his own. But the fight grew fiery, and then he rested his head on his hand for a few moments, opened the hand &mdash; and there lay a slip of parchment, on which was written that the <em>sukkah</em> of Rav Yisrael Ba&rsquo;al Shem Tov is <em>kasher</em>, <em>ne&rsquo;um</em> Mat&lsquo;t (Metatron), <em>sar ha&rsquo;panim</em>. &ldquo;It was like a magic trick,&rdquo; said the Rav, &ldquo;if you&rsquo;ve ever seen one.&rdquo;</p>
+
+<h3>The parchment, the Degel, and two years with no <em>levayos</em></h3>
+
+<p>The note passed down as an inheritance to the Ba&rsquo;al Shem Tov&rsquo;s grandson, the holy Rav of Sadigura &mdash; Rav Moshe Chaim Ephraim, the author of <em>Degel Machaneh Ephraim</em>. A word on the family, since the Rav lingered over it: the Ba&rsquo;al Shem Tov had a son, Tzvi, and a daughter, Adel, who married Rav Yechiel Michel &mdash; <em>der Deitschel</em>. Their three children were Rav Baruch of Mezhibuzh, the Degel Machaneh Ephraim, and Feiga, the mother of Rebbe Nachman of Breslov. The Frierdiker Rebbe reports that the Alter Rebbe said there were certain things he learned from no one but Rav Yechiel Michel, over and above what he received from the Maggid, Rav Mendel Horodoker and Rav Avraham <em>HaMalach</em>; the Rav confessed he did not know what those things were, nor when the two would have crossed paths.<sup class="fn">2</sup></p>
+
+<blockquote class="hebrew">
+והפתקא הזאת נשאר בירושה אצל נכד הבעל שם טוב ז״ל, הוא הרב הקדוש מסדילקוב ז״ל [בעל דגל מחנה אפרים], והיה כאשר נזדמן איזה חולה רחמנא ליצלן, והלכו לבעל הדגל ז״ל, ציוה להניח הפתקא תחת מראשותיו של החולה, וכאשר עשו כן נתרפא החולה תיכף, וכן היה שתי שנים, שהניחו הפתקא תחת הכר של כל חולה רחמנא ליצלן ונתרפא, ובכל משך השתי שנים לא נעדר שום אדם שם בעיר, ואחר כך נזדמן שהניחו פעם אחת הפתקא אצל איזה חולה ונעלם הפתקא, ואמר בעל הדגל על זה, שנתגלה לו מן השמים שאין ניחא זאת, כי הילודים למות (אבות פרק ד׳) על כן התפלל על זה שיקח מאתו בחזרה הפתקא&hellip;
+<span class="attrib">&mdash; Ba&rsquo;al Shem Tov al HaTorah (source sheet #1, continued) &nbsp;<sup class="fn">1</sup></span>
+</blockquote>
+
+<p>Whenever a <em>choleh</em> turned up, they went to the Degel, who ordered that the parchment be placed under the sick person&rsquo;s head &mdash; and he was healed at once. For two years it went on this way. For two years, in all of Sadigura, nobody died. No <em>levayah</em>; the <em>chevra kadisha</em>, as the Rav put it, were twiddling their fingers. And then, one day, the parchment was placed by one of the sick &mdash; and vanished.</p>
+
+<p>The Degel explained that it had been revealed to him from Heaven that this was not pleasing Above: <em>ha&rsquo;yilodim lamus</em> (<span class="heb">הַיְלוֹדִים לָמוּת</span>) &mdash; people are born to die. A <em>tzaddik gozer v&rsquo;HaKadosh Baruch Hu mekayem</em> (<span class="heb">צַדִּיק גּוֹזֵר וְהַקָּדוֹשׁ בָּרוּךְ הוּא מְקַיֵּם</span>) for an individual is one thing; to rule out death altogether, in an entire city, is to tamper with the statutes of Creation. So the Degel davened that it be taken back. The Rav said he once saw an explanation of why he davened for its removal rather than simply declining to use it: the Degel was in a quandary &mdash; <em>if I have it, I must use it</em>; You do not want me to use it; so the only way out is that it disappear. The author closes with a firsthand report: he heard from <em>anshei emes</em> that the <em>tzaddik</em> Rav Yoski, a grandson of the Degel, saw the parchment with his own eyes by his <em>zeide</em>, before it disappeared.</p>
+
+<h3>Rav Itzikel Hamburger and the <em>sukkah</em></h3>
+
+<p>The Rav then added a coda from a <em>sefer</em> he knew as <em>Divrei Shalom</em>, in the name of the Sar Shalom of Belz.<sup class="fn">3</sup> It identifies the <em>rav</em> who challenged the Ba&rsquo;al Shem Tov&rsquo;s <em>sukkah</em> as Rav Itzikel Hamburger &mdash; the same Rav Itzikel from the shiur about his big debate with his friend and <em>mechutan</em>, the Noda BiYehuda, over that dodgy <em>get</em>. Rav Itzikel was officially a <em>misnaged</em>, yet the Ba&rsquo;al Shem Tov said terrific things about him &mdash; that throughout Elul and Tishrei the <em>Shechinah</em> rests upon him. The Sar Shalom says that Rav Itzikel came to Mezhibuzh, raised the challenge &mdash; and something amazing happened. He does not say what; but if we set this story beside the first, then Rav Itzikel would have witnessed the parchment. And his reaction, says the Sar Shalom, was: the Ba&rsquo;al Shem Tov indeed has something going, but that belongs to <em>his</em> <em>neshamah</em>, and my path belongs to <em>my</em> <em>neshamah</em> &mdash; and with that he left.</p>
+
+<h2><span class="num">II.</span> The Sugya in Sukkah 11b &mdash; Mist, Clouds, and Two Tannaim</h2>
+
+<p>&ldquo;So what is our discussion tonight?&rdquo; It begins, said the Rav, at number four on the sheet &mdash; the <em>gemara</em> in Sukkah 11b. (Numbers two and three, he added, come at the end; they were placed here for reasons not to be asked.) The <em>gemara</em> is discussing <em>sechach</em> (<span class="heb">סְכָךְ</span>): it must be from something that grows from the ground and is not <em>mekabel tumah</em> (<span class="heb">מְקַבֵּל טֻמְאָה</span>). <em>Mena hani milei?</em> Where do we know this?</p>
+
+<blockquote class="hebrew">
+מנא הני מילי? אמר ריש לקיש, אמר קרא ואד יעלה מן הארץ, מה אד דבר שאינו מקבל טומאה וגידולו מן הארץ אף סוכה דבר שאין מקבל טומאה וגידולו מן הארץ. הניחא למאן דאמר ענני כבוד היו, אלא למאן דאמר סוכות ממש עשו להם מאי איכא למימר? דתניא, כי בסוכות הושבתי את בני ישראל, ענני כבוד היו דברי ר׳ אליעזר, ר״ע אומר סוכות ממש עשו להם. הניחא לר״א, אלא לר״ע מאי איכא למימר&hellip;
+<span class="attrib">&mdash; Sukkah 11b (source sheet #4) &nbsp;<sup class="fn">4</sup></span>
+</blockquote>
+
+<p>Reish Lakish derives it from the <em>pasuk</em> in <em>Bereishis</em>, <span class="heb">וְאֵד יַעֲלֶה מִן הָאָרֶץ</span> &mdash; a mist rising from the ground. A mist is not a <em>kli</em>, hence not <em>mekabel tumah</em>, and it grows from the ground. The connection to <em>sukkah</em>? We sit in the <em>sukkah</em> to commemorate the clouds of glory, so the <em>sechach</em>, at least, must resemble them &mdash; and the clouds, in <em>Bereishis</em>, rise from the earth.</p>
+
+<p>But the <em>gemara</em> immediately challenges the premise. Where did we get that the <em>sukkah</em> commemorates clouds? The <em>pasuk</em> in <em>Emor</em> says <span class="heb">כִּי בַסֻּכּוֹת הוֹשַׁבְתִּי אֶת בְּנֵי יִשְׂרָאֵל</span> &mdash; <em>I</em> placed you in <em>sukkos</em>. The Rav stressed the word: Hashem takes the credit. He does not say, &ldquo;because you sat in <em>sukkos</em> in the desert&rdquo;; He says <em>hoshavti</em>. And what were those <em>sukkos</em>? Rabbi Eliezer: <em>ananei kavod hayu</em>. Rabbi Akiva: <em>sukkos mamash asu lahem</em>. Reish Lakish&rsquo;s <em>derashah</em> works for Rabbi Eliezer; what does Rabbi Akiva do for a source that the <em>sechach</em> must grow from the ground and be <em>tahor</em>? (The <em>gemara</em> goes on to answer, but the Rav&rsquo;s interest was the machlokes beneath it.)</p>
+
+<h3>Do the two <em>shitos</em> really exclude each other?</h3>
+
+<p>The Rav pressed the obvious <em>kushya</em>. Some write that according to Rabbi Eliezer there were clouds but no individual huts. That cannot be: Bilaam said <span class="heb">מַה טֹּבוּ אֹהָלֶיךָ יַעֲקֹב</span>, and the <em>chazal</em> read it as the entrances of the tents not facing one another. Every Jew had a tent. Is Rabbi Eliezer going to say the camp was one big dormitory, &ldquo;blankets and pillows&rdquo;? <em>Chas v&rsquo;shalom.</em> And Rabbi Akiva, for his part, surely agrees that the clouds existed &mdash; <em>Parshas Beshalach</em> speaks of a cloud again and again. <em>Ela mai</em> &mdash; both existed. The question is only what we are remembering.<sup class="fn">5</sup></p>
+
+<p>Two further wrinkles the Rav touched on. First, the Rokeach &mdash; Rav Elazar of Worms, the foremost <em>talmid</em> of Rabbeinu Yehudah HeChassid, writing in Germany at the end of the 1100s &mdash; quotes <em>yesh omrim</em> that Klal Yisrael sat in <em>sukkos</em> only at the end of the forty years, when the wars to enter <em>Eretz Yisrael</em> began.<sup class="fn">6</sup> Second, the Mabit asks whether Klal Yisrael performed the <em>mitzvah</em> of <em>sukkah</em> at all during the forty years &mdash; a <em>sukkah</em> under a cloud being like a <em>sukkah</em> under a tree. The Rav noted that clouds by themselves are no problem (nobody asks the clouds to move aside so that he can see the stars). The problem would arise if the clouds are a <em>chatzitzah</em> (<span class="heb">חֲצִיצָה</span>), a barrier; and a more serious problem, if the clouds were real <em>mechitzos</em> (<span class="heb">מְחִצּוֹת</span>) on every side: then there would be no <em>reshus harabim</em> (<span class="heb">רְשׁוּת הָרַבִּים</span>) in the camp, and the <em>mekoshesh</em> could not have been liable for <em>ma&rsquo;avir arba amos</em>. Rav Yosef Engel raises this in his <em>Gilyonei HaShas</em>, and a listener added that the Frierdiker Rebbe too dealt with it.<sup class="fn">7</sup></p>
+
+<p>That, in turn, touches the source of the <em>melachah</em> of carrying itself &mdash; Moshe&rsquo;s call in <em>Parshas Vayakhel</em> that no more should be brought for the <em>Mishkan</em>.<sup class="fn">8</sup> The Rav floated, and in the room it was debated without a clean resolution, whether the clouds had perhaps taken a break at that very moment; the Rav comes back to it in connection with the Gra, in chapter V below.</p>
+
+<p>The first great question, though, is Rabbi Akiva&rsquo;s. If he agrees there were clouds, why would he pour cold water on the miracle? Rabbi Eliezer is his own <em>rebbe</em> &mdash; Rabbi Akiva had a few, Rav Tarfon, Nachum Ish Gamzu, and of course Rabbi Eliezer and Rabbi Yehoshua &mdash; and Rabbi Eliezer had already said <em>ananei kavod</em>. Is Rabbi Akiva now saying &ldquo;don&rsquo;t get so excited, it&rsquo;s plain old booths&rdquo;? <em>Ribbono shel Olam</em>, what is Rabbi Akiva up to? The Rav promised the answer for the grand finale.</p>
+
+<h2><span class="num">III.</span> The Flipped <em>Girsa</em> &mdash; Sifra, Mechilta, and the Maharatz Chayes</h2>
+
+<p>The puzzle deepens when we open the <em>halachic midrashim</em>. In the Sifra &mdash; the <em>Toras Kohanim</em> on <em>Vayikra</em>, so named in the singular because it is on a single <em>sefer</em>, as opposed to the Sifrei on <em>Bamidbar</em> and <em>Devarim</em> &mdash; the <em>shitos</em> are flipped: Rabbi Eliezer says <em>sukkos mamash</em>, Rabbi Akiva says <em>ananei ha&rsquo;kavod</em>. The same appears in the Mechilta on <em>Parshas Bo</em>, on the <em>pasuk</em> of Klal Yisrael traveling from Ra&rsquo;amses to Sukkos (source #6).<sup class="fn">9</sup></p>
+
+<blockquote class="hebrew">
+סוכות ממש דכתיב ויעקב נסע סוכתה דברי רבי אליעזר. וחכמים אומרים אין סוכות אלא מקום שנאמר ויסעו מסוכות ויחנו באתם מה איתם מקום אף סוכות מקום. רבי עקיבא אומר אין סוכות אלא ענני כבוד.
+<span class="attrib">&mdash; Mechilta, on the <em>pasuk</em> of Ra&rsquo;amses to Sukkos (source sheet #6) &nbsp;<sup class="fn">9</sup></span>
+</blockquote>
+
+<p>Three opinions as to why there is a place called Sukkos: Rabbi Eliezer &mdash; because they actually built booths there, as Yaakov did; the <em>Chachamim</em> &mdash; it is just the name of a place, like Eisam; Rabbi Akiva &mdash; <em>ein sukkos ela ananei kavod</em>. And here Rabbi Akiva&rsquo;s role at least makes sense: &ldquo;He is not pouring cold water &mdash; <em>farkert</em>, he is turning on the fire.&rdquo; The Rav added a note: in the Mechilta the dispute may not be about the whole forty years but about that specific place, and it is hard to see why a <em>mitzvah l&rsquo;doros</em> would commemorate one encampment &mdash; though the <em>pasuk</em> does say <em>hoshavti</em> &hellip; <em>b&rsquo;hotzi&rsquo;i osam me&rsquo;eretz Mitzrayim</em>, which someone suggested refers to just that short episode. To the Rav it seemed strange.</p>
+
+<h3>The Maharatz Chayes: the <em>Shas</em> has it right</h3>
+
+<p>Number seven on the sheet is the Maharatz Chayes, Rav Tzvi Hirsch Chayes, one of the great <em>geonim</em> of the early 1800s, in his glosses to the <em>gemara</em>. He notes that Rav Yeshayah Berlin pointed out that the <em>girsa</em> in the Toras Kohanim is the reverse, and the Mechilta on <em>vayis&rsquo;u me&rsquo;Ra&rsquo;amses</em> is likewise like the Toras Kohanim &mdash; two against one.<sup class="fn">10</sup></p>
+
+<blockquote class="hebrew">
+שם ענני כבוד הי׳ דברי ר׳ אליעזר ר״ע אומר סוכות ממש. נ״ב הגאון ר״י ברלין התעורר דבת״כ הגירסא בהיפך דר״א ס״ל סוכות ממש ור״ע ס״ל ענני כבוד ועי׳ מכילתא פ׳ בא על קרא ויסעו מרעמסס ג״כ כגירסת ת״כ. אולם לדעתי גירסת הש״ס מדוקדקת יותר דהרי העידו חז״ל מגילה ג׳ ע״ב דאונקלוס תרגם מפי ר׳ אליעזר ור׳ יהושע וכאן תרגם אונקלוס בסוכות במטללות ענני היינו ענני כבוד, ולגירסת ת״כ ומכילתא ה״כ תרגם שלא כשיטת ר׳ אליעזר דס״ל סוכות ממש, ה״ו דגירסת הבבלי נכונה דר״א ס״ל ענני כבוד ואתא אונקלוס בשיטת רבו ר׳ אליעזר, ונכון.
+<span class="attrib">&mdash; Maharatz Chayes, glosses on Sukkah 11b (source sheet #7) &nbsp;<sup class="fn">10</sup></span>
+</blockquote>
+
+<p>But, says the Maharatz Chayes, <em>l&rsquo;da&rsquo;ati</em> (<span class="heb">לְדַעְתִּי</span>), the <em>girsa</em> of the <em>Shas</em> is the more exact. The <em>gemara</em> in <em>Megillah</em> testifies that Onkelos translated <em>mipi</em> Rabbi Eliezer and Rabbi Yehoshua; and what does Onkelos say on <em>Parshas Emor</em>? <em>Ba&rsquo;sukkos &mdash; b&rsquo;matlelan ananei</em>: the shade of clouds. Onkelos, Rabbi Eliezer&rsquo;s student, says <em>ananei kavod</em>; therefore Rabbi Eliezer said <em>ananei kavod</em>. If we followed the version of the Toras Kohanim and Mechilta, Onkelos would be translating <em>against</em> his own <em>rebbe</em>. <em>Ela vaday</em>, concludes the Maharatz Chayes, the <em>girsa</em> of the <em>Bavli</em> is correct and the Toras Kohanim and Mechilta are the ones in which the <em>shitos</em> were accidentally switched, somewhere in the last fifteen hundred or two thousand years of copying.</p>
+
+<h2><span class="num">IV.</span> What Must You Have in Mind? &mdash; the Bach and the Taz</h2>
+
+<p>The first practical ramification is what one must have in mind when sitting in the <em>sukkah</em> on the first night. On the first night there is a <em>chovas gavra</em> (<span class="heb">חוֹבַת גַּבְרָא</span>) to sit in the <em>sukkah</em> and to eat a <em>kazayis</em> of bread &mdash; just as, six months earlier or later, one eats a <em>kazayis</em> of <em>matzah</em> &mdash; and that is where we say <em>l&rsquo;ma&rsquo;an yed&rsquo;u doroseichem</em> (<span class="heb">לְמַעַן יֵדְעוּ דֹרֹתֵיכֶם</span>). So what are you supposed to be thinking? According to Rabbi Akiva, <em>sukkos mamash</em> &mdash; &ldquo;it just sounds so bizarre.&rdquo; The Tur and the <em>Shulchan Aruch</em> pasken like Rabbi Eliezer: you are to have in mind the <em>ananei ha&rsquo;kavod</em>.<sup class="fn">11</sup></p>
+
+<h3>A <em>machlokes</em> between a father-in-law and a son-in-law</h3>
+
+<p>&ldquo;Not me and my father-in-law,&rdquo; said the Rav; &ldquo;we get along; we haven&rsquo;t argued yet.&rdquo; The Bach (<span class="heb">ב״ח</span>) and the Taz (<span class="heb">ט״ז</span>) &mdash; and this was not their first dispute. The Rav told the well-known story: the Bach had promised his son-in-law that after the wedding he would support him with meat every day so that he could learn. The Bach fell on hard times and served him lung. The Taz said: this is not meat; and he took his father-in-law to a <em>din Torah</em>. The <em>dayanim</em> ruled that lung is <em>fleishigs</em> &mdash; it is meat. People asked the Taz how he could take a father-in-law in distress to <em>beis din</em>. His answer: because the Bach had fallen on hard times, I am not eating; I am weaker and not learning with the same gusto; and in <em>Shamayim</em> there is a <em>kitrug</em> against my father-in-law that his actions are hurting my learning. I wanted a ruling down here so that Above they would rule the same way &mdash; and then no complaint remains against him; he is keeping his side of the deal. &ldquo;<em>Farkert</em>, I did it for the benefit of my father-in-law.&rdquo; (The Rav, who has told this to the <em>bochurim</em> many times so that they bring it to the <em>hanhalah</em>, reported that the <em>hanhalah</em> responded with hot dogs.)</p>
+
+<p>The Bach and the Taz disagree about our <em>sugya</em>, and the Rav gave the point of each. There is also a beautiful discussion in the Pri Megadim at the beginning of <em>Hilchos Sukkah</em>.<sup class="fn">12</sup></p>
+
+<ul>
+<li><strong>The Bach</strong>: according to Rabbi Eliezer, the clouds of glory are not the point in themselves. If they were, why is there no <em>Yom Tov</em> for the <em>be&rsquo;er</em> of Miriam and for the <em>mon</em>? The clouds are simply another instance of how Hashem took care of us when He took us out of Mitzrayim &mdash; so <em>sukkah</em> is <em>zecher li&rsquo;tziyas Mitzrayim</em>. According to Rabbi Akiva, <em>sukkos mamash</em>, it has nothing to do with <em>yetzias Mitzrayim</em>; the phrase <em>b&rsquo;hotzi&rsquo;i</em> in the <em>pasuk</em> is only a time reference.</li>
+<li><strong>The Taz</strong>: precisely the opposite. According to Rabbi Akiva, huts alone are nothing &mdash; what is there to remember in plain huts? It must be that we are remembering the leaving of Mitzrayim, which gives the huts their significance. According to Rabbi Eliezer, the clouds of glory are sufficient in themselves to warrant a <em>Yom Tov</em>.</li>
+</ul>
+
+<p>The Rav then said that the <em>machlokes</em> has teeth in practice. He told of the first night of <em>Sukkos</em> when, just before <em>chatzos</em>, he suddenly realized that the entire <em>seudah</em> had gone by without any thought of the <em>ananei ha&rsquo;kavod</em> &mdash; so he went back to the <em>sukkah</em>, ate another <em>kazayis</em>, and had the right thing in mind. The Pri Megadim holds that if you missed the <em>kavanah</em> you need not go back; the Bikurei Yaakov seems to disagree, and says you would have to. But even then, what is the right thing to have in mind? Even according to Rabbi Eliezer, the Bach says <em>yetzias Mitzrayim</em> and the Taz says <em>ananei ha&rsquo;kavod</em>. <em>L&rsquo;chatchilah</em>, the Rav concluded, one should have in mind both. If you had in mind only <em>yetzias Mitzrayim</em>, the Bach would say you are fine; the Taz would say you missed the whole point.</p>
+
+<h2><span class="num">V.</span> The Tur&rsquo;s Question &mdash; Why Tishrei? &mdash; and Four Answers</h2>
+
+<p>This leads to the famous question of the Tur at the start of <em>siman</em> 625: if we are remembering the <em>sukkos</em> of <em>yetzias Mitzrayim</em>, the time to do it is Nissan. <em>Vos epes</em> in the middle of Tishrei? The Tur&rsquo;s own answer: around <em>Pesach</em> it gets warm, and people go outside for the pleasure of the sun and the porch. A <em>sukkah</em> then would look like personal convenience. (The Rav&rsquo;s digression about Florida, where in the heat everyone runs from home to car to office, and where a palm tree provides no shade &mdash; which is why Devorah judged under a <em>tomer</em>, a date palm, so there would be no question of <em>yichud</em> &mdash; need not detain us.) In Tishrei, by contrast, the rains come, and going out into a <em>sukkah</em> is plainly for Hashem alone.<sup class="fn">13</sup></p>
+
+<p>The Tur asks his question only according to Rabbi Eliezer. The Bach explains why: only the clouds are linked to <em>yetzias Mitzrayim</em>; Rabbi Akiva&rsquo;s huts could have been built in Tishrei, when it gets cold, so no question. The Taz explains the other way: Rabbi Akiva, who needs <em>yetzias Mitzrayim</em> to give weight to his huts, would answer &ldquo;every six months, a <em>Yom Tov</em>, to remember the Exodus,&rdquo; but Rabbi Eliezer&rsquo;s clouds began in Nissan, so the question stands for him.</p>
+
+<h3>First answer &mdash; the <em>Chiddushei HaRim</em>: the night is <em>da&rsquo;as</em></h3>
+
+<p>Number five on the sheet is the Chiddushei HaRim, with a <em>chassidishe</em> answer.<sup class="fn">14</sup></p>
+
+<blockquote class="hebrew">
+בטור מקשה למה אין אנו עושים סוכות בניסן שאז יצאו בנ״י ממצרים, וי״ל כי בסוכות נאמר ז׳ ימים תשבו בסוכות למען ידעו דורותיכם וגו׳, פי׳ שלסוכות צריכים דעת ובכל ימות השנה אנשים מלאים חטאים ואין אדם חוטא אא״כ נכנס בו רוח שטות ואין לנו דעת, אולם אחרי יוה״כ שמכפר על העוונות וסוכות הוא ראשון לחשבון עוונות ויש לנו אז דעת לכן צותה התורה לעשות אז סוכות אף שלא בזמן.
+<span class="attrib">&mdash; Chiddushei HaRim (source sheet #5) &nbsp;<sup class="fn">14</sup></span>
+</blockquote>
+
+<p><em>L&rsquo;ma&rsquo;an yed&rsquo;u</em> &mdash; the <em>sukkah</em> is for <em>da&rsquo;as</em>, wisdom and focus. All year we are full of sin, and the <em>gemara</em> in <em>Sotah</em> says that no one sins unless a <em>ruach shtus</em> (<span class="heb">רוּחַ שְׁטוּת</span>) enters him: all year our minds are clouded. After <em>Yom Kippur</em>, with our sins atoned, and <em>Sukkos</em> being <em>rishon l&rsquo;cheshbon avonos</em> (<span class="heb">רִאשׁוֹן לְחֶשְׁבּוֹן עֲוֺנוֹת</span>), the first day of a new ledger, we are clean enough to have a measure of <em>da&rsquo;as</em>. The Rav, working it through with the room, sharpened it: it is <em>night</em> that is the key. On the first night, by the time you daven and make <em>Kiddush</em> and sit down to eat, you have not yet had a chance to sin. By <em>day</em> &mdash; the <em>pasuk</em> says <em>u&rsquo;lekachtem lachem ba&rsquo;yom harishon</em> &mdash; the account is already open. The Berditchover reads <em>rishon l&rsquo;cheshbon avonos</em> differently: until <em>Sukkos</em> we do <em>teshuvah</em> from fear, so that <em>zedonos</em> are treated as <em>shegagos</em>; on <em>Sukkos</em>, a time of <em>simchah</em>, we do <em>teshuvah</em> from love and our <em>aveiros</em> become <em>zechuyos</em> &mdash; and on that reading we are certainly in a state of <em>da&rsquo;as</em>.</p>
+
+<h3>Second answer &mdash; Rav Shlomo Kluger: relocate</h3>
+
+<p>Rav Shlomo Kluger &mdash; sharp, as his name attests, the author of well over a hundred works, whom the Tzemach Tzedek held in high regard, as one sees in a number of letters &mdash; answers from the <em>gemara</em> in <em>Taanis</em>.<sup class="fn">15</sup> Rava gave <em>malkos</em> to a man for living with a <em>shiktzah</em>, and the man died (a mishap in the <em>beis din</em>); the government wanted retribution, and Rava was put to a test: if he could daven for rain in the middle of the summer they would know he was a holy rabbi. It rained. Then his father appeared in a dream and told him: you troubled the <em>Aibershter</em> to change nature &mdash; change your place of sleep. That night Rava slept elsewhere, and in the morning his bed was pierced with knife-marks, from <em>mazikim</em>, forces that had wanted to get him. So too on <em>Yom Kippur</em>, says Rav Shlomo: we ask Hashem to forgive us and give us a good year though we do not deserve it &mdash; a much heavier demand than asking for rain in <em>Tammuz</em>. When you pressure Heaven, the forces of evil can try to get hold of you; you must not sleep in your own bed. So we go out and make a new home, the <em>sukkah</em>. It follows, said the Rav, that you must <em>sleep</em> in the <em>sukkah</em>; one who does everything in the <em>sukkah</em> but sleeps back in his bed has, on this reading, gained nothing.</p>
+
+<h3>Third answer &mdash; the Vilna Gaon: the clouds came back</h3>
+
+<p>Number eight is the Gra, in his commentary on <em>Shir HaShirim</em> (1:4) &mdash; though the <em>chiddush</em> predates him by centuries and, as the Rav noted, is almost always quoted in the Gra&rsquo;s name.<sup class="fn">16</sup></p>
+
+<blockquote class="hebrew">
+מה שהקשו (עי׳ טוא״ח סי׳ תרכה) למה אנחנו עושים סוכות בתשרי, כיון שהוא נגד היקף ענני כבוד היה ראוי לעשות בניסן, כי בניסן היה תחילת היקף העננים. אבל נראה, לפי שכשעשו את העגל נסתלקו העננים ואז לא חזרו עד שהתחילו לעשות המשכן, ומשה ירד ביום הכפורים, ובמחרת יום הכפורים ׳ויקהל משה׳ וצוה על מלאכת המשכן וזה היה בי״א תשרי, וכתיב והעם הביאו עוד נדבה בבקר בבקר ב׳ ימים הרי י״ג בתשרי. ובי״ד בתשרי נטלו כל חכם לב ממשה את הזהב במנין ומשקל, ובט״ו התחילו לעשות ואז חזרו ענני כבוד, ולכך אנו עושין סוכות בט״ו בתשרי.
+<span class="attrib">&mdash; The Gra, on Shir HaShirim 1:4 (source sheet #8) &nbsp;<sup class="fn">16</sup></span>
+</blockquote>
+
+<p>The clouds in <em>Parshas Beshalach</em>, the Rav noted, are not the problem: Rashi there says that the cloud left at night, and that when Mitzrayim caught up it moved behind us &mdash; it sounds like the cloud that led, not the one that surrounded. But the Gra adds something fantastic: when Klal Yisrael made the <em>eigel</em>, the clouds left them. And they did not return until the building of the <em>Mishkan</em>, which was there to atone for the <em>eigel</em>. Moshe descended on <em>Yom Kippur</em>; on the day after he gathered them &mdash; <em>vayakhel Moshe</em> &mdash; and instructed them on the <em>Mishkan</em>: 11 Tishrei. They brought <em>nedavah</em> <em>baboker baboker</em>, two mornings: 12 and 13 Tishrei. On the 14th, the craftsmen took the gold from Moshe, weighed and counted it. And on the 15th they began to build &mdash; and the clouds returned. That, says the Gra, is why we make <em>Sukkos</em> on the 15th of Tishrei: not simply that there were clouds, but that they <em>came back</em> after we lost them.</p>
+
+<p>The Rav said that this is not only the Gra: there are earlier sources, and the Litvishe world quotes it from the Gra because he is the one who said it so memorably. He showed three. The <em>Pri HaAdamah</em> (#9), one of the great Sephardic <em>rabbanim</em> of some three hundred years ago, quotes the Maharam Chaviv, who in turn found it in a <em>sefer</em> called <em>Levanas HaSapir</em>: <em>b&rsquo;avon ha&rsquo;eigel</em> the clouds left, and they returned in the merit of Aharon. A note on whose merit it was: the <em>gemara</em> in <em>Taanis</em> says that the clouds were in the merit of Aharon, the <em>be&rsquo;er</em> in the merit of Miriam and the <em>mon</em> in the merit of Moshe; yet <em>Bava Metzia</em> says that all three were in the merit of Avraham, who gave his guests butter and milk, water, and <em>v&rsquo;hu omeid aleihem</em> &mdash; he stood over them. So the Maharsha explains: in Avraham&rsquo;s merit alone we would have received them only temporarily; to continue for forty years there needed to be a living <em>tzaddik</em>.<sup class="fn">17</sup></p>
+
+<blockquote class="hebrew">
+עוד קשה בשלמא למאן דאמר סוכות ממש אתי שפיר דבאותו זמן היה, אבל למאן דאמר בעד ענני כבוד קשה אמאי, וכתב דמצא בספר לבנת הספיר דבעון העגל נסתלקו הענני כבוד ואחר כך חזרו בזכות אהרן, וחזרתם היה אחר שנצטוו במשכן והליווי היה מוצאי יום הכיפורים ונדבת המשכן היה ב׳ בקרים כמ״ש בבקר בבקר&hellip; ולכן ביום ט״ו שכבר נשלמו המעשים חזרו העננים&hellip; ולכן אנו עושים להודיע כחה של תשובה וכו׳.
+<span class="attrib">&mdash; Pri HaAdamah, quoting Maharam Chaviv and <em>Levanas HaSapir</em> (source sheet #9) &nbsp;<sup class="fn">17</sup></span>
+</blockquote>
+
+
+<p>The third source is Rabbi Yehoshua ibn Shuaib, a <em>talmid</em> of the Rashba (#11, printed in the 1500s), who says that all the <em>Rishonim</em> asked: what is the reason that Hashem commanded a <em>sukkah</em> on the 15th of Tishrei, when we were redeemed on the 15th of Nissan? According to him it was not that the clouds had come and left &mdash; the clouds did not descend at all until after <em>Yom Kippur</em>: from <em>Pesach</em> to <em>Atzeres</em> they were busy with <em>Matan Torah</em> and its aftermath, Amalek, the <em>meriva</em>, the bread and the water; then after <em>Matan Torah</em> came the <em>eigel</em>, and they were <em>nezufin</em>, in a kind of excommunication, and the clouds did not descend until after <em>Yom Kippur</em> had atoned. Then came the command about the <em>Mishkan</em>, and in the following days they were busy with the donations: <em>b&rsquo;yom yud-daled asu sukkos u&rsquo;v&rsquo;yom tes-vav hischilu lashevet bahen</em>.<sup class="fn">18</sup></p>
+
+<blockquote class="hebrew">
+לנו לבאר הענין שאלו הראשונים ז״ל מה טעם צוה השם לעשות בצצית סוכה בט״ו בתשרי כי בט״ו בניסן נגאלו אבל בט״ו בתשרי בין למאן דאמר סוכות ממש בין למאן דאמר ענני כבוד למה היו בתשרי כי יותר היו ראוין בסיון בתמוז ובאב שהן ימי הקיץ&hellip; ובזה נוכל לומר כי מפסח שיצאו עד עצרת היו עסוקין בנתן תורה ובטהרתן וקרה להם מקרים בעמלק ובמריבה ובלחם והמים ולאחר מתן תורה עשו העגל והיו נזופין ולא ירדו ענני כבוד עד אחר יום הכיפורים שנתכפר עון העגל ולמחרתו נצטוו בהקמת המשכן והיו טרודין בהבאת הנדבה בשני בקרים דכתיב והם הביאו עוד נדבה בבקר בבקר וביום י״ד עשו סוכות ויום ט״ו התחילו לישב בהן.
+<span class="attrib">&mdash; R&rsquo; Yehoshua ibn Shuaib, <em>derashos</em> (source sheet #11) &nbsp;<sup class="fn">18</sup></span>
+</blockquote>
+
+
+<h3>Fourth answer &mdash; the <em>kocho shel teshuvah</em></h3>
+
+<p>With this, the Pri HaAdamah brings the answer to the <em>second</em> question as well &mdash; which the Rav said has bothered everyone, and which will occupy the next chapter. We celebrate the clouds, and not the <em>be&rsquo;er</em> and the <em>mon</em>, because the clouds were lost through sin and returned through <em>teshuvah</em>. The <em>be&rsquo;er</em> and the <em>mon</em> did not leave us because of sin &mdash; Miriam&rsquo;s <em>be&rsquo;er</em> was lost only later, on her death. And so, says the Maharam Chaviv, <em>lachen anu osim l&rsquo;hodia kocha shel teshuvah</em> &mdash; we make this <em>Yom Tov</em> to proclaim the power of <em>teshuvah</em>. &ldquo;<em>L&rsquo;chaim, l&rsquo;chaim v&rsquo;livrachah</em>,&rdquo; said the Rav: the message of <em>Sukkos</em> is the power of repentance.</p>
+
+<p>The Rav added one remark on the timing, with the Zohar: there is an opinion in the Zohar that Moshe gathered the people and told them of the <em>Mishkan</em> even <em>before</em> the <em>eigel</em>, a point on which the Rebbe has a beautiful <em>sichah</em>. But the standard line throughout Chazal is as Rashi says: the instruction came the day after <em>Yom Kippur</em>.<sup class="fn">19</sup></p>
+
+<p>Back to the earlier question of the <em>mechitzos</em>: on the Gra&rsquo;s chronology the clouds had not yet returned on the day Moshe called out that no more should be brought, so the Rav suggested that at that moment the question of <em>mechitzos</em> does not arise for the source of the <em>melachah</em> of carrying. The room pressed the point, and it was left without a clean resolution.</p>
+
+<p>The sheet also supplies, at #12, a <em>midrash</em> from the <em>Pesikta</em> in which Rabbi Eliezer asks why we make <em>sukkos</em> after <em>Yom Kippur</em> &mdash; <em>shema yigaleh dineinu b&rsquo;Yom Kippurim l&rsquo;galus</em>, perhaps our verdict on <em>Yom Kippur</em> was exile, and so we leave our homes for the <em>sukkah</em> as a kind of exile &mdash; with comments of a <em>sefer</em> labelled on the sheet &ldquo;Eliyah Rabbah.&rdquo; The recording does not take up this excerpt explicitly; it is recorded in the Inventory below.<sup class="fn">20</sup></p>
+
+<h2><span class="num">VI.</span> Why the Clouds &mdash; and Not the <em>Mon</em> and the <em>Be&rsquo;er</em>?</h2>
+
+<p>The second great <em>kushya</em>, which everyone asks, is this: according to Rabbi Eliezer, why do the <em>ananei ha&rsquo;kavod</em> merit their own <em>Yom Tov</em> and not the <em>be&rsquo;er</em> and the <em>mon</em>? We have already met two answers &mdash; the Bach (the clouds are only an excuse to remember <em>yetzias Mitzrayim</em>) and the Maharam Chaviv and <em>Levanas HaSapir</em> (the power of <em>teshuvah</em>). The Rav now gave four more, drawn from the sheet.</p>
+
+<h3>The Bnei Yissaschar: the table is the <em>mon</em> and the <em>be&rsquo;er</em></h3>
+
+<p>Number thirteen is the Bnei Yissaschar of Dinov, who opens with the <em>kadmonim</em>&rsquo;s own <em>kushya</em>: the <em>gemara</em> says that Hashem gave Klal Yisrael three good gifts in the desert &mdash; the <em>mon</em>, the <em>be&rsquo;er</em> and the <em>ananei kavod</em> &mdash; yet commanded a remembrance only of the clouds.<sup class="fn">21</sup> His first answer, <em>al pi pshuto</em>, is from the Chida in the name of Rav Tzemach David: the <em>be&rsquo;er</em> tasted like whatever drink a person wished, just as the <em>mon</em> tasted like whatever food he wished. Since on <em>Sukkos</em> we are commanded in <em>simchas ha&rsquo;chag</em> to eat meat, drink wine and <em>she&rsquo;ar matamim</em>, we already have the <em>mon</em> in all the delicacies and the <em>be&rsquo;er</em> in all the different drinks (&ldquo;you cannot have just water or plain seltzer; you need different flavors&rdquo;). So the <em>sukkah</em> is the clouds; the food, the <em>mon</em>; the drink, the <em>be&rsquo;er</em>. But, he says, <em>al da ein anu marvin tzimaoneinu</em> &mdash; this does not quench our thirst.</p>
+
+<blockquote class="hebrew">
+הקדמונים אחזו שער לדרוש ולחקור על מה עשה י״י ככה, (תענית ט.) ג׳ מתנות טובות נתן הקב״ה לישראל במדבר, מן ובאר וענני כבוד, הנה צוה הש״י זכר לענני הכבוד במצות סוכה, ולא עשה כן במן ובאר, והנה נראה לי על פי פשוטו, על פי מה שכתב הרב הגדול חיד״א זללה״ה (דבש לפי ב׳ ג׳) בשם הרב צמח דוד, דגם הבאר היה בו טעם כל המשקין כפי רצון האדם, כמו שהמן היה בו טעם כל המאכלים, אם כן כיון שנצטוינו בשמחת החג בבשר ויין ושאר מטעמים, הנה יש זכר למן ובאר, הנה זהו לפי פשוטו, אבל עדיין אין זה מרווה צמאוננו.
+<span class="attrib">&mdash; Bnei Yissaschar (source sheet #13) &nbsp;<sup class="fn">21</sup></span>
+</blockquote>
+
+
+<h3>The Chida: a luxury, a gift</h3>
+
+<p>Numbers fourteen through sixteen are all from the Chida&rsquo;s <em>Rosh David</em>, as cited by the Bnei Yissaschar.<sup class="fn">22</sup> First (#14), in the name of Rav Chaim Kapusi &mdash; the very Rav Chaim Kapusi the Rav had mentioned in the shiur on the bribe, the man who lost his sight and had it restored:</p>
+
+<blockquote class="hebrew">
+דהמן ובאר הלא המה לחם ומים שהן הכרחיים לחיי האדם ולא הוה כל כך תוספת טובה, אבל מה שהקיפן הש״י בענני כבוד, חיבה יתירה נודעת להם בתוספת טובה, לזה צונו הש״י במצותיו לעשות זכר רק למתנה הזו, באמרו ית״ש כי בסוכות הושבתי את בני ישראל.
+<span class="attrib">&mdash; Chida, <em>Rosh David</em>, in the name of Rav Chaim Kapusi, as quoted in Bnei Yissaschar (source sheet #14) &nbsp;<sup class="fn">22</sup></span>
+</blockquote>
+
+<p>The <em>mon</em> is food, the <em>be&rsquo;er</em> is water &mdash; <em>hecheirachiyim l&rsquo;chaiyei adam</em>; a person must eat and drink to live. That Hashem took us into the desert obliged Him to sustain us. But that He surrounded us in clouds, protecting us from <em>sharav v&rsquo;shemesh</em>, flattening the terrain, keeping our clothes clean, so that no one had to launder or go shopping &mdash; this was not necessary at all; <em>chiba yeseirah</em> (<span class="heb">חִיבָּה יְתֵרָה</span>), a special love. This is the gift &mdash; and therefore He commanded a remembrance of the gift only. That is what <em>hoshavti</em> means: it came entirely from My side.</p>
+
+<p>Two more from the Chida follow. The second (#15), in the name of Rav Yehudah Chaviliyo (as spelled on the sheet): the clouds were only for Yisrael &mdash; the <em>erev rav</em> were expelled by the clouds, as the Zohar says &mdash; whereas the <em>mon</em> and the <em>be&rsquo;er</em> were for everyone who joined the march. Since the clouds were unique to us, it is the clouds we remember. The third (#16), in the name of Rav Yeshua Zin: the <em>mon</em> and the <em>be&rsquo;er</em> were given in response to complaints &mdash; <em>asher bikshu</em>, they asked for food and for water &mdash; whereas the clouds were never asked for. The Rav smiled: did they ever say &ldquo;it is too hot, we need shade; it is too hard to launder; going uphill is too much&rdquo;? They complained about the road, <em>kamah lavatnu b&rsquo;zeh hadereich</em>, but never about that. It probably was not on their radar. It began from God&rsquo;s part &mdash; <em>that</em> is something to celebrate. Not so the <em>mon</em> and the <em>be&rsquo;er</em>: &ldquo;we got them because we made God <em>meshuga</em>.&rdquo; Another sheet excerpt (#17), the Maharam Chaviv quoted from a manuscript, addresses the same question from the perspective of whose merit each gift came in.<sup class="fn">23</sup></p>
+
+<blockquote class="hebrew">
+הרב הגדול החסיד מו׳ חיד״א זללה״ה (ראש דוד שם) הטעים לנו עוד טעם מן ובאר&hellip; הנה כתב בשם הרב החסיד מו׳ יהודה חאביליו זללה״ה, להיות ענני כבוד היו רק ישראל מיוחדים בטובה כי (זח״ב קצא:) הערב רב פלט אותם, מה שאין כן מן ובאר שגם הערב רב נהנו מהם.
+<span class="attrib">&mdash; Chida, <em>Rosh David</em>, in the name of Rav Yehudah Chaviliyo, quoted in Bnei Yissaschar (source sheet #15) &nbsp;<sup class="fn">22</sup></span>
+</blockquote>
+<blockquote class="hebrew">
+עוד דרש הרב הגדול מו׳ חיד״א (ראש דוד שם) בשם הרב מו׳ ישועה זיי״ן זללה״ה, להיות המן ובאר ניתן להם על ידי תלונתם ותרעומתם אשר בקשו אוכל למו ומים לצמאם, מה שאין כן ענני כבוד ניתן להם מבלי שאלה מאתם רק בטובו הגדול ית״ש, על כן לא ניתן להם זכר למן ובאר רק זכר לענני כבוד.
+<span class="attrib">&mdash; Chida, <em>Rosh David</em>, in the name of Rav Yeshua Zin, quoted in Bnei Yissaschar (source sheet #16) &nbsp;<sup class="fn">22</sup></span>
+</blockquote>
+
+
+<h3>A <em>kushya</em> from the Maharam of Rottenburg</h3>
+
+<p>The Rav had a question on the Chida&rsquo;s reading. Number eighteen is the famous letter of the Maharam of Rottenburg disputing Rabbeinu Tam. The topic: women on <em>Shabbos</em> and the three meals, and <em>lechem mishneh</em>. Rabbeinu Tam derives their obligation from <em>af hen hayu b&rsquo;oso hanes</em> (<span class="heb">אַף הֵן הָיוּ בְּאוֹתוֹ הַנֵּס</span>) &mdash; they too were in that miracle &mdash; the <em>mon</em>. The Maharam disagrees.<sup class="fn">24</sup></p>
+
+<blockquote class="hebrew">
+אבל מכל מקום לא שייך טעמא דאף הן היו אלא היכא דהמצוה באה על הנס שאירע לישראל שהיו בסכנה ונמלטו, דומיא דמגילה ובד׳ כוסות ובנר חנוכה.
+<span class="attrib">&mdash; Maharam of Rottenburg (source sheet #18) &nbsp;<sup class="fn">24</sup></span>
+</blockquote>
+
+<p><em>Af hen</em> applies only where the <em>mitzvah</em> came on account of a <em>nes</em> in which Yisrael were in <em>sakanah</em> and escaped &mdash; <em>Megillah</em>, the four cups, <em>Chanukah</em>. What danger was there with the <em>mon</em>? But, said the Rav, according to Rav Chaim Kapusi the <em>mon</em> was a necessity without which we could not have lived; it is exactly the clouds that were the luxury. So we must say that the Maharam would agree that without the <em>mon</em> we could not have survived &mdash; but <em>af hen</em> applies only where there is an <em>oppressor</em>: Mitzrayim, the Greeks, Haman. Hunger, a natural threat, does not count. &ldquo;<em>Muz men zogen azoi a zach</em>&rdquo; to make it fit. The Rav noted that this is the same area as the <em>sugya</em> of why women are not obligated in <em>sukkah</em> despite <em>af hen</em>, on which he had spoken previously: according to Rabbi Akiva there was no <em>nes</em> at all; and according to Rabbi Eliezer, what were women supposed to feel about the clouds?</p>
+
+<h2><span class="num">VII.</span> The <em>Halachic</em> Ramifications &mdash; Panim Yafos and Rav Oshaya</h2>
+
+<p>The machlokes between Rabbi Eliezer and Rabbi Akiva reaches into <em>halachah</em>. Number nineteen is the Panim Yafos &mdash; Rav Pinchas HaLevi Horowitz, the Ba&rsquo;al HaHafla&rsquo;ah, a <em>talmid</em> of the Maggid, who spent the end of his life in Frankfurt.<sup class="fn">25</sup> On Sukkah 27b, Rabbi Eliezer holds <em>ein yotz&rsquo;in mi&rsquo;sukkah l&rsquo;sukkah</em> (<span class="heb">אֵין יוֹצְאִין מִסֻּכָּה לְסֻכָּה</span>): one <em>sukkah</em> for the whole <em>Yom Tov</em>; you may not spend one day in one and another day in another, nor build a fresh one on <em>Chol HaMoed</em>. The <em>Chachamim</em> say you may. Why does Rabbi Eliezer hold so? Because the <em>sukkah</em> must be <em>dumya d&rsquo;ananei ha&rsquo;kavod</em>: the same covering for the entire journey. And Rabbi Akiva &mdash; <em>sukkos mamash</em> &mdash; holds that every time they traveled they packed up the hut and rebuilt it at the next camp, <em>b&rsquo;chol makom she&rsquo;nasu</em>; hence one may go from <em>sukkah</em> to <em>sukkah</em>.</p>
+
+<p>The Panim Yafos then addresses the obvious objection: the clouds <em>did</em> leave for a time &mdash; after the death of Aharon, or, as in the Gra, for a few months &mdash; and then returned. So Rabbi Eliezer agrees that if a <em>sukkah</em> fell, one may rebuild it on <em>Chol HaMoed</em>, since even the clouds themselves left and came back. A brand-new <em>sukkah</em>, however, one may not.</p>
+
+<p>The problem, as the Chelkas Yoav points out, is that we pasken like the <em>Chachamim</em> in this <em>machlokes</em> &mdash; you may go from <em>sukkah</em> to <em>sukkah</em> &mdash; but we pasken like Rabbi Eliezer that the <em>sukkah</em> is <em>zecher l&rsquo;ananei kavod</em>. The answer: Rabbi Eliezer himself was extreme. Other <em>tanaim</em> agree about the clouds but not to the point of requiring one single <em>sukkah</em>.<sup class="fn">26</sup></p>
+
+<h3>Rav Oshaya and the walls</h3>
+
+<p>The Rav gave a parallel. Rav Oshaya (Sukkah 7b) holds that not only the <em>sechach</em> must be <em>tzilasah merubah me&rsquo;chamasah</em> (<span class="heb">צִלָּתָהּ מְרֻבָּה מֵחַמָּתָהּ</span>), more shade than sun, but the walls too &mdash; they may not be see-through; and, the Ra&rsquo;avyah (cited in the Mordechai) adds, the walls have the same <em>din</em> as the <em>sechach</em>: they must provide more shade than sun, grow from the ground, and not be <em>mekabel tumah</em>. The <em>acharonim</em> ask what lies behind that and answer: it is Rabbi Eliezer&rsquo;s position. If the <em>sukkah</em> is clouds, the clouds surrounded Klal Yisrael on every side, so why should the walls be different from the roof? According to Rabbi Akiva, the essence of a hut is a roof over one&rsquo;s head; walls just hold up the roof &mdash; and in much of Florida, the Rav observed, you have rooms with pillars and no walls at all. That is another <em>nafka minah</em>.</p>
+
+<p>Practically, we do not pasken like Rav Oshaya, though we pasken like Rabbi Eliezer; so one must say that one can hold like Rabbi Eliezer without going to the extreme that Rabbi Eliezer or Rav Oshaya go. The Rav added that there are <em>Rishonim</em> who say to be <em>machmir</em> <em>l&rsquo;chatchilah</em> like Rav Oshaya, brought by the Eliyah Rabbah, though we do not act that way, as it would be very difficult. In the room it was objected that even for Rabbi Eliezer the main protection of the clouds was against the sun above &mdash; <em>v&rsquo;lo yakem sharav v&rsquo;shamesh</em> &mdash; so there is room to distinguish between roof and walls even if you hold like Rabbi Eliezer. A second question: can an <em>amora</em> hold like Rabbi Eliezer? Yes; <em>amoraim</em> are <em>machria</em> between <em>tanaim</em> all the time.</p>
+
+<h2><span class="num">VIII.</span> What Was Rabbi Akiva Adding? &mdash; Rashbam, Rabbeinu Bachya, Kad HaKemach</h2>
+
+<p>&ldquo;For the grand finale &mdash; this is really what I wanted to talk about, but we will keep it condensed.&rdquo; What is the <em>pshat</em> in Rabbi Akiva&rsquo;s <em>sukkos mamash</em>, especially if our <em>girsa</em> is correct and he is the one pouring cold water on his <em>rebbe</em>&rsquo;s clouds?</p>
+
+<h3>The Rashbam: don&rsquo;t say <em>kochi v&rsquo;otzem yadi</em></h3>
+
+<p>Number ten, one of the best-known Rashbams in <em>Chumash</em>.<sup class="fn">27</sup></p>
+
+<blockquote class="hebrew">
+למען ידעו דורותיכם [וגו׳]. פשוטו כדברי האומרים במסכת סוכה (יא:) סוכה ממש. וזה טעמו של דבר. חג הסוכות תעשה לך באספך מגרנך ומיקבך באוספך את תבואת הארץ ובתיכם מלאים כל טוב דגן ותירוש ויצהר, למען תזכרו כי בסוכות הושבתי את בני ישראל במדבר ארבעים שנה בלא ישוב ובלא נחלה, ומתוך כך תתנו הודאה למי שנתן לכם נחלה ובתיכם מלאים כל טוב, ולא תאמרו בלבבכם כחי ועצם ידי עשה לי את החיל הזה.
+<span class="attrib">&mdash; Rashbam, Vayikra 23:43 (source sheet #10) &nbsp;<sup class="fn">27</sup></span>
+</blockquote>
+
+<p><em>Peshuto</em> &mdash; the simple meaning &mdash; is <em>sukkah mamash</em>. <em>Chag HaSukkos</em> falls when you gather everything from the field and your houses are full of every good: grain, grapes, oil. You begin to think, &ldquo;I am not a bad farmer; I know my way around this world; look at what I amassed.&rdquo; So Hashem says: go back into the <em>sukkah</em> and remember forty years in a flimsy hut, <em>b&rsquo;lo yishuv uv&rsquo;lo nachalah</em> &mdash; with neither settled land nor inheritance. Then you will give <em>hoda&rsquo;ah</em> to the One who gave you the land, and you will not say in your heart, <span class="heb">כֹּחִי וְעֹצֶם יָדִי עָשָׂה לִי אֶת הַחַיִל הַזֶּה</span>. The message is to remember where we came from. It was the <em>Aibershter</em> who gave us a home, who gave us land, and this entire successful season was His.</p>
+
+<h3>Rabbeinu Bachya: the <em>ma&rsquo;alah</em> of Yisrael in the desert</h3>
+
+<p>Number twenty is Rabbeinu Bachya on <em>Chumash</em>; and the Rav added a second, in his <em>Kad HaKemach</em> (#2).<sup class="fn">28</sup></p>
+
+<blockquote class="hebrew">
+(כג) כִּי בַסֻּכּוֹת הוֹשַׁבְתִּי אֶת בְּנֵי יִשְׂרָאֵל. יֵשׁ מֵרַזַ״ל שֶׁאָמְרוּ סֻכּוֹת מַמָּשׁ עָשׂוּ לָהֶם, וְיֵשׁ שֶׁאָמַר עַנְנֵי כָבוֹד. דַּעַת הָאוֹמֵר סֻכּוֹת מַמָּשׁ עָשׂוּ לָהֶם, מִפְּנֵי זֶה נִצְטַוִּינוּ לַעֲשׂוֹת סֻכּוֹת דֻּגְמָתָן כְּדֵי שֶׁיִּתְגַּלֶּה וְיִתְפַּרְסֵם מִתּוֹךְ מִצְוַת הַסֻּכָּה גֹּדֶל מַעֲלָתָן שֶׁל יִשְׂרָאֵל בַּמִּדְבָּר שֶׁהָיוּ הוֹלְכִים עִם כֹּבֶד הָאֲנָשִׁים וְהַנָּשִׁים וְהַטַּף בַּמָּקוֹם הַהוּא אֲשֶׁר אֵין בְּטֶבַע הָאָדָם לִחְיוֹת בּוֹ.
+<span class="attrib">&mdash; Rabbeinu Bachya, Vayikra 23:43 (source sheet #20) &nbsp;<sup class="fn">28</sup></span>
+</blockquote>
+
+<p>So that the <em>ma&rsquo;alah</em> of Yisrael be publicized through the <em>mitzvah</em>: men, women and children, in a desert where by nature no one survives, living in simple huts &mdash; as Yirmiyahu says, <span class="heb">זָכַרְתִּי לָךְ חֶסֶד נְעוּרַיִךְ</span>. The <em>Aibershter</em> wants later generations to remember the <em>mesirus nefesh</em> of the first. In the <em>Kad HaKemach</em> he adds a second layer: <em>mitzvos</em> have a revealed meaning and a hidden meaning, <em>nigleh v&rsquo;nistar</em> (<span class="heb">נִגְלֶה וְנִסְתָּר</span>); so does <em>sukkah</em>.</p>
+
+<blockquote class="hebrew">
+מכלל מצות התורה שהם בדרך נגלה ונסתר הוא מצות הסוכה שיש בה נגלה ונסתר, הנגלה הוא הפשט הוא שהכתוב צוה אותנו בעשיית הסוכה רמז לזמן המדבר שהיו ישראל מטולטלין ונעים בו והיה ארץ ציה ושממה לא מקום זרע ותאנה וגפן ורמון, ולגודל מעלת הנס ההוא אמר הכתוב המוליכך במדבר הגדול והנורא נחש שרף ועקרב, והוא כלשון המוציאך מארץ מצרים. והנסתר זהו שאמר הכתוב בסכות תשבו שבעת ימים ואמרו רז״ל אלו ענני כבוד שהרי ישראל במדבר היו מקיפין אותם שבעה עננים והעננים נקראים סוכה.
+<span class="attrib">&mdash; Kad HaKemach, Sukkah (source sheet #2) &nbsp;<sup class="fn">28</sup></span>
+</blockquote>
+
+<p>The revealed meaning: a <em>sukkah</em> to hint at the wandering desert years &mdash; nomads, a desolate land where nothing could be planted, and somehow we survived. The <em>pasuk</em> says <span class="heb">הַמּוֹלִיכֵךְ בַּמִּדְבָּר הַגָּדֹל וְהַנּוֹרָא נָחָשׁ שָׂרָף וְעַקְרָב</span>, in the very language of <em>ha&rsquo;motzi&rsquo;acha me&rsquo;eretz Mitzrayim</em> &mdash; as if to equate the two: <em>I took you out of Egypt, as miraculous as that was; I took you through the desert</em>. How did we survive forty years where people do not survive overnight? That is the <em>nes</em>. The hidden meaning is the clouds, the seven clouds of glory.</p>
+
+<h2><span class="num">IX.</span> Rabbi Eliezer and Rabbi Akiva &mdash; Beis Shammai and Beis Hillel</h2>
+
+<p>About ten years ago the Rav began a book on the <em>tanna</em> Rabbi Eliezer: his story, his <em>aggadah</em>, his <em>halachos</em>, his debates with his contemporaries. A friend asked, &ldquo;Who will buy a book about a random <em>tanna</em>?&rdquo; So he refrained. Shortly after, he walked into a <em>seforim</em> store in Crown Heights and saw a Hebrew book, <em>Rabbi Eliezer HaGadol</em>, written by a <em>shliach</em> in Canada <em>l&rsquo;iluy nishmas</em> Reb Dubrawsky, whose name was also Eliezer &mdash; on the Torah of the Rebbe and <em>chassidus</em> about Rabbi Eliezer. But the Rav has always had a major <em>koch</em> in Rabbi Eliezer, and there is a powerful reason for this debate: and especially in the <em>girsa</em> of our <em>gemara</em>, a reason why Rabbi Akiva came and said, forget the clouds, <em>sukkos mamash</em>.</p>
+
+<h3>Rabbi Eliezer &mdash; <em>shamuti</em></h3>
+
+<p>The <em>gemara</em> in <em>Shabbos</em> says that Rabbi Eliezer is <em>shamuti</em> (<span class="heb">שַׁמּוּתִי</span>) &mdash; you cannot pasken like him.<sup class="fn">29</sup> The context: Rabbi Eliezer held that even <em>machshirei mitzvah</em>, the preparatory acts, of <em>milah</em> override <em>Shabbos</em> &mdash; if you need a knife, bring it. The <em>Chachamim</em> said only the <em>milah</em> itself; Rabbi Akiva held that the preparatory acts do not override <em>Shabbos</em>. Once people forgot to bring the knife on Friday, said &ldquo;Rabbi Eliezer is good enough for me,&rdquo; and brought it on <em>Shabbos</em> &mdash; and the <em>Chachamim</em> were upset: how could you pasken like him? He is <em>shamuti</em>. What does it mean? Rashi gives two explanations. One: Rabbi Eliezer died in <em>cherem</em> &mdash; the story in <em>Bava Metzia</em> of the oven of Achnai, where he insisted it was pure and would not back down, and the <em>Chachamim</em>, with Rabbi Yehoshua, put him in <em>cherem</em>. Two: he was from Beis Shammai.</p>
+
+<p>The Rav paused on a puzzle. The Ramban says that the reason Rabbi Eliezer did not back down was that the others said, &ldquo;We hear your arguments and cannot answer them, but this is the tradition we have,&rdquo; to which Rabbi Eliezer said, in effect, &ldquo;tradition, schmadition; I am telling you what <em>seichel</em> demands.&rdquo; That is strange: the <em>gemara</em> in <em>Sukkah</em> says that Rabbi Eliezer never said anything he did not hear from his teachers; and in <em>Avos</em> Rabban Yochanan ben Zakkai calls him a <em>bor sud she&rsquo;eino me&rsquo;abeid tipah</em> (<span class="heb">בּוֹר סִיד שֶׁאֵינוֹ מְאַבֵּד טִפָּה</span>), a plastered cistern that loses not a drop. Yet in the story that placed him in <em>cherem</em>, he was the one presenting his own logic against the <em>Chachamim</em> who quoted a tradition! The Rav brought the <em>teshuvah</em> of the Chavos Yair (#3, <em>siman</em> 94): when someone asks him a <em>halachah l&rsquo;maaseh</em>, Rabbi Eliezer says, &ldquo;I never asked my teacher; I will not pasken&rdquo;; but where the <em>Chachamim</em> are deliberating a current question, trying to work out what the <em>din</em> should be, of course he states his own <em>da&rsquo;as</em> and his reasoning.<sup class="fn">30</sup></p>
+
+<blockquote class="hebrew">
+&hellip;לע״ד לא קשה מידי, שבמה דברים אמורים כשישאלו ממנו דבר הלכה למעשה כהנך דמסכת יומא [סו:] ומסכת סוכה [ח.], ועל זה אמרו לו תלמידיו [סוכה כח.] ׳כל דבריך׳ ר״ל בהוראה ׳אינן אלא מפי השמועה׳, משא״כ כשדן עם רבותיו או עם חבריו בהלכה כמו בתנורו של עכנאי [בבא מציעא שם] היה אומר דעתו וטעמו.
+<span class="attrib">&mdash; Chavos Yair, <em>siman</em> 94 (source sheet #3) &nbsp;<sup class="fn">30</sup></span>
+</blockquote>
+
+
+<h3>Shammai and Hillel in their temperaments</h3>
+
+<p>Rabbi Eliezer, then, died in <em>cherem</em> &mdash; and also he was from Beis Shammai, while Rabbi Akiva, <em>b&rsquo;peshitus</em>, is from Beis Hillel (<em>Rashi</em> and <em>Tosafos</em> in <em>Bava Metzia</em> discuss it, but so it appears). Their temperaments also echo Shammai and Hillel. In <em>Shabbos</em>, Shammai chased away the one who wanted the Torah &ldquo;on one foot&rdquo;; Hillel was patient. Shammai was a <em>kapdan</em> &mdash; <em>gevurah</em>.<sup class="fn">31</sup> The <em>gemara</em> in <em>Taanis</em> tells that in a drought, Rabbi Eliezer had the congregation fasting, and after the <em>davening</em> everyone began leaving. He screamed, &ldquo;Where are you going? To dig your own graves? There is a drought; there is no food outside; we stay here until the <em>Aibershter</em> sends rain.&rdquo; But when Rabbi Akiva went down before the <em>amud</em> and said <em>Avinu Malkeinu</em>, it poured. Yet the <em>gemara</em> says: do not think Rabbi Akiva is greater than Rabbi Eliezer &mdash; Rabbi Akiva was <em>ma&rsquo;avir al midosav</em> (<span class="heb">מַעֲבִיר עַל מִדּוֹתָיו</span>); he never took offense. Rabbi Eliezer was not; whoever offended him was held to task. In <em>Pesachim</em>, Rabbi Akiva once pressed a question about <em>shechitah</em> &mdash; and Rabbi Eliezer replied, &ldquo;Akiva, you challenge me about <em>shechitah</em>? You will die through <em>shechitah</em>.&rdquo; He cursed him; and Rabbi Akiva became one of the <em>Aseres Harugei Malchus</em>. &ldquo;You do not mess with Rabbi Eliezer.&rdquo;</p>
+
+<h3>Heaven first, or earth?</h3>
+
+<p>The <em>gemara</em> in <em>Chagigah</em> (12a) records that Beis Shammai say that heaven was created first and then earth &mdash; <em>bereishis bara Elokim es ha&rsquo;shamayim v&rsquo;es ha&rsquo;aretz</em> &mdash; since heaven is Hashem&rsquo;s throne and the earth His footstool: you build the chair first. Beis Hillel say that earth was first, citing other <em>pesukim</em>: the earth is the house, and heaven merely the attic, <em>aliyah</em>; the main thing is the ground floor. The <em>Pirkei d&rsquo;Rabbi Eliezer</em> says that they finally agreed, a <em>bas kol</em> declaring that the two were created together, and in the <em>gemara</em> in <em>Chagigah</em> the Sages hold that as a third opinion.<sup class="fn">32</sup></p>
+
+<p>The Rav brought this to <em>chassidus</em>. According to Beis Hillel, the essence of creation is this world; according to Beis Shammai, heaven. This parallels the debate whether a <em>tzaddik</em> is greater than a <em>malach</em> &mdash; a shiur the Rav said he still owes. Beis Hillel represents the life of a <em>tzaddik</em>, who pumps <em>Elokus</em> from above to below &mdash; <em>chesed</em>, water, running <em>toward</em> the world rather than away from it. Beis Shammai represents fire, which always rises from below to above: the movement of a <em>ba&rsquo;al teshuvah</em>, who tasted sin and flees it &mdash; <em>barach ha&rsquo;am</em>, like Yisrael leaving Mitzrayim; whereas for <em>Moshiach</em>, <em>b&rsquo;mnusah lo seileichun</em>, not in flight. For Beis Shammai the purpose of the <em>neshamah</em> in this world is to test whether it will be drawn to its pleasures or tear itself away &mdash; to become a hermit in the forest; for Beis Hillel, the <em>neshamah</em> is to pump <em>Elokus</em> into this world.</p>
+
+<p>This is the difference between Rabbi Eliezer and Rabbi Yehoshua. Rabbi Yehoshua was born a <em>tzaddik</em>: his mother would bring his cradle to the <em>beis midrash</em> so that only words of Torah would enter his ears. Rabbi Eliezer, by contrast &mdash; the <em>Pirkei d&rsquo;Rabbi Eliezer</em> opens with the story &mdash; was busy working with his father until age twenty-six or so, and then fled the field and ran to Yerushalayim to learn from Rabban Yochanan ben Zakkai. His <em>tenuah</em> is that of Shammai: one who flees, from below upward. That is why he holds that the world was created in Tishrei and that <em>Moshiach</em> will come in Tishrei: Tishrei is our <em>avodah</em>, when we reach out toward Heaven. Rabbi Yehoshua, born a <em>tzaddik</em>, holds that the main thing is Nissan, when the <em>Aibershter</em> comes to us from above to below.<sup class="fn">33</sup></p>
+
+<h2><span class="num">X.</span> Finding Hashem in the Natural &mdash; the Answer to Rabbi Akiva</h2>
+
+<p>Apply this to our <em>machlokes</em>. Rabbi Akiva is placed with Beis Hillel &mdash; patient. Rabbi Eliezer is Shammai: for him, meaning in life is found not in <em>gashmiyus</em> but in the heavens, in the <em>ruchniyus</em>. Physical huts? Where do you see Hashem in plain huts? You need an open miracle, a complete supernatural; <em>ananei ha&rsquo;kavod</em> &mdash; that is what we celebrate. When Rabbi Akiva says <em>sukkos mamash</em>, what are we commemorating? As Rabbeinu Bachya said in the <em>Kad HaKemach</em>: when you think of it, how did Klal Yisrael survive in the desert and feel secure in such conditions? It was Hashem&rsquo;s hand &mdash; but not so grand as the clouds. The very fact that the huts <em>worked</em>, day after day, week after week, year after year, is also godly. But you have to be <em>misbonen</em> in it. That is the <em>avodah</em> of Beis Hillel: finding <em>Elokus</em> in what seems natural, what seems simple.</p>
+
+<p>So that is why Rabbi Akiva made such a <em>shturem</em>: do not think you must run to the clouds of glory. They were there, for sure. But that is not what this <em>Yom Tov</em> is about. If it were, we would remember the <em>be&rsquo;er</em> and the <em>mon</em> and all the supernatural things. This <em>Yom Tov</em> teaches that the day-to-day is also the hand of Hashem. As the Ramban writes at the end of <em>Parshas Bo</em>: from the revealed miracles a person comes to recognize the hidden miracles.<sup class="fn">34</sup> We think about <em>yetzias Mitzrayim</em> all the time &mdash; the fantastic, fabulous acts of Hashem &mdash; so that when the sun comes up in the morning, when it rains, when you are able to breathe, you see that this too is the <em>Aibershter</em>&rsquo;s hand. The Rav saw this in Rabbeinu Bachya &mdash; and this, he said, was the statement of Rabbi Akiva. <em>Davka</em> after Rabbi Eliezer, he came onto the scene: do not think you have to run to the clouds of glory. This <em>Yom Tov</em> is far more subtle: even the day-to-day works only because the <em>Aibershter</em>&rsquo;s hand is behind it.</p>
+
+<p>The Rav closed with <em>yasher koach</em> and an <em>a freilichen Sukkos</em>.</p>
+
+<!-- ============ MAREH MEKOMOS ============ -->
+<section class="mm-appendix">
+<h2>מַרְאֵה מְקוֹמוֹת</h2>
+<div class="subtitle">Sources, Citations, and Textual Notes &mdash; Artscroll dual-layer</div>
+
+<div class="mm-note">
+  <span class="short">1. <span class="heb">בַּעַל שֵׁם טוֹב עַל הַתּוֹרָה</span>, section on <em>Sukkos</em> (Parshas Emor) &mdash; the Ba&rsquo;al Shem Tov&rsquo;s <em>sukkah</em> and the parchment.</span>
+  <span class="exp">Reprinted as source #1 on the sheet. The collection <em>Ba&rsquo;al Shem Tov al HaTorah</em> gathers teachings preserved in the name of the Ba&rsquo;al Shem Tov by his <em>talmidim</em>; this <em>maaseh</em> is told by the compiler, who closes with a firsthand report from Rav Yoski, a grandson of the Degel. The Rav stressed that the Ba&rsquo;al Shem Tov&rsquo;s halachic mastery (<em>nigleh</em>) is attested by the Alter Rebbe, who repeated many <em>pilpulim</em> heard from the Maggid, who heard them from the Ba&rsquo;al Shem Tov, to prove the point to leading <em>misnagdim</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">2. The Ba&rsquo;al Shem Tov&rsquo;s descendants &mdash; Tzvi; Adel and <span class="heb">רַבִּי יְחִיאֵל מִיכָל הַדֵּייטְשֶׁל</span>; their children Rav Baruch of Mezhibuzh, the Degel Machaneh Ephraim, and Feiga.</span>
+  <span class="exp">The Degel Machaneh Ephraim is Rav Moshe Chaim Ephraim of Sadigura (&ldquo;Sedilkov&rdquo;), grandson of the Ba&rsquo;al Shem Tov; Feiga was the mother of Rebbe Nachman of Breslov. The Rav relayed that the Frierdiker Rebbe reports that the Alter Rebbe said that there were things he learned <em>only</em> from Rav Yechiel Michel.
+  <div class="note-academic"><strong>Flag:</strong> The Frierdiker Rebbe&rsquo;s report that the Alter Rebbe learned particular matters only from Rav Yechiel Michel was given orally without a location. Not verified; to be matched to a source in the Frierdiker Rebbe&rsquo;s writings.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">3. <span class="heb">דִּבְרֵי שָׁלוֹם</span>, in the name of the Sar Shalom of Belz &mdash; Rav Itzikel Hamburger as the challenger of the <em>sukkah</em>.</span>
+  <span class="exp">The Rav described the passage as saying that Rav Itzikel Hamburger came to Mezhibuzh and challenged the Ba&rsquo;al Shem Tov&rsquo;s <em>sukkah</em>, that something amazing happened, and that his response was that the Ba&rsquo;al Shem Tov&rsquo;s path belonged to the Ba&rsquo;al Shem Tov&rsquo;s <em>neshamah</em> and his own to his. The Rav noted that the passage itself does not state what happened; pairing it with the parchment is the Rav&rsquo;s own connection. Rav Itzikel&rsquo;s debate with the Noda BiYehuda over the <em>get</em> was the subject of an earlier shiur.
+  <div class="note-academic"><strong>Flag:</strong> The title <em>Divrei Shalom</em> and its attribution to the Sar Shalom of Belz come from the transcript and were not otherwise specified (no <em>siman</em>, <em>parshah</em> or page). The sefer is not on Sefaria. Left unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">4. <span class="heb">סוּכָּה יא ע&quot;ב</span> &mdash; Reish Lakish&rsquo;s <em>derashah</em> on <span class="heb">וְאֵד יַעֲלֶה מִן הָאָרֶץ</span> (Bereishis 2:6); the baraisa of Rabbi Eliezer and Rabbi Akiva on <span class="heb">כִּי בַסֻּכּוֹת הוֹשַׁבְתִּי</span> (Vayikra 23:43).</span>
+  <span class="exp">Reprinted as source #4. Reish Lakish derives that <em>sechach</em> must be from that which is not <em>mekabel tumah</em> and grows from the ground, from the analogy to the mist (<em>ed</em>); the <em>gemara</em> notes that this works only according to Rabbi Eliezer (<em>ananei kavod hayu</em>) and asks what Rabbi Akiva (<em>sukkos mamash asu lahem</em>) would say. The Rav stressed Hashem&rsquo;s word <em>hoshavti</em>. <span class="sefaria-ref">Sefaria: Sukkah 11b (confirmed: Reish Lakish on Genesis 2:6; baraita of Rabbi Eliezer and Rabbi Akiva).</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">5. <span class="heb">בַּמִּדְבָּר כד:ה</span> (<span class="heb">מַה טֹּבוּ אֹהָלֶיךָ יַעֲקֹב</span>); the clouds in <em>Parshas Beshalach</em>.</span>
+  <span class="exp">The Rav argued that Rabbi Eliezer cannot deny that every Jew had a tent, given Bilaam&rsquo;s blessing (understood by Chazal as the entrances not facing one another), and Rabbi Akiva cannot deny the clouds of <em>Beshalach</em>. Hence both existed; the dispute is what the <em>sukkah</em> commemorates.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">6. <span class="heb">רַבֵּינוּ אֶלְעָזָר הָרוֹקֵחַ</span> of Worms (<span class="heb">סֵפֶר הָרוֹקֵחַ</span>) &mdash; <em>yesh omrim</em> that they sat in <em>sukkos</em> only at the end of the forty years.</span>
+  <span class="exp">Rav Elazar of Worms was the most prominent <em>talmid</em> of Rabbeinu Yehudah HeChassid, writing in Germany at the end of the 1100s. The Rav cited him for the possibility that the <em>sukkos</em> existed only during the wars to enter <em>Eretz Yisrael</em>.
+  <div class="note-academic"><strong>Flag:</strong> The Rav pointed the listener to the Rokeach &ldquo;for details&rdquo; without naming a <em>siman</em>. Location in the Rokeach left unspecified rather than guessed.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">7. <span class="heb">הַמַּבִּי&quot;ט</span> (does <em>sukkah</em> apply in the desert?); <span class="heb">רַבִּי יוֹסֵף עֶנְגֶּיל, גִּלְיוֹנֵי הַשַּׁ&quot;ס</span> (the clouds as <em>chatzitzah</em>).</span>
+  <span class="exp">The Mabit&rsquo;s question: <em>bein l&rsquo;Rabbi Eliezer bein l&rsquo;Rabbi Akiva</em>, did Klal Yisrael perform the <em>mitzvah</em> of <em>sukkah</em> in the desert, if clouds are above them? The Rav noted that clouds as such are not a <em>chatzitzah</em>, but if they were, the issue would be real; and if they were <em>mechitzos</em>, there would be no <em>reshus harabim</em>. A listener added that the Frierdiker Rebbe also addressed it.
+  <div class="note-academic"><strong>Flag:</strong> Neither the Mabit&rsquo;s location (<em>teshuvos</em> or <em>sefer</em>) nor the page in <em>Gilyonei HaShas</em> was specified in the recording; the Frierdiker Rebbe attribution came from a participant. Left unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">8. <span class="heb">שַׁבָּת צו ע&quot;ב</span> (the <em>mekoshesh</em> and <em>ma&rsquo;avir arba amos</em>); <span class="heb">שְׁמוֹת לו:ו</span>.</span>
+  <span class="exp">The <em>melachah</em> of <em>hotza&rsquo;ah</em> is derived from Moshe&rsquo;s call in <em>Parshas Vayakhel</em> that no man or woman should make any more <em>melachah</em> for the <em>terumah</em> of the <em>Mishkan</em> &mdash; the starting point for the question of whether the clouds, if <em>mechitzos</em>, make a <em>reshus harabim</em> impossible.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">9. <span class="heb">סִפְרָא (תּוֹרַת כֹּהֲנִים) אֱמוֹר</span>; <span class="heb">מְכִילְתָּא דְּרַבִּי יִשְׁמָעֵאל, בֹּא</span> (on <span class="heb">וַיִּסְעוּ בְנֵי יִשְׂרָאֵל מֵרַעְמְסֵס סֻכֹּתָה</span>, Shemos 12:37); <span class="heb">בְּרֵאשִׁית לג:יז</span>; <span class="heb">בַּמִּדְבָּר לג:ו</span>.</span>
+  <span class="exp">Reprinted as source #6. In the Sifra, per the Rav, the <em>shitos</em> are flipped (Rabbi Eliezer: <em>sukkos mamash</em>; Rabbi Akiva: <em>ananei kavod</em>); in the Mechilta there are three opinions &mdash; Rabbi Eliezer: actual booths, <em>ki Yaakov nasa Sukkasah</em>; <em>Chachamim</em>: only a place name, like Eisam; Rabbi Akiva: <em>ein sukkos ela ananei kavod</em>. <span class="sefaria-ref">Sefaria: Mekhilta DeRabbi Yishmael, Tractate Pischa 14 (on Exodus 12:37; three opinions confirmed); Sifra, Emor, Chapter 17:11 (Rabbi Eliezer: <em>sukkos mamash</em>; Rabbi Akiva: <em>ananei kavod</em>, as the Rav described).</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">10. <span class="heb">מהר&quot;ץ חיות</span>, glosses on Sukkah 11b; <span class="heb">מְגִלָּה ג ע&quot;ב</span> (Onkelos translated <em>mipi</em> Rabbi Eliezer and Rabbi Yehoshua); Onkelos on Vayikra 23:43.</span>
+  <span class="exp">Reprinted as source #7. Rav Tzvi Hirsch Chayes (1805&ndash;1855) cites Rav Yeshayah Berlin on the reversed <em>girsa</em> in the Toras Kohanim and Mechilta, then argues that the <em>girsa</em> of the <em>Bavli</em> is more precise, since Onkelos &mdash; a <em>talmid</em> of Rabbi Eliezer &mdash; translates <em>b&rsquo;matlelan ananei</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">11. <span class="heb">טוּר וְשֻׁלְחָן עָרוּךְ אורח חיים תרכ&quot;ה</span> &mdash; we pasken like Rabbi Eliezer.</span>
+  <span class="exp">The Tur and the <em>Shulchan Aruch</em> pasken that the <em>sukkah</em> is <em>zecher l&rsquo;ananei kavod</em>, which is what one is supposed to have in mind on the first night, when there is a <em>chovas gavra</em> to eat a <em>kazayis</em> in the <em>sukkah</em>. <span class="sefaria-ref">Sefaria: Shulchan Arukh, Orach Chayim 625:1 (confirmed: the <em>sukkos</em> were the clouds of glory); Tur, Orach Chayim 625.</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">12. <span class="heb">ב&quot;ח</span> and <span class="heb">ט&quot;ז</span> on <em>Orach Chaim</em> 625; <span class="heb">פְּרִי מְגָדִים</span>, beginning of <em>Hilchos Sukkah</em>; <span class="heb">בִּכּוּרֵי יַעֲקֹב</span>.</span>
+  <span class="exp">The Bach (Rav Yoel Sirkes) says that according to Rabbi Eliezer the clouds are a way of recalling <em>yetzias Mitzrayim</em>, while Rabbi Akiva&rsquo;s huts are unrelated; the Taz (Rav David HaLevi Segal, his son-in-law) says the reverse. On the practical question of one who missed the <em>kavanah</em>, the Pri Megadim says he need not return, while the Bikurei Yaakov seems to disagree. <em>L&rsquo;chatchilah</em>, have both in mind.
+  <div class="note-academic"><strong>Flag:</strong> The specific <em>se&rsquo;ifim</em> in the Bach and Taz and the Pri Megadim passage were not named in the recording; the Bikurei Yaakov (and the &ldquo;Aruch&rdquo; the Rav seemed to name alongside him) was not clear on the audio. The Taz&rsquo;s <em>din Torah</em> over lung is told as a <em>maaseh</em> without citation. Left to Sefaria for the Bach/Taz; the rest unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">13. <span class="heb">טוּר אורח חיים תרכ&quot;ה</span> &mdash; why Sukkos in Tishrei and not Nissan; <span class="heb">מְגִלָּה יד ע&quot;א</span> (Devorah under a <em>tomer</em>).</span>
+  <span class="exp">The Tur answers that in Nissan, when it is warm, a <em>sukkah</em> might look like pleasure, while in Tishrei, with the rains, it is plainly for Hashem. The Rav&rsquo;s digression: Devorah judged under a date palm, which has no branches, so there was no question of <em>yichud</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">14. <span class="heb">חִדּוּשֵׁי הָרִי&quot;ם</span> &mdash; <em>da&rsquo;as</em> and <em>l&rsquo;ma&rsquo;an yed&rsquo;u</em>; <span class="heb">סוֹטָה ג ע&quot;א</span> (<em>ruach shtus</em>); the <span class="heb">בֶּרְדִּיטְשׁוֹבֶר</span>.</span>
+  <span class="exp">Reprinted as source #5. The Chiddushei HaRim (Rav Yitzchak Meir Alter of Ger) reads <em>l&rsquo;ma&rsquo;an yed&rsquo;u</em> as requiring <em>da&rsquo;as</em>; since sin requires <em>ruach shtus</em> (Sotah 3a), we lack <em>da&rsquo;as</em> all year until <em>Yom Kippur</em> atones. The Rav added that <em>Sukkos</em> is <em>rishon l&rsquo;cheshbon avonos</em> by day, but that on the first night we have not yet sinned.
+  <div class="note-academic"><strong>Flag:</strong> The <em>midrash</em> for <em>Sukkos rishon l&rsquo;cheshbon avonos</em> was cited by the Rav as &ldquo;the <em>midrash</em>&rdquo; without a source, and the Berditchover&rsquo;s reading (from <em>yirah</em> to <em>ahavah</em>, <em>zedonos</em> as <em>zechuyos</em>) was given orally. The Chiddushei HaRim passage is as on the sheet; its <em>parshah</em> is not stated there.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">15. <span class="heb">רַבִּי שְׁלֹמֹה קְלוּגֶר</span>; <span class="heb">תַּעֲנִית כד ע&quot;ב</span> (Rava and the dream of his father).</span>
+  <span class="exp">Rav Shlomo Kluger (1785&ndash;1869), prolific author, held in high regard by the Tzemach Tzedek. His answer to the Tur&rsquo;s question: after pressuring Heaven on <em>Yom Kippur</em>, one must leave one&rsquo;s bed, as Rava did, so we go into the <em>sukkah</em>; hence the point is to <em>sleep</em> there.
+  <div class="note-academic"><strong>Flag:</strong> The Rav did not name the work or location in which Rav Shlomo Kluger says this; the Gemara parallel (Rava, the man who died, the rain, the father in the dream, the knife marks) is cited from Taanis. Sefaria confirms the Gemara parallel at Taanit 24b (Rava, the man flogged who died, rain, his father in the dream, bed slashed by knives); the Kluger attribution remains unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">16. <span class="heb">הַגּר&quot;א, שִׁיר הַשִּׁירִים א:ד</span>; <span class="heb">רש&quot;י, שְׁמוֹת יד:יט</span>.</span>
+  <span class="exp">Reprinted as source #8. The Gra&rsquo;s <em>chiddush</em>: the clouds left with the <em>eigel</em> and returned on the 15th of Tishrei when building of the <em>Mishkan</em> began &mdash; with the calendar of 11, 12&ndash;13, 14 and 15 Tishrei. The Rav noted that the cloud mentioned in <em>Beshalach</em> is, per Rashi, the one that led and later moved behind us.
+  <div class="note-academic"><strong>Flag:</strong> Source sheet reads &ldquo;(see <em>Tur Orach Chaim</em> 625)&rdquo; for the question; the location &ldquo;Shir HaShirim 1:4&rdquo; is from the transcript. Sefaria confirms Rashi on Exodus 14:19 (the pillar of cloud moved behind the camp); the Gra on Shir HaShirim 1:4 was not found on Sefaria and remains unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">17. <span class="heb">פְּרִי הָאֲדָמָה</span> (quoting the <span class="heb">מַהֲרַ&quot;ם חָבִיב</span> and <span class="heb">לְבָנַת הַסַּפִּיר</span>); <span class="heb">תַּעֲנִית ט ע&quot;א</span>; <span class="heb">בָּבָא מְצִיעָא פו ע&quot;ב</span>; the <span class="heb">מהרש&quot;א</span>.</span>
+  <span class="exp">Reprinted as source #9. <em>Taanis</em> 9a: the clouds in the merit of Aharon, the <em>be&rsquo;er</em> of Miriam, the <em>mon</em> of Moshe; <em>Bava Metzia</em> 86b: all three in the merit of Avraham (butter and milk; water; <em>v&rsquo;hu omeid aleihem</em>). The Maharsha, per the Rav, says that in Avraham&rsquo;s merit alone they would have been temporary, and a living <em>tzaddik</em> was needed to extend them. The Pri HaAdamah, quoting Maharam Chaviv quoting <em>Levanas HaSapir</em>, says the clouds left because of the <em>eigel</em> and returned in the merit of Aharon, so we make a <em>Yom Tov</em> <em>l&rsquo;hodia kocha shel teshuvah</em>.
+  <div class="note-academic"><strong>Flag:</strong> The identity and period of &ldquo;the Pri HaAdamah&rdquo; and of the <em>Levanas HaSapir</em> (&ldquo;from way back&rdquo;) are as the Rav described them; no author or date was given. The Maharsha&rsquo;s location (on <em>Bava Metzia</em> 86b or <em>Taanis</em> 9a) was not specified. Left unverified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">18. <span class="heb">רַבִּי יְהוֹשֻׁעַ אִבְּן שׁוּעֵיב</span>, <em>derashos</em> (on Emor).</span>
+  <span class="exp">Reprinted as source #11. A <em>talmid</em> of the Rashba, in a print the Rav dated to the 1500s. He reports that the <em>Rishonim</em> asked why the <em>sukkah</em> is in Tishrei and offers that the clouds did not descend until after <em>Yom Kippur</em>; from <em>Pesach</em> to <em>Atzeres</em> they were busy with <em>Matan Torah</em> and its aftermath, then the <em>eigel</em>, then the <em>Mishkan</em> donations.
+  <div class="note-academic"><strong>Flag:</strong> Sheet label &ldquo;R&rsquo; Shuaib&rdquo; (partly legible on the scan). Specific <em>derashah</em> and page not given.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">19. <span class="heb">רש&quot;י, שְׁמוֹת לה:א</span> (<span class="heb">וַיַּקְהֵל מֹשֶׁה</span>, the day after <em>Yom Kippur</em>); <span class="heb">שְׁמוֹת לו:ג</span> (<span class="heb">בַּבֹּקֶר בַּבֹּקֶר</span>); the opinion in the <span class="heb">זֹהַר</span>.</span>
+  <span class="exp">The Rav noted that the timetable of 11&ndash;15 Tishrei follows Rashi; there is an opinion in the Zohar that Moshe told them of the <em>Mishkan</em> before the <em>eigel</em>, on which the Rebbe has a beautiful <em>sichah</em>.
+  <div class="note-academic"><strong>Flag:</strong> No location was given for the Zohar or for the Rebbe&rsquo;s <em>sichah</em>. Left unverified. (Rashi on Exodus 35:1, the day after <em>Yom Kippur</em>, confirmed on Sefaria.)</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">20. <span class="heb">אֵלִיָּהוּ רַבָּה</span> (label on sheet) citing <span class="heb">פְּסִיקְתָּא דְרַב כַּהֲנָא</span> &mdash; sheet #12.</span>
+  <span class="exp">Opening words in the Inventory only. The <em>midrash</em> cited: <em>amar Rabbi Eliezer lamah anu osin sukkos achar Yom Kippurim?</em> &mdash; <em>shema yigaleh dineinu b&rsquo;Yom Kippurim l&rsquo;galus</em>. The Rav did not take this excerpt up explicitly in the recording; it is placed here for completeness.
+  <div class="note-academic"><strong>Flag:</strong> The sheet label (&ldquo;Eliyah Rabbah&rdquo;) and the <em>Pesikta d&rsquo;Rav Kahana</em> reference are as read from the scan; the passage was not discussed, and its precise location was not confirmed.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">21. <span class="heb">בְּנֵי יִשָּׂשכָר, מַאֲמָרֵי חֹדֶשׁ תִּשְׁרֵי</span>; <span class="heb">דְּבַשׁ לְפִי</span> (Chida) in the name of <span class="heb">צֶמַח דָּוִד</span>.</span>
+  <span class="exp">Reprinted as source #13. The Bnei Yissaschar of Dinov (Rav Tzvi Elimelech) asks why only <em>ananei kavod</em> were given a remembrance, and offers the <em>pshat</em> that the <em>be&rsquo;er</em> and the <em>mon</em> are recalled in the food and drink of <em>Yom Tov</em>.
+  <div class="note-academic"><strong>Flag:</strong> The sheet reads <em>Devash LaPi</em> with a partly legible location; page and <em>os</em> left as printed on the sheet.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">22. <span class="heb">חיד&quot;א, רֹאשׁ דָּוִד</span> (Emor), in the names of <span class="heb">רַבִּי חַיִּים כַּפּוּסִי</span>, <span class="heb">רַבִּי יְהוּדָה חַבִּילִיוֹ</span>, <span class="heb">רַבִּי יְשׁוּעָה זִין</span>; <span class="heb">זֹהַר ח&quot;ב קצא:</span>.</span>
+  <span class="exp">Reprinted as sources #14&ndash;16. Chaim Kapusi: <em>mon</em> and <em>be&rsquo;er</em> are necessities, the clouds <em>chiba yeseirah</em>. Chaviliyo: the clouds were only for Yisrael (the <em>erev rav</em> were expelled by them). Yeshua Zin: <em>mon</em> and <em>be&rsquo;er</em> came through complaints; the clouds were given unasked. The Rav noted that Rav Chaim Kapusi was the subject of a prior shiur (the bribe).
+  <div class="note-academic"><strong>Flag:</strong> The spelling &ldquo;Chaviliyo&rdquo; follows the printed sheet; the name was garbled in the transcript. The Zohar reference is as printed on the sheet.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">23. <span class="heb">מַהֲרַ&quot;ם חָבִיב</span> (from a manuscript), as cited on the sheet &mdash; sheet #17.</span>
+  <span class="exp">Opening words in the Inventory only. The passage addresses why only the clouds receive a remembrance if all three came in individual merits (Aharon, Moshe, Miriam), and offers that on the view of real huts the difficulty is lighter.
+  <div class="note-academic"><strong>Flag:</strong> The scan is only partly legible, the printed source of this excerpt is not identified on the sheet, and the Rav did not read it aloud. The summary here is cautious.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">24. <span class="heb">מהר&quot;ם מרוטנבורג</span> (responsum) against <span class="heb">רַבֵּינוּ תָּם</span> on women and the Shabbos meals; <span class="heb">אַף הֵן הָיוּ בְּאוֹתוֹ הַנֵּס</span>.</span>
+  <span class="exp">Reprinted as source #18. Rabbeinu Tam extends <em>af hen hayu b&rsquo;oso hanes</em> from <em>Megillah</em>, the four cups and <em>Chanukah</em> to <em>lechem mishneh</em> and three meals; the Maharam limits <em>af hen</em> to a <em>nes</em> in which Yisrael were in <em>sakanah</em>.
+  <div class="note-academic"><strong>Flag:</strong> The responsum&rsquo;s location (edition, <em>siman</em>) is not given on the sheet; the <em>gemaros</em> for the three rulings of <em>af hen</em> (<em>Megillah</em> 4a, <em>Shabbos</em> 23a, <em>Pesachim</em> 108b) are standard but were not named by the Rav.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">25. <span class="heb">פָּנִים יָפוֹת</span> (Rav Pinchas HaLevi Horowitz) on Vayikra 23:43; <span class="heb">סוּכָּה כז ע&quot;ב</span>.</span>
+  <span class="exp">Opening words in the Inventory (source #19); the Rav read it aloud. On Sukkah 27b, Rabbi Eliezer: <em>ein yotz&rsquo;in mi&rsquo;sukkah l&rsquo;sukkah</em> (<em>dumya d&rsquo;ananei kavod</em>); the <em>Chachamim</em> dispute. The Panim Yafos explains Rabbi Akiva as rebuilding at every camp, and Rabbi Eliezer as permitting reconstruction of a fallen <em>sukkah</em>, since the clouds also left and returned. <span class="sefaria-ref">Sefaria: Sukkah 27b (confirmed: Rabbi Eliezer, <em>ein yotz&rsquo;in mi&rsquo;sukkah l&rsquo;sukkah</em>; all agree a collapsed <em>sukkah</em> may be rebuilt).</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">26. <span class="heb">חֶלְקַת יוֹאָב</span>; <span class="heb">רַב אוֹשַׁעְיָא</span>, Sukkah 7b; the <span class="heb">רָאבִּי&quot;ה</span> in the <span class="heb">מָרְדְּכַי</span>; the <span class="heb">אֵלִיָּהוּ רַבָּה</span>.</span>
+  <span class="exp">The Chelkas Yoav raises the difficulty that we pasken like the <em>Chachamim</em> on <em>ein yotz&rsquo;in</em> yet like Rabbi Eliezer on <em>ananei kavod</em>. Rav Oshaya requires walls to be <em>tzilasah merubah me&rsquo;chamasah</em>; the Ra&rsquo;avyah in the Mordechai extends to walls the same <em>din</em> as <em>sechach</em>; the Eliyah Rabbah brings <em>Rishonim</em> who are <em>machmir l&rsquo;chatchilah</em>.
+  <div class="note-academic"><strong>Flag:</strong> The Chelkas Yoav, the Ra&rsquo;avyah/Mordechai and the Eliyah Rabbah were cited orally without a <em>siman</em>; Sukkah 7b is the Rav&rsquo;s own location for Rav Oshaya. Sefaria check: Sukkah 7a and 7b contain no statement of Rav Oshaya on <em>tzilasah merubah me&rsquo;chamasah</em>; the correct daf was not located, so the location remains unconfirmed.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">27. <span class="heb">רַשְׁבַּ&quot;ם, וַיִּקְרָא כג:מג</span>; <span class="heb">דְּבָרִים ח:יז</span>.</span>
+  <span class="exp">Reprinted as source #10. <em>Peshuto</em> is <em>sukkah mamash</em>: when gathering the produce, remember forty years without settled land, and do not say <em>kochi v&rsquo;otzem yadi</em>. <span class="sefaria-ref">Sefaria: Rashbam on Leviticus 23:43 (confirmed; he cites Sukkah 11 for the literal reading).</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">28. <span class="heb">רַבֵּינוּ בַּחְיֵי, וַיִּקְרָא כג:מג</span>; <span class="heb">כַּד הַקֶּמַח, סֻכָּה</span>; <span class="heb">יִרְמְיָהוּ ב:ב</span>; <span class="heb">דְּבָרִים ח:טו</span>; <span class="heb">יִרְמְיָהוּ ב:ו</span>.</span>
+  <span class="exp">Reprinted as sources #20 and #2. Rabbeinu Bachya: <em>sukkos mamash</em> publicizes the <em>ma&rsquo;alah</em> of Yisrael in the desert. Kad HaKemach: <em>nigleh</em> is that we survived the desert; <em>nistar</em> is <em>ananei kavod</em>. <span class="sefaria-ref">Sefaria: Rabbeinu Bahya, Vayikra 23:43 (confirmed).</span></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">29. <span class="heb">שַׁבָּת קל ע&quot;א</span> (Rabbi Eliezer <em>shamuti</em>); <span class="heb">בָּבָא מְצִיעָא נט ע&quot;ב</span> (oven of Achnai); Rashi&rsquo;s two explanations.</span>
+  <span class="exp">The Rav told that <em>machshirei milah</em> override <em>Shabbos</em> per Rabbi Eliezer; the <em>Chachamim</em> and Rabbi Akiva disagree; people who brought a knife on <em>Shabbos</em> were rebuked. Rashi: died in <em>cherem</em>, or from Beis Shammai.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">30. <span class="heb">הַרַמְבַּ&quot;ן</span> on why Rabbi Eliezer did not back down; <span class="heb">סוּכָּה כח ע&quot;א</span>; <span class="heb">אָבוֹת ב:ח</span>; <span class="heb">חַוּוֹת יָאִיר סִימָן צ&quot;ד</span> &mdash; sheet #3.</span>
+  <span class="exp">Reprinted as source #3. The Chavos Yair distinguishes the case in which Rabbi Eliezer is asked <em>halachah l&rsquo;maaseh</em> (he states only what he received) from the case of a <em>halachic</em> discussion among the <em>Chachamim</em> (he gives his own reasoning). The sheet&rsquo;s own references (Yoma 66b, Sukkah 28a, Bava Metzia 59b) are printed inside the excerpt.
+  <div class="note-academic"><strong>Flag:</strong> The location of the Ramban on the oven of Achnai was not given in the recording and is left unspecified. Chavos Yair <em>siman</em> 94 is from the Rav&rsquo;s own &ldquo;letter <em>tzadi-daled</em>&rdquo; and the sheet.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">31. <span class="heb">שַׁבָּת לא ע&quot;א</span> (Hillel and Shammai, &ldquo;on one foot&rdquo;); <span class="heb">תַּעֲנִית כה ע&quot;ב</span> (Rabbi Eliezer&rsquo;s fast; Rabbi Akiva and <em>Avinu Malkeinu</em>); <span class="heb">פְּסָחִים סט ע&quot;א</span> (&ldquo;his death will be with slaughter&rdquo;).</span>
+  <span class="exp">Shammai&rsquo;s impatience and Hillel&rsquo;s patience; the drought in which Rabbi Eliezer would not let the congregation leave while Rabbi Akiva&rsquo;s <em>Avinu Malkeinu</em> brought rain, with the <em>gemara</em>&rsquo;s remark that Rabbi Akiva was <em>ma&rsquo;avir al midosav</em>; and Rabbi Eliezer&rsquo;s remark to Rabbi Akiva in the discussion of <em>machshirei</em> of the <em>korban Pesach</em> that he would die through <em>shechitah</em>.</span>
+</div>
+
+<div class="mm-note">
+  <span class="short">32. <span class="heb">חֲגִיגָה יב ע&quot;א</span> &mdash; Beis Shammai and Beis Hillel on heaven and earth; <span class="heb">פִּרְקֵי דְּרַבִּי אֱלִיעֶזֶר</span>.</span>
+  <span class="exp">Beis Shammai: heaven first (throne and footstool); Beis Hillel: earth first (house and attic); Chachamim: together. The Rav cited Pirkei d&rsquo;Rabbi Eliezer for the opinion that Beis Shammai and Beis Hillel came to agree via a <em>bas kol</em> that they were created simultaneously.
+  <div class="note-academic"><strong>Flag:</strong> The chapter of Pirkei d&rsquo;Rabbi Eliezer was not specified in the recording; left unspecified.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">33. <span class="heb">רֹאשׁ הַשָּׁנָה י ע&quot;ב&ndash;יא ע&quot;א</span> (Rabbi Eliezer and Rabbi Yehoshua on Tishrei and Nissan); the opening of <span class="heb">פִּרְקֵי דְּרַבִּי אֱלִיעֶזֶר</span> (Rabbi Eliezer&rsquo;s youth).</span>
+  <span class="exp">Rabbi Eliezer: the world was created in Tishrei and <em>Moshiach</em> will come in Tishrei; Rabbi Yehoshua: Nissan. The Rav tied this to the <em>tenuah</em> of each: Rabbi Eliezer, who fled his father&rsquo;s field to learn from Rabban Yochanan ben Zakkai, a movement from below upward; Rabbi Yehoshua, born a <em>tzaddik</em>, from above downward.
+  <div class="note-academic"><strong>Flag:</strong> The story of Rabbi Yehoshua&rsquo;s mother bringing his cradle to the <em>beis midrash</em> was told without a source; not given a location here.</div></span>
+</div>
+
+<div class="mm-note">
+  <span class="short">34. <span class="heb">רַמְבַּ&quot;ן, שְׁמוֹת יג:טז</span> (end of <em>Parshas Bo</em>) &mdash; from the revealed miracles to the hidden.</span>
+  <span class="exp">The Ramban&rsquo;s principle that a person has no portion in the Torah of Moshe until he believes that all events are miracles, from the open miracles one comes to recognize the hidden ones. The Rav brought it to explain Rabbi Akiva: that the day-to-day works only through Hashem&rsquo;s hand. <span class="sefaria-ref">Sefaria: Ramban on Exodus 13:16 (confirmed, end of the comment).</span></span>
+</div>
+
+</section>
+
+<!-- ============ SOURCE SHEET INVENTORY ============ -->
+<section class="inventory">
+<h2>Source Sheet Inventory</h2>
+<div class="subtitle">Cross-reference to every raw excerpt provided on the accompanying source sheet (&ldquo;Sukkos! The Colossal Debate On Which Everyone Weighs In&rdquo;, two scanned pages, set sideways in the PDF)</div>
+
+<table class="inv">
+  <thead>
+    <tr><th>#</th><th>Opening words</th><th>Attributed to</th><th>In this write-up</th><th>Location in PDF</th></tr>
+  </thead>
+  <tbody>
+    <tr><td class="num">1</td><td class="heb">רבינו הבעל שם טוב הקדוש זכותו יגן עלינו בעת שתקע אהלו של תורה&hellip; (with the continuation <span class="heb">והפתקא הזאת נשאר בירושה</span>)</td><td>Ba&rsquo;al Shem Tov al HaTorah, section on Sukkos (parchment of Metatron; Degel Machaneh Ephraim)</td><td>I</td><td>p.&nbsp;1, top</td></tr>
+    <tr><td class="num">2</td><td class="heb">מכלל מצות התורה שהם בדרך נגלה ונסתר הוא מצות הסוכה&hellip;</td><td>Kad HaKemach, <em>Sukkah</em> (<em>nigleh v&rsquo;nistar</em>)</td><td>VIII</td><td>p.&nbsp;1, upper right</td></tr>
+    <tr><td class="num">3</td><td class="heb">&hellip;לע״ד לא קשה מידי, שבמה דברים אמורים כשישאלו ממנו דבר הלכה למעשה&hellip;</td><td>Chavos Yair, <em>siman</em> 94 (Rabbi Eliezer: &ldquo;every word from tradition&rdquo;)</td><td>IX</td><td>p.&nbsp;1, right, upper-middle</td></tr>
+    <tr><td class="num">4</td><td class="heb">מנא הני מילי אמר ריש לקיש אמר קרא ואד יעלה מן הארץ&hellip;</td><td>Sukkah 11b (Reish Lakish; Rabbi Eliezer and Rabbi Akiva)</td><td>II</td><td>p.&nbsp;1, centre</td></tr>
+    <tr><td class="num">5</td><td class="heb">בטור מקשה למה אין אנו עושים סוכות בניסן שאז יצאו בנ״י ממצרים&hellip;</td><td>Chiddushei HaRim, on the Tur</td><td>V</td><td>p.&nbsp;1, left, middle</td></tr>
+    <tr><td class="num">6</td><td class="heb">סוכות ממש דכתיב ויעקב נסע סוכתה דברי רבי אליעזר&hellip;</td><td>Mechilta (Bo), Ra&rsquo;amses to Sukkos</td><td>III</td><td>p.&nbsp;1, right, middle</td></tr>
+    <tr><td class="num">7</td><td class="heb">שם ענני כבוד הי׳ דברי ר׳ אליעזר ר״ע אומר סוכות ממש&hellip;</td><td>Maharatz Chayes (Rav Tzvi Hirsch Chayes), glosses on Sukkah 11b</td><td>III</td><td>p.&nbsp;1, right, lower-middle</td></tr>
+    <tr><td class="num">8</td><td class="heb">מה שהקשו (עי׳ טוא״ח סי׳ תרכה) למה אנחנו עושים סוכות בתשרי&hellip;</td><td>The Gra, Shir HaShirim 1:4</td><td>V</td><td>p.&nbsp;1, left, lower</td></tr>
+    <tr><td class="num">9</td><td class="heb">עוד קשה בשלמא למאן דאמר סוכות ממש אתי שפיר&hellip;</td><td>Pri HaAdamah, quoting Maharam Chaviv and <em>Levanas HaSapir</em></td><td>V</td><td>p.&nbsp;1, left, bottom</td></tr>
+    <tr><td class="num">10</td><td class="heb">למען ידעו דורותיכם [וגו׳]. פשוטו כדברי האומרים במסכת סוכה סוכה ממש&hellip;</td><td>Rashbam, Vayikra 23:43</td><td>VIII</td><td>p.&nbsp;1, right, bottom</td></tr>
+    <tr><td class="num">11</td><td class="heb">ולנו לבאר הענין שאלו הראשונים ז״ל מה טעם צוה השם&hellip;</td><td>R&rsquo; Yehoshua ibn Shuaib, <em>derashos</em></td><td>V</td><td>p.&nbsp;2, right, top</td></tr>
+    <tr><td class="num">12</td><td class="heb">איתא במדרש [פסיקתא דרב כהנא] אמר ר׳ אליעזר למה אנו עושין סוכות אחר יום הכיפורים&hellip;</td><td>&ldquo;Eliyah Rabbah&rdquo; (sheet label) citing the <em>Pesikta</em> &mdash; <em>not discussed in the recording</em></td><td>V (noted)</td><td>p.&nbsp;2, left, top</td></tr>
+    <tr><td class="num">13</td><td class="heb">הקדמונים אחזו שער לדרוש ולחקור על מה עשה י״י ככה&hellip;</td><td>Bnei Yissaschar (Chida, <em>Devash LaPi</em>, in the name of Tzemach David)</td><td>VI</td><td>p.&nbsp;2, right, upper</td></tr>
+    <tr><td class="num">14</td><td class="heb">והנה ראיתי להרב הגדול מו׳ חיד״א הנ״ל בספרו ראש דוד&hellip; בשם הרב החסיד מו׳ חיים כפוסי</td><td>Bnei Yissaschar quoting Chida, <em>Rosh David</em> (Rav Chaim Kapusi)</td><td>VI</td><td>p.&nbsp;2, left, upper</td></tr>
+    <tr><td class="num">15</td><td class="heb">הרב הגדול החסיד מו׳ חיד״א זללה״ה (ראש דוד שם) הטעים לנו עוד טעם מן ובאר&hellip;</td><td>Chida, <em>Rosh David</em> (Rav Yehudah Chaviliyo; Zohar II 191b)</td><td>VI</td><td>p.&nbsp;2, right, middle</td></tr>
+    <tr><td class="num">16</td><td class="heb">עוד דרש הרב הגדול מו׳ חיד״א (ראש דוד שם) בשם הרב מו׳ ישועה זיי״ן&hellip;</td><td>Chida, <em>Rosh David</em> (Rav Yeshua Zin)</td><td>VI</td><td>p.&nbsp;2, right, lower</td></tr>
+    <tr><td class="num">17</td><td class="heb">והרב הגדול כמהר״ם חביב ז״ל בכ״י כתב דלמ״ד סוכות ממש אתי שפיר טפי&hellip;</td><td>Maharam Chaviv, from manuscript (printed source not identified; <em>partly legible; not read aloud</em>)</td><td>VI (noted)</td><td>p.&nbsp;2, left, middle</td></tr>
+    <tr><td class="num">18</td><td class="heb">אבל מכל מקום לא שייך טעמא דאף הן היו&hellip;</td><td>Maharam of Rottenburg (against Rabbeinu Tam)</td><td>VI</td><td>p.&nbsp;2, left, lower-middle</td></tr>
+    <tr><td class="num">19</td><td class="heb">כי בסוכות הושבתי את בני ישראל וגו׳ ענני כבוד היו דברי ר״א ר״ע אומר&hellip;</td><td>Panim Yafos (Rav Pinchas HaLevi Horowitz)</td><td>VII</td><td>p.&nbsp;2, right, bottom</td></tr>
+    <tr><td class="num">20</td><td class="heb">(כג) כִּי בַסֻּכּוֹת הוֹשַׁבְתִּי אֶת בְּנֵי יִשְׂרָאֵל. יֵשׁ מֵרַזַ״ל שֶׁאָמְרוּ סֻכּוֹת מַמָּשׁ&hellip;</td><td>Rabbeinu Bachya, Vayikra 23:43</td><td>VIII</td><td>p.&nbsp;2, left, bottom</td></tr>
+  </tbody>
+</table>
+
+</section>
+
+<div class="colophon">
+Prepared as part of the Rabbi Kraz shiur-typography project &middot; Tishrei 5787 / October 2026 &middot; Set in Georgia at 12.5&nbsp;pt with Hebrew set in SBL Hebrew and matched serif fallbacks &middot; Cream #fdfcf7 / Burgundy #4a1525 / Gold #b8860b
+</div>
+
+</body>
+</html>
